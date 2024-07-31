@@ -1,3 +1,43 @@
+.color-buttons {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 3;
+}
+.color-btn {
+  /* padding: 10px 20px; */
+  width: 1.2rem /* 80/54 */;
+  height: 1.2rem /* 80/54 */;
+  font-size: 0.37rem;
+  font-style: normal;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.color-btn:hover {
+  opacity: 0.8;
+}
+.color-btn.red {
+  background-color: #c43939;
+}
+.color-btn.green {
+  background-color: #46ca46;
+}
+.color-btn.blue {
+  background-color: #3737d3;
+}
+.color-btn.reset {
+  background-color: #3b3b3b;
+}
+
 .page-loading {
   position: absolute;
   top: 50%;
@@ -323,6 +363,18 @@ button {
   .control-right-top .btn-detail {
     width: 1.067rem /* 40/37.5 */;
     height: 1.067rem /* 40/37.5 */;
+  }
+
+  .color-buttons {
+    top: 50%;
+    left: 5%;
+    right: unset;
+    gap: 15px;
+  }
+  .color-btn {
+    width: 1.067rem;
+    height: 1.067rem;
+    font-size: 0.32rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

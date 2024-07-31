@@ -119,9 +119,14 @@
         </a>
     </div>
 
+    <!-- 修改颜色 -->
+    <div id="colorBar" class="color-buttons" v-show="currentProduct == 0 || currentProduct == 1">
+        <button id="redBtn" class="red color-btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-red" title="红色" type="button">红</button>
+        <button id="greenBtn" class="green color-btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="绿色" type="button">绿</button>
+        <button id="blueBtn" class="color-btn blue EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="蓝色" type="button">蓝</button>
+        <button id="resetBtn" class="color-btn reset EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="还原" type="button">还原</button>
+    </div>
 </div>
-
-
 
 <script type="text/javascript" src="../dist/vue.global.min.js"></script>
 <script type="text/javascript" src="../dist/swiper/js/swiper.min.js"></script>
@@ -193,6 +198,11 @@
     //监听子页面按钮
     const parentBtnPos = document.querySelector("#btnPos");
     const parentBtnBos = document.querySelector("#btnBos");
+    const parentBtnRed = document.querySelector("#redBtn");
+    const parentBtnGreen = document.querySelector("#greenBtn");
+    const parentBtnBlue = document.querySelector("#blueBtn");
+    const parentBtnReset = document.querySelector("#resetBtn");
+
     const childFrame = document.querySelector("#childFrame");
     parentBtnPos.addEventListener('click', ()=>{
         const childBtn = childFrame.contentWindow.document.querySelector("#aa");
@@ -202,8 +212,43 @@
         const childBtn = childFrame.contentWindow.document.querySelector("#bb");
         childBtn.click();
     });
+    parentBtnRed.addEventListener('click', ()=>{
+        const childBtn = childFrame.contentWindow.document.querySelector("#setRed");//id
+        childBtn.click();
+    });
+    parentBtnGreen.addEventListener('click', ()=>{
+        const childBtn = childFrame.contentWindow.document.querySelector("#setGreen");//id
+        childBtn.click();
+    });
+    parentBtnBlue.addEventListener('click', ()=>{
+        const childBtn = childFrame.contentWindow.document.querySelector("#setBlue");//id
+        childBtn.click();
+    });
+    parentBtnReset.addEventListener('click', ()=>{
+        const childBtn = childFrame.contentWindow.document.querySelector("#reset");//id
+        childBtn.click();
+    });
 
 </script>
+
+<!-- dify -->
+<script>
+    window.aiChatbotConfig = {
+        baseUrl: '../aiChat.html',
+        draggable: false,
+        dynamicScript: false
+    }
+</script>
+<script
+    src="../js/chatbot.js"
+    id="htwYEci6QayqHaC8"
+    defer>
+</script>
+<style>
+    #ai-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+    }
+</style>
 
 </body>
 </html>
