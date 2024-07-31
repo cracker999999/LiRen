@@ -1,0 +1,56 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_3);
+		  );
+	</action>
+	
+	<scene name="scene_3" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        />
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+		
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/automobile/3.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/automobile/3.video/video-3000x1500-poster.jpg');
+			videointerface_play('3000x1500');
+		</action>
+
+		<hotspot name="jcsc_zaoyin1" style="skin_hotspotstyle_red" ath="-160.072" atv="3.755" onclick="show_hotspot_alert(jcsc_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="jcsc_zaoyin2" style="skin_hotspotstyle_red" ath="-29.012" atv="3.534" onclick="show_hotspot_alert(jcsc_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="jcsc_zaoyin3" style="skin_hotspotstyle_red" ath="91.142" atv="1.136" onclick="show_hotspot_alert(jcsc_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+
+		<hotspot name="jcsc_keliwu1" style="skin_hotspotstyle_red" ath="-110.738" atv="5.378" onclick="show_hotspot_alert(jcsc_keliwu1)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
+		<hotspot name="jcsc_keliwu2" style="skin_hotspotstyle_red" ath="7.544" atv="3.325" onclick="show_hotspot_alert(jcsc_keliwu2)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
+
+		<hotspot name="jcsc_yhqt1" style="skin_hotspotstyle_red" ath="0.002" atv="-9.949" onclick="show_hotspot_alert(jcsc_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
+
+	</scene>
+
+
+
+
+</krpano>

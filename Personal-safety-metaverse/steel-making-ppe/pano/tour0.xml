@@ -1,0 +1,62 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_0);
+		  );
+	</action>
+
+	<scene name="scene_0" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        />
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" hlookat.mobile="-30" vlookat="0" fovtype="DFOV" fov="130" fov.mobile="90"  fovmin="75" fovmax="150" distortion="0.0" />
+
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/steel-making-ppe/0.video/video-3000x1500.mp4?v20231211', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/steel-making-ppe/0.video/video-3000x1500-poster.jpg?v20231211');
+			videointerface_play('3000x1500');
+		</action>
+
+		<hotspot name="xk_zaoyin1" style="skin_hotspotstyle_red" ath="-107.731" atv="-5.104" onclick="show_hotspot_alert(xk_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="xk_zaoyin2" style="skin_hotspotstyle_red" ath="59.526" atv="-7.811" onclick="show_hotspot_alert(xk_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="xk_zaoyin3" style="skin_hotspotstyle_red" ath="58.479" atv="4.674" onclick="show_hotspot_alert(xk_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+
+		<hotspot name="xk_fc1" style="skin_hotspotstyle_red" ath="-38.834" atv="-4.205" onclick="show_hotspot_alert(xk_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
+		<hotspot name="xk_fc2" style="skin_hotspotstyle_red" ath="-1.387" atv="4.432" onclick="show_hotspot_alert(xk_fc2)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
+		<hotspot name="xk_fc3" style="skin_hotspotstyle_red" ath="-28.043" atv="0.772" onclick="show_hotspot_alert(xk_fc3)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
+
+		<hotspot name="xk_cjw1" style="skin_hotspotstyle_red" ath="-63.786" atv="-2.139" onclick="show_hotspot_alert(xk_cjw1)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
+		<hotspot name="xk_cjw2" style="skin_hotspotstyle_red" ath="32.309" atv="-7.661" onclick="show_hotspot_alert(xk_cjw2)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
+		<hotspot name="xk_cjw3" style="skin_hotspotstyle_red" ath="71.691" atv="1.732" onclick="show_hotspot_alert(xk_cjw3)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
+
+
+
+
+	</scene>
+
+
+
+
+</krpano>

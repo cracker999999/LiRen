@@ -1,0 +1,56 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_1);
+		  );
+	</action>
+	
+	<scene name="scene_1" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        />
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" hlookat.mobile="-45" vlookat="0" fovtype="DFOV" fov="130" fov.mobile="90" fovmin="75" fovmax="150" distortion="0.0" />
+		
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/construction/1.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/construction/1.video/video-3000x1500-poster.jpg');
+			videointerface_play('3000x1500');
+		</action>
+
+		<hotspot name="ld_linbian1" style="skin_hotspotstyle_red" ath="11.952" atv="4.768" onclick="show_hotspot_alert(ld_linbian1)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
+		<hotspot name="ld_linbian2" style="skin_hotspotstyle_red" ath="83.654" atv="7.446" onclick="show_hotspot_alert(ld_linbian2)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
+
+		<hotspot name="ld_dongkou" style="skin_hotspotstyle_red" ath="-78.684" atv="14.854" onclick="show_hotspot_alert(ld_dongkou)" onloaded="add_all_the_time_tooltip()" text="洞口作业" />
+
+		<hotspot name="ld_pingtai" style="skin_hotspotstyle_red" ath="-34.024" atv="10.868" onclick="show_hotspot_alert(ld_pingtai)" onloaded="add_all_the_time_tooltip()" text="操作平台" />
+
+		<hotspot name="ld_pandeng" style="skin_hotspotstyle_red" ath="-54.455" atv="-16.526" onclick="show_hotspot_alert(ld_pandeng)" onloaded="add_all_the_time_tooltip()" text="攀登作业" />
+
+	</scene>
+
+
+
+
+</krpano>

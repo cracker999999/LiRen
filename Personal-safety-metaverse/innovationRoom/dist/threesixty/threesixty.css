@@ -1,0 +1,90 @@
+.threesixty {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: all-scroll;
+  /* .nav_bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 11;
+
+    a {
+      display: block;
+      width: 32px;
+      height: 32px;
+      float: left;
+      background: url(http://3m.sjune.cn/assets/sprites.png) no-repeat;
+      text-indent: -99999px;
+    }
+
+    a.nav_bar_play {
+      background-position: 0 0 !important;
+    }
+
+    a.nav_bar_previous {
+      background-position: 0 -73px !important;
+    }
+
+    a.nav_bar_stop {
+      background-position: 0 -37px !important;
+    }
+
+    a.nav_bar_next {
+      background-position: 0 -104px !important;
+    }
+  }*/
+}
+.threesixty .threesixty_images {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.threesixty .threesixty_images img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.threesixty .threesixty_images img.previous-image {
+  visibility: hidden;
+  width: 0;
+}
+.threesixty .threesixty_images img.current-image {
+  visibility: visible;
+  width: 100%;
+}
+.spinner {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.spinner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* html */
+.threesixty:-webkit-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
+.threesixty:-moz-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
+/*# sourceMappingURL=threesixty.css.map */
