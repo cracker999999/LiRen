@@ -58,18 +58,18 @@ const app = Vue.createApp({
                 //装卸货
                 {
                     name: '装卸货',
-                    previewImg: 'assets/img/scene_zhuangxiehuo.png',
+                    previewImg: 'assets/img/scene_zhuangxiehuo.png', // 下方预览图
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0', // 解决方案按钮
-                    alertList: [
+                    alertList: [ 
                         {
                             name: '高空坠落',
-                            btn: 'assets/img/btn_zhuiluo.png',
-                            btnActive: 'assets/img/btn_zhuiluo_on.png',
-                            text: '槽罐车卸货前取样检测时，作业人员需要站在槽罐车上方，存在高空坠落风险',
+                            btn: 'assets/img/btn_zhuiluo.png', //右侧按扭
+                            btnActive: 'assets/img/btn_zhuiluo_on.png', //右侧按扭
+                            text: '槽罐车卸货前取样检测时，作业人员需要站在槽罐车上方，存在高空坠落风险', //点击红点后的弹窗文字
                             solutionName: '坠落防护',
-                            alertBoxIcon: 'assets/img/icon_zlfh.png',
-                            spotArray: ['zxh_zhuiluo1', 'zxh_zhuiluo2'],
+                            alertBoxIcon: 'assets/img/icon_zlfh.png', //弹窗图标
+                            spotArray: ['zxh_zhuiluo1', 'zxh_zhuiluo2'], //tour.xml中的hotspot
                         },
                         {
                             name: '有害气态物',
@@ -256,7 +256,7 @@ const app = Vue.createApp({
             ],
             curAlertIndex: 0,
             curAlertList: [],
-            solutionList: [
+            solutionList: [ //最下面一栏是解决方案
                 {
                     solutionName: '呼吸防护',
                     solutionIcon: 'assets/img/icon_mask.png',
@@ -685,7 +685,7 @@ const app = Vue.createApp({
             ],
             curProductList: [],
             curProductTypeIndex: 0,
-            productTypeList: [
+            productTypeList: [ // 产品页面的左侧分类
                 {
                     name: '锚点连接件',
                     icon: 'assets/img/icon_maodian.png?v20230904',

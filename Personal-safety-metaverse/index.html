@@ -61,7 +61,7 @@
         <div class="btn btn-bgm flex-column flex-vc flex-hc" onclick="onPlayBgm()">
             <span class="icon"></span>
             <span>音乐</span>
-            <audio style="opacity: 0; height: 0" src="images/bgm.mp3?v2023041002" id="bgm" loop="" autoplay="autoplay" preload="auto"></audio>
+            <audio style="opacity: 0; height: 0" src="images/bgm.mp3" id="bgm" loop="" autoplay="autoplay" preload="auto"></audio>
         </div>
         <div class="btn btn-jieshuo flex-column flex-vc flex-hc" onclick="onPlayJieshuo()">
             <span class="icon"></span>
@@ -75,7 +75,7 @@
         <!--拖动画布-->
         <div class="drag-box relative hidden " id="dragBox" style="display: none;">
             <div class="drag-content zoomContainer" id="dragContent">
-                <img src="images/bg_init_mid.jpg?v20230728" alt="" class="drag-img " id="dragImg">
+                <img src="images/bg_init_mid.jpg" alt="" class="drag-img " id="dragImg">
                 <ul class="dot-list absolute ">
                     <li class="dot-item dot-shaojie">
                         <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-冶金-烧结" onclick="toJumpPageEvent(this, function () { changePage('steel-making-ppe','tour1.xml', 1); });">
@@ -172,7 +172,7 @@
                     </li>
 
                     <li class="industry-item flex-column flex-vc flex-hc EnterPageEvent" data-title="首页" data-name="首页-冶金行业" data-jieshuo="jieshuo_yejin.mp3" onclick="showSolution(this)">
-                        <img src="images/icon_pin4.png?v20230323" alt="" class="icon-pin animated infinite moveUpDown">
+                        <img src="images/icon_pin4.png" alt="" class="icon-pin animated infinite moveUpDown">
                         <div class="text">冶金行业</div>
                     </li>
                 </ul>
@@ -202,7 +202,7 @@
         <!--沙盘缩略-->
         <div class="overview-container fixed zoomContainer">
             <div class="overview-img">
-                <img src="images/bg_init_mid.jpg?v20230728" alt="" class="w-100">
+                <img src="images/bg_init_mid.jpg" alt="" class="w-100">
             </div>
             <div class="overview-btns flex flex-vc flex-hc margin-top-xs">
                 <div class="btn margin-lr-sm btn-scale flex flex-vc flex-hc EnterPageEvent" data-title="首页" data-name="首页-放大" data-modal="overviewModal" onclick="showModal(this)">
@@ -469,7 +469,7 @@
                             </a>
                         </div>
                     </div>
-                    <!-- Image Map Generated-->
+                    <!-- Image Map Generated  https://summerstyle.github.io/summer/ -->
                     <div class="img-map-container">
                         <img src="images/index/img_floor.png" usemap="#image-map" width="3840" height="2160" class="img-map">
 
@@ -1021,5 +1021,25 @@
     }
 
 </script>
+
+<!-- dify -->
+<script>
+    window.aiChatbotConfig = {
+        baseUrl: 'aiChat.html',
+        draggable: false,
+        dynamicScript: false
+    }
+</script>
+<script
+    src="js/chatbot.js"
+    id="htwYEci6QayqHaC8"
+    defer>
+</script>
+<style>
+    #ai-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+    }
+</style>
+
 </body>
 </html>
