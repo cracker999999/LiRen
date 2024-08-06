@@ -12,6 +12,22 @@ var config = {
     directColor: '#FFFFFF',
 };
 
+function getUrlParams() {
+    const params = {};
+    const queryString = window.location.search.slice(1);
+    const pairs = queryString.split('&');
+
+    for (let pair of pairs) {
+    const [key, value] = pair.split('=');
+    params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+    }
+
+    return params;
+}
+
+const urlParams = getUrlParams();
+var modelName = urlParams.model;
+
 var mesh;
 var mixer;
 var hdrCubeRenderTarget = null;
@@ -80,7 +96,7 @@ var gltfLoader = new THREE.GLTFLoader();
 gltfLoader.setPath(window.baseFilesPath || './');
 gltfLoader.setCrossOrigin('anonymous');
 gltfLoader.setDRACOLoader(draco);
-gltfLoader.load('TempGLB.glb', function (gltf) {
+gltfLoader.load(modelName + '.glb', function (gltf) {
     // console.log(gltf);
     var object = gltf.scene || gltf.scenes[0];
     clips = gltf.animations || [];

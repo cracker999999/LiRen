@@ -65,7 +65,7 @@
         <div class="product-container flex flex-vc flex-hc" id="productContainer">
             <div class="w-100 h-100 product720Box" v-show="is720">
                 <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
-                    <iframe id="childFrame" :src="productList[currentProduct].loadFrame" frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                    <iframe id="childFrame" :src="productList[currentProduct].loadFrame + '?model=' + productList[currentProduct].modelName" frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
                 </div>
             </div>
             <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
@@ -88,7 +88,7 @@
                 {{productList[currentProduct].desc}}
             </div>
             <div class="p text-content margin-top-sm">
-                <a href="https://shop.m.jd.com/?shopId=84511" class="text-white text-underline" target="_blank">去京东看看 >></a>
+                <a :href="productList[currentProduct].url" class="text-white text-underline" target="_blank">去看看 >></a>
             </div>
         </div>
         <div class="icon-rotate"><span>720°</span></div>
