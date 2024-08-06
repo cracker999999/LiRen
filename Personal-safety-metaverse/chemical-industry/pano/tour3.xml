@@ -35,8 +35,8 @@
 		<view hlookat="-30" vlookat="0" fovtype="DFOV" fov="145" fovmin="75" fovmax="150" distortion="0.0" />
 		
 		<action name="add_video_sources" >
-			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/3.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/3.video/video-3000x1500-poster.jpg');
-			videointerface_play('3000x1500');
+			videointerface_addsource('6000x3000', 'https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/video/test3.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/3.video/video-3000x1500-poster.jpg');
+			videointerface_play('6000x3000');
 		</action>
 
 		<hotspot name="jxdz_zhuiluo1" style="skin_hotspotstyle_red" ath="-75.519" atv="-18.755" onclick="show_hotspot_alert(jxdz_zhuiluo1)" onloaded="add_all_the_time_tooltip()" text="高空坠落" />

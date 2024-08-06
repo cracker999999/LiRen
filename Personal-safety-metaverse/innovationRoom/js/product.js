@@ -228,6 +228,9 @@ const app = Vue.createApp({
     },
     methods: {
         onClickProduct(index) {
+            if (this.currentProduct === index) {
+                return;
+            }
             this.currentProduct = index;
             this.is720 = this.productList[index].is720;
             console.log(this.is720);
