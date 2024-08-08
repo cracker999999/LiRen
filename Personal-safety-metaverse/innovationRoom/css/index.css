@@ -217,6 +217,7 @@
 }
 .product-thum-swiper {
   position: absolute;
+  width: 100%;
   bottom: 0.556rem /* 30/54 */;
   left: 50%;
   -webkit-transform: translateX(-50%);
