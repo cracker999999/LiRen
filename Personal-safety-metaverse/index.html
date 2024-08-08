@@ -72,132 +72,6 @@
 
     <!--主体内容-->
     <div class="bg-container hidden relative " style="z-index: 1; display: none;">
-        <!--拖动画布-->
-        <div class="drag-box relative hidden " id="dragBox" style="display: none;">
-            <div class="drag-content zoomContainer" id="dragContent">
-                <img src="images/bg_init_mid.jpg" alt="" class="drag-img " id="dragImg">
-                <ul class="dot-list absolute ">
-                    <li class="dot-item dot-shaojie">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-冶金-烧结" onclick="toJumpPageEvent(this, function () { changePage('steel-making-ppe','tour1.xml', 1); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">烧结</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-                    <li class="dot-item dot-xuankuang">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-冶金-选矿" onclick="toJumpPageEvent(this, function () { changePage('steel-making-ppe','tour0.xml',0); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">选矿</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-                    <li class="dot-item dot-zhagang">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-冶金-轧钢" onclick="toJumpPageEvent(this, function () { changePage('steel-making-ppe','tour5.xml', 5); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">轧钢</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-                    <li class="dot-item dot-liangang">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-冶金-炼钢、炼铁" onclick="toJumpPageEvent(this, function () { changePage('steel-making-ppe','tour3.xml', 3); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">炼钢、炼铁</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-                    <li class="dot-item dot-jiaohua">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-冶金-焦化" onclick="toJumpPageEvent(this, function () { changePage('steel-making-ppe','tour2.xml', 2); });">
-                            <div class="dot-title margin-bottom-xs ">
-                                <span class="text-df text-white text-center ">焦化</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-
-                    <li class="dot-item dot-chuangxin">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-创新空间" onclick="toJumpPageEvent(this, function () { toJump('innovationRoom/index.html'); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">创新空间</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-
-                    <li class="dot-item dot-zhijiyaopian" id="zhiji">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-制药-制剂药片生产" onclick="toJumpPageEvent(this, function () { changePage('preparation-tablet', 'tour0.xml', 0, 1); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">制剂药片生产</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-
-                    <li class="dot-item dot-huaxueyuanliao">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-制药-化学原料生产" onclick="toJumpPageEvent(this, function () { changePage('preparation-tablet', 'tour4.xml', 0, 0); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">化学原料生产</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-                    <li class="dot-item dot-jianzhu">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-建筑-建筑" onclick="toJumpPageEvent(this, function () { changePage('construction', 'tour0.xml', 0); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">建筑</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-
-                    <li class="dot-item dot-huagong">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-化工-化工" onclick="toJumpPageEvent(this, function () { changePage('chemical-industry', 'tour0.xml', 0, 0); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">化工</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-
-                    <li class="dot-item dot-qiche">
-                        <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-汽车-汽车" onclick="toJumpPageEvent(this, function () { changePage('automobile', 'tour0.xml', 0); });">
-                            <div class="dot-title margin-bottom-xs">
-                                <span class="text-df text-white text-center ">汽车</span>
-                            </div>
-                            <span class="dot"></span>
-                        </a>
-                    </li>
-
-                    <li class="industry-item flex-column flex-vc flex-hc EnterPageEvent" data-title="首页" data-name="首页-冶金行业" data-jieshuo="jieshuo_yejin.mp3" onclick="showSolution(this)">
-                        <img src="images/icon_pin4.png" alt="" class="icon-pin animated infinite moveUpDown">
-                        <div class="text">冶金行业</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!--工艺方案-->
-        <div class="solution-container absolute zoomContainer" style="display: none;">
-            <div class="title flex flex-vc flex-bt">
-                <div class="h1">炼钢冶炼行业工艺流程、危害及防护方案</div>
-                <div class="btn-close" onclick="closeSolution()">
-                    <span class="iconfont icon-close1"></span>
-                </div>
-            </div>
-            <div class="content">
-                <div class="relative">
-                    <div class="solution-img">
-                        <img src="images/1.metallurgy-safety-solutions_1440.jpg" alt="" class="w-100">
-                    </div>
-                    <div class="p text-red text-bold">
-                        基础重工业，职业危害，粉尘微粒，矿粉尘、各种辅料粉尘、高温金属烟尘和焦炉逸散物，有毒有害气体，二氧化硫、一氧化碳、苯系物，噪音、高温、高处坠落、有限空间，职业防护和应急响应，人员健康和安全，可持续发展
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!--沙盘缩略-->
         <div class="overview-container fixed zoomContainer">
@@ -474,12 +348,12 @@
                         <img src="images/index/img_floor.png" usemap="#image-map" width="3840" height="2160" class="img-map">
 
                         <map name="image-map">
-                            <area href="javascript:void(0);" coords="1111,760,1603,787,1691,668,1447,454,1355,505,1240,583,1158,682" shape="poly" onmouseover="getPhoth('汽车')">
-                            <area href="javascript:void(0);" coords="1091,817,1586,834,1623,1010,1077,1282,1036,1122,1053,943" shape="poly" onmouseover="getPhoth('制药')">
-                            <area href="javascript:void(0);" coords="1667,1038,1169,1434,1389,1621,1562,1702,1755,1750,1898,1767,2101,1753,2356,1685,2515,1594,2620,1512,2142,1082,1905,1129" shape="poly" onmouseover="getPhoth('冶金')">
-                            <area href="javascript:void(0);" coords="2210,1041,2699,1417,2797,1248,2821,1072,2790,851,2671,668,2590,590,2481,492,2210,692,2251,861" shape="poly" onmouseover="getPhoth('化工')">
-                            <area href="javascript:void(0);" coords="1739,637,1508,414,1739,349,1871,336,2023,346,2169,356,2278,404,2397,454,2142,658,1932,604" shape="poly" onmouseover="getPhoth('建筑')">
-                            <area href="javascript:void(0);" coords="1701,743,1806,648,1925,631,1990,637,2044,661,2129,702,2186,783,2200,902,2149,973,2112,1017,1993,1058,1898,1061,1803,1034,1722,983,1674,888,1674,800" shape="poly" onmouseover="getPhoth('创新中心')">
+                            <area onmouseover="getPhoth('创新中心')" alt="中心" href="javascript:void(0);" coords="1665, 666, 1813, 620, 1912, 538, 2002, 507, 2076, 553, 2138, 646, 2294, 709, 2359, 797, 2365, 891, 2277, 998, 2121, 1055, 1938, 1076, 1707, 1042, 1583, 963, 1524, 856, 1548, 742" shape="poly">
+                            <area onmouseover="getPhoth('建筑')" alt="建筑" href="javascript:void(0);" coords="2108, 534, 2191, 362, 2359, 379, 2536, 415, 2699, 460, 2910, 541, 3139, 686, 2433, 775, 2370, 696, 2194, 631" shape="poly">
+                            <area onmouseover="getPhoth('化工')" alt="化工" href="javascript:void(0);" coords="2262, 1075, 2974, 1638, 3185, 1510, 3312, 1352, 3375, 1200, 3392, 1045, 3350, 904, 3260, 801, 2456, 822, 2427, 960" shape="poly">
+                            <area onmouseover="getPhoth('冶金')" alt="冶金" href="javascript:void(0);" coords="1571, 1062, 766, 1535, 995, 1668, 1276, 1774, 1627, 1838, 1995, 1855, 2349, 1828, 2675, 1752, 2458, 1465, 2158, 1109, 1975, 1138, 1780, 1127" shape="poly">
+                            <area onmouseover="getPhoth('制药')" alt="制药" href="javascript:void(0);" coords="639, 778, 793, 630, 1459, 762, 1424, 835, 1436, 934, 1497, 1009, 609, 1376, 511, 1196, 520, 954" shape="poly">
+                            <area onmouseover="getPhoth('汽车')" alt="汽车" href="javascript:void(0);" coords="970, 534, 1541, 707, 1990, 465, 2001, 343, 1745, 350, 1482, 377, 1229, 441" shape="poly">
                         </map>
                     </div>
                 </div>
@@ -897,6 +771,8 @@
     }
 
     function onClickSandTablePin(e) {
+        console.log(e);
+        
         let area = e.getAttribute("data-area"),
             src = e.getAttribute("data-jieshuo");
         $(".btnMoreSolution").attr("data-area", area);

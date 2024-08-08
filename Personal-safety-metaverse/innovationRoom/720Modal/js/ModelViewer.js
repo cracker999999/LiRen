@@ -160,7 +160,7 @@ function loadFBX() {
 
 function onModelLoaded() {
     // let scaleFactor = isMobile() ? 0.5 : 1;
-    // model.scale.multiplyScalar(0.5);
+    // model.scale.multiplyScalar(5);
 
     model.updateMatrixWorld();
 

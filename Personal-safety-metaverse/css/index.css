@@ -236,16 +236,16 @@
   left: 46%;
 }
 .overview-modal .pin-list .pin-item.item-zhiyao {
-  top: 36%;
-  left: 31%;
+  top: 32%;
+  left: 21%;
 }
 .overview-modal .pin-list .pin-item.item-qiche {
-  top: 16%;
-  left: 32%;
+  top: 10%;
+  left: 40%;
 }
 .overview-modal .pin-list .pin-item.item-jianzhu {
   top: 13%;
-  left: 51%;
+  left: 63%;
 }
 .overview-modal .pin-list .pin-item.item-chuanbo {
   top: 11%;
@@ -313,23 +313,23 @@
 }
 .overview-modal .dot-list .dot-item.dot-huaxueyuanliao {
   top: 48%;
-  left: 29%;
+  left: 20%;
 }
 .overview-modal .dot-list .dot-item.dot-zhijiyaopian {
   top: 41%;
-  left: 37%;
+  left: 30%;
 }
 .overview-modal .dot-list .dot-item.dot-loudingzuoye {
   top: 17%;
-  left: 44%;
+  left: 57%;
 }
 .overview-modal .dot-list .dot-item.dot-jianzhugongdi {
-  top: 12%;
-  left: 48%;
+  top: 20%;
+  left: 60%;
 }
 .overview-modal .dot-list .dot-item.dot-shineizuoye {
-  top: 12%;
-  left: 56%;
+  top: 25%;
+  left: 70%;
 }
 .overview-modal .dot-list .dot-item.dot-xuankuang {
   top: 59%;
@@ -352,32 +352,32 @@
   left: 59%;
 }
 .overview-modal .dot-list .dot-item.dot-zhuangxiehuo {
-  top: 50%;
-  left: 62%;
+  top: 55%;
+  left: 68%;
 }
 .overview-modal .dot-list .dot-item.dot-richangzuoye {
-  top: 32%;
-  left: 62%;
+  top: 40%;
+  left: 65%;
 }
 .overview-modal .dot-list .dot-item.dot-gaochuzuoye {
-  top: 26%;
-  left: 66%;
+  top: 40%;
+  left: 76%;
 }
 .overview-modal .dot-list .dot-item.dot-hanjiedamo {
-  top: 53%;
-  left: 67%;
+  top: 65%;
+  left: 75%;
 }
 .overview-modal .dot-list .dot-item.dot-youxiankongjian {
+  top: 55%;
+  left: 80%;
+}
+/* .overview-modal .dot-list .dot-item.dot-yingjixiangying {
   top: 38%;
   left: 65%;
-}
+} */
 .overview-modal .dot-list .dot-item.dot-yingjixiangying {
-  top: 38%;
-  left: 65%;
-}
-.overview-modal .dot-list .dot-item.dot-yingjixiangying {
-  top: 46%;
-  left: 59%;
+  top: 47%;
+  left: 63%;
 }
 .overview-modal .dot-list .dot-item.dot-pack {
   top: 17%;
@@ -392,20 +392,20 @@
   left: 35%;
 }
 .overview-modal .dot-list .dot-item.dot-tuzhuangchejian {
-  top: 26%;
-  left: 32%;
+  top: 20%;
+  left: 30%;
 }
 .overview-modal .dot-list .dot-item.dot-donglizongcheng {
-  top: 30%;
-  left: 35%;
+  top: 20%;
+  left: 46%;
 }
 .overview-modal .dot-list .dot-item.dot-zongzhuangchejian {
-  top: 30%;
-  left: 39%;
+  top: 15%;
+  left: 48%;
 }
 .overview-modal .dot-list .dot-item.dot-jianceshiche {
-  top: 26%;
-  left: 42%;
+  top: 24%;
+  left: 43%;
 }
 .overview-modal .solution-box {
   padding-left: 0.556rem /* 30/54 */;
