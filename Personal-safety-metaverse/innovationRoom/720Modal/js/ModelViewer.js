@@ -34,7 +34,7 @@ var transparent = urlParams.trans;
 var changeColor = urlParams.color;
 var type = urlParams.type;
 
-var mesh;
+var model;
 var mixer;
 var hdrCubeRenderTarget = null;
 var texture;
@@ -76,6 +76,29 @@ controls.enableDamping = true;//开启阻尼效果，拖拽时有惯性效果
 
 config.showAxes && addAxesHelper();
 
+function addLights() {
+    const light1 = new THREE.AmbientLight(config.ambientColor, config.ambientIntensity);
+    light1.name = 'ambient_light';
+    defaultCamera.add(light1);
+
+    const light2 = new THREE.DirectionalLight(config.directColor, config.directIntensity);
+    light2.position.set(0.5, 0, 0.866); // ~60º
+    light2.name = 'main_light';
+    defaultCamera.add(light2);
+
+    lights.push(light1, light2);
+
+    renderer.toneMapping = Number(config.toneMapping);
+    renderer.toneMappingExposure = Math.pow(2, config.exposure);
+
+    if (lights.length === 2) {
+        lights[0].intensity = config.ambientIntensity;
+        lights[0].color.set(config.ambientColor);
+        lights[1].intensity = config.directIntensity;
+        lights[1].color.set(config.directColor);
+    }
+}
+
 // var texLoader = new THREE.TextureLoader();
 // texLoader.setPath(window.baseFilesPath || './');
 // var normal = texLoader.load('map/光照.png');
@@ -111,11 +134,11 @@ function loadGLTF() {
     gltfLoader.setDRACOLoader(draco);
     gltfLoader.load(modelName + '.glb', function(gltf){
         // console.log(gltf);
-        var object = gltf.scene || gltf.scenes[0];
+        model = gltf.scene || gltf.scenes[0];
         clips = gltf.animations || [];
-        console.log(clips);
+        console.log(clips.length);
 
-        onModelLoaded(object);
+        onModelLoaded();
     }, progressEvt => {
         document.getElementById('load').innerText = (progressEvt.loaded / progressEvt.total * 100).toFixed() + '%';
     });
@@ -125,29 +148,29 @@ function loadFBX() {
     var fbxLoader = new THREE.FBXLoader();
     fbxLoader.setPath(window.baseFilesPath || './');
     fbxLoader.load(modelName + '.fbx', function(fbx){
-        var object = fbx;
+        model = fbx;
         clips = fbx.animations || [];
-        console.log(clips);
+        console.log(clips.length);
 
-        onModelLoaded(object);
+        onModelLoaded();
     }, progressEvt => {
         document.getElementById('load').innerText = (progressEvt.loaded / progressEvt.total * 100).toFixed() + '%';
     });
 }
 
-function onModelLoaded(object) {
+function onModelLoaded() {
     // let scaleFactor = isMobile() ? 0.5 : 1;
-    // object.scale.multiplyScalar(0.5);
+    // model.scale.multiplyScalar(0.5);
 
-    object.updateMatrixWorld();
+    model.updateMatrixWorld();
 
-    const box = new THREE.Box3().setFromObject(object);
+    const box = new THREE.Box3().setFromObject(model);
     const size = box.getSize(new THREE.Vector3()).length();
     const center = box.getCenter(new THREE.Vector3());
 
-    object.position.x -= center.x;
-    object.position.y -= center.y;
-    object.position.z -= center.z;
+    model.position.x -= center.x;
+    model.position.y -= center.y;
+    model.position.z -= center.z;
 
     defaultCamera.near = size / 100;
     defaultCamera.far = size * 100;
@@ -166,12 +189,8 @@ function onModelLoaded(object) {
     }
     defaultCamera.lookAt(center);
 
-    scene.add(object);
-    // console.log(object.scale);
-
-    if (animation) {
-        // playAnim(object);
-    }
+    scene.add(model);
+    // console.log(model.scale);
 
     initColorDict();
     setTransparent();
@@ -181,22 +200,13 @@ function onModelLoaded(object) {
     document.getElementById('colorBar').style.display = 'block';
 }
 
-function playAnim(object) {
-    mixer = new THREE.AnimationMixer(object);
-    AnimationAction = mixer.clipAction(object.animations[0]);
-    AnimationAction.timeScale = 1;
-    AnimationAction.loop = THREE.LoopOnce;
-    AnimationAction.clampWhenFinished = true;
-    AnimationAction.play();
-}
-
 function setTransparent(){
     if (transparent === '') return;
 
     var arr = transparent.split(",");
     // console.log("trans "+arr);
     for (var i = 0; i < arr.length; i++){
-        var obj = scene.getObjectByName(arr[i]);
+        var obj = model.getObjectByName(arr[i]);
         if (obj){
             var mat = new THREE.MeshPhysicalMaterial({
                 'color': 0x000000,
@@ -210,29 +220,6 @@ function setTransparent(){
 
             obj.material = mat;
         }
-    }
-}
-
-function addLights() {
-    const light1 = new THREE.AmbientLight(config.ambientColor, config.ambientIntensity);
-    light1.name = 'ambient_light';
-    defaultCamera.add(light1);
-
-    const light2 = new THREE.DirectionalLight(config.directColor, config.directIntensity);
-    light2.position.set(0.5, 0, 0.866); // ~60º
-    light2.name = 'main_light';
-    defaultCamera.add(light2);
-
-    lights.push(light1, light2);
-
-    renderer.toneMapping = Number(config.toneMapping);
-    renderer.toneMappingExposure = Math.pow(2, config.exposure);
-
-    if (lights.length === 2) {
-        lights[0].intensity = config.ambientIntensity;
-        lights[0].color.set(config.ambientColor);
-        lights[1].intensity = config.directIntensity;
-        lights[1].color.set(config.directColor);
     }
 }
 
@@ -327,36 +314,54 @@ function blue() {
 }
 
 function donghua(objectName, moveDistance, animateToNewPos = true) {
-    if (!animateToNewPos && !mesh.oldPos)
+    if (!animateToNewPos && !model.oldPos)
         return;
 
-    mesh = scene.getObjectByName(objectName);
-    var currPos = mesh.position.clone();
+    model = scene.getObjectByName(objectName);
+    var currPos = model.position.clone();
     
-    if (!mesh.oldPos) {
-        mesh.oldPos = mesh.position.clone();
-        mesh.newPos = mesh.position.clone().add(currPos.set(moveDistance, 0, 0));
+    if (!model.oldPos) {
+        model.oldPos = model.position.clone();
+        model.newPos = model.position.clone().add(currPos.set(moveDistance, 0, 0));
     }
 
-    var tween = new TWEEN.Tween(mesh.position);
-    tween.to(animateToNewPos ? mesh.newPos : mesh.oldPos, 1000);
+    var tween = new TWEEN.Tween(model.position);
+    tween.to(animateToNewPos ? model.newPos : model.oldPos, 1000);
     tween.start();
+}
+
+function playAnim() {
+    if(clips.length === 0) return;
+    mixer = new THREE.AnimationMixer(model);
+    AnimationAction = mixer.clipAction(clips[0]);
+    AnimationAction.timeScale = 1;
+    AnimationAction.loop = THREE.LoopOnce;
+    AnimationAction.clampWhenFinished = true;
+    AnimationAction.play();
+}
+
+function playAnimReverse() {
+    if(clips.length === 0) return;
+    mixer = new THREE.AnimationMixer(model);
+    AnimationAction = mixer.clipAction(clips[0]);
+    // 设置时间缩放为负值,实现反向播放
+    AnimationAction.timeScale = -1;
+    AnimationAction.loop = THREE.LoopOnce;
+    AnimationAction.clampWhenFinished = true;
+    
+    // 将动画设置到结束状态
+    AnimationAction.time = AnimationAction.getClip().duration;
+    AnimationAction.play();
 }
 
 //拆解
 function pos() {
-    donghua('立方体_5', -50, true);
-    donghua('立方体_7', -50, true);
-    donghua('立方体_3', 50, true);
-    donghua('立方体_6', 50, true);
+    playAnim();
 }
 
 //组合
 function bos() {
-    donghua('立方体_6', -50, false);
-    donghua('立方体_3', -50, false);
-    donghua('立方体_5', 50, false);
-    donghua('立方体_7', 50, false);
+    playAnimReverse();
 }
 
 function isMobile(){

@@ -255,28 +255,21 @@ const app = Vue.createApp({
                     attr1: '',
                     is720: true
                 },
-                // {
-                //     productName: '3M™ HF-802扬声器振动膜版硅胶半面型防护面罩',
-                //     desc: '· 硅胶面罩，舒适耐用\n' +
-                //         '· 插扣式滤材，组装佩戴方便\n' +
-                //         '· 装配声振膜，沟通更清晰顺畅\n' +
-                //         '· 一键式气密性检查按钮，快速判断佩戴是否正确',
-                //     img: 'images/products/HF-802SD.png',
-                //     is720: true,
-                //     loadFrame: '720Modal/HF-802.html',
-                //     attr1: 'HF-802SD',
-                //     modelName: 'TempGLB'
-                // },
                 {
                     productName: 'G5-02',
                     desc: '曲面玻璃技术\n' +
                         '紧凑贴合，视野宽阔\n' +
                         '亮态遮光号 2.5号\n' +
                         '自然色彩技术',
+                    modelName: 'kouzhao',
                     img: 'images/products/G5-02.png',
                     is720: true,
-                    loadFrame: '720Modal/G5-02.html',
+                    loadFrame: '720Modal/HF-802.html', /*G5-02*/ 
                     attr1: 'G5-02',
+                    transparent: '',
+                    animation: true,
+                    changeColor: '',
+                    modelType: 'fbx',
                 },
                 // {
                 //     productName: '3M™ Aura™ 9321CN+自吸过滤式防颗粒物口罩',
