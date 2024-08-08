@@ -136,7 +136,10 @@ function loadGLTF() {
         // console.log(gltf);
         model = gltf.scene || gltf.scenes[0];
         clips = gltf.animations || [];
-        console.log(clips.length);
+        // console.log(clips.length);
+        if (clips.length > 0) {
+            console.log(clips);
+        }
 
         onModelLoaded();
     }, progressEvt => {
@@ -145,12 +148,18 @@ function loadGLTF() {
 }
 
 function loadFBX() {
+    // const manager = new THREE.LoadingManager();
+    // manager.addHandler( /\.tga$/i, new THREE.TGALoader());
+
     var fbxLoader = new THREE.FBXLoader();
     fbxLoader.setPath(window.baseFilesPath || './');
     fbxLoader.load(modelName + '.fbx', function(fbx){
         model = fbx;
         clips = fbx.animations || [];
-        console.log(clips.length);
+        // console.log(clips.length);
+        if (clips.length > 0) {
+            console.log(clips);
+        }
 
         onModelLoaded();
     }, progressEvt => {
@@ -185,7 +194,7 @@ function onModelLoaded() {
         defaultCamera.position.z += 300;
     }
     else{
-        defaultCamera.position.z += 100;
+        defaultCamera.position.z += 50;
     }
     defaultCamera.lookAt(center);
 
@@ -330,6 +339,19 @@ function donghua(objectName, moveDistance, animateToNewPos = true) {
     tween.start();
 }
 
+function playAllAnim() {
+    if(clips.length === 0) return;
+
+    mixer = new THREE.AnimationMixer(model);
+    for (var i = 0; i < clips.length; i++) {
+        AnimationAction = mixer.clipAction(clips[i]);
+        AnimationAction.timeScale = 1;
+        AnimationAction.loop = THREE.LoopOnce;
+        AnimationAction.clampWhenFinished = true;
+        AnimationAction.play();
+    }
+}
+
 function playAnim() {
     if(clips.length === 0) return;
     mixer = new THREE.AnimationMixer(model);
@@ -338,6 +360,20 @@ function playAnim() {
     AnimationAction.loop = THREE.LoopOnce;
     AnimationAction.clampWhenFinished = true;
     AnimationAction.play();
+}
+
+function playAllAnimReverse() {
+    if(clips.length === 0) return;
+
+    mixer = new THREE.AnimationMixer(model);
+    for (var i = 0; i < clips.length; i++) {
+        AnimationAction = mixer.clipAction(clips[i]);
+        AnimationAction.timeScale = -1;
+        AnimationAction.loop = THREE.LoopOnce;
+        AnimationAction.clampWhenFinished = true;
+        AnimationAction.time = AnimationAction.getClip().duration;
+        AnimationAction.play();
+    }
 }
 
 function playAnimReverse() {
@@ -356,12 +392,14 @@ function playAnimReverse() {
 
 //拆解
 function pos() {
-    playAnim();
+    // playAnim();
+    playAllAnim();
 }
 
 //组合
 function bos() {
-    playAnimReverse();
+    // playAnimReverse();
+    playAllAnimReverse();
 }
 
 function isMobile(){

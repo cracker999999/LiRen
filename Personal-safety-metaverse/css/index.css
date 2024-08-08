@@ -975,20 +975,20 @@
     pointer-events: all;
   }
   .overview-modal .pin-list .pin-item.item-yejin {
-    top: 58%;
-    left: 50%;
+    top: 53%;
+    left: 40%;
   }
   .overview-modal .pin-list .pin-item.item-zhiyao {
     top: 40%;
     left: 1%;
   }
   .overview-modal .pin-list .pin-item.item-qiche {
-    top: 31%;
-    left: 10%;
+    top: 28%;
+    left: 20%;
   }
   .overview-modal .pin-list .pin-item.item-jianzhu {
-    top: 26%;
-    left: 62%;
+    top: 30%;
+    left: 70%;
   }
   .overview-modal .pin-list .pin-item.item-chuanbo {
     top: 26%;
@@ -999,8 +999,8 @@
     right: 5%;
   }
   .overview-modal .pin-list .pin-item.item-chuangxin {
-    top: 39%;
-    left: 35.5%;
+    top: 35%;
+    left: 40%;
   }
   .overview-modal .solution-box {
     width: 70%;
