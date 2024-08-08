@@ -26,7 +26,13 @@ function getUrlParams() {
 }
 
 const urlParams = getUrlParams();
+// console.log(urlParams);
+
 var modelName = urlParams.model;
+var animation = urlParams.anim;
+var transparent = urlParams.trans;
+var changeColor = urlParams.color;
+var type = urlParams.type;
 
 var mesh;
 var mixer;
@@ -92,18 +98,46 @@ config.showAxes && addAxesHelper();
 const draco = new THREE.DRACOLoader();
 draco.setDecoderPath('./js/draco/');
 
-var gltfLoader = new THREE.GLTFLoader();
-gltfLoader.setPath(window.baseFilesPath || './');
-gltfLoader.setCrossOrigin('anonymous');
-gltfLoader.setDRACOLoader(draco);
-gltfLoader.load(modelName + '.glb', function (gltf) {
-    // console.log(gltf);
-    var object = gltf.scene || gltf.scenes[0];
-    clips = gltf.animations || [];
-    // gltf.position.set(60, 24, 0);
+if (type === 'glb') {
+    loadGLTF();
+}
+else if (type === 'fbx') {
+    loadFBX();
+}
 
+function loadGLTF() {
+    var gltfLoader = new THREE.GLTFLoader();
+    gltfLoader.setPath(window.baseFilesPath || './');
+    gltfLoader.setDRACOLoader(draco);
+    gltfLoader.load(modelName + '.glb', function(gltf){
+        // console.log(gltf);
+        var object = gltf.scene || gltf.scenes[0];
+        clips = gltf.animations || [];
+        console.log(clips);
+
+        onModelLoaded(object);
+    }, progressEvt => {
+        document.getElementById('load').innerText = (progressEvt.loaded / progressEvt.total * 100).toFixed() + '%';
+    });
+}
+
+function loadFBX() {
+    var fbxLoader = new THREE.FBXLoader();
+    fbxLoader.setPath(window.baseFilesPath || './');
+    fbxLoader.load(modelName + '.fbx', function(fbx){
+        var object = fbx;
+        clips = fbx.animations || [];
+        console.log(clips);
+
+        onModelLoaded(object);
+    }, progressEvt => {
+        document.getElementById('load').innerText = (progressEvt.loaded / progressEvt.total * 100).toFixed() + '%';
+    });
+}
+
+function onModelLoaded(object) {
     // let scaleFactor = isMobile() ? 0.5 : 1;
-    // object.scale.multiplyScalar(scaleFactor);
+    // object.scale.multiplyScalar(0.5);
 
     object.updateMatrixWorld();
 
@@ -123,20 +157,61 @@ gltfLoader.load(modelName + '.glb', function (gltf) {
     defaultCamera.position.x += size / 2.0;
     defaultCamera.position.y += size / 5.0;
     defaultCamera.position.z += size / 2.0;
-    isMobile() && (defaultCamera.position.z += 50);
+    
+    if (isMobile()) {
+        defaultCamera.position.z += 300;
+    }
+    else{
+        defaultCamera.position.z += 100;
+    }
     defaultCamera.lookAt(center);
 
     scene.add(object);
     // console.log(object.scale);
 
+    if (animation) {
+        // playAnim(object);
+    }
+
     initColorDict();
+    setTransparent();
     
     document.getElementById('loading').style.display = 'none';
     document.getElementById('loaderOver').style.display = 'block';
     document.getElementById('colorBar').style.display = 'block';
-}, progressEvt => {
-    document.getElementById('load').innerText = (progressEvt.loaded / progressEvt.total * 100).toFixed() + '%';
-});
+}
+
+function playAnim(object) {
+    mixer = new THREE.AnimationMixer(object);
+    AnimationAction = mixer.clipAction(object.animations[0]);
+    AnimationAction.timeScale = 1;
+    AnimationAction.loop = THREE.LoopOnce;
+    AnimationAction.clampWhenFinished = true;
+    AnimationAction.play();
+}
+
+function setTransparent(){
+    if (transparent === '') return;
+
+    var arr = transparent.split(",");
+    // console.log("trans "+arr);
+    for (var i = 0; i < arr.length; i++){
+        var obj = scene.getObjectByName(arr[i]);
+        if (obj){
+            var mat = new THREE.MeshPhysicalMaterial({
+                'color': 0x000000,
+                'metalness': 0,
+                'roughness': 0.1,
+                'transparent': true,
+                // 'envMap': neutralEnvironment,
+                'opacity': 0.3,
+                'reflectivity': 0.5
+            });
+
+            obj.material = mat;
+        }
+    }
+}
 
 function addLights() {
     const light1 = new THREE.AmbientLight(config.ambientColor, config.ambientIntensity);
@@ -229,7 +304,6 @@ function updateAllColor(color){
     });
 }
 
-// const objName = "立方体_5";
 const objName = "BZLR_P2_opcaitas";
 function red(){
     var mesh = scene.getObjectByName(objName);

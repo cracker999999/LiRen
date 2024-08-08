@@ -65,7 +65,8 @@
         <div class="product-container flex flex-vc flex-hc" id="productContainer">
             <div class="w-100 h-100 product720Box" v-show="is720">
                 <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
-                    <iframe id="childFrame" :src="productList[currentProduct].loadFrame + '?model=' + productList[currentProduct].modelName" frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                    <iframe id="childFrame" :src="productList[currentProduct].loadFrame + '?model=' + productList[currentProduct].modelName + '&anim=' + productList[currentProduct].animation + '&trans=' + productList[currentProduct].transparent + '&color=' + productList[currentProduct].changeColor + '&type=' + productList[currentProduct].modelType" 
+                        frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
                 </div>
             </div>
             <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
@@ -81,7 +82,7 @@
 
         <div class="product-description">
             <div class="top flex flex-v-start flex-bt">
-            <div class="product-name">{{productList[currentProduct].productName}}</div>
+            <div class="product-name">{{productList[currentProduct].productName}} {{productList[currentProduct].modelName}}</div>
                 <i class="iconfont icon-close mc" onclick="showProductDescription()"></i>
             </div>
             <div class="p text-content">
@@ -109,7 +110,7 @@
     </div>
 
     <div class="control-right-middle flex-column flex-vc flex-hc">
-        <div id="loaderOver" class="model-control-box" v-show="currentProduct == 0 || currentProduct == 1">
+        <div id="loaderOver" class="model-control-box" v-show="showAnimation">
             <button class="aa btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-拆解" id="btnPos" title="拆解" type="button"></button>
             <button class="bb btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-组合" id="btnBos" title="组合" type="button"></button>
         </div>
@@ -120,7 +121,7 @@
     </div>
 
     <!-- 修改颜色 -->
-    <div id="colorBar" class="color-buttons" v-show="currentProduct == 0 || currentProduct == 1">
+    <div id="colorBar" class="color-buttons" v-show="showChangeColor">
         <button id="redBtn" class="red color-btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-red" title="红色" type="button">红</button>
         <button id="greenBtn" class="green color-btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="绿色" type="button">绿</button>
         <button id="blueBtn" class="color-btn blue EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="蓝色" type="button">蓝</button>
