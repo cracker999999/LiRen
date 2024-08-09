@@ -98,7 +98,7 @@
     <!--产品预览图-->
     <div class="product-thum-swiper swiper-container productThumSwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in productList" :key="index"
+            <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in productList.filter(item => item.is720)" :key="index"
                  data-title="创新空间" data-name="创新空间-切换产品类型" :data-attr1="item.productName" :data-attr2="item.attr1"
                  :class="{active: index === currentProduct}"
                  @click="onClickProduct(index)">

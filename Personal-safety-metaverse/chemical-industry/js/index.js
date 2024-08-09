@@ -57,7 +57,7 @@ const app = Vue.createApp({
             sceneList: [
                 //装卸货
                 {
-                    name: '装卸货',
+                    name: '制程',
                     previewImg: 'assets/img/scene_zhuangxiehuo.png', // 下方预览图
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0', // 解决方案按钮
@@ -93,7 +93,7 @@ const app = Vue.createApp({
                 },
                 //日常作业
                 {
-                    name: '日常作业',
+                    name: '移动测听车服务场景',
                     previewImg: 'assets/img/scene_richangzuoye.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1', // 解决方案按钮
@@ -127,117 +127,9 @@ const app = Vue.createApp({
                         },
                     ],
                 },
-                //检修吊装
-                {
-                    name: '高处作业',
-                    previewImg: 'assets/img/scene_diaozhuangzuoye.png',
-                    tour: 'tour3.xml?v20231211',
-                    startScene: 'scene_3', // 解决方案按钮
-                    alertList: [
-                        {
-                            name: '高空坠落',
-                            btn: 'assets/img/btn_zhuiluo.png',
-                            btnActive: 'assets/img/btn_zhuiluo_on.png',
-                            text: '装置检修时，作业人员需要攀爬脚手架或者在管廊结构上作业，存在高空坠落风险',
-                            solutionName: '坠落防护',
-                            alertBoxIcon: 'assets/img/icon_zlfh.png',
-                            spotArray: ['jxdz_zhuiluo1', 'jxdz_zhuiluo2', 'jxdz_zhuiluo3'],
-                        },
-                        {
-                            name: '冲击物',
-                            btn: 'assets/img/btn_cjw.png',
-                            btnActive: 'assets/img/btn_cjw_on.png',
-                            text: '检修作业时，需要使用工具从事机械作业，存在飞溅物冲击眼面部的风险',
-                            solutionName: '眼面防护',
-                            alertBoxIcon: 'assets/img/icon_cjw.png',
-                            spotArray: ['jxdz_cjw1'],
-                        },
-                    ],
-                },
-                //焊接打磨
-                {
-                    name: '焊接打磨',
-                    previewImg: 'assets/img/scene_hanjiedamo.png',
-                    tour: 'tour4.xml?v20231211',
-                    startScene: 'scene_4', // 解决方案按钮
-                    alertList: [
-                        {
-                            name: '焊烟',
-                            btn: 'assets/img/btn_hanyan.png',
-                            btnActive: 'assets/img/btn_hanyan_on.png',
-                            text: '焊接作业时会产生大量焊烟',
-                            solutionName: '呼吸防护',
-                            alertBoxIcon: 'assets/img/icon_hanyan.png',
-                            spotArray: ['hjdm_hanyan1'],
-                        },
-                        {
-                            name: '焊接弧光',
-                            btn: 'assets/img/btn_hanjiehuguang.png',
-                            btnActive: 'assets/img/btn_hanjiehuguang_on.png',
-                            text: '焊接作业会产生强烈弧光，会对眼睛产生严重危害',
-                            solutionName: '眼面防护',
-                            alertBoxIcon: 'assets/img/icon_hanjiehuguang.png',
-                            spotArray: ['hjdm_hanjiehuguang1'],
-                        },
-                        {
-                            name: '金属飞溅物',
-                            btn: 'assets/img/btn_jinshufeijian.png',
-                            btnActive: 'assets/img/btn_jinshufeijian_on.png',
-                            text: '打磨作业会产生高速碎屑，可能对眼面部产生冲击危害',
-                            solutionName: '眼面防护',
-                            alertBoxIcon: 'assets/img/icon_jinshufeijian.png',
-                            spotArray: ['hjdm_jinshufeijian1', 'hjdm_jinshufeijian2'],
-                        },
-                        {
-                            name: '噪音',
-                            btn: 'assets/img/btn_zy.png',
-                            btnActive: 'assets/img/btn_zy_on.png',
-                            text: '打磨及焊接作业过程中会伴随高分贝噪音',
-                            solutionName: '听力防护',
-                            alertBoxIcon: 'assets/img/icon_zy.png',
-                            spotArray: ['hjdm_zaoyin1', 'hjdm_zaoyin2'],
-                        },
-                        {
-                            name: '粉尘',
-                            btn: 'assets/img/btn_fc.png',
-                            btnActive: 'assets/img/btn_fc_on.png',
-                            text: '在大修现场，焊接打磨作业非常普遍，伴随着焊接打磨会产生大量有害粉尘，像焊烟、金属粉尘等。吸入这些有害粉尘可能导致各类急性和长期的健康影响，因此必须采用正确有效的呼吸防护。',
-                            solutionName: '呼吸防护',
-                            alertBoxIcon: 'assets/img/icon_fc.png',
-                            spotArray: ['hjdm_fenchen1'],
-                        },
-                    ],
-                },
-                //有限空间
-                {
-                    name: '有限空间',
-                    previewImg: 'assets/img/scene_wushuichuli.png',
-                    tour: 'tour5.xml?v20231211',
-                    startScene: 'scene_5', // 解决方案按钮
-                    alertList: [
-                        {
-                            name: '有害气态物',
-                            btn: 'assets/img/btn_qitaiwu.png',
-                            btnActive: 'assets/img/btn_qitaiwu_on.png',
-                            text: '有限空间内，可能存在高浓度的有害气态物或缺氧',
-                            solutionName: '呼吸防护',
-                            alertBoxIcon: 'assets/img/icon_qitaiwu.png',
-                            spotArray: ['wscl_qitaiwu1'],
-                        },
-                        {
-                            name: '高空坠落',
-                            btn: 'assets/img/btn_zhuiluo.png',
-                            btnActive: 'assets/img/btn_zhuiluo_on.png',
-                            text: '当作业人员需要进出有限空间时，存在高空坠落风险',
-                            solutionName: '坠落防护',
-                            alertBoxIcon: 'assets/img/icon_zlfh.png',
-                            spotArray: ['wscl_zhuiluo1'],
-                        },
-                    ],
-                },
                 //应急响应
                 {
-                    name: '应急响应',
+                    name: '配套方案',
                     previewImg: 'assets/img/scene_yingjixiangying.png',
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2', // 解决方案按钮
@@ -253,6 +145,114 @@ const app = Vue.createApp({
                         },
                     ],
                 },
+                //高处作业
+                // {
+                //     name: '高处作业',
+                //     previewImg: 'assets/img/scene_diaozhuangzuoye.png',
+                //     tour: 'tour3.xml?v20231211',
+                //     startScene: 'scene_3', // 解决方案按钮
+                //     alertList: [
+                //         {
+                //             name: '高空坠落',
+                //             btn: 'assets/img/btn_zhuiluo.png',
+                //             btnActive: 'assets/img/btn_zhuiluo_on.png',
+                //             text: '装置检修时，作业人员需要攀爬脚手架或者在管廊结构上作业，存在高空坠落风险',
+                //             solutionName: '坠落防护',
+                //             alertBoxIcon: 'assets/img/icon_zlfh.png',
+                //             spotArray: ['jxdz_zhuiluo1', 'jxdz_zhuiluo2', 'jxdz_zhuiluo3'],
+                //         },
+                //         {
+                //             name: '冲击物',
+                //             btn: 'assets/img/btn_cjw.png',
+                //             btnActive: 'assets/img/btn_cjw_on.png',
+                //             text: '检修作业时，需要使用工具从事机械作业，存在飞溅物冲击眼面部的风险',
+                //             solutionName: '眼面防护',
+                //             alertBoxIcon: 'assets/img/icon_cjw.png',
+                //             spotArray: ['jxdz_cjw1'],
+                //         },
+                //     ],
+                // },
+                //焊接打磨
+                // {
+                //     name: '焊接打磨',
+                //     previewImg: 'assets/img/scene_hanjiedamo.png',
+                //     tour: 'tour4.xml?v20231211',
+                //     startScene: 'scene_4', // 解决方案按钮
+                //     alertList: [
+                //         {
+                //             name: '焊烟',
+                //             btn: 'assets/img/btn_hanyan.png',
+                //             btnActive: 'assets/img/btn_hanyan_on.png',
+                //             text: '焊接作业时会产生大量焊烟',
+                //             solutionName: '呼吸防护',
+                //             alertBoxIcon: 'assets/img/icon_hanyan.png',
+                //             spotArray: ['hjdm_hanyan1'],
+                //         },
+                //         {
+                //             name: '焊接弧光',
+                //             btn: 'assets/img/btn_hanjiehuguang.png',
+                //             btnActive: 'assets/img/btn_hanjiehuguang_on.png',
+                //             text: '焊接作业会产生强烈弧光，会对眼睛产生严重危害',
+                //             solutionName: '眼面防护',
+                //             alertBoxIcon: 'assets/img/icon_hanjiehuguang.png',
+                //             spotArray: ['hjdm_hanjiehuguang1'],
+                //         },
+                //         {
+                //             name: '金属飞溅物',
+                //             btn: 'assets/img/btn_jinshufeijian.png',
+                //             btnActive: 'assets/img/btn_jinshufeijian_on.png',
+                //             text: '打磨作业会产生高速碎屑，可能对眼面部产生冲击危害',
+                //             solutionName: '眼面防护',
+                //             alertBoxIcon: 'assets/img/icon_jinshufeijian.png',
+                //             spotArray: ['hjdm_jinshufeijian1', 'hjdm_jinshufeijian2'],
+                //         },
+                //         {
+                //             name: '噪音',
+                //             btn: 'assets/img/btn_zy.png',
+                //             btnActive: 'assets/img/btn_zy_on.png',
+                //             text: '打磨及焊接作业过程中会伴随高分贝噪音',
+                //             solutionName: '听力防护',
+                //             alertBoxIcon: 'assets/img/icon_zy.png',
+                //             spotArray: ['hjdm_zaoyin1', 'hjdm_zaoyin2'],
+                //         },
+                //         {
+                //             name: '粉尘',
+                //             btn: 'assets/img/btn_fc.png',
+                //             btnActive: 'assets/img/btn_fc_on.png',
+                //             text: '在大修现场，焊接打磨作业非常普遍，伴随着焊接打磨会产生大量有害粉尘，像焊烟、金属粉尘等。吸入这些有害粉尘可能导致各类急性和长期的健康影响，因此必须采用正确有效的呼吸防护。',
+                //             solutionName: '呼吸防护',
+                //             alertBoxIcon: 'assets/img/icon_fc.png',
+                //             spotArray: ['hjdm_fenchen1'],
+                //         },
+                //     ],
+                // },
+                //有限空间
+                // {
+                //     name: '有限空间',
+                //     previewImg: 'assets/img/scene_wushuichuli.png',
+                //     tour: 'tour5.xml?v20231211',
+                //     startScene: 'scene_5', // 解决方案按钮
+                //     alertList: [
+                //         {
+                //             name: '有害气态物',
+                //             btn: 'assets/img/btn_qitaiwu.png',
+                //             btnActive: 'assets/img/btn_qitaiwu_on.png',
+                //             text: '有限空间内，可能存在高浓度的有害气态物或缺氧',
+                //             solutionName: '呼吸防护',
+                //             alertBoxIcon: 'assets/img/icon_qitaiwu.png',
+                //             spotArray: ['wscl_qitaiwu1'],
+                //         },
+                //         {
+                //             name: '高空坠落',
+                //             btn: 'assets/img/btn_zhuiluo.png',
+                //             btnActive: 'assets/img/btn_zhuiluo_on.png',
+                //             text: '当作业人员需要进出有限空间时，存在高空坠落风险',
+                //             solutionName: '坠落防护',
+                //             alertBoxIcon: 'assets/img/icon_zlfh.png',
+                //             spotArray: ['wscl_zhuiluo1'],
+                //         },
+                //     ],
+                // },
             ],
             curAlertIndex: 0,
             curAlertList: [],

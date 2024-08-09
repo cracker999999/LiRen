@@ -351,6 +351,27 @@
   top: 76%;
   left: 59%;
 }
+.overview-modal .dot-list .dot-item.dot-shouhou {
+  top: 78%;
+  left: 59%;
+}
+.overview-modal .dot-list .dot-item.dot-chengliehaocai {
+  top: 76%;
+  left: 56%;
+}
+.overview-modal .dot-list .dot-item.dot-ermozhizuo {
+  top: 76%;
+  left: 53%;
+}
+.overview-modal .dot-list .dot-item.dot-liansuo-tlc {
+  top: 76%;
+  left: 50%;
+}
+.overview-modal .dot-list .dot-item.dot-yanpeipeixun {
+  top: 76%;
+  left: 46%;
+}
+
 .overview-modal .dot-list .dot-item.dot-zhuangxiehuo {
   top: 55%;
   left: 68%;
