@@ -25,6 +25,50 @@ const app = Vue.createApp({
                     is720: true
                 },
                 {
+                    productName: '助听器保养仪',
+                    desc: '用于助听器日常干燥、清洁护理使用，便捷的按键操作，一键智能开启，除湿保养 一机搞定。',
+                    url: 'http://www.soundlink.com.cn/products/Matching1/383.html',
+                    modelName: 'BZLR_P12',
+                    img: 'images/products/BZLR_I12.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '真耳分析仪',
+                    desc: '自动真耳分析，兼容各大助听器厂家软件，·客观验配，精准调节，·提高患者满意度',
+                    url: 'http://www.soundlink.com.cn/products/Matching9/2712.html',
+                    modelName: 'BZLR_P13',
+                    img: 'images/products/BZLR_I13.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '耳镜',
+                    desc: '本产品是一款利用CMOS摄像装置来对耳道进行检查，并将摄取到的图像传输到电脑屏幕上显示，使用者可以在耳镜主机上操作按键来调节LED亮度或拍照，也可在电脑软件上进行拍照、储存、打印和编辑等操作。\n'+ 
+            '适用于医生、听力学专家、听力师、助听器验配师和其他接受过专业培训的人士。\n'+ 
+            '适用于医院、听力诊所、助听器验配店等场所。',
+                    url: 'http://www.soundlink.com.cn/products/Matching2/2958.html',
+                    modelName: 'BZLR_P14',
+                    img: 'images/products/BZLR_I14.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
                     productName: '亚克力六耳展示架',
                     desc: '由仿真耳及亚克力板组成。亚克力板晶莹剔透，仿真耳柔软细腻，整体精致典雅，展示极具视觉效果。',
                     url: 'http://www.soundlink.com.cn/product/application/133.html',
@@ -33,7 +77,7 @@ const app = Vue.createApp({
                     loadFrame: '720Modal/HF-802.html',
                     transparent: 'p16_01_glass,p16_02_glass,p16_03_glass,p16_04_glass,p16_05_glass,p16_06_glass,p16_07a_glass,p16_07b_glass,p16_07c_glass',
                     animation: '',
-                    changeColor: 'ddd',
+                    changeColor: '',
                     modelType: 'glb',
                     attr1: '',
                     is720: true
@@ -69,10 +113,42 @@ const app = Vue.createApp({
                 {
                     productName: '电子干燥器',
                     desc: '本产品采用自动恒温加热元件，能在短时间内达到设定恒定温度，除湿效果明显。中层板隔离干燥物与发热系统，通过加热后的空气对被干燥物进行除湿，避免了传统加热方式引起的温度过高而导致被干燥物损坏。\n'+
-                            '本产品外形小巧、便于携带、性能稳定，全新科技外观设计（已申请专利），USB电源供电方式，操作简便。是用户居家及旅途常备的干燥除湿佳品。',
+            '本产品外形小巧、便于携带、性能稳定，全新科技外观设计（已申请专利），USB电源供电方式，操作简便。是用户居家及旅途常备的干燥除湿佳品。',
                     url: 'http://www.soundlink.com.cn/products/Matching1/359.html',
                     modelName: 'BZLR_P19',
                     img: 'images/products/BZLR_I19.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: 'Fitshape 3D打印机',
+                    desc: '专注于听力行业快速成型领域，高分辨率、高精度，层厚可达到25-100μm\n'+
+            '出色的表面质量，打印出的产品表面光滑， 更快的成型方式，能够高效完成复杂精细的模型， 耗材兼容性强，能兼容多种品牌耗材。',
+                    url: 'http://www.ear3d.cn/product/3d_printer/fitshape/',
+                    modelName: 'BZLR_P2',
+                    img: 'images/products/BZLR_I2.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '开放式耳塞',
+                    desc: '特殊声音滤波器保护您的双耳，防过敏硅胶材质，柔软舒适。\n'+
+            '三层叠状设计，有效降低压追感。\n'+
+            '安全不易损坏，可多次重复使用。\n'+
+            '独特的声音过滤器，有效保护您的双耳。',
+                    url: 'http://easysoundsz.com/products/8/5229.html',
+                    modelName: 'BZLR_P22',
+                    img: 'images/products/BZLR_I22.png',
                     loadFrame: '720Modal/HF-802.html',
                     transparent: '',
                     animation: '',
@@ -96,13 +172,83 @@ const app = Vue.createApp({
                     is720: true
                 },
                 {
+                    productName: '光固化机',
+                    desc: 'UV-LED光固化机采用MCU技术进行控制，LCD液晶显示，可以快速固化红胶、亮漆，树脂等材料。光照强度大，效果好，任意设置固化时间，随时可以中断固化操作。',
+                    url: 'http://www.soundlink.com.cn/products/4/2968.html',
+                    modelName: 'BZLR_P26',
+                    img: 'images/products/BZLR_I26.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '蓝色大号耳朵展示架',
+                    desc: '选用丰富艳丽的色彩，立体的耳朵形象更引人注目，以产品形象直观展示来替代市场激烈竞争中产生昂贵的推广成本，达到促进形象，降低宣传成本的营销目的。适用于听力中心、展会、活动等场所，有利于赢得市场，提高行业竞争力。',
+                    url: 'http://www.soundlink.com.cn/product/application/2960.html',
+                    modelName: 'BZLR_P27',
+                    img: 'images/products/BZLR_I27.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
                     productName: '检耳镜',
                     desc: 'e-scope耳窥镜是德国Riester的产品之-光线柔和明亮，观察效果佳;\n'+
-                            '简洁大方的外观设计、符合人体工程学的使用要求，极佳手感;\n'+
-                            '采用减少反射的光学元件和LED技术，可提高诊断效率并降低维护成本。',
+            '简洁大方的外观设计、符合人体工程学的使用要求，极佳手感;\n'+
+            '采用减少反射的光学元件和LED技术，可提高诊断效率并降低维护成本。',
                     url: 'http://www.soundlink.com.cn/product/application/2960.html',
                     modelName: 'BZLR_P28',
                     img: 'images/products/BZLR_I28.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '磁铁钢针刷',
+                    desc: '用于助听器及耳模的清洁。一端安有钢针圆环，可用于助听器或耳模异物的清除。',
+                    url: 'http://www.soundlink.com.cn/product/shichangyongju/786.html',
+                    modelName: 'BZLR_P29',
+                    img: 'images/products/BZLR_I29.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '验配套装',
+                    desc: '产品配备齐全，携带方便，凸显专业，适合验配师外出上门使用，是各听力中心常备工具套装。',
+                    url: 'http://www.soundlink.com.cn/products/Matching2/476.html',
+                    modelName: 'BZLR_P3',
+                    img: 'images/products/BZLR_I3.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '气孔通杆',
+                    desc: '适用于定制机气孔、导声管的清洁和疏通。',
+                    url: 'http://www.soundlink.com.cn/products/Matching1/369.html',
+                    modelName: 'BZLR_P30',
+                    img: 'images/products/BZLR_I30.png',
                     loadFrame: '720Modal/HF-802.html',
                     transparent: '',
                     animation: '',
@@ -128,13 +274,29 @@ const app = Vue.createApp({
                 {
                     productName: '诊疗椅',
                     desc: '座垫平面升降范围：560-760mm（200mm）\n'+
-                            '靠背府仰角度：90°~180\n'+
-                            '旋转角度：360°，可任一位置锁定\n'+
-                            '头枕延伸：0~200mm\n'+
-                            '最大承载范围：<150kg',
+            '靠背府仰角度：90°~180\n'+
+            '旋转角度：360°，可任一位置锁定\n'+
+            '头枕延伸：0~200mm\n'+
+            '最大承载范围：<150kg',
                     url: 'http://www.soundlink.com.cn/products/Matching9/2962.html',
                     modelName: 'BZLR_P34',
                     img: 'images/products/BZLR_I34.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '声场',
+                    desc: '用于听障患者佩戴助听器后的听力评估，由必备扬声器单元、调节支架组成。使用便捷，是听力中心标准评估设备之一。\n'+
+            
+            '(含支架，支架高度可调)',
+                    url: 'http://www.soundlink.com.cn/products/Matching9/201.html',
+                    modelName: 'BZLR_P35',
+                    img: 'images/products/BZLR_I35.png',
                     loadFrame: '720Modal/HF-802.html',
                     transparent: '',
                     animation: '',
@@ -172,6 +334,23 @@ const app = Vue.createApp({
                     is720: true
                 },
                 {
+                    productName: '声阻抗',
+                    desc: 'Madsen Zodiac的设计重点在于容易获得密封的探头\n'+
+            '·采用7英寸彩色大屏，对比鲜明，重点内容突出显示\n'+
+            '·平面菜单结构，快速上手\n'+
+            '·内置打印机，亦可连接耳遂听软件，创建定制化报告',
+                    url: 'http://www.soundlink.com.cn/products/Matching9/2711.html',
+                    modelName: 'BZLR_P38',
+                    img: 'images/products/BZLR_I38.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
                     productName: '助听器效果演示仪',
                     desc: '用于助听器实际效果演示，大大提升了客户的体验感和满意度。使用本产品时可同时供两到四人试听，以满足聋儿的监护人、亲属一同参与试听选购助听器的需求。',
                     url: 'http://www.soundlink.com.cn/products/Matching9/2965.html',
@@ -200,11 +379,42 @@ const app = Vue.createApp({
                     is720: true
                 },
                 {
+                    productName: 'Z型展示架',
+                    desc: '优质材质，精工制作，产品独立展示，提升店面形象，打造品牌生命力。',
+                    url: 'http://www.soundlink.com.cn/product/application/2966.html',
+                    modelName: 'BZLR_P43',
+                    img: 'images/products/BZLR_I43.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
                     productName: '真空护理仪',
                     desc: '人工耳蜗、助听器是一种精密且昂贵的电子设备，佩戴时需要与人体接触，人体的新陈代谢产生的汗液、空气中潮气会侵蚀机器，对耳蜗、助听器相关配件存在潜在危害。',
                     url: 'http://www.soundlink.com.cn/products/Matching1/405.html',
                     modelName: 'BZLR_P44',
                     img: 'images/products/BZLR_I44.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '硬耳模材料',
+                    desc: '液态光固化材料，用于制作助听器硬耳模、定制音乐耳机外壳等。\n'+
+            '材质对人体安全无刺激，制成品性能稳定，得到国内外客户一致\n'+
+            '口碑好评，是耳模实验室常备的材料。\n'+
+            '制成品通过后期处理（亮漆、打磨），使产品水晶般晶莹剔透。',
+                    url: 'http://www.soundlink.com.cn/products/Matching3/243.html',
+                    modelName: 'BZLR_P45',
+                    img: 'images/products/BZLR_I45.png',
                     loadFrame: '720Modal/HF-802.html',
                     transparent: '',
                     animation: '',
@@ -231,11 +441,25 @@ const app = Vue.createApp({
                     productName: '大号耳朵解剖模型',
                     desc: '有外耳、中耳、内耳组成的解剖模型。可以直观看到听骨链，半规管及耳蜗。适合于摆放在公司或助听器专营店显眼的位置，以营造专业的气氛。通过模型的讲解，增进与客户间的沟通和交流。',
                     url: 'http://www.soundlink.com.cn/product/application/139.html',
-                    modelName: 'BZLR_P5_',
+                    modelName: 'BZLR_P5',
                     img: 'images/products/BZLR_I5.png',
                     loadFrame: '720Modal/HF-802.html',
                     transparent: '',
                     animation: true,
+                    changeColor: '',
+                    modelType: 'glb',
+                    attr1: '',
+                    is720: true
+                },
+                {
+                    productName: '新款干燥饼+干燥盒',
+                    desc: '搭配30g专用干燥饼，用于助听器日常干燥护理使用。',
+                    url: 'http://www.soundlink.com.cn/products/Matching1/175.html',
+                    modelName: 'BZLR_P6',
+                    img: 'images/products/BZLR_I6.png',
+                    loadFrame: '720Modal/HF-802.html',
+                    transparent: '',
+                    animation: '',
                     changeColor: '',
                     modelType: 'glb',
                     attr1: '',
