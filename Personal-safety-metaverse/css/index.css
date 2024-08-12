@@ -990,7 +990,7 @@
     width: 100%;
   }
   .overview-modal .city-img-box .city-img {
-    background-size: 200%;
+    background-size: 140%; /*200 leen*/
   }
   .overview-modal .pin-list .pin-item {
     pointer-events: all;
