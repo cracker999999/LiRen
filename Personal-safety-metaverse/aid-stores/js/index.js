@@ -812,7 +812,7 @@ const app = Vue.createApp({
     },
     created() {
         let _pub = window.$pubWin;
-        var tempDate = _pub.getStorage('temp-steel-making-ppe-modal') || '';
+        var tempDate = _pub.getStorage('temp-aid-stores-modal') || '';
         var currentDate = new Date().Format("yyyy-MM-dd");
         this.showInstruction = false;// (tempDate != currentDate);
         this.showInstruction = (tempDate != currentDate);
@@ -847,7 +847,7 @@ const app = Vue.createApp({
             this.showInstruction = false;
             let _pub = window.$pubWin;
             var currentDate = new Date().Format("yyyy-MM-dd");
-            _pub.setStorage('temp-steel-making-ppe-modal', currentDate);
+            _pub.setStorage('temp-aid-stores-modal', currentDate);
         },
         krpanoOnReady(krpanoInterface) {
             this.krpano = krpanoInterface;
