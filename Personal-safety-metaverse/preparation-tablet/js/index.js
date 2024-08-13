@@ -76,6 +76,53 @@ const app = Vue.createApp({
             showProductModal: false,
             jieshuoSrc,
             highLightArray: [],
+            sceneList: [
+                {
+                    name: '培训',
+                    previewImg: 'assets/img/scene_xuankuang.png?v20230222',
+                    tour: 'tour0.xml?v20231211',
+                    startScene: 'scene_0',
+                    alertList: [
+                        
+                    ],
+                },
+                {
+                    name: '3D打印',
+                    previewImg: 'assets/img/scene_xuankuang.png?v20230222',
+                    tour: 'tour1.xml?v20231211',
+                    startScene: 'scene_1',
+                    alertList: [
+                        
+                    ],
+                },
+                {
+                    name: '相关产品配套',
+                    previewImg: 'assets/img/scene_xuankuang.png?v20230222',
+                    tour: 'tour2.xml?v20231211',
+                    startScene: 'scene_2',
+                    alertList: [
+                        
+                    ],
+                },
+                {
+                    name: '服务',
+                    previewImg: 'assets/img/scene_xuankuang.png?v20230222',
+                    tour: 'tour3.xml?v20231211',
+                    startScene: 'scene_3',
+                    alertList: [
+                        
+                    ],
+                },
+                {
+                    name: '耳道应用全场景',
+                    previewImg: 'assets/img/scene_xuankuang.png?v20230222',
+                    tour: 'tour4.xml?v20231211',
+                    startScene: 'scene_4',
+                    alertList: [
+                        
+                    ],
+                }
+            ],
             secondarySceneList: [
                 {
                     secondarySceneName: '化学原料生产',
@@ -399,8 +446,10 @@ const app = Vue.createApp({
         });
 
         var secondarySceneItem = this.secondarySceneList[this.secondarySceneIndex];
-        var sceneItem = secondarySceneItem.sceneList[this.sceneIndex];
-        var targetName = '场景页面-制药-' + secondarySceneItem.secondarySceneName + '-' + sceneItem.name;
+        // var sceneItem = secondarySceneItem.sceneList[this.sceneIndex];
+        var sceneItem = this.sceneList[this.sceneIndex];
+        // var targetName = '场景页面-制药-' + secondarySceneItem.secondarySceneName + '-' + sceneItem.name;
+        var targetName = '场景页面-制药-' + sceneItem.name;
         typeof addClabTrackerCommon == 'function' && addClabTrackerCommon(targetName);
 
         var pageSearch = '?scene=' + sceneItem.tour + '&sceneIndex=' + this.sceneIndex + '&secondarySceneIndex=' + this.secondarySceneIndex;
@@ -442,7 +491,8 @@ const app = Vue.createApp({
                 curAlertNames = curScene.alertList;
 
             var secondarySceneItem = this.secondarySceneList[this.secondarySceneIndex];
-            var sceneItem = secondarySceneItem.sceneList[this.sceneIndex];
+            // var sceneItem = secondarySceneItem.sceneList[this.sceneIndex];
+            var sceneItem = sceneList[sceneIndex];
 
             this.krpano.call('loadpano(' + sceneItem.tour + ', null, MERGE, BLEND(1));');
             this.krpano.call('loadscene(' + sceneItem.startScene + ');');

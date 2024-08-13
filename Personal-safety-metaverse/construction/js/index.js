@@ -9,10 +9,15 @@ window.getUrlParam = function (name) {
     return null; //返回参数值
 }
 
+//跳转页面
+function toJump(path) {
+    var urlArgs = '';//"?v=" + window.Version;//js参数,用于控制js版本
+    window.location.href = path + urlArgs;//跳转页面
+}
 
 let initScene = getUrlParam("scene") || 'tour0.xml?v20231211',
-    sceneIndex = parseInt(getUrlParam("sceneIndex")) || 0;
-jieshuoSrc = "./assets/img/jieshuo_jianzhugongdi.mp3";
+    sceneIndex = parseInt(getUrlParam("sceneIndex")) || 0,
+    jieshuoSrc = "./assets/img/jieshuo_jianzhugongdi.mp3";
 switch (sceneIndex){
     case 0:
         jieshuoSrc = "./assets/img/jieshuo_jianzhugongdi.mp3";
@@ -21,6 +26,9 @@ switch (sceneIndex){
         jieshuoSrc = "./assets/img/jieshuo_shinei.mp3";
         break;
     case 2:
+        jieshuoSrc = "./assets/img/jieshuo_louding.mp3";
+        break;
+    case 3:
         jieshuoSrc = "./assets/img/jieshuo_louding.mp3";
         break;
     default:
@@ -43,10 +51,10 @@ const app = Vue.createApp({
             jieshuoSrc,
             highLightArray: [],
             sceneList: [
-                //建筑工地
+                //室内作业
                 {
-                    previewImg: 'assets/img/scene_jianzhu.png',
-                    name: '建筑工地',
+                    name: '政府',
+                    previewImg: 'assets/img/scene_shinei.png',
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0', // 解决方案按钮
                     solutionList: [
@@ -57,24 +65,10 @@ const app = Vue.createApp({
                         },
                     ],
                 },
-                //室内作业
+                //建筑工地
                 {
-                    previewImg: 'assets/img/scene_shinei.png',
-                    name: '室内作业',
-                    tour: 'tour2.xml?v20231211',
-                    startScene: 'scene_2', // 解决方案按钮
-                    solutionList: [
-                        {
-                            btn: 'assets/img/icon_fall.png',
-                            name: '坠落防护',
-                            text: '???',
-                        },
-                    ],
-                },
-                //楼顶操作
-                {
-                    previewImg: 'assets/img/scene_louding.png',
-                    name: '楼顶操作',
+                    name: '移动服务听力车',
+                    previewImg: 'assets/img/scene_jianzhu.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1', // 解决方案按钮
                     solutionList: [
@@ -85,6 +79,37 @@ const app = Vue.createApp({
                         },
                     ],
                 },
+                //楼顶操作
+                {
+                    name: '社会组织',
+                    previewImg: 'assets/img/scene_louding.png',
+                    tour: 'tour2.xml?v20231211',
+                    startScene: 'scene_2', // 解决方案按钮
+                    solutionList: [
+                        {
+                            btn: 'assets/img/icon_fall.png',
+                            name: '坠落防护',
+                            text: '???',
+                        },
+                    ],
+                },
+                //高校
+                {
+                    name: '高校及科研院所',
+                    previewImg: 'assets/img/scene_louding.png',
+                    tour: 'tour3.xml?v20231211',
+                    startScene: 'scene_3', // 解决方案按钮
+                    solutionList: [
+                        {
+                            btn: 'assets/img/icon_fall.png',
+                            name: '坠落防护11',
+                            text: '???',
+                        },
+                    ],
+                    alertList:[
+
+                    ]
+                }
             ],
             alertList: [
                 {
@@ -555,6 +580,8 @@ const app = Vue.createApp({
         }
     },
     created() {
+        console.log('created');
+        
         let _pub = window.$pubWin;
         var tempDate = _pub.getStorage('temp-construction-modal') || '';
         var currentDate = new Date().Format("yyyy-MM-dd");
@@ -597,7 +624,7 @@ const app = Vue.createApp({
                     return item.name === '洞口作业' || item.name === '临边作业' || item.name === '操作平台'
                 });
                 break;
-            case 2:
+            case 2,3:
                 curAlertList = alertList.filter(item => {
                     if (item.name == '攀登作业') {
                         item.productTypeList = [
@@ -680,7 +707,7 @@ const app = Vue.createApp({
                 productList = this.productList;
             this.krpano.call('loadpano(' + sceneItem.tour + ', null, MERGE, BLEND(1));');
             this.krpano.call('loadscene(' + sceneItem.startScene + ');');
-            // console.log("场景名：", this.sceneIndex, sceneList.name);
+            // console.log("场景名：", this.sceneIndex, sceneItem.name);
             // console.log("现有作业：", curAlertList);
 
             var title = '场景页面-建筑-' + sceneItem.name;

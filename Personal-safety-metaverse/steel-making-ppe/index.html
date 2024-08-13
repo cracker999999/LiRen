@@ -14,9 +14,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="color-scheme" content="light dark">
     <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-title" content="炼铁炼钢作业">
-    <meta name="description" content="炼铁炼钢作业">
-    <title>炼铁炼钢作业</title>
+    <meta name="apple-mobile-web-app-title" content="助听器连锁门店">
+    <meta name="description" content="助听器连锁门店">
+    <title>助听器连锁门店</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -27,15 +27,16 @@
     <link href="../dist/animate.min.css" rel="stylesheet" type="text/css">
     <link href="../dist/swiper/css/swiper.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../innovationRoom/dist/threesixty/threesixty.css">
-    <link href="assets/css/index.css?v20231211" rel="stylesheet" type="text/css">
+    <link href="../css/index2.css?v20231211" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="../../open/js/jweixin-1.6.0.js"></script>
 
     <script src="../dist/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../dist/flexible.js"></script>
     <script type="text/javascript" src="../dist/vue.global.min.js"></script>
-    <script type="text/javascript" src="pano/tour.js"></script>
+    <script type="text/javascript" src="../pano/tour.js"></script>
     <script type="text/javascript" src="pano/settings/init.js?v20231113"></script>
+
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../../Content/js/loadingJs.js" id="main" data-baseurl="../../" data-main="../js/http.js"></script>
     <!-- Google tag (gtag.js) -->
@@ -109,7 +110,10 @@
             </div>
 
             <div class="control-right">
-                <div class="right-btn-img" v-cloak="" v-for="(item, index) in curAlertList" :key="index" :style="{backgroundImage: `url(${index === alertIndex ? item.btnActive : item.btn})`}" :data-name="item.name" @click="onAlertClick(index)"></div>
+                <div class="right-btn-img" v-cloak="" v-for="(item, index) in curAlertList" :key="index" 
+                    :style="{backgroundImage: `url(${index === alertIndex ? item.btnActive : item.btn})`}" 
+                    :data-name="item.name" 
+                    @click="onAlertClick(index)"></div>
 
 
                 <a class="btn-msg" href="https://psd-contenthub.3m.com.cn/p/9332d" target="_blank" @click="goContenthub()">
@@ -121,7 +125,9 @@
                 <div class="scene-select-box" v-show="showScenePreview" v-cloak="">
                     <div class="scene-preview-list swiper-container scenePreviewSwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide preview-box" v-for="(item, index) in sceneList" :key="index" :class="{active: index === sceneIndex}" v-cloak="" @click="onSceneClick(index)">
+                            <div class="swiper-slide preview-box" v-for="(item, index) in sceneList" :key="index" 
+                                :class="{active: index === sceneIndex}" v-cloak="" 
+                                @click="onSceneClick(index)">
                                 <div class="preview-content">
                                     <img :src="item.previewImg" alt="" class="img-preview">
                                     <span class="scene-name">{{item.name}}</span>
@@ -131,12 +137,17 @@
                     </div>
                 </div>
                 <div class="bottom-option-box flex flex-hc flex-v-stretch">
-                    <div class="scene-select-btn flex-column flex-vc flex-hc" :class="{active: showScenePreview}" v-cloak="" @click="onScenePreviewClick()">
+                    <div class="scene-select-btn flex-column flex-vc flex-hc" 
+                        :class="{active: showScenePreview}" v-cloak="" 
+                        @click="onScenePreviewClick()">
                         <img src="assets/img/icon_scene.png" alt="" class="icon">
                         <span>场景选择</span>
                     </div>
                     <ul class="solution-list flex flex-vc flex-hc">
-                        <li class="item flex-column flex-vc flex-hc" v-for="(item, index) in curSolutionList" :key="index" :class="{active: index === curSolutionIndex }" v-cloak="" @click="onClickSolution(index)">
+                        <li class="item flex-column flex-vc flex-hc" 
+                            v-for="(item, index) in curSolutionList" :key="index" 
+                            :class="{active: index === curSolutionIndex }" v-cloak="" 
+                            @click="onClickSolution(index)">
                             <img :src="item.solutionIcon" alt="" class="solution-btn" v-cloak="">
                             <div class="solution-name" v-cloak="">{{item.solutionName}}</div>
                         </li>

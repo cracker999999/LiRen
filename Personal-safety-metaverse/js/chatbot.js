@@ -47,10 +47,12 @@
             iframe.style.cssText = `
                 border: none; position: fixed; flex-direction: column; justify-content: space-between;
                 box-shadow: rgba(150, 150, 150, 0.2) 0px 10px 30px 0px, rgba(150, 150, 150, 0.2) 0px 0px 0px 1px;
-                bottom: 5rem; right: 1rem; 
-                width: 16rem; max-width: calc(100vw - 2rem); height: 50rem; max-height: calc(100vh - 4rem); 
+                // bottom: 5rem; right: 1rem; 
+                left: 50%; top: 50%;
+                transform: translate(-50%, -50%);
+                width: 16rem; max-width: calc(100vw - 1rem); height: 50rem; max-height: calc(100vh - 4rem); 
                 border-radius: 12px; display: flex; z-index: 2147483647;
-                overflow: hidden; left: unset; background-color: #F3F4F6;
+                overflow: hidden; background-color: #F3F4F6;
             `;
 
             document.body.appendChild(iframe);
@@ -131,9 +133,9 @@
                         width: var(--${containerDiv.id}-mobile-width, 40px);
                         height: var(--${containerDiv.id}-mobile-height, 40px);
                         bottom: var(--${containerDiv.id}-mobile-bottom, unset);
-                        top: var(--${containerDiv.id}-mobile-top, 2rem);
+                        top: var(--${containerDiv.id}-mobile-top, 0.5rem);
                         left: var(--${containerDiv.id}-mobile-left, unset);
-                        right: var(--${containerDiv.id}-mobile-right, 0.5rem);
+                        right: var(--${containerDiv.id}-mobile-right, 2rem);
                     }
                 }
             `, 2);

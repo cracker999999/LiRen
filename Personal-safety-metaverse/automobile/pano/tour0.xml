@@ -18,17 +18,18 @@
 	<scene name="scene_0" title="krpano Panoramic Video Example">
 
 		<!-- include the videoplayer plugin -->
-		<plugin name="video"
+		<!-- <plugin name="video"
 		        url.html5="%VIEWER%/plugins/videoplayer.js"
 		        pausedonstart="false"
 		        loop="true"
 		        volume="1.0"
 		        onloaded="add_video_sources();"
-		        />
+		        /> -->
 
 		<!-- use the videoplayer plugin as panoramic image source -->
 		<image>
-			<sphere url="plugin:video" />
+			<!-- <sphere url="plugin:video" /> -->
+			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/tingliche.jpg" />
 		</image>
 
 		<!-- set the default view -->

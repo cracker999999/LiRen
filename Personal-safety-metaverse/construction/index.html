@@ -14,9 +14,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="color-scheme" content="light dark">
     <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-title" content="建筑作业">
-    <meta name="description" content="建筑作业">
-    <title>建筑作业</title>
+    <meta name="apple-mobile-web-app-title" content="政府及社会组织">
+    <meta name="description" content="政府及社会组织">
+    <title>政府及社会组织</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -27,19 +27,20 @@
     <link href="../dist/animate.min.css" rel="stylesheet" type="text/css">
     <link href="../dist/swiper/css/swiper.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../innovationRoom/dist/threesixty/threesixty.css">
-    <link href="../steel-making-ppe/assets/css/index.css?v20231211" rel="stylesheet" type="text/css"/>
+    <link href="../css/index2.css?v20231211" rel="stylesheet" type="text/css"/>
 
     <script type="text/javascript" src="https://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 
     <script src="../dist/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../dist/flexible.js"></script>
     <script type="text/javascript" src="../dist/vue.global.min.js"></script>
-    <script type="text/javascript" src="../steel-making-ppe/pano/tour.js"></script>
+    <script type="text/javascript" src="../pano/tour.js"></script>
     <script type="text/javascript" src="pano/settings/init.js?v20230506"></script>
+
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../../Content/js/loadingJs.js" id="main" data-baseurl="../../" data-main="../js/http.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTPS8DHXHH"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTPS8DHXHH"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -124,7 +125,7 @@
                     <div class="scene-preview-list swiper-container scenePreviewSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide preview-box" v-for="(item, index) in sceneList" :key="index"
-                                 :class="{active: index === sceneIndex}" v-cloak
+                                 :class="{active: index === sceneIndex}" v-cloak=""
                                  @click="onSceneClick(index)">
                                 <div class="preview-content">
                                     <img :src="item.previewImg" alt="" class="img-preview">
@@ -136,7 +137,7 @@
                 </div>
                 <div class="bottom-option-box flex flex-hc flex-v-stretch">
                     <div class="scene-select-btn flex-column flex-vc flex-hc"
-                         :class="{active: showScenePreview}" v-cloak
+                         :class="{active: showScenePreview}" v-cloak=""
                          @click="onScenePreviewClick()">
                         <img src="assets/img/icon_scene.png" alt="" class="icon">
                         <span>场景选择</span>
@@ -144,9 +145,9 @@
                     <ul class="solution-list flex flex-vc flex-hc">
                         <li class="item flex-column flex-vc flex-hc"
                             v-for="(item, index) in sceneList[sceneIndex].solutionList" :key="index"
-                            :class="{active: index === solutionIndex }" v-cloak
+                            :class="{active: index === solutionIndex }" v-cloak=""
                             @click="onSolutionClick(index)">
-                            <img :src="item.btn" alt="" class="solution-btn" v-cloak>
+                            <img :src="item.btn" alt="" class="solution-btn" v-cloak="">
                             <div class="solution-name" v-cloak>{{item.name}}</div>
                         </li>
                     </ul>
@@ -317,7 +318,7 @@
 <script type="text/javascript" src="../innovationRoom/dist/threesixty/threesixty.min.js"></script>
 <!-- <script src="//cbe.convertlab.com/cbe/collect?tid=5742798233695064425&at=0&h=web"></script> -->
 <script type="text/javascript" src="../js/clab_tracker.js?v20231212"></script>
-<script type="text/javascript" src="js/index.js?v20231211"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/pointDisplay.js?v20231212"></script>
 <script type="text/javascript" src="../js/bgm.js"></script>
 <script type="text/javascript" src="../dist/current-device.min.js"></script>

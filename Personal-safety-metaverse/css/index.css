@@ -311,6 +311,7 @@
 .overview-modal .dot-list .dot-item:hover .dot-title span {
   opacity: 1;
 }
+
 .overview-modal .dot-list .dot-item.dot-huaxueyuanliao {
   top: 48%;
   left: 20%;
@@ -319,6 +320,19 @@
   top: 41%;
   left: 30%;
 }
+.overview-modal .dot-list .dot-item.dot-ermo-chanpinpeitao {
+  top: 35%;
+  left: 27%;
+}
+.overview-modal .dot-list .dot-item.dot-ermo-fuwu {
+  top: 45%;
+  left: 24%;
+}
+.overview-modal .dot-list .dot-item.dot-ermo-erdaoyingyong {
+  top: 35%;
+  left: 20%;
+}
+
 .overview-modal .dot-list .dot-item.dot-loudingzuoye {
   top: 17%;
   left: 57%;
@@ -329,8 +343,13 @@
 }
 .overview-modal .dot-list .dot-item.dot-shineizuoye {
   top: 25%;
-  left: 70%;
+  left: 63%;
 }
+.overview-modal .dot-list .dot-item.dot-zf-gaoxiao {
+  top: 25%;
+  left: 72%;
+}
+
 .overview-modal .dot-list .dot-item.dot-xuankuang {
   top: 59%;
   left: 51%;
@@ -352,19 +371,19 @@
   left: 59%;
 }
 .overview-modal .dot-list .dot-item.dot-shouhou {
-  top: 78%;
-  left: 59%;
+  top: 65%;
+  left: 33%;
 }
 .overview-modal .dot-list .dot-item.dot-chengliehaocai {
   top: 76%;
   left: 56%;
 }
-.overview-modal .dot-list .dot-item.dot-ermozhizuo {
-  top: 76%;
+.overview-modal .dot-list .dot-item.dot-liansuo-ermozhizuo {
+  top: 68%;
   left: 53%;
 }
 .overview-modal .dot-list .dot-item.dot-liansuo-tlc {
-  top: 76%;
+  top: 70%;
   left: 50%;
 }
 .overview-modal .dot-list .dot-item.dot-yanpeipeixun {

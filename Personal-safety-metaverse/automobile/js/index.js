@@ -55,8 +55,9 @@ const app = Vue.createApp({
             jieshuoSrc,
             highLightArray: [],
             sceneList: [
+                //PACK线
                 {
-                    name: 'PACK线',
+                    name: '大型商超场景-听力中心',
                     previewImg: 'assets/img/scene_pack.png',
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0',
@@ -107,8 +108,9 @@ const app = Vue.createApp({
                         },
                     ],
                 },
+                //冲压车间
                 {
-                    name: '冲压车间',
+                    name: '眼镜门店场景',
                     previewImg: 'assets/img/scene_chongyachejian.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1',
@@ -148,8 +150,9 @@ const app = Vue.createApp({
                         },
                     ],
                 },
+                //焊接车间
                 {
-                    name: '焊接车间',
+                    name: '药房',
                     previewImg: 'assets/img/scene_hanjiechejian.png',
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2',
@@ -211,161 +214,9 @@ const app = Vue.createApp({
                         },
                     ],
                 },
+                //检测试车
                 {
-                    name: '涂装车间',
-                    previewImg: 'assets/img/scene_tuzhuangchejian.png',
-                    tour: 'tour4.xml?v20231211',
-                    startScene: 'scene_4',
-                    alertList: [
-                        {
-                            name: '漆雾',
-                            btn: 'assets/img/btn_qiwu.png',
-                            btnActive: 'assets/img/btn_qiwu_on.png',
-                            alertInfos: [
-                                {
-                                    text: '喷漆过程中空气中会含有大量漆雾，造成呼吸危害',
-                                    solutionName: '呼吸防护',
-                                },
-                                {
-                                    text: '眼睛直接接触漆雾，油漆中的化学成分可能对眼睛造成刺激甚至灼伤眼睛',
-                                    solutionName: '眼面防护',
-                                },
-                            ],
-                            alertBoxIcon: 'assets/img/icon_qiwu.png',
-                            spotArray: ['tzcj_qiwu1', 'tzcj_qiwu2'],
-                        },
-                        {
-                            name: '有机蒸气',
-                            btn: 'assets/img/btn_zhengqi.png?v20230817',
-                            btnActive: 'assets/img/btn_zhengqi_on.png',
-                            alertInfos: [
-                                {
-                                    text: '喷漆过程中，油漆中的有机溶剂挥发产生有机蒸气',
-                                    solutionName: '呼吸防护',
-                                }
-                            ],
-                            alertBoxIcon: 'assets/img/icon_zhengqi.png?v20230817',
-                            spotArray: ['tzcj_zhengqi1'],
-                        },
-                        {
-                            name: '噪音',
-                            btn: 'assets/img/btn_zy.png',
-                            btnActive: 'assets/img/btn_zy_on.png',
-                            alertInfos: [{
-                                text: '喷漆操作、系统运转会产生较高分贝的噪声',
-                                solutionName: '听力防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_zy.png',
-                            spotArray: ['tzcj_zaoyin1'],
-                        },
-                        {
-                            name: '油漆',
-                            btn: 'assets/img/btn_youqi.png',
-                            btnActive: 'assets/img/btn_youqi_on.png',
-                            alertInfos: [{
-                                text: '油漆中含有可能危害皮肤的溶剂，皮肤长期接触漆雾可能会造成皮肤损伤、神经系统损伤或其他身体危害',
-                                solutionName: '身体防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_youqi.png',
-                            spotArray: ['tzcj_youqi1', 'tzcj_youqi2'],
-                        },
-                    ],
-                },
-                {
-                    name: '动力总成',
-                    previewImg: 'assets/img/scene_donglizongcheng.png',
-                    tour: 'tour6.xml?v20231211',
-                    startScene: 'scene_6',
-                    alertList: [
-                        {
-                            name: '颗粒物',
-                            btn: 'assets/img/btn_keliwu.png',
-                            btnActive: 'assets/img/btn_keliwu_on.png',
-                            alertInfos: [{
-                                text: '零部件生产或组装过程中，会产生金属粉尘等颗粒物危害',
-                                solutionName: '呼吸防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_fc.png',
-                            spotArray: ['dlzc_keliwu1'],
-                        },
-                        {
-                            name: '噪音',
-                            btn: 'assets/img/btn_zy.png',
-                            btnActive: 'assets/img/btn_zy_on.png',
-                            alertInfos: [{
-                                text: '设备、工具运转及组装过程中会产生较高分贝的噪声',
-                                solutionName: '听力防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_zy.png',
-                            spotArray: ['dlzc_zaoyin1'],
-                        },
-                        {
-                            name: '冲击物',
-                            btn: 'assets/img/btn_cjw.png',
-                            btnActive: 'assets/img/btn_cjw_on.png',
-                            alertInfos: [{
-                                text: '使用电动工具、气动工具组装过程中，可能产生高速冲击的金属碎屑',
-                                solutionName: '眼面防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_cjw.png',
-                            spotArray: ['dlzc_cjw1', 'dlzc_cjw2'],
-                        },
-                    ],
-                },
-                {
-                    name: '总装车间',
-                    previewImg: 'assets/img/scene_zongzhuangchejian.png',
-                    tour: 'tour5.xml?v20231211',
-                    startScene: 'scene_5',
-                    alertList: [
-                        {
-                            name: '颗粒物',
-                            btn: 'assets/img/btn_keliwu.png',
-                            btnActive: 'assets/img/btn_keliwu_on.png',
-                            alertInfos: [{
-                                text: '某些岗位在装配过程中，可能会产生金属粉尘等颗粒物危害',
-                                solutionName: '呼吸防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_fc.png',
-                            spotArray: ['zzcj_keliwu1', 'zzcj_keliwu2', 'zzcj_keliwu3'],
-                        },
-                        {
-                            name: '有机蒸气',
-                            btn: 'assets/img/btn_zhengqi.png?v20230817',
-                            btnActive: 'assets/img/btn_zhengqi_on.png',
-                            alertInfos: [{
-                                text: '总装时使用的溶剂或胶粘剂会挥发产生有毒有害蒸气',
-                                solutionName: '呼吸防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_zhengqi.png?v20230817',
-                            spotArray: ['zzcj_zhengqi1'],
-                        },
-                        {
-                            name: '噪音',
-                            btn: 'assets/img/btn_zy.png',
-                            btnActive: 'assets/img/btn_zy_on.png',
-                            alertInfos: [{
-                                text: '设备、工具运转及组装过程中会产生较高分贝的噪声',
-                                solutionName: '听力防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_zy.png',
-                            spotArray: ['zzcj_zaoyin1', 'zzcj_zaoyin2', 'zzcj_zaoyin3'],
-                        },
-                        {
-                            name: '冲击物',
-                            btn: 'assets/img/btn_cjw.png',
-                            btnActive: 'assets/img/btn_cjw_on.png',
-                            alertInfos: [{
-                                text: '使用电动工具、气动工具组装过程中，可能产生高速冲击的金属碎屑',
-                                solutionName: '眼面防护',
-                            }],
-                            alertBoxIcon: 'assets/img/icon_cjw.png',
-                            spotArray: ['zzcj_cjw1', 'zzcj_cjw2', 'zzcj_cjw3'],
-                        },
-                    ],
-                },
-                {
-                    name: '检测试车',
+                    name: '采耳店',
                     previewImg: 'assets/img/scene_ceshichejian.png',
                     tour: 'tour3.xml?v20231211',
                     startScene: 'scene_3',
@@ -405,6 +256,159 @@ const app = Vue.createApp({
                         },
                     ],
                 },
+                // {
+                //     name: '涂装车间',
+                //     previewImg: 'assets/img/scene_tuzhuangchejian.png',
+                //     tour: 'tour4.xml?v20231211',
+                //     startScene: 'scene_4',
+                //     alertList: [
+                //         {
+                //             name: '漆雾',
+                //             btn: 'assets/img/btn_qiwu.png',
+                //             btnActive: 'assets/img/btn_qiwu_on.png',
+                //             alertInfos: [
+                //                 {
+                //                     text: '喷漆过程中空气中会含有大量漆雾，造成呼吸危害',
+                //                     solutionName: '呼吸防护',
+                //                 },
+                //                 {
+                //                     text: '眼睛直接接触漆雾，油漆中的化学成分可能对眼睛造成刺激甚至灼伤眼睛',
+                //                     solutionName: '眼面防护',
+                //                 },
+                //             ],
+                //             alertBoxIcon: 'assets/img/icon_qiwu.png',
+                //             spotArray: ['tzcj_qiwu1', 'tzcj_qiwu2'],
+                //         },
+                //         {
+                //             name: '有机蒸气',
+                //             btn: 'assets/img/btn_zhengqi.png?v20230817',
+                //             btnActive: 'assets/img/btn_zhengqi_on.png',
+                //             alertInfos: [
+                //                 {
+                //                     text: '喷漆过程中，油漆中的有机溶剂挥发产生有机蒸气',
+                //                     solutionName: '呼吸防护',
+                //                 }
+                //             ],
+                //             alertBoxIcon: 'assets/img/icon_zhengqi.png?v20230817',
+                //             spotArray: ['tzcj_zhengqi1'],
+                //         },
+                //         {
+                //             name: '噪音',
+                //             btn: 'assets/img/btn_zy.png',
+                //             btnActive: 'assets/img/btn_zy_on.png',
+                //             alertInfos: [{
+                //                 text: '喷漆操作、系统运转会产生较高分贝的噪声',
+                //                 solutionName: '听力防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_zy.png',
+                //             spotArray: ['tzcj_zaoyin1'],
+                //         },
+                //         {
+                //             name: '油漆',
+                //             btn: 'assets/img/btn_youqi.png',
+                //             btnActive: 'assets/img/btn_youqi_on.png',
+                //             alertInfos: [{
+                //                 text: '油漆中含有可能危害皮肤的溶剂，皮肤长期接触漆雾可能会造成皮肤损伤、神经系统损伤或其他身体危害',
+                //                 solutionName: '身体防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_youqi.png',
+                //             spotArray: ['tzcj_youqi1', 'tzcj_youqi2'],
+                //         },
+                //     ],
+                // },
+                // {
+                //     name: '总装车间',
+                //     previewImg: 'assets/img/scene_zongzhuangchejian.png',
+                //     tour: 'tour5.xml?v20231211',
+                //     startScene: 'scene_5',
+                //     alertList: [
+                //         {
+                //             name: '颗粒物',
+                //             btn: 'assets/img/btn_keliwu.png',
+                //             btnActive: 'assets/img/btn_keliwu_on.png',
+                //             alertInfos: [{
+                //                 text: '某些岗位在装配过程中，可能会产生金属粉尘等颗粒物危害',
+                //                 solutionName: '呼吸防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_fc.png',
+                //             spotArray: ['zzcj_keliwu1', 'zzcj_keliwu2', 'zzcj_keliwu3'],
+                //         },
+                //         {
+                //             name: '有机蒸气',
+                //             btn: 'assets/img/btn_zhengqi.png?v20230817',
+                //             btnActive: 'assets/img/btn_zhengqi_on.png',
+                //             alertInfos: [{
+                //                 text: '总装时使用的溶剂或胶粘剂会挥发产生有毒有害蒸气',
+                //                 solutionName: '呼吸防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_zhengqi.png?v20230817',
+                //             spotArray: ['zzcj_zhengqi1'],
+                //         },
+                //         {
+                //             name: '噪音',
+                //             btn: 'assets/img/btn_zy.png',
+                //             btnActive: 'assets/img/btn_zy_on.png',
+                //             alertInfos: [{
+                //                 text: '设备、工具运转及组装过程中会产生较高分贝的噪声',
+                //                 solutionName: '听力防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_zy.png',
+                //             spotArray: ['zzcj_zaoyin1', 'zzcj_zaoyin2', 'zzcj_zaoyin3'],
+                //         },
+                //         {
+                //             name: '冲击物',
+                //             btn: 'assets/img/btn_cjw.png',
+                //             btnActive: 'assets/img/btn_cjw_on.png',
+                //             alertInfos: [{
+                //                 text: '使用电动工具、气动工具组装过程中，可能产生高速冲击的金属碎屑',
+                //                 solutionName: '眼面防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_cjw.png',
+                //             spotArray: ['zzcj_cjw1', 'zzcj_cjw2', 'zzcj_cjw3'],
+                //         },
+                //     ],
+                // },
+                // {
+                //     name: '动力总成',
+                //     previewImg: 'assets/img/scene_donglizongcheng.png',
+                //     tour: 'tour6.xml?v20231211',
+                //     startScene: 'scene_6',
+                //     alertList: [
+                //         {
+                //             name: '颗粒物',
+                //             btn: 'assets/img/btn_keliwu.png',
+                //             btnActive: 'assets/img/btn_keliwu_on.png',
+                //             alertInfos: [{
+                //                 text: '零部件生产或组装过程中，会产生金属粉尘等颗粒物危害',
+                //                 solutionName: '呼吸防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_fc.png',
+                //             spotArray: ['dlzc_keliwu1'],
+                //         },
+                //         {
+                //             name: '噪音',
+                //             btn: 'assets/img/btn_zy.png',
+                //             btnActive: 'assets/img/btn_zy_on.png',
+                //             alertInfos: [{
+                //                 text: '设备、工具运转及组装过程中会产生较高分贝的噪声',
+                //                 solutionName: '听力防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_zy.png',
+                //             spotArray: ['dlzc_zaoyin1'],
+                //         },
+                //         {
+                //             name: '冲击物',
+                //             btn: 'assets/img/btn_cjw.png',
+                //             btnActive: 'assets/img/btn_cjw_on.png',
+                //             alertInfos: [{
+                //                 text: '使用电动工具、气动工具组装过程中，可能产生高速冲击的金属碎屑',
+                //                 solutionName: '眼面防护',
+                //             }],
+                //             alertBoxIcon: 'assets/img/icon_cjw.png',
+                //             spotArray: ['dlzc_cjw1', 'dlzc_cjw2'],
+                //         },
+                //     ],
+                // },
             ],
             curAlertIndex: 0,
             curAlertList: [],
