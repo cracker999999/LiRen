@@ -6,7 +6,6 @@ const app = Vue.createApp({
     data() {
         return {
             isConfigLoaded: false,
-            productConfig: [],
             is720: true,
             currentProduct: 0,
             showChangeColor: false, //默认值取第一个产品

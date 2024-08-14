@@ -98,6 +98,8 @@
             <div class="control-top">
                 <span class="top-title" v-cloak>{{sceneList[sceneIndex].name}}</span>
             </div>
+
+            <!-- 右侧竖排按扭 -->
             <div class="control-right">
                 <div class="right-btn-img" v-cloak v-for="(item, index) in curAlertList" :key="index"
                      :style="{backgroundImage: `url(${index === alertIndex ? item.btnActive : item.btn})`}"
@@ -110,6 +112,7 @@
             </div>
 
             <div class="control-bottom">
+                <!-- 场景预览 -->
                 <div class="scene-select-box" v-show="showScenePreview" v-cloak>
                     <div class="scene-preview-list swiper-container scenePreviewSwiper">
                         <div class="swiper-wrapper">
@@ -124,6 +127,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 解决方案 -->
                 <div class="bottom-option-box flex flex-hc flex-v-stretch">
                     <div class="scene-select-btn flex-column flex-vc flex-hc"
                          :class="{active: showScenePreview}" v-cloak

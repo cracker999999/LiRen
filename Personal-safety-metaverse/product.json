@@ -13,7 +13,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "3D制造"
+        "solution": "3D制造",
+        "productType": ""
     },
     {
         "productName": "Fitshape 3D打印机",
@@ -29,7 +30,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "3D制造"
+        "solution": "3D制造",
+        "productType": ""
     },
     {
         "productName": "验配套装",
@@ -45,7 +47,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "验配,验配耳镜,产品供应"
+        "solution": "验配,市场,产品供应",
+        "productType": "验配耳镜"
     },
     {
         "productName": "大号耳朵解剖模型",
@@ -61,7 +64,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "解剖模型,陈列道具,市场用具"
+        "solution": "陈列道具,市场用具",
+        "productType": "解剖模型"
     },
     {
         "productName": "新款干燥饼+干燥盒",
@@ -77,7 +81,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "陈列道具,配件耗材,助听器标配产品"
+        "solution": "陈列道具,配件耗材,助听器标配产品",
+        "productType": "陈列道具,定制机,标准机"
     },
     {
         "productName": "编程器",
@@ -93,7 +98,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "验配,验配室"
+        "solution": "验配,验配室",
+        "productType": ""
     },
     {
         "productName": "助听器保养仪",
@@ -109,7 +115,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "市场,售后服务,售后"
+        "solution": "市场,售后服务,售后",
+        "productType": "助听器清洁产品"
     },
     {
         "productName": "真耳分析仪",
@@ -125,7 +132,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "生产,验配"
+        "solution": "生产,验配",
+        "productType": ""
     },
     {
         "productName": "耳镜",
@@ -141,7 +149,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "市场,耳保健检查,健康服务"
+        "solution": "市场,耳保健检查,健康服务",
+        "productType": "验配耳镜"
     },
     {
         "productName": "亚克力六耳展示架",
@@ -157,7 +166,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "市场用具,市场,陈列耗材"
+        "solution": "市场用具,市场,陈列耗材",
+        "productType": "耳展示架"
     },
     {
         "productName": "挂绳",
@@ -173,7 +183,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材,陈列耗材"
+        "solution": "配件耗材,陈列耗材",
+        "productType": "挂绳"
     },
     {
         "productName": "液晶测电器",
@@ -189,7 +200,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材,市场,陈列耗材"
+        "solution": "配件耗材,市场,陈列耗材",
+        "productType": "陈列道具,专业礼品"
     },
     {
         "productName": "电子干燥器",
@@ -205,7 +217,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材,市场"
+        "solution": "配件耗材,市场",
+        "productType": "陈列道具,助听器清洁产品"
     },
     {
         "productName": "开放式耳塞",
@@ -221,7 +234,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材,陈列耗材,"
+        "solution": "配件耗材,陈列耗材,",
+        "productType": "陈列道具"
     },
     {
         "productName": "助听器分析仪",
@@ -237,7 +251,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "售后服务"
+        "solution": "售后服务",
+        "productType": ""
     },
     {
         "productName": "光固化机",
@@ -253,7 +268,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "生产,手工制作耳膜,科研场景"
+        "solution": "生产,手工制作耳膜,科研场景",
+        "productType": "实验室技术研发"
     },
     {
         "productName": "蓝色大号耳朵展示架",
@@ -269,7 +285,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "市场,陈列道具,市场用具"
+        "solution": "市场,陈列道具,市场用具",
+        "productType": "大耳展示架"
     },
     {
         "productName": "检耳镜",
@@ -285,7 +302,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "市场,健康服务,验配"
+        "solution": "市场,健康服务,验配",
+        "productType": "验配耳镜"
     },
     {
         "productName": "磁铁钢针刷",
@@ -301,7 +319,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "助听器标配产品"
+        "solution": "助听器标配产品",
+        "productType": "定制机,标准机"
     },
     {
         "productName": "气孔通杆",
@@ -317,7 +336,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "助听器标配产品"
+        "solution": "助听器标配产品",
+        "productType": "定制机,标准机"
     },
     {
         "productName": "一体化工作台",
@@ -333,7 +353,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "耳保健检查"
+        "solution": "耳保健检查",
+        "productType": ""
     },
     {
         "productName": "诊疗椅",
@@ -349,7 +370,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "耳保健检查"
+        "solution": "耳保健检查",
+        "productType": ""
     },
     {
         "productName": "声场",
@@ -365,7 +387,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "声场测试,言语测试"
+        "solution": "声场测试,言语测试",
+        "productType": ""
     },
     {
         "productName": "声级计",
@@ -381,7 +404,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "声场测试,言语测试,VRA测试"
+        "solution": "声场测试,言语测试,VRA测试",
+        "productType": ""
     },
     {
         "productName": "视觉强化",
@@ -397,7 +421,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "健康服务,VRA测试"
+        "solution": "健康服务,VRA测试",
+        "productType": ""
     },
     {
         "productName": "声阻抗",
@@ -413,7 +438,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "声阻抗测试"
+        "solution": "声阻抗测试",
+        "productType": ""
     },
     {
         "productName": "助听器效果演示仪",
@@ -429,7 +455,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "客观检测,验配室,产品供应,验配"
+        "solution": "客观检测,验配室,产品供应,验配",
+        "productType": ""
     },
     {
         "productName": "超声波清洗机",
@@ -445,7 +472,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "售后,售后服务"
+        "solution": "售后,售后服务",
+        "productType": ""
     },
     {
         "productName": "Z型展示架",
@@ -461,7 +489,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "陈列道具"
+        "solution": "陈列道具",
+        "productType": ""
     },
     {
         "productName": "真空护理仪",
@@ -477,10 +506,11 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材"
+        "solution": "配件耗材",
+        "productType": ""
     },
     {
-        "productName": "硬耳模材料",
+        "productName": "硬耳膜材料",
         "id": "45",
         "desc": "液态光固化材料，用于制作助听器硬耳模、定制音乐耳机外壳等。\n材质对人体安全无刺激，制成品性能稳定，得到国内外客户一致。\n口碑好评，是耳模实验室常备的材料。\n制成品通过后期处理（亮漆、打磨），使产品水晶般晶莹剔透。",
         "url": "http://www.soundlink.com.cn/products/Matching3/243.html",
@@ -493,7 +523,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "手工制作耳膜,科研场景"
+        "solution": "手工制作耳膜,科研场景",
+        "productType": "实验室技术研发"
     },
     {
         "productName": "喇叭单元",
@@ -509,7 +540,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "产品"
+        "solution": "产品",
+        "productType": ""
     },
     {
         "productName": "清洁护理套装",
@@ -525,7 +557,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "售后服务,市场"
+        "solution": "售后服务,市场",
+        "productType": "助听器清洁产品"
     },
     {
         "productName": "定制款隔声室",
@@ -541,7 +574,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "纯音测试,声场测试,言语测试,VRA测试,产品供应,测听"
+        "solution": "纯音测试,声场测试,言语测试,VRA测试,产品供应,测听",
+        "productType": ""
     },
     {
         "productName": "移动听力车",
@@ -557,7 +591,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": ""
+        "solution": "",
+        "productType": ""
     },
     {
         "productName": "听力保护器",
@@ -573,7 +608,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "定制式耳塞"
+        "solution": "定制式耳塞",
+        "productType": ""
     },
     {
         "productName": "听能保养包",
@@ -589,7 +625,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "健康服务"
+        "solution": "健康服务",
+        "productType": ""
     },
     {
         "productName": "助听器服务工具盒",
@@ -605,7 +642,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "售后服务,售后"
+        "solution": "售后服务,售后",
+        "productType": ""
     },
     {
         "productName": "电池",
@@ -621,7 +659,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材"
+        "solution": "配件耗材",
+        "productType": "陈列道具"
     },
     {
         "productName": "防耳垢网罩",
@@ -637,7 +676,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材,助听器标配产品"
+        "solution": "配件耗材,助听器标配产品",
+        "productType": "陈列道具,定制机"
     },
     {
         "productName": "技工桌",
@@ -653,7 +693,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "生产,售后"
+        "solution": "生产,售后",
+        "productType": ""
     },
     {
         "productName": "压力锅",
@@ -669,7 +710,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "手工制作耳膜,生产,科研场景"
+        "solution": "手工制作耳膜,生产,科研场景",
+        "productType": "实验室技术研发"
     },
     {
         "productName": "BTE三件套",
@@ -685,7 +727,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "助听器标配产品"
+        "solution": "助听器标配产品",
+        "productType": "标准机"
     },
     {
         "productName": "软耳塞",
@@ -701,7 +744,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材"
+        "solution": "配件耗材",
+        "productType": "陈列道具"
     },
     {
         "productName": "耳声发射",
@@ -717,7 +761,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "耳声发射测试"
+        "solution": "耳声发射测试",
+        "productType": ""
     },
     {
         "productName": "手钻",
@@ -733,10 +778,11 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "售后,手工制作耳膜"
+        "solution": "售后,手工制作耳膜",
+        "productType": ""
     },
     {
-        "productName": "软耳模材料",
+        "productName": "软耳膜材料",
         "id": "62",
         "desc": "德国进口材料，用于制作BTE助听器软耳模，制成品柔软度好，韧性度高，表面光泽度显著，佩戴舒适。 常温20min即可全部成型凝固（压力锅中可加速凝固），适合小批量以及对时间有快速要求的工作需要(注射时间需要控制在90S内)，适用于一次成型及二次成型制作工艺。",
         "url": "http://www.soundlink.com.cn/products/Matching3/502.html",
@@ -749,7 +795,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "手工制作耳膜,科研场景"
+        "solution": "手工制作耳膜,科研场景",
+        "productType": "实验室技术研发"
     },
     {
         "productName": "包装盒",
@@ -765,7 +812,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "助听器标配产品,产品"
+        "solution": "助听器标配产品,产品",
+        "productType": "定制机"
     },
     {
         "productName": "适配型耳塞",
@@ -781,7 +829,8 @@
         "modelType": "glb",
         "attr1": "",
         "is720": true,
-        "solution": "配件耗材,适配型耳塞"
+        "solution": "配件耗材,适配型耳塞",
+        "productType": "陈列道具"
     },
     {
         "productName": "睡眠耳塞",
@@ -797,7 +846,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "适配型耳塞"
+        "solution": "适配型耳塞",
+        "productType": ""
     },
     {
         "productName": "游泳耳塞",
@@ -813,7 +863,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "适配型耳塞"
+        "solution": "适配型耳塞",
+        "productType": ""
     },
     {
         "productName": "公路耳塞",
@@ -829,7 +880,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "适配型耳塞"
+        "solution": "适配型耳塞",
+        "productType": ""
     },
     {
         "productName": "阅读耳塞",
@@ -845,7 +897,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "适配型耳塞"
+        "solution": "适配型耳塞",
+        "productType": ""
     },
     {
         "productName": "旅行耳塞",
@@ -861,7 +914,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "适配型耳塞"
+        "solution": "适配型耳塞",
+        "productType": ""
     },
     {
         "productName": "音乐耳塞",
@@ -877,7 +931,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "适配型耳塞"
+        "solution": "适配型耳塞",
+        "productType": ""
     },
     {
         "productName": "3D耳膜设计",
@@ -893,7 +948,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "生产设计"
+        "solution": "生产设计",
+        "productType": ""
     },
     {
         "productName": "3D后处理",
@@ -909,7 +965,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "3D制造,产品"
+        "solution": "3D制造,产品",
+        "productType": ""
     },
     {
         "productName": "3D制程培训",
@@ -925,7 +982,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "培训"
+        "solution": "培训",
+        "productType": ""
     },
     {
         "productName": "听力计",
@@ -941,7 +999,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "测听,纯音测试,声场测试,言语测试,VRA测试,健康服务"
+        "solution": "测听,纯音测试,声场测试,言语测试,VRA测试,健康服务",
+        "productType": ""
     },
     {
         "productName": "单耳展示架",
@@ -957,7 +1016,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": "耳展示架"
     },
     {
         "productName": "高透加厚人头展架",
@@ -973,7 +1033,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": "耳展示架"
     },
     {
         "productName": "四耳展示架",
@@ -989,7 +1050,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": "耳展示架"
     },
     {
         "productName": "五耳展示架",
@@ -1005,7 +1067,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": "耳展示架"
     },
     {
         "productName": "亚克力人头展示架",
@@ -1021,7 +1084,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": "耳展示架"
     },
     {
         "productName": "亚克力异形展示座",
@@ -1037,7 +1101,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": "耳展示架"
     },
     {
         "productName": "圆柱形单耳展架",
@@ -1053,7 +1118,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场用具,市场,展示架"
+        "solution": "市场用具,市场,展示架",
+        "productType": ""
     },
     {
         "productName": "测电笔",
@@ -1069,7 +1135,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "市场"
+        "solution": "市场",
+        "productType": "专业礼品"
     },
     {
         "productName": "OAE设备",
@@ -1085,7 +1152,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "耳声发射测试"
+        "solution": "耳声发射测试",
+        "productType": ""
     },
     {
         "productName": "ABR/ASSR设备",
@@ -1101,7 +1169,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "客观检测"
+        "solution": "客观检测",
+        "productType": ""
     },
     {
         "productName": "诊疗床",
@@ -1117,7 +1186,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "客观检测"
+        "solution": "客观检测",
+        "productType": ""
     },
     {
         "productName": "NOAH平台",
@@ -1133,7 +1203,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "客观检测"
+        "solution": "客观检测",
+        "productType": ""
     },
     {
         "productName": "声管耗材",
@@ -1149,7 +1220,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "配件耗材,产品"
+        "solution": "配件耗材,产品",
+        "productType": ""
     },
     {
         "productName": "验配培训",
@@ -1165,7 +1237,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "培训"
+        "solution": "培训",
+        "productType": ""
     },
     {
         "productName": "验配师资质考核",
@@ -1181,7 +1254,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "培训"
+        "solution": "培训",
+        "productType": ""
     },
     {
         "productName": "3D制程培训",
@@ -1197,7 +1271,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "培训"
+        "solution": "培训",
+        "productType": ""
     },
     {
         "productName": "手工培训",
@@ -1213,7 +1288,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "培训"
+        "solution": "培训",
+        "productType": ""
     },
     {
         "productName": "焊线",
@@ -1229,7 +1305,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "产品"
+        "solution": "产品",
+        "productType": ""
     },
     {
         "productName": "钻头",
@@ -1245,7 +1322,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "手工制作耳膜,科研场景"
+        "solution": "手工制作耳膜,科研场景",
+        "productType": "实验室技术研发"
     },
     {
         "productName": "代加工生产",
@@ -1261,7 +1339,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "生产设计"
+        "solution": "生产设计",
+        "productType": ""
     },
     {
         "productName": "工程降噪",
@@ -1277,7 +1356,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": ""
+        "solution": "",
+        "productType": ""
     },
     {
         "productName": "助听器",
@@ -1293,10 +1373,11 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "产品供应"
+        "solution": "产品供应",
+        "productType": ""
     },
     {
-        "productName": "培训体制",
+        "productName": "培训体系",
         "id": "97",
         "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
         "url": "",
@@ -1309,7 +1390,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "教培场景"
+        "solution": "教培场景",
+        "productType": "人员资质培训及考核"
     },
     {
         "productName": "资质考核",
@@ -1325,7 +1407,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "教培场景"
+        "solution": "教培场景",
+        "productType": "人员资质培训及考核"
     },
     {
         "productName": "BTE棉布保护套",
@@ -1341,7 +1424,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "配件耗材,挂绳"
+        "solution": "配件耗材,挂绳",
+        "productType": "挂绳"
     },
     {
         "productName": "儿童生肖挂绳",
@@ -1357,7 +1441,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "配件耗材,挂绳"
+        "solution": "配件耗材,挂绳",
+        "productType": "挂绳"
     },
     {
         "productName": "耳背机挂绳单耳",
@@ -1373,7 +1458,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "配件耗材,挂绳"
+        "solution": "配件耗材,挂绳",
+        "productType": "挂绳"
     },
     {
         "productName": "耳背机挂绳双耳",
@@ -1389,7 +1475,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "配件耗材,挂绳"
+        "solution": "配件耗材,挂绳",
+        "productType": "挂绳"
     },
     {
         "productName": "硅胶防丢挂绳",
@@ -1405,7 +1492,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "配件耗材,挂绳"
+        "solution": "配件耗材,挂绳",
+        "productType": "挂绳"
     },
     {
         "productName": "定制式睡眠耳塞",
@@ -1421,7 +1509,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "定制式耳塞"
+        "solution": "定制式耳塞",
+        "productType": ""
     },
     {
         "productName": "定制式游泳耳塞",
@@ -1437,7 +1526,8 @@
         "modelType": "",
         "attr1": "",
         "is720": false,
-        "solution": "定制式耳塞"
+        "solution": "定制式耳塞",
+        "productType": ""
     },
     {
         "productName": "所有培训一样",
@@ -1453,7 +1543,8 @@
         "modelType": "",
         "attr1": "",
         "is720": "",
-        "solution": ""
+        "solution": "",
+        "productType": ""
     },
     {
         "productName": "所有资质考核一样",
@@ -1469,6 +1560,7 @@
         "modelType": "",
         "attr1": "",
         "is720": "",
-        "solution": ""
+        "solution": "",
+        "productType": ""
     }
 ]

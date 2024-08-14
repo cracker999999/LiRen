@@ -106,11 +106,11 @@
             </div>
 
             <div class="control-top">
-                <span class="top-title" v-cloak="">{{sceneList[sceneIndex].name}}</span>
+                <span class="top-title" v-cloak>{{sceneList[sceneIndex].name}}</span>
             </div>
 
             <div class="control-right">
-                <div class="right-btn-img" v-cloak="" v-for="(item, index) in curAlertList" :key="index" 
+                <div class="right-btn-img" v-cloak v-for="(item, index) in curAlertList" :key="index" 
                     :style="{backgroundImage: `url(${index === alertIndex ? item.btnActive : item.btn})`}" 
                     :data-name="item.name" 
                     @click="onAlertClick(index)"></div>
@@ -122,11 +122,11 @@
             </div>
 
             <div class="control-bottom">
-                <div class="scene-select-box" v-show="showScenePreview" v-cloak="">
+                <div class="scene-select-box" v-show="showScenePreview" v-cloak>
                     <div class="scene-preview-list swiper-container scenePreviewSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide preview-box" v-for="(item, index) in sceneList" :key="index" 
-                                :class="{active: index === sceneIndex}" v-cloak="" 
+                                :class="{active: index === sceneIndex}" v-cloak 
                                 @click="onSceneClick(index)">
                                 <div class="preview-content">
                                     <img :src="item.previewImg" alt="" class="img-preview">
@@ -138,7 +138,7 @@
                 </div>
                 <div class="bottom-option-box flex flex-hc flex-v-stretch">
                     <div class="scene-select-btn flex-column flex-vc flex-hc" 
-                        :class="{active: showScenePreview}" v-cloak="" 
+                        :class="{active: showScenePreview}" v-cloak 
                         @click="onScenePreviewClick()">
                         <img src="assets/img/icon_scene.png" alt="" class="icon">
                         <span>场景选择</span>
@@ -146,10 +146,10 @@
                     <ul class="solution-list flex flex-vc flex-hc">
                         <li class="item flex-column flex-vc flex-hc" 
                             v-for="(item, index) in curSolutionList" :key="index" 
-                            :class="{active: index === curSolutionIndex }" v-cloak="" 
+                            :class="{active: index === curSolutionIndex }" v-cloak 
                             @click="onClickSolution(index)">
-                            <img :src="item.solutionIcon" alt="" class="solution-btn" v-cloak="">
-                            <div class="solution-name" v-cloak="">{{item.solutionName}}</div>
+                            <img :src="item.solutionIcon" alt="" class="solution-btn" v-cloak>
+                            <div class="solution-name" v-cloak>{{item.solutionName}}</div>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +157,7 @@
         </div>
 
         <!--危害弹框-->
-        <div class="alert-box" v-if="showAlertBox" v-cloak="">
+        <div class="alert-box" v-if="showAlertBox" v-cloak>
             <div class="box">
                 <div class="box-content">
                     <div class="btn-close" @click="closeAlertBox">X</div>
@@ -186,7 +186,7 @@
         </div>
 
         <!--产品弹框-->
-        <div class="modal-container modal-3d flex flex-vc flex-hc animated fadeIn" v-show="showProductModal" v-cloak="">
+        <div class="modal-container modal-3d flex flex-vc flex-hc animated fadeIn" v-show="showProductModal" v-cloak>
             <div class="modal-body animated slideInRight">
                 <div class="modal-content">
                     <div class="modal-title" v-if="curAlertList.length > 0">
@@ -199,7 +199,7 @@
                         <div class="right">
                             <div class="product-list swiper-container productListSwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-no-swiping" v-for="(item, index) in curProductList" :key="index" v-cloak="">
+                                    <div class="swiper-slide swiper-no-swiping" v-for="(item, index) in curProductList" :key="index" v-cloak>
                                         <div class="product-box flex flex-vc flex-hc">
                                             <div class="product-img" v-if="item.product360 == null">
                                                 <img :src="item.img" alt="" class="w-100">
@@ -238,7 +238,7 @@
                             <div class="product-preview-list">
                                 <div class="swiper-container productPreviewSwiper">
                                     <div class="swiper-wrapper flex flex-vc">
-                                        <div class="swiper-slide product-item" :class="{active: index === curProductIndex}" v-for="(item, index) in curProductList" :key="index" v-cloak="" @click="onProductClick(index)">
+                                        <div class="swiper-slide product-item" :class="{active: index === curProductIndex}" v-for="(item, index) in curProductList" :key="index" v-cloak @click="onProductClick(index)">
                                             <div class="product-img">
                                                 <img :src="item.thumbImg" alt="" class="w-100">
                                             </div>
@@ -271,7 +271,7 @@
     </div>
 
     <!--操作指示-->
-    <div class="instruction-container pc-show flex flex-vc flex-hc instructionContainer" v-cloak="" v-if="showInstruction">
+    <div class="instruction-container pc-show flex flex-vc flex-hc instructionContainer" v-cloak v-if="showInstruction">
         <img src="../images/instruction.png" alt="" class="instruction-img">
     </div>
 
