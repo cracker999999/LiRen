@@ -37,14 +37,14 @@
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../../Content/js/loadingJs.js" id="main" data-baseurl="../../" data-main="../js/http.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTPS8DHXHH"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTPS8DHXHH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-RTPS8DHXHH');
-    </script>
+    </script> -->
 </head>
 <body class="bg-cover" style="background-image: url('images/bg.png')">
 
@@ -54,60 +54,67 @@
         <img src="images/icon_back.png" alt="" class="icon-back">
         <span>返回</span>
     </a>
-    <div class="control-right-top mobile-show">
 
-        <div class="flex flex-vc flex-hc">
-            <button class="btn-detail" onclick="showProductDescription()"></button>
+    <div v-if="isConfigLoaded">
+        <div class="control-right-top mobile-show">
+            <div class="flex flex-vc flex-hc">
+                <button class="btn-detail" onclick="showProductDescription()"></button>
+            </div>
         </div>
+    
+        <div class="product-wrap flex flex-vc flex-hc">
+            <div class="product-container flex flex-vc flex-hc" id="productContainer">
+                <div class="w-100 h-100 product720Box" v-show="is720">
+                    <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
+                        <iframe id="childFrame" :src="productList[currentProduct].loadFrame + '?model=' + productList[currentProduct].modelName + '&anim=' + productList[currentProduct].animation + '&trans=' + productList[currentProduct].transparent + '&color=' + productList[currentProduct].changeColor + '&type=' + productList[currentProduct].modelType" 
+                            frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                    </div>
+                </div>
+                <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
+                    <div class="spinner flex-column flex-vc flex-hc">
+                        <img src="map/loading.gif">
+                        <span>0%</span>
+                    </div>
+                    <div class="threesixty product1">
+                        <ol class="threesixty_images"></ol>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product-description">
+                <div class="top flex flex-v-start flex-bt">
+                <div class="product-name">{{productList[currentProduct].productName}} {{productList[currentProduct].modelName}}</div>
+                    <i class="iconfont icon-close mc" onclick="showProductDescription()"></i>
+                </div>
+                <div class="p text-content">
+                    {{productList[currentProduct].desc}}
+                </div>
+                <div class="p text-content margin-top-sm">
+                    <a :href="productList[currentProduct].url" class="text-white text-underline" target="_blank">去商城看看 >></a>
+                </div>
+            </div>
+            <div class="icon-rotate"><span>720°</span></div>
+        </div>
+    
+        <!--产品预览图-->
+        <div class="product-thum-swiper swiper-container productThumSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in productList.filter(item => item.is720)" :key="index"
+                     data-title="创新空间" data-name="创新空间-切换产品类型" :data-attr1="item.productName" :data-attr2="item.attr1"
+                     :class="{active: index === currentProduct}"
+                     @click="onClickProduct(index)">
+                    <div class="thum-img">
+                        <img :src="item.img" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <div class="product-wrap flex flex-vc flex-hc">
-        <div class="product-container flex flex-vc flex-hc" id="productContainer">
-            <div class="w-100 h-100 product720Box" v-show="is720">
-                <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
-                    <iframe id="childFrame" :src="productList[currentProduct].loadFrame + '?model=' + productList[currentProduct].modelName + '&anim=' + productList[currentProduct].animation + '&trans=' + productList[currentProduct].transparent + '&color=' + productList[currentProduct].changeColor + '&type=' + productList[currentProduct].modelType" 
-                        frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
-                </div>
-            </div>
-            <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
-                <div class="spinner flex-column flex-vc flex-hc">
-                    <img src="map/loading.gif">
-                    <span>0%</span>
-                </div>
-                <div class="threesixty product1">
-                    <ol class="threesixty_images"></ol>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-description">
-            <div class="top flex flex-v-start flex-bt">
-            <div class="product-name">{{productList[currentProduct].productName}} {{productList[currentProduct].modelName}}</div>
-                <i class="iconfont icon-close mc" onclick="showProductDescription()"></i>
-            </div>
-            <div class="p text-content">
-                {{productList[currentProduct].desc}}
-            </div>
-            <div class="p text-content margin-top-sm">
-                <a :href="productList[currentProduct].url" class="text-white text-underline" target="_blank">去看看 >></a>
-            </div>
-        </div>
-        <div class="icon-rotate"><span>720°</span></div>
+    <div v-else>
+        Loading...
     </div>
-
-    <!--产品预览图-->
-    <div class="product-thum-swiper swiper-container productThumSwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in productList.filter(item => item.is720)" :key="index"
-                 data-title="创新空间" data-name="创新空间-切换产品类型" :data-attr1="item.productName" :data-attr2="item.attr1"
-                 :class="{active: index === currentProduct}"
-                 @click="onClickProduct(index)">
-                <div class="thum-img">
-                    <img :src="item.img" alt="" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="control-right-middle flex-column flex-vc flex-hc">
         <div id="loaderOver" class="model-control-box" v-show="showAnimation">
@@ -127,12 +134,13 @@
         <button id="blueBtn" class="color-btn blue EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="蓝色" type="button">蓝</button>
         <button id="resetBtn" class="color-btn reset EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="还原" type="button">还原</button>
     </div>
-</div>
+</div><!-- app -->
 
 <script type="text/javascript" src="../dist/vue.global.min.js"></script>
+<script type="text/javascript" src="js/product.js"></script>
 <script type="text/javascript" src="../dist/swiper/js/swiper.min.js"></script>
 <script type="text/javascript" src="dist/threesixty/threesixty.min.js"></script>
-<script type="text/javascript" src="js/product.js"></script>
+
 <script type="text/javascript" src="../dist/current-device.min.js"></script>
 <script type="text/javascript" src="../dist/devicePixelRatio.js"></script>
 
@@ -143,9 +151,9 @@
 
 <script type="text/javascript">
 
-    var productSwiper = new Swiper('.productThumSwiper', {
-        slidesPerView: 'auto',
-    });
+    // var productSwiper = new Swiper('.productThumSwiper', {
+    //     slidesPerView: 'auto',
+    // });
 
     $(".product-thum").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
@@ -195,40 +203,44 @@
             $(".product-description").fadeOut();
         }
     }
+    
+    //product.js call this
+    window.initBtns = function() {
+        //监听子页面按钮
+        const parentBtnPos = document.querySelector("#btnPos");
+        const parentBtnBos = document.querySelector("#btnBos");
+        const parentBtnRed = document.querySelector("#redBtn");
+        const parentBtnGreen = document.querySelector("#greenBtn");
+        const parentBtnBlue = document.querySelector("#blueBtn");
+        const parentBtnReset = document.querySelector("#resetBtn");
 
-    //监听子页面按钮
-    const parentBtnPos = document.querySelector("#btnPos");
-    const parentBtnBos = document.querySelector("#btnBos");
-    const parentBtnRed = document.querySelector("#redBtn");
-    const parentBtnGreen = document.querySelector("#greenBtn");
-    const parentBtnBlue = document.querySelector("#blueBtn");
-    const parentBtnReset = document.querySelector("#resetBtn");
-
-    const childFrame = document.querySelector("#childFrame");
-    parentBtnPos.addEventListener('click', ()=>{
-        const childBtn = childFrame.contentWindow.document.querySelector("#aa");
-        childBtn.click();
-    });
-    parentBtnBos.addEventListener('click', ()=>{
-        const childBtn = childFrame.contentWindow.document.querySelector("#bb");
-        childBtn.click();
-    });
-    parentBtnRed.addEventListener('click', ()=>{
-        const childBtn = childFrame.contentWindow.document.querySelector("#setRed");//id
-        childBtn.click();
-    });
-    parentBtnGreen.addEventListener('click', ()=>{
-        const childBtn = childFrame.contentWindow.document.querySelector("#setGreen");//id
-        childBtn.click();
-    });
-    parentBtnBlue.addEventListener('click', ()=>{
-        const childBtn = childFrame.contentWindow.document.querySelector("#setBlue");//id
-        childBtn.click();
-    });
-    parentBtnReset.addEventListener('click', ()=>{
-        const childBtn = childFrame.contentWindow.document.querySelector("#reset");//id
-        childBtn.click();
-    });
+        const childFrame = document.querySelector("#childFrame");
+        
+        parentBtnPos.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#aa");
+            childBtn.click();
+        });
+        parentBtnBos.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#bb");
+            childBtn.click();
+        });
+        parentBtnRed.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#setRed");//id
+            childBtn.click();
+        });
+        parentBtnGreen.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#setGreen");//id
+            childBtn.click();
+        });
+        parentBtnBlue.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#setBlue");//id
+            childBtn.click();
+        });
+        parentBtnReset.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#reset");//id
+            childBtn.click();
+        });
+    }
 
 </script>
 

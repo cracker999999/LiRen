@@ -43,14 +43,26 @@ function toJumpPageEvent(event, callback) {
     typeof addPageEvent == 'function' && addPageEvent(title, name, attr1, attr2, callback);//页面日志
 }
 
-$(function () {
+// $(function () {
+//     var pageSearch = '';
+//     var shareTitle = '3M个人安全防护元宇宙';
+//     var shareDesc = '创新空间';
+//     typeof changeURLStatic == 'function' && changeURLStatic(pageSearch, shareTitle, shareDesc);
+    
+//     initClick();
+//     initCanvasListener();
+// });
+
+//product.js call this
+window.initEvent = function() {
     var pageSearch = '';
     var shareTitle = '3M个人安全防护元宇宙';
     var shareDesc = '创新空间';
     typeof changeURLStatic == 'function' && changeURLStatic(pageSearch, shareTitle, shareDesc);
+    
     initClick();
     initCanvasListener();
-});
+}
 
 function initCanvasListener() {
 
