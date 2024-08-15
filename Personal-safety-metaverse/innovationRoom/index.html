@@ -66,7 +66,7 @@
             <div class="product-container flex flex-vc flex-hc" id="productContainer">
                 <div class="w-100 h-100 product720Box" v-show="is720">
                     <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
-                        <iframe id="childFrame" :src="productList[currentProduct].loadFrame + '?model=' + productList[currentProduct].modelName + '&anim=' + productList[currentProduct].animation + '&trans=' + productList[currentProduct].transparent + '&color=' + productList[currentProduct].changeColor + '&type=' + productList[currentProduct].modelType" 
+                        <iframe id="childFrame" :src="'720Modal/3D.html' + '?model=' + productList[currentProduct].modelName + '&anim=' + productList[currentProduct].animation + '&trans=' + productList[currentProduct].transparent + '&color=' + productList[currentProduct].changeColor + '&type=' + productList[currentProduct].modelType" 
                             frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
                     </div>
                 </div>
