@@ -59,7 +59,7 @@ const app = Vue.createApp({
                 //选矿
                 {
                     name: '耳保健检查',
-                    previewImg: 'assets/img/scene_xuankuang.png?v20230222',
+                    previewImg: '../scene_preview/scene_erbaojianjiancha.png?v20230222',
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0',
                     alertList: [
@@ -98,7 +98,7 @@ const app = Vue.createApp({
                 //烧结
                 {
                     name: '听力检查',
-                    previewImg: 'assets/img/scene_shaojie.png?v20230222',
+                    previewImg: '../scene_preview/scene_tinglijiancha.png?v20230222',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1',
                     alertList: [
@@ -147,7 +147,7 @@ const app = Vue.createApp({
                 //焦化
                 {
                     name: 'ABR/ASSR测试',
-                    previewImg: 'assets/img/scene_jiaohua.png?v20230222',
+                    previewImg: '../scene_preview/scene_abrassrceshi.png?v20230222',
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2',
                     alertList: [
@@ -196,7 +196,7 @@ const app = Vue.createApp({
                 //炼铁
                 {
                     name: '验配',
-                    previewImg: 'assets/img/scene_liantie.png?v20230222',
+                    previewImg: '../scene_preview/scene_yanpei.png?v20230222',
                     tour: 'tour3.xml?v20231211',
                     startScene: 'scene_3',
                     alertList: [
@@ -235,7 +235,7 @@ const app = Vue.createApp({
                 //炼钢
                 {
                     name: '售后服务',
-                    previewImg: 'assets/img/scene_liangang.png?v20230222',
+                    previewImg: '../scene_preview/scene_shouhoufuwu.png?v20230222',
                     tour: 'tour4.xml?v20231211',
                     startScene: 'scene_4',
                     alertList: [
@@ -284,7 +284,7 @@ const app = Vue.createApp({
                 //轧钢
                 {
                     name: '陈列耗材',
-                    previewImg: 'assets/img/scene_zhagang.png?v20230222',
+                    previewImg: '../scene_preview/scene_chenliehaocai.png?v20230222',
                     tour: 'tour5.xml?v20231211',
                     startScene: 'scene_5',
                     alertList: [
@@ -333,7 +333,7 @@ const app = Vue.createApp({
                 //耳模制作
                 {
                     name: '耳模制作',
-                    previewImg: 'assets/img/scene_zhagang.png?v20230222',
+                    previewImg: '../scene_preview/scene_ermozhizuo.png?v20230222',
                     tour: 'tour6.xml?v20231211',
                     startScene: 'scene_6',
                     alertList: [
@@ -382,7 +382,7 @@ const app = Vue.createApp({
                 //移动测听车服务场景
                 {
                     name: '移动测听车服务场景',
-                    previewImg: 'assets/img/scene_zhagang.png?v20230222',
+                    previewImg: '../scene_preview/scene_yidongcetingchefuwuchangjing.png?v20230222',
                     tour: 'tour7.xml?v20231211',
                     startScene: 'scene_7',
                     alertList: [
@@ -431,7 +431,7 @@ const app = Vue.createApp({
                 //验配培训及资质考核
                 {
                     name: '验配培训及资质考核',
-                    previewImg: 'assets/img/scene_zhagang.png?v20230222',
+                    previewImg: '../scene_preview/scene_yanpeipeixunjizizhikaohe.png?v20230222',
                     tour: 'tour8.xml?v20231211',
                     startScene: 'scene_8',
                     alertList: [
