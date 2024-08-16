@@ -33,20 +33,19 @@
 		</image>
 
 		<!-- set the default view -->
-		<view hlookat="-30" hlookat.mobile="0" vlookat="0" fovtype="DFOV" fov="145" fov.mobile="90" fovmin="75" fovmax="150" distortion="0.0" />
+		<view hlookat="0" hlookat.mobile="0" vlookat="0" fovtype="DFOV" fov="145" fov.mobile="90" fovmin="75" fovmax="150" distortion="0.0" />
 		
 		<action name="add_video_sources" >
 			videointerface_addsource('6000x3000', 'https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/video/test2.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/1.video/video-3000x1500-poster.jpg');
 			videointerface_play('6000x3000');
 		</action>
 
-		<hotspot name="rczy_zaoyin1" style="skin_hotspotstyle_red" ath="7.165" atv="-4.724" onclick="show_hotspot_alert(rczy_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="rczy_zaoyin2" style="skin_hotspotstyle_red" ath="-87.674" atv="11.235" onclick="show_hotspot_alert(rczy_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="rczy_qitaiwu1" style="skin_hotspotstyle_red" ath="5.909" atv="5.149" onclick="show_hotspot_alert(rczy_qitaiwu1)" onloaded="add_all_the_time_tooltip()" text="有害气态物" />
-		<hotspot name="rczy_qitaiwu2" style="skin_hotspotstyle_red" ath="-77.563" atv="12.275" onclick="show_hotspot_alert(rczy_qitaiwu2)" onloaded="add_all_the_time_tooltip()" text="有害气态物" />
-
-		<hotspot name="rczy_feijian1" style="skin_hotspotstyle_red" ath="-0.175" atv="-4.769" onclick="show_hotspot_alert(rczy_feijian1)" onloaded="add_all_the_time_tooltip()" text="液体飞溅" />
+		<!-- 听力车 -->
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-13.8" atv="-11.5" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="测听" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="-6" atv="-11.5" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="验配" />
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="4" atv="-11.5" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="12" atv="-11.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
+		<hotspot name="solution_5" style="skin_hotspotstyle_red" ath="20" atv="-11.5" onclick="show_hotspot_alert(solution_5)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
 
 	</scene>
 

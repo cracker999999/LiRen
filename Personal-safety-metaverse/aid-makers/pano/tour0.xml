@@ -40,12 +40,17 @@
 			videointerface_play('6000x3000');
 		</action>
 
-		<hotspot name="zxh_zhuiluo1" style="skin_hotspotstyle_red" ath="-75.861" atv="-11.761" onclick="show_hotspot_alert(zxh_zhuiluo1)" onloaded="add_all_the_time_tooltip()" text="高空坠落" />
+		<!-- show_hotspot_alert: init.xml -> init.js -> pointDisplay.js -->
+		<hotspot name="product_2" style="skin_hotspotstyle_red" ath="-28.313" atv="-10" onclick="show_hotspot_alert(product_2)" onloaded="add_all_the_time_tooltip()" text="3D打印机" />
+
+		<hotspot name="product_1" style="skin_hotspotstyle_red" ath="0" atv="-10" onclick="show_hotspot_alert(product_1)" onloaded="add_all_the_time_tooltip()" text="3D扫描仪" />
+
+		<!-- <hotspot name="zxh_zhuiluo1" style="skin_hotspotstyle_red" ath="-75.861" atv="-11.761" onclick="show_hotspot_alert(zxh_zhuiluo1)" onloaded="add_all_the_time_tooltip()" text="高空坠落" />
 		<hotspot name="zxh_zhuiluo2" style="skin_hotspotstyle_red" ath="9.313" atv="-6.770" onclick="show_hotspot_alert(zxh_zhuiluo2)" onloaded="add_all_the_time_tooltip()" text="高空坠落" />
 
 		<hotspot name="zxh_qitaiwu1" style="skin_hotspotstyle_red" ath="-84.619" atv="-12.117" onclick="show_hotspot_alert(zxh_qitaiwu1)" onloaded="add_all_the_time_tooltip()" text="有害气态物" />
 
-		<hotspot name="zxh_penjian1" style="skin_hotspotstyle_red" ath="-79.072" atv="-4.710" onclick="show_hotspot_alert(zxh_penjian1)" onloaded="add_all_the_time_tooltip()" text="液体喷溅" />
+		<hotspot name="zxh_penjian1" style="skin_hotspotstyle_red" ath="-79.072" atv="-4.710" onclick="show_hotspot_alert(zxh_penjian1)" onloaded="add_all_the_time_tooltip()" text="液体喷溅" /> -->
 
 	</scene>
 

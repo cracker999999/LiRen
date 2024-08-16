@@ -2,6 +2,7 @@ var winWidth = $(window).width() || window.innerWidth || document.documentElemen
     , winHeight = $(window).height() || window.innerHeight || document.documentElement.clientHeight;
 console.log(winWidth, winHeight);
 
+//init.xml call this
 function showHotspotAlert(id, x, y, h, v, text) {
     const info = {id, x, y, h: Number(h), v: Number(v), text};
     const e = new Event("hotspot_click");

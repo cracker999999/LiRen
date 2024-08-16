@@ -60,7 +60,7 @@
     <div class="page-container page-construction zoomContainer">
         <div class="control-layer" @click="onInstructionClick">
             <div class="logo flex flex-vc flex-hc">
-                <img src="assets/img/logo.png" alt="" class="w-100">
+                <img src="../images/logo.png" alt="" class="w-100">
             </div>
 
             <a class="btn-back flex flex-vc flex-hc" href="javascript:;" @click="goBack()">
@@ -106,7 +106,7 @@
                      :data-name="item.name"
                      @click="onAlertClick(index)"></div>
 
-                <a class="btn-msg" href="https://psd-contenthub.3m.com.cn/p/9332d" target="_blank" @click="goContenthub()">
+                <a class="btn-msg" href="http://soundlink.com.cn/index.html" target="_blank" @click="goContenthub()">
                     <img src="../images/btn_msg.png?v20230721" alt="" class="w-100">
                 </a>
             </div>
@@ -167,7 +167,7 @@
                             <li class="product-item" v-for="(item, index) in curProductList.slice(0, 3)" :key="index"
                                 @click="onClickAlertProduct(index)">
                                 <div class="product-img">
-                                    <img :src="item.img" alt="" class="w-100">
+                                    <img :src="'../innovationRoom/'+item.img" alt="" class="w-100">
                                 </div>
                             </li>
                         </ul>
@@ -182,12 +182,13 @@
             <div class="modal-body animated slideInRight">
                 <div class="modal-content">
                     <div class="modal-title" v-if="curAlertList.length > 0">
-                        {{modalSceneName}}{{curAlertList[curAlertIndex].solutionName}}解决方案
+                        <!-- {{modalSceneName}} {{curAlertList[curAlertIndex].solutionName}}解决方案 -->
                     </div>
                     <div class="sub-title padding-sm text-content text-lg text-center" v-if="curAlertList.length > 0">
-                        {{curAlertList[curAlertIndex].text}}
+                        <!-- {{curAlertList[curAlertIndex].text}} -->
                     </div>
                     <div class="modal-content-bottom flex flex-hc">
+                        <!-- 产品类别 -->
                         <ul class="work-list flex-column flex-v-start" v-cloak v-show="curProductTypeList.length > 0">
                             <li class="work-item  flex flex-vc flex-hc"
                                 :key="index"
@@ -207,40 +208,46 @@
                                          v-for="(item, index) in curProductList"
                                          :key="index" v-cloak>
                                         <div class="product-box flex flex-vc flex-hc">
-                                            <div class="product-img" v-if="item.product360 == null">
-                                                <img :src="item.img" alt=""
-                                                     class="w-100">
+                                            <!-- 大图 -->
+                                            <div class="product-img" v-if="!item.is720">
+                                                <img :src="'../innovationRoom/'+item.img" alt="" class="w-100">
                                             </div>
-                                            <div class="product-img product360Box flex flex-vc flex-hc w-100 h-100 relative"
-                                                 v-else>
-                                                <div class="spinner flex-column flex-vc flex-hc">
+                                            <div class="product-img product360Box flex flex-vc flex-hc w-100 h-100 relative" v-else>
+                                                <!-- 3d -->
+                                                <div class="w-100 h-100 product720Box" v-if="index === curProductIndex">
+                                                    <iframe id="childFrame" :src="'../innovationRoom/720Modal/3D.html' + '?model=' + item.modelName + '&anim=' + item.animation + '&trans=' + item.transparent + '&color=' + item.changeColor + '&type=' + item.modelType" 
+                                                    frameborder="0" class="iframe w-100 h-100" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                                                </div>
+
+                                                <!-- <div class="spinner flex-column flex-vc flex-hc">
                                                     <img src="../innovationRoom/map/loading.gif">
                                                     <span>0%</span>
                                                 </div>
                                                 <div class="threesixty"
                                                      :class="'productImgList-' + index">
                                                     <ol class="threesixty_images"></ol>
-                                                </div>
+                                                </div> -->
                                             </div>
+                                            
+
+                                            <!-- 名字 描述 -->
                                             <div class="product-info-wrap">
                                                 <div class="product-info-box">
                                                     <div class="product-type margin-bottom-sm">
-                                                        {{item.name}}
+                                                        {{item.productName}}
                                                     </div>
                                                     <div class="product-desc margin-tb-sm text-content">
-                                                        {{item.productDesc}}
+                                                        {{item.desc}}
                                                     </div>
                                                     <ul class="product-link-list margin-top-sm">
-                                                        <li class="link-item"
-                                                            v-for="(item, index) in item.productLink"
-                                                            :key="index">
-                                                            <a :href="item.link" target="_blank" v-show="item.link"
-                                                               @click="onProductLinkClick(index)">{{item.text}}</a>
-                                                        </li>
-                                                        <li class="link-item">
+                                                        <!-- <li class="link-item" v-for="(item, index) in item.productLink" :key="index"> -->
+                                                            <a :href="item.url" target="_blank" v-show="item.url" class="text-white text-underline"
+                                                               @click="onProductLinkClick(index)">去商城看看</a>
+                                                        <!-- </li> -->
+                                                        <!-- <li class="link-item">
                                                             <a href="https://shop.m.jd.com/?shopId=84511"
-                                                               target="_blank" @click="goJD(index)">去京东看看</a>
-                                                        </li>
+                                                               target="_blank" @click="goJD(index)">去商城看看</a>
+                                                        </li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -248,6 +255,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- 小icon -->
                             <div class="product-preview-list">
                                 <div class="swiper-container productPreviewSwiper">
                                     <div class="swiper-wrapper flex flex-vc">
@@ -257,7 +265,7 @@
                                              :key="index" v-cloak
                                              @click="onProductClick(index)">
                                             <div class="product-img">
-                                                <img :src="item.img" alt="" class="w-100" style="border-radius: 50%;">
+                                                <img :src="'../innovationRoom/'+item.img" alt="" class="w-100" style="border-radius: 50%;">
                                             </div>
                                         </div>
                                     </div>

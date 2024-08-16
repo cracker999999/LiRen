@@ -33,14 +33,24 @@
 		</image>
 
 		<!-- set the default view -->
-		<view hlookat="-30" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
 		
 		<action name="add_video_sources" >
 			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/2.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/2.video/video-3000x1500-poster.jpg');
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="yjxy_jiuyuanzhuangbei1" style="skin_hotspotstyle_red" ath="-51.229" atv="-2.516" onclick="show_hotspot_alert(yjxy_jiuyuanzhuangbei1)" onloaded="add_all_the_time_tooltip()" text="应急救援装备" />
+		<hotspot name="something_1" style="skin_hotspotstyle_red" ath="-30" atv="-10" onclick="show_hotspot_alert(something_1)" onloaded="add_all_the_time_tooltip()" text="专业礼品" />
+		<hotspot name="something_2" style="skin_hotspotstyle_red" ath="-18" atv="-10" onclick="show_hotspot_alert(something_2)" onloaded="add_all_the_time_tooltip()" text="助听器清洁产品" />
+		<hotspot name="something_3" style="skin_hotspotstyle_red" ath="-1" atv="-10" onclick="show_hotspot_alert(something_3)" onloaded="add_all_the_time_tooltip()" text="助听器标配产品(标准)" />
+		<hotspot name="something_4" style="skin_hotspotstyle_red" ath="17" atv="-10" onclick="show_hotspot_alert(something_4)" onloaded="add_all_the_time_tooltip()" text="助听器标配产品(定制)" />
+		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-32" atv="12" onclick="show_hotspot_alert(product_56)" onloaded="add_all_the_time_tooltip()" text="技工桌" />
+		<hotspot name="product_57" style="skin_hotspotstyle_red" ath="17" atv="12" onclick="show_hotspot_alert(product_57)" onloaded="add_all_the_time_tooltip()" text="压力锅" />
+
+		<hotspot name="product_13" style="skin_hotspotstyle_red" ath="-130" atv="19" onclick="show_hotspot_alert(product_13)" onloaded="add_all_the_time_tooltip()" text="分析仪" />
+		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="-118" atv="15" onclick="show_hotspot_alert(product_14)" onloaded="add_all_the_time_tooltip()" text="验配耳镜" />
+		<hotspot name="product_26" style="skin_hotspotstyle_red" ath="-85" atv="16" onclick="show_hotspot_alert(product_26)" onloaded="add_all_the_time_tooltip()" text="光固化机" />
+		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-70" atv="8" onclick="show_hotspot_alert(product_12)" onloaded="add_all_the_time_tooltip()" text="助听器保养仪" />
 
 	</scene>
 
