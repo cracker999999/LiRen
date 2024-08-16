@@ -29,11 +29,11 @@
 		<!-- use the videoplayer plugin as panoramic image source -->
 		<image>
 			<!-- <sphere url="plugin:video" /> -->
-			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/tingliche.jpg" />
+			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/DaJianKangHangYeJiGou_TingLiZhongXin.jpg" />
 		</image>
 
 		<!-- set the default view -->
-		<view hlookat="-90" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+		<view hlookat="" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
 
 		<action name="add_video_sources" >
 			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/automobile/0.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/automobile/0.video/video-3000x1500-poster.jpg');
