@@ -82,3 +82,60 @@ function changeURLStatic(search, shareTitle, shareDesc) {
     console.log('shareUrl =>', shareUrl)
     initWxConfig(shareUrl, shareTitle, shareDesc);
 }
+
+/**
+ * @param {string} solutionName
+ * @param {array} productList
+ * @return {array} 
+ */
+function getProductsBySolution(solutionName, productList){
+    return productList.filter(item => item.solution.includes(solutionName));
+}
+
+/**
+ * @param {string} productType
+ * @param {array} productList
+ * @return {array} 
+ */
+function getProductsByType(productType, productList){
+    return productList.filter(item => item.productType.includes(productType));
+}
+
+/**
+ * @param {string} solutionName
+ * @param {array} solutionList
+ * @return {Object|undefined}
+ */
+function getSolutionByName(solutionName, solutionList){
+    return solutionList.find(item => item.solutionName === solutionName);
+}
+
+let productMap;
+let productList;
+let isConfigLoaded = false;
+function loadProductConfig() {
+    fetch('../product.json')
+        .then(response => response.json())
+        .then(data => {
+            productList = data;
+
+            //把productList转成map key为id value为对象
+            productMap = new Map();
+            data.forEach(item => {
+                productMap.set(parseInt(item.id), item);
+            });
+
+            isConfigLoaded = true;
+
+            console.log('产品总数: '+productMap.size);
+            
+            document.dispatchEvent(new Event('productConfigLoaded'));
+        })
+        .catch(error => {
+            console.error('Error loading config:', error);
+        });
+}
+
+$(function (){
+    loadProductConfig();
+})

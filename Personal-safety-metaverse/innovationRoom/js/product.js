@@ -2,6 +2,13 @@ var winWidth = $(window).width() || window.innerWidth || document.documentElemen
     , winHeight = $(window).height() || window.innerHeight || document.documentElement.clientHeight;
 console.log(winWidth, winHeight);
 
+document.addEventListener('productConfigLoaded', onProductConfigLoaded);
+
+function onProductConfigLoaded(e) {
+    vm.productList = productList;
+    vm.isConfigLoaded = true;
+}
+
 const app = Vue.createApp({
     data() {
         return {
@@ -19,7 +26,7 @@ const app = Vue.createApp({
     },
     created() {
         // console.log(new Date().getTime());
-        this.loadProductConfig();
+        // this.loadProductConfig();
         // console.log('created');
     },
     beforeMount(){
@@ -53,19 +60,19 @@ const app = Vue.createApp({
     },
 
     methods: {
-        loadProductConfig() {
-            fetch('../product.json')
-                .then(response => response.json())
-                .then(data => {
-                    this.productList = data;
-                    // console.log(new Date().getTime());
-                    console.log('产品总数: '+this.productList.length);
-                    this.isConfigLoaded = true;
-                })
-                .catch(error => {
-                    console.error('Error loading config:', error);
-                });
-        },
+        // loadProductConfig() {
+        //     fetch('../product.json')
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             this.productList = data;
+        //             // console.log(new Date().getTime());
+        //             console.log('产品总数: '+this.productList.length);
+        //             this.isConfigLoaded = true;
+        //         })
+        //         .catch(error => {
+        //             console.error('Error loading config:', error);
+        //         });
+        // },
         onClickProduct(index) {
             if (this.currentProduct === index) {
                 return;
