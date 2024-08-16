@@ -552,7 +552,7 @@
         "modelType": "glb",
         "img": "images/products/BZLR_I9.png",
         "transparent": "window_glass:ffffff,\nwindow01_glass:ffffff,\nObject007_glass:ffffff,\nheadlamplamp_glass_white:ffffff,\nheadlamplamp_glass_red_glass:AB0202,\nheadlamplamp_glass_orange_glass:FF7500,\nheadlamplamp_glass_white_glass:ffffff,\nheadlamplamp_reflector_b2_glass:AB0202,\nstop_light_reflector_glass:AB0202,\nObject038_glass:ffffff,\nfog_light_glass:ffffff",
-        "animation": "",
+        "animation": true,
         "changeColor": "",
         "attr1": "",
         "is720": true,
