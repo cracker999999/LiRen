@@ -209,16 +209,29 @@ function onModelLoaded() {
     document.getElementById('colorBar').style.display = 'block';
 }
 
+// transparent格式为
+// BZLR_P49b_glass01:ffffff,BZLR_P49b_glass02:c339b0
+// mesh:color,mesh:color
 function setTransparent(){
     if (transparent === '') return;
 
+    transparent = transparent.replace(/\n+/g, "");//过滤换行
+    transparent = transparent.replace(/\r+/g, "");//过滤回车
+    transparent = transparent.replace(/\s+/g, "");//过滤空格/
     var arr = transparent.split(",");
-    // console.log("trans "+arr);
+    
     for (var i = 0; i < arr.length; i++){
-        var obj = model.getObjectByName(arr[i]);
+        var meshColor = arr[i];
+        var meshName = meshColor.split(":")[0];
+        var color = '0x'+meshColor.split(":")[1];
+        //convert color to hex
+        color = parseInt(color, 16);
+        // console.log(meshName, color);
+        
+        var obj = model.getObjectByName(meshName);
         if (obj){
             var mat = new THREE.MeshPhysicalMaterial({
-                'color': 0x000000,
+                'color': color,
                 'metalness': 0,
                 'roughness': 0.1,
                 'transparent': true,

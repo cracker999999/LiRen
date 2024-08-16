@@ -110,11 +110,39 @@ function getSolutionByName(solutionName, solutionList){
     return solutionList.find(item => item.solutionName === solutionName);
 }
 
+// 点击红点
+function onClickHotspot(hotspotId, vm) {
+    if (hotspotId.includes('solution')) {
+        var solutionIndex = hotspotId.split('_')[1];
+        console.log("solutionId: " + solutionIndex);
+        vm.onClickSolution(solutionIndex);
+    }
+    else if(hotspotId.includes('product'))
+    {
+        var productId = hotspotId.split('_')[1];
+        console.log("productId: " + productId);
+        vm.showProductInfoById(parseInt(productId));
+    }
+    else if(hotspotId.includes('productType'))
+    {
+        var productType = hotspotId.split('_')[1];
+        console.log("productType: " + productType);
+        // vm.onClickProductType(productType);
+    }
+}
+
+const ProductConfigPath = '../product.json';
 let productMap;
 let productList;
 let isConfigLoaded = false;
-function loadProductConfig() {
-    fetch('../product.json')
+async function loadProductConfig() {
+    const headResponse = await fetch(ProductConfigPath, { method: 'HEAD' });
+    if (!headResponse.ok) {
+        console.log('json文件不存在');
+        return;
+    }
+
+    await fetch(ProductConfigPath)
         .then(response => response.json())
         .then(data => {
             productList = data;
