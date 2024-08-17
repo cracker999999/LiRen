@@ -3,6 +3,8 @@ var loader = new ImagesLoader();
 loader.loadImages([
     "flash_bg.jpg",
     "img_chuangxin.png",
+    "img_ear_on.png",
+    "img_ear.png",
     "img_floor.png",
     "img_huagong.png",
     "img_huagong_on.png",

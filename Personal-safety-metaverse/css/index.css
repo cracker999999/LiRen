@@ -158,6 +158,10 @@
   background-image: url("../images/index/img_chuangxin.png");
   opacity: 1;
 }
+.overview-modal .city-img-box .city-img.img-ear {
+  background-image: url("../images/index/img_ear_on.png");
+  opacity: 1;
+}
 .overview-modal .city-img-box .city-img.img-yejin {
   background-image: url("../images/index/img_yejin.png");
 }
@@ -173,6 +177,7 @@
 .overview-modal .city-img-box .city-img.img-huagong {
   background-image: url("../images/index/img_huagong.png");
 }
+
 .overview-modal .city-img-box .city-img.active.img-yejin {
   background-image: url("../images/index/img_yejin_on.png");
 }
@@ -907,11 +912,11 @@
 @-webkit-keyframes moveUpDown {
   0%,
   100% {
-    -webkit-transform: translateY(15%);
-    -moz-transform: translateY(15%);
-    -ms-transform: translateY(15%);
-    -o-transform: translateY(15%);
-    transform: translateY(15%);
+    -webkit-transform: translateY(var(--offset));
+    -moz-transform: translateY(var(--offset));
+    -ms-transform: translateY(var(--offset));
+    -o-transform: translateY(var(--offset));
+    transform: translateY(var(--offset));
   }
   50% {
     -webkit-transform: translateY(0);
@@ -924,11 +929,11 @@
 @keyframes moveUpDown {
   0%,
   100% {
-    -webkit-transform: translateY(15%);
-    -moz-transform: translateY(15%);
-    -ms-transform: translateY(15%);
-    -o-transform: translateY(15%);
-    transform: translateY(15%);
+    -webkit-transform: translateY(var(--offset));
+    -moz-transform: translateY(var(--offset));
+    -ms-transform: translateY(var(--offset));
+    -o-transform: translateY(var(--offset));
+    transform: translateY(var(--offset));
   }
   50% {
     -webkit-transform: translateY(0);
@@ -939,9 +944,16 @@
   }
 }
 .moveUpDown {
+  --offset: 15%;
   -webkit-animation: moveUpDown 1s linear both;
   -o-animation: moveUpDown 1s linear both;
   animation: moveUpDown 1s linear both;
+}
+.moveUpDown_ear {
+  --offset: 3%;
+  -webkit-animation: moveUpDown 5s linear both;
+  -o-animation: moveUpDown 5s linear both;
+  animation: moveUpDown 5s linear both;
 }
 @-webkit-keyframes cloudMove1 {
   from {

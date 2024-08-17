@@ -14,9 +14,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="color-scheme" content="light dark">
     <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-title" content="3M-个人防护">
-    <meta name="description" content="3M-个人防护">
-    <title>3M-个人防护</title>
+    <meta name="apple-mobile-web-app-title" content="个人防护">
+    <meta name="description" content="个人防护">
+    <title>个人防护</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -37,7 +37,7 @@
     <script type="text/javascript" src="../Content/js/loadingJs.js" id="main" data-baseurl="../" data-main="js/http.js"></script>
     <!-- Google tag (gtag.js) -->
     <!-- <script async="" src="../gtag/js?id=G-RTPS8DHXHH"></script> leen-->
-    <script>
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -47,7 +47,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-RTPS8DHXHH');
-    </script>
+    </script> -->
 </head>
 <body style="background-color: #fff;">
 
@@ -100,6 +100,9 @@
                 <div class="city-img-box">
                     <div class="city-img img-floor" data-name="" style="z-index: 1;"></div>
                     <div class="city-img img-chuangxin" data-name="创新中心" style="z-index: 3;"></div>
+                    <div class="city-img img-ear icon-pin animated moveUpDown_ear infinite" data-name="耳朵" style="z-index: 3;">
+                        <!-- <img src="images/index/img_ear_on.png?v20230323" alt="" class="icon-pin animated moveUpDown_ear infinite"> -->
+                    </div>
                     <div class="city-img img-yejin cityImg" data-name="冶金" style="z-index: 4;"></div>
                     <div class="city-img img-zhiyao cityImg" data-name="制药" style="z-index: 3;"></div>
                     <div class="city-img img-qiche cityImg" data-name="汽车" style="z-index: 2;"></div>
@@ -264,14 +267,6 @@
                     </div>
                     <!--汽车 大健康-->
                     <div class="dots-box dots-qiche">
-                        <!-- <div class="dot-item pc-show dot-zongzhuangchejian" data-area="汽车">
-                            <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-汽车-总装车间" onclick="toJumpPageEvent(this, function () { changePage('big-health','tour5.xml', 5); });">
-                                <div class="dot-title margin-bottom-xs">
-                                    <span class="text-df text-white text-center ">总装车间</span>
-                                </div>
-                                <span class="dot"></span>
-                            </a>
-                        </div> -->
                         <div class="dot-item pc-show dot-pack" data-area="汽车">
                             <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-汽车-PACK线" onclick="toJumpPageEvent(this, function () { changePage('big-health','tour0.xml', 0); });">
                                 <div class="dot-title margin-bottom-xs">
@@ -304,22 +299,6 @@
                                 <span class="dot"></span>
                             </a>
                         </div>
-                        <!-- <div class="dot-item pc-show dot-tuzhuangchejian" data-area="汽车">
-                            <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-汽车-涂装车间" onclick="toJumpPageEvent(this, function () { changePage('big-health','tour4.xml', 3); });">
-                                <div class="dot-title margin-bottom-xs">
-                                    <span class="text-df text-white text-center ">涂装车间</span>
-                                </div>
-                                <span class="dot"></span>
-                            </a>
-                        </div> -->
-                        <!-- <div class="dot-item pc-show dot-donglizongcheng" data-area="汽车">
-                            <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-汽车-动力总成" onclick="toJumpPageEvent(this, function () { changePage('big-health','tour6.xml', 4); });">
-                                <div class="dot-title margin-bottom-xs">
-                                    <span class="text-df text-white text-center ">动力总成</span>
-                                </div>
-                                <span class="dot"></span>
-                            </a>
-                        </div> -->
                     </div>
                     <!--建筑 政府-->
                     <div class="dots-box dots-jianzhu">
@@ -358,14 +337,6 @@
                     </div>
                     <!--化工 制造商-->
                     <div class="dots-box dots-huagong">
-                        <!-- <div class="dot-item pc-show dot-hanjiedamo" data-area="化工">
-                            <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-化工-焊接打磨" onclick="toJumpPageEvent(this, function () { changePage('aid-makers','tour4.xml', 3); });">
-                                <div class="dot-title margin-bottom-xs">
-                                    <span class="text-df text-white text-center ">焊接打磨</span>
-                                </div>
-                                <span class="dot"></span>
-                            </a>
-                        </div> -->
                         <div class="dot-item pc-show dot-zhuangxiehuo" data-area="化工">
                             <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-化工-装卸货" onclick="toJumpPageEvent(this, function () { changePage('aid-makers','tour0.xml', 0); });">
                                 <div class="dot-title margin-bottom-xs">
@@ -382,22 +353,6 @@
                                 <span class="dot"></span>
                             </a>
                         </div>
-                        <!-- <div class="dot-item pc-show dot-gaochuzuoye" data-area="化工">
-                            <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-化工-高处作业" onclick="toJumpPageEvent(this, function () { changePage('aid-makers','tour3.xml', 2); });">
-                                <div class="dot-title margin-bottom-xs">
-                                    <span class="text-df text-white text-center ">高处作业</span>
-                                </div>
-                                <span class="dot"></span>
-                            </a>
-                        </div>
-                        <div class="dot-item pc-show dot-youxiankongjian" data-area="化工">
-                            <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-化工-有限空间" onclick="toJumpPageEvent(this, function () { changePage('aid-makers','tour5.xml', 4); });">
-                                <div class="dot-title margin-bottom-xs">
-                                    <span class="text-df text-white text-center ">有限空间</span>
-                                </div>
-                                <span class="dot"></span>
-                            </a>
-                        </div> -->
                         <div class="dot-item pc-show dot-yingjixiangying" data-area="化工">
                             <a href="javascript:;" class="dot-link relative flex-column flex-vc flex-hc" data-title="首页" data-name="首页-行业区域-化工-应急响应" onclick="toJumpPageEvent(this, function () { changePage('aid-makers','tour2.xml', 2); });">
                                 <div class="dot-title margin-bottom-xs">
@@ -412,12 +367,12 @@
                         <img src="images/index/img_floor.png" usemap="#image-map" width="3840" height="2160" class="img-map">
 
                         <map name="image-map">
-                            <area onmouseover="getPhoth('创新中心')" alt="中心" href="javascript:void(0);" coords="1665, 666, 1813, 620, 1912, 538, 2002, 507, 2076, 553, 2138, 646, 2294, 709, 2359, 797, 2365, 891, 2277, 998, 2121, 1055, 1938, 1076, 1707, 1042, 1583, 963, 1524, 856, 1548, 742" shape="poly">
-                            <area onmouseover="getPhoth('建筑')" alt="建筑" href="javascript:void(0);" coords="2108, 534, 2191, 362, 2359, 379, 2536, 415, 2699, 460, 2910, 541, 3139, 686, 2433, 775, 2370, 696, 2194, 631" shape="poly">
-                            <area onmouseover="getPhoth('化工')" alt="化工" href="javascript:void(0);" coords="2262, 1075, 2974, 1638, 3185, 1510, 3312, 1352, 3375, 1200, 3392, 1045, 3350, 904, 3260, 801, 2456, 822, 2427, 960" shape="poly">
-                            <area onmouseover="getPhoth('冶金')" alt="冶金" href="javascript:void(0);" coords="1571, 1062, 766, 1535, 995, 1668, 1276, 1774, 1627, 1838, 1995, 1855, 2349, 1828, 2675, 1752, 2458, 1465, 2158, 1109, 1975, 1138, 1780, 1127" shape="poly">
-                            <area onmouseover="getPhoth('制药')" alt="制药" href="javascript:void(0);" coords="639, 778, 793, 630, 1459, 762, 1424, 835, 1436, 934, 1497, 1009, 609, 1376, 511, 1196, 520, 954" shape="poly">
-                            <area onmouseover="getPhoth('汽车')" alt="汽车" href="javascript:void(0);" coords="970, 534, 1541, 707, 1990, 465, 2001, 343, 1745, 350, 1482, 377, 1229, 441" shape="poly">
+                            <area onmouseover="getPhoth('创新中心')" alt="中心" href="javascript:void(0);" coords="1669, 670, 1824, 624, 1912, 538, 2002, 507, 2076, 553, 2115, 651, 2245, 732, 2294, 793, 2308, 892, 2247, 987, 2121, 1055, 1938, 1080, 1726, 1046, 1583, 963, 1553, 861, 1590, 755" shape="poly">
+                            <area onmouseover="getPhoth('建筑')" alt="政府" href="javascript:void(0);" coords="2082, 514, 2178, 292, 2353, 321, 2567, 380, 2726, 445, 2910, 541, 3069, 673, 2393, 774, 2349, 704, 2194, 631" shape="poly">
+                            <area onmouseover="getPhoth('化工')" alt="制造商" href="javascript:void(0);" coords="2229, 1108, 2842, 1668, 3029, 1534, 3156, 1385, 3232, 1233, 3252, 1073, 3232, 934, 3171, 799, 2430, 826, 2383, 977" shape="poly">
+                            <area onmouseover="getPhoth('冶金')" alt="连锁店" href="javascript:void(0);" coords="1617, 1081, 892, 1578, 1090, 1699, 1359, 1809, 1660, 1875, 1968, 1895, 2289, 1860, 2580, 1792, 2375, 1490, 2127, 1127, 1974, 1149, 1773, 1132" shape="poly">
+                            <area onmouseover="getPhoth('制药')" alt="耳模" href="javascript:void(0);" coords="718, 782, 878, 595, 1516, 746, 1470, 832, 1482, 931, 1541, 1026, 738, 1416, 629, 1177, 629, 952" shape="poly">
+                            <area onmouseover="getPhoth('汽车')" alt="大健康" href="javascript:void(0);" coords="1021, 500, 1546, 697, 1973, 465, 1993, 277, 1748, 284, 1496, 321, 1246, 393" shape="poly">
                         </map>
                     </div>
                 </div>
