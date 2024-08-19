@@ -79,27 +79,27 @@ const app = Vue.createApp({
             solutionList: [
                 {
                     solutionName: '测听',
-                    solutionIcon: 'assets/img/icon_earmuff.png',
+                    solutionIcon: 'assets/img/CeTing.png',
                     productIds: [49,74],
                 },
                 {
                     solutionName: '验配',
-                    solutionIcon: 'assets/img/icon_hat.png',
+                    solutionIcon: 'assets/img/YanPei.png',
                     productIds: [3,28,8,86,40],
                 },
                 {
                     solutionName: '售后服务',
-                    solutionIcon: 'assets/img/icon_earmuff.png',
+                    solutionIcon: 'assets/img/ShouHouFuwu.png',
                     productIds: [48,12,53,41],
                 },
                 {
                     solutionName: '市场用具',
-                    solutionIcon: 'assets/img/icon_earmuff.png',
+                    solutionIcon: 'assets/img/ShiChangYongJu.png',
                     productIds: [5,16,27],
                 },
                 {
                     solutionName: '配件耗材',
-                    solutionIcon: 'assets/img/icon_earmuff.png',
+                    solutionIcon: 'assets/img/PeiJianHaoCai.png',
                     productIds: [17,18,19,6,54,55,22,59,64,44,87],
                 },
             ],

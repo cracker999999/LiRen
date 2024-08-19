@@ -67,7 +67,7 @@ const app = Vue.createApp({
                     startScene: 'scene_2',
                     alertList: [],
                     jieshuo: '../jieshuo/ErMoYingYongChangJing_XiangGuanChanPingPeiTao.mp3',
-                    solutions: ['产品','手工制作耳模'],
+                    solutions: ['产品','耳模制作'],
                 },
                 {
                     name: '服务',
@@ -93,37 +93,37 @@ const app = Vue.createApp({
             solutionList: [
                 {
                     solutionName: '培训',
-                    solutionIcon: 'assets/img/icon_mask.png?v20230222',
+                    solutionIcon: 'assets/img/PeiXun.png?v20230222',
                     productIds: [73,91],
                 },
                 {
                     solutionName: '3D制造',
-                    solutionIcon: 'assets/img/icon_earmuff.png?v20230222',
+                    solutionIcon: 'assets/img/3DZhiZao.png?v20230222',
                     productIds: [1,2],
                 },
                 {
                     solutionName: '产品',
-                    solutionIcon: 'assets/img/icon_hat.png?v20230222',
+                    solutionIcon: 'assets/img/ChanPin.png?v20230222',
                     productIds: [63,72,47,87,92],
                 },
                 {
-                    solutionName: '手工制作耳模',
-                    solutionIcon: 'assets/img/icon_earmuff.png?v20230222',
+                    solutionName: '耳模制作',
+                    solutionIcon: 'assets/img/ErMoZhiZuo.png?v20230222',
                     productIds: [61,93,62,45,26,57],
                 },
                 {
                     solutionName: '生产设计',
-                    solutionIcon: 'assets/img/icon_hat.png?v20230222',
+                    solutionIcon: 'assets/img/ShengChanSheJi.png?v20230222',
                     productIds: [71,94],
                 },
                 {
                     solutionName: '定制型耳塞',
-                    solutionIcon: 'assets/img/icon_earmuff.png?v20230222',
+                    solutionIcon: 'assets/img/DingZhiShiErSai.png?v20230222',
                     productIds: [51,104,105],
                 },
                 {
                     solutionName: '适配型耳塞',
-                    solutionIcon: 'assets/img/icon_hat.png?v20230222',
+                    solutionIcon: 'assets/img/ShiPeiXingErSai.png?v20230222',
                     productIds: [64,65,66,67,68,69,70],
                 },
             ],

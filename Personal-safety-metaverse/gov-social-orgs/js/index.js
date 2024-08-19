@@ -83,53 +83,53 @@ const app = Vue.createApp({
             solutionList: [
                 {
                     solutionName: '产品供应 ',
-                    solutionIcon: 'assets/img/icon_fall.png?v20230222',
+                    solutionIcon: 'assets/img/ChanPinGongYing.png?v20230222',
                     productIds: [96,40,49],
                 },
                 {
                     solutionName: '健康服务',
-                    solutionIcon: 'assets/img/icon_fall.png?v20230222',
+                    solutionIcon: 'assets/img/JianKangFuWu.png?v20230222',
                     productIds: [52,14,28,74,37],
                 },
                 {
                     solutionName: '产品供应',
-                    solutionIcon: 'assets/img/icon_fall.png?v20230222',
+                    solutionIcon: 'assets/img/ChanPinGongYing.png?v20230222',
                     productIds: [49,96],
                 },
                 {
                     solutionName: '科研场景',
-                    solutionIcon: 'assets/img/icon_fall.png?v20230222',
+                    solutionIcon: 'assets/img/KeYanChangJing.png?v20230222',
                     productIds: [26,57,45,93,62],
                 },
                 {
                     solutionName: '教培场景',
-                    solutionIcon: 'assets/img/icon_fall.png?v20230222',
+                    solutionIcon: 'assets/img/JiaoPeiChangJing.png?v20230222',
                     productIds: [97,98],
                 },
                 //听力车
                 {
                     solutionName: '测听',
-                    solutionIcon: 'assets/img/icon_fall.png',
+                    solutionIcon: 'assets/img/CeTing.png',
                     productIds: [74],
                 },
                 {
                     solutionName: '验配',
-                    solutionIcon: 'assets/img/icon_fall.png',
+                    solutionIcon: 'assets/img/YanPei.png',
                     productIds: [3,8],
                 },
                 {
                     solutionName: '售后服务',
-                    solutionIcon: 'assets/img/icon_fall.png',
+                    solutionIcon: 'assets/img/ShouHouFuwu.png',
                     productIds: [48,12,53],
                 },
                 {
                     solutionName: '市场用具',
-                    solutionIcon: 'assets/img/icon_fall.png',
+                    solutionIcon: 'assets/img/ShiChangYongJu.png',
                     productIds: [5,16,75,76,77,78,79,80,81],
                 },
                 {
                     solutionName: '配件耗材',
-                    solutionIcon: 'assets/img/icon_fall.png',
+                    solutionIcon: 'assets/img/PeiJianHaoCai.png',
                     productIds: [18,19,6,54,55,22,59,64, 17,99,100,101,102,103],
                 },
             ],

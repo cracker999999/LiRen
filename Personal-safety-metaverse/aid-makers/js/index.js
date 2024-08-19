@@ -74,47 +74,47 @@ const app = Vue.createApp({
             solutionList: [ //该版块所有的解决方案
                 {
                     solutionName: '3D制造',
-                    solutionIcon: 'assets/img/icon_mask.png',
+                    solutionIcon: 'assets/img/3DZhiZao.png',
                     productIds: [1,2],
                 },
                 {
                     solutionName: '测听',
-                    solutionIcon: 'assets/img/icon_earmuff.png',
+                    solutionIcon: 'assets/img/CeTing.png',
                     productIds: [74],
                 },
                 {
                     solutionName: '验配',
-                    solutionIcon: 'assets/img/icon_hat.png',
+                    solutionIcon: 'assets/img/YanPei.png',
                     productIds: [3,8],
                 },
                 {
                     solutionName: '售后服务',
-                    solutionIcon: 'assets/img/icon_fall.png',
+                    solutionIcon: 'assets/img/ShouHouFuWu.png',
                     productIds: [48,12,53],
                 },
                 {
                     solutionName: '市场用具',
-                    solutionIcon: 'assets/img/icon_jiuyuan.png',
+                    solutionIcon: 'assets/img/ShiChangYongJu.png',
                     productIds: [5,16,75,76,77,78,79,80,81],
                 },
                 {
                     solutionName: '配件耗材',
-                    solutionIcon: 'assets/img/icon_jiuyuan.png',
+                    solutionIcon: 'assets/img/PeiJianHaoCai.png',
                     productIds: [18,19,6,54,55,22,59,64, 17,99,100,101,102,103],
                 },
                 {
                     solutionName: '生产',
-                    solutionIcon: 'assets/img/icon_jiuyuan.png',
+                    solutionIcon: 'assets/img/ShengChan.png',
                     productIds: [56,57,13,26],
                 },
                 {
                     solutionName: '市场',
-                    solutionIcon: 'assets/img/icon_jiuyuan.png',
+                    solutionIcon: 'assets/img/ShiChang.png',
                     productIds: [19,48,12, 16,75,76,77,78,79,80,81, 27, 3,14,28, 18,82],
                 },
                 {
                     solutionName: '助听器产品',
-                    solutionIcon: 'assets/img/icon_jiuyuan.png',
+                    solutionIcon: 'assets/img/ZhuTingQiBiaoPeiChanPin.png',
                     productIds: [29,30,6,55,63, 29,30,6,58],
                 },
             ],

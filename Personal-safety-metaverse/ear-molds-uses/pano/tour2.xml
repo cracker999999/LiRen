@@ -44,7 +44,7 @@
 		<hotspot name="product_47" style="skin_hotspotstyle_red" ath="4.2" atv="-12.2" onclick="show_hotspot_alert(product_47)" onloaded="add_all_the_time_tooltip()" text="喇叭" />
 		<hotspot name="product_87" style="skin_hotspotstyle_red" ath="11.4" atv="-12" onclick="show_hotspot_alert(product_87)" onloaded="add_all_the_time_tooltip()" text="声管" />
 		<hotspot name="product_92" style="skin_hotspotstyle_red" ath="17.2" atv="-12" onclick="show_hotspot_alert(product_92)" onloaded="add_all_the_time_tooltip()" text="焊线" />
-		<hotspot name="product_45" style="skin_hotspotstyle_red" ath="24.6" atv="-11.5" onclick="show_hotspot_alert(product_45)" onloaded="add_all_the_time_tooltip()" text="化学材料" />
+		<hotspot name="product_45" style="skin_hotspotstyle_red" ath="23.8" atv="-11.5" onclick="show_hotspot_alert(product_45)" onloaded="add_all_the_time_tooltip()" text="化学材料" />
 		<hotspot name="product_63" style="skin_hotspotstyle_red" ath="30.7" atv="-11" onclick="show_hotspot_alert(product_63)" onloaded="add_all_the_time_tooltip()" text="包装盒" />
 		<hotspot name="product_57" style="skin_hotspotstyle_red" ath="37" atv="-10" onclick="show_hotspot_alert(product_57)" onloaded="add_all_the_time_tooltip()" text="压力锅" />
 		<hotspot name="product_61" style="skin_hotspotstyle_red" ath="42.8" atv="-9.5" onclick="show_hotspot_alert(product_61)" onloaded="add_all_the_time_tooltip()" text="手钻" />
