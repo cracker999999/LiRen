@@ -469,9 +469,7 @@ body {
   .pc-show {
     display: none;
   }
-  .logo {
-    width: 0.8rem /* 60/75 */;
-  }
+   
   .service-center {
     width: 0.667rem /* 50/75 */;
     height: 0.667rem /* 50/75 */;

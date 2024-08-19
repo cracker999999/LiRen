@@ -18,8 +18,8 @@ function getUrlParams() {
     const pairs = queryString.split('&');
 
     for (let pair of pairs) {
-    const [key, value] = pair.split('=');
-    params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+        const [key, value] = pair.split('=');
+        params[decodeURIComponent(key)] = decodeURIComponent(value || '');
     }
 
     return params;
@@ -33,6 +33,7 @@ var animation = urlParams.anim;
 var transparent = urlParams.trans;
 var changeColor = urlParams.color;
 var type = urlParams.type;
+var scale = parseFloat(urlParams.scale) || 1;
 
 var model;
 var mixer;
@@ -169,7 +170,7 @@ function loadFBX() {
 
 function onModelLoaded() {
     // let scaleFactor = isMobile() ? 0.5 : 1;
-    // model.scale.multiplyScalar(5);
+    model.scale.multiplyScalar(scale);
 
     model.updateMatrixWorld();
 
