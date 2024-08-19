@@ -52,7 +52,7 @@
 		<hotspot name="product_26" style="skin_hotspotstyle_red" ath="-85" atv="16" onclick="show_hotspot_alert(product_26)" onloaded="add_all_the_time_tooltip()" text="光固化机" />
 		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-70" atv="8" onclick="show_hotspot_alert(product_12)" onloaded="add_all_the_time_tooltip()" text="助听器保养仪" /> -->
 
-		<hotspot name="product_82" style="skin_hotspotstyle_red" ath="-35" atv="-10" onclick="show_hotspot_alert(product_82)" onloaded="add_all_the_time_tooltip()" text="测电笔" />
+		<!-- <hotspot name="product_82" style="skin_hotspotstyle_red" ath="-35" atv="-10" onclick="show_hotspot_alert(product_82)" onloaded="add_all_the_time_tooltip()" text="测电笔" /> -->
 		<hotspot name="product_18" style="skin_hotspotstyle_red" ath="-27" atv="-10" onclick="show_hotspot_alert(product_18)" onloaded="add_all_the_time_tooltip()" text="液晶测电器" />
 		<hotspot name="product_19" style="skin_hotspotstyle_red" ath="-17.5" atv="-10" onclick="show_hotspot_alert(product_19)" onloaded="add_all_the_time_tooltip()" text="电子干燥器" />
 		<hotspot name="product_48" style="skin_hotspotstyle_red" ath="-7" atv="-10" onclick="show_hotspot_alert(product_48)" onloaded="add_all_the_time_tooltip()" text="清洁护理套装" />

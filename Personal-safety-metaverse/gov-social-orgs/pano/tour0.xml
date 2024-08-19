@@ -40,7 +40,7 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="product_96" style="skin_hotspotstyle_red" ath="-18" atv="4.4" onclick="show_hotspot_alert(product_96)" onloaded="add_all_the_time_tooltip()" text="助听器" />
+		<!-- <hotspot name="product_96" style="skin_hotspotstyle_red" ath="-18" atv="4.4" onclick="show_hotspot_alert(product_96)" onloaded="add_all_the_time_tooltip()" text="助听器" /> -->
 		<hotspot name="product_40" style="skin_hotspotstyle_red" ath="-4.2" atv="-5.5" onclick="show_hotspot_alert(product_40)" onloaded="add_all_the_time_tooltip()" text="助听器效果演示仪" />
 		<hotspot name="product_3" style="skin_hotspotstyle_red" ath="14.2" atv="-3" onclick="show_hotspot_alert(product_3)" onloaded="add_all_the_time_tooltip()" text="验配套装" />
 		<hotspot name="product_49" style="skin_hotspotstyle_red" ath="22" atv="-16.3" onclick="show_hotspot_alert(product_49)" onloaded="add_all_the_time_tooltip()" text="隔声室" />

@@ -110,7 +110,7 @@ const app = Vue.createApp({
                 {
                     solutionName: '市场',
                     solutionIcon: 'assets/img/icon_jiuyuan.png',
-                    productIds: [19,48,12, 16,75,76,77,78,79,80,81, 27, 3,14,28, 18],
+                    productIds: [19,48,12, 16,75,76,77,78,79,80,81, 27, 3,14,28, 18,82],
                 },
                 {
                     solutionName: '助听器产品',

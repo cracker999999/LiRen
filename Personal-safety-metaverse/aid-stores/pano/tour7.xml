@@ -41,7 +41,7 @@
 		</action>
 
 		<hotspot name="product_88" style="skin_hotspotstyle_red" ath="-13.8" atv="-11.5" onclick="show_hotspot_alert(product_88)" onloaded="add_all_the_time_tooltip()" text="验配培训" />
-		<hotspot name="product_89" style="skin_hotspotstyle_red" ath="12.7" atv="-10.6" onclick="show_hotspot_alert(product_89)" onloaded="add_all_the_time_tooltip()" text="验配师资质考核" />
+		<!-- <hotspot name="product_89" style="skin_hotspotstyle_red" ath="12.7" atv="-10.6" onclick="show_hotspot_alert(product_89)" onloaded="add_all_the_time_tooltip()" text="验配师资质考核" /> -->
 		
 	</scene>
 
