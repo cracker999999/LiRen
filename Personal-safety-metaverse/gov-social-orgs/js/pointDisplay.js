@@ -13,6 +13,8 @@ function onHotspotClick(e) {
         text = e.info.text;
     console.log("hotspotId: " + hotspotId);
 
+    onClickHotspot(hotspotId, vm);
+
     var sceneItem = vm.sceneList[vm.sceneIndex];
     var sceneName = sceneItem.name; //$('.scene-select-box .preview-box.active .scene-name').html();
 

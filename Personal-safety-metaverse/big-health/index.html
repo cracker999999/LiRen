@@ -40,20 +40,6 @@
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../../Content/js/loadingJs.js" id="main" data-baseurl="../../" data-main="../js/http.js"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTPS8DHXHH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-RTPS8DHXHH');
-    </script>
-
 </head>
 <body>
 
@@ -71,6 +57,7 @@
     <div id="pano" style="width:100%;height:100%;" @click="onInstructionClick"></div>
 
     <div class="page-container page-construction zoomContainer">
+
         <div class="control-layer" @click="onInstructionClick">
             <div class="logo flex flex-vc flex-hc">
                 <img src="../images/logo.png" alt="" class="w-100">
@@ -86,31 +73,31 @@
                     <img src="../images/btn_service_center.png" alt="" class="icon-service">
                 </div>
 
-                <div class="nav-game mobile-show flex-column flex-hc">
+                <!-- <div class="nav-game mobile-show flex-column flex-hc">
                     <a href="javascript:;" @click="goGame()">
                         <img src="../images/icon_game.png?v20230413" alt="" class="icon-game">
                     </a>
-                </div>
+                </div> -->
             </div>
 
             <div class="left-control">
                 <div class="btn btn-bgm flex-column flex-vc flex-hc" onclick="onPlayBgm()">
                     <span class="icon"></span>
                     <span>音乐</span>
-                    <audio style="opacity: 0; height: 0" src="../images/bgm.mp3" id="bgm"
-                           loop autoplay="autoplay" preload="auto"></audio>
+                    <audio style="opacity: 0; height: 0" src="../images/bgm.mp3" id="bgm" loop autoplay="autoplay" preload="auto"></audio>
                 </div>
                 <div class="btn btn-jieshuo flex-column flex-vc flex-hc">
                     <span class="icon"></span>
                     <span>解说</span>
-                    <audio style="opacity: 0; height: 0" :src="jieshuoSrc" id="jieshuo"
-                           autoplay="autoplay" preload="auto"></audio>
+                    <audio style="opacity: 0; height: 0" :src="jieshuoSrc" id="jieshuo" autoplay="autoplay" preload="auto"></audio>
                 </div>
             </div>
 
             <div class="control-top">
                 <span class="top-title" v-cloak>{{sceneList[sceneIndex].name}}</span>
             </div>
+
+            <!-- 右侧竖排按扭 -->
             <div class="control-right">
                 <div class="right-btn-img" v-cloak v-for="(item, index) in curAlertList" :key="index"
                      :style="{backgroundImage: `url(${index === alertIndex ? item.btnActive : item.btn})`}"
@@ -123,6 +110,7 @@
             </div>
 
             <div class="control-bottom">
+                <!-- 场景预览 -->
                 <div class="scene-select-box" v-show="showScenePreview" v-cloak>
                     <div class="scene-preview-list swiper-container scenePreviewSwiper">
                         <div class="swiper-wrapper">
@@ -137,6 +125,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 解决方案 -->
                 <div class="bottom-option-box flex flex-hc flex-v-stretch">
                     <div class="scene-select-btn flex-column flex-vc flex-hc"
                          :class="{active: showScenePreview}" v-cloak
@@ -191,12 +180,13 @@
             <div class="modal-body animated slideInRight">
                 <div class="modal-content">
                     <div class="modal-title" v-if="curAlertList.length > 0">
-                        {{sceneList[sceneIndex].name}}{{curAlertList[curAlertIndex].solutionName}}解决方案
+                        <!-- {{sceneList[sceneIndex].name}}{{curAlertList[curAlertIndex].solutionName}}解决方案 -->
                     </div>
                     <div class="sub-title padding-sm text-content text-lg text-center" v-if="curAlertList.length > 0">
-                        {{curAlertList[curAlertIndex].text}}
+                        <!-- {{curAlertList[curAlertIndex].text}} -->
                     </div>
                     <div class="modal-content-bottom flex flex-hc">
+
                         <div class="right">
                             <div class="product-list swiper-container productListSwiper">
                                 <div class="swiper-wrapper">
@@ -204,40 +194,43 @@
                                          v-for="(item, index) in curProductList"
                                          :key="index" v-cloak>
                                         <div class="product-box flex flex-vc flex-hc">
-                                            <div class="product-img" v-if="item.product360 == null">
-                                                <img :src="item.img" alt=""
-                                                     class="w-100">
+                                            <!-- 大图 -->
+                                            <div class="product-img" v-if="!item.is720">
+                                                <img :src="'../innovationRoom/'+item.img" alt="" class="w-100">
                                             </div>
-                                            <div class="product-img product360Box flex flex-vc flex-hc w-100 h-100 relative"
-                                                 v-else>
-                                                <div class="spinner flex-column flex-vc flex-hc">
+                                            <div class="product-img product360Box flex flex-vc flex-hc w-100 h-100 relative" v-else>
+                                                <!-- 3d -->
+                                                <div class="w-100 h-100 product720Box" v-if="index === curProductIndex">
+                                                    <iframe id="childFrame" :src="'../innovationRoom/720Modal/3D.html' + '?model=' + item.modelName + '&anim=' + item.animation + '&trans=' + item.transparent + '&color=' + item.changeColor + '&type=' + item.modelType + '&scale=' + item.scale" 
+                                                    frameborder="0" class="iframe w-100 h-100" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                                                </div>
+                                                
+                                                <!-- <div class="spinner flex-column flex-vc flex-hc">
                                                     <img src="../innovationRoom/map/loading.gif">
                                                     <span>0%</span>
                                                 </div>
-                                                <div class="threesixty"
-                                                     :class="'productImgList-' + index">
+                                                <div class="threesixty" :class="'productImgList-' + index">
                                                     <ol class="threesixty_images"></ol>
-                                                </div>
+                                                </div> -->
                                             </div>
+
+                                            <!-- 名字 描述 -->
                                             <div class="product-info-wrap">
                                                 <div class="product-info-box">
                                                     <div class="product-type margin-bottom-sm">
-                                                        {{item.name}}
+                                                        {{item.productName}}
                                                     </div>
                                                     <div class="product-desc margin-tb-sm text-content">
-                                                        {{item.productDesc}}
+                                                        {{item.desc}}
                                                     </div>
                                                     <ul class="product-link-list margin-top-sm">
-                                                        <li class="link-item"
-                                                            v-for="(item, index) in item.productLink"
-                                                            :key="index">
-                                                            <a :href="item.link" target="_blank" v-show="item.link"
-                                                               @click="onProductLinkClick(index)">{{item.text}}</a>
-                                                        </li>
-                                                        <li class="link-item">
-                                                            <a href="https://shop.m.jd.com/?shopId=84511"
-                                                               target="_blank" @click="goJD(index)">去京东看看</a>
-                                                        </li>
+                                                        <!-- <li class="link-item" v-for="(item, index) in item.productLink" :key="index"> -->
+                                                            <a :href="item.url" target="_blank" v-show="item.url" class="text-white text-underline"
+                                                                @click="onProductLinkClick(index)">去商城看看</a>
+                                                        <!-- </li> -->
+                                                        <!-- <li class="link-item">
+                                                            <a href="https://shop.m.jd.com/?shopId=84511" target="_blank">去商城看看</a>
+                                                        </li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -245,6 +238,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- 小icon -->
                             <div class="product-preview-list">
                                 <div class="swiper-container productPreviewSwiper">
                                     <div class="swiper-wrapper flex flex-vc">
@@ -254,7 +248,7 @@
                                              :key="index" v-cloak
                                              @click="onProductClick(index)">
                                             <div class="product-img">
-                                                <img :src="item.img" alt="" class="w-100">
+                                                <img :src="'../innovationRoom/'+item.img" alt="" class="w-100">
                                             </div>
                                         </div>
                                     </div>
@@ -271,23 +265,24 @@
         <div class="modal-container modal-service-center flex flex-vc flex-hc animated fadeIn" style="z-index: 1000; display: none;">
             <div class="modal-bg" onclick="hideServiceCenter()"></div>
             <div class="modal-body">
-                <div class="modal-title text-center text-white margin-tb">3M服务中心</div>
+                <div class="modal-title text-center text-white margin-tb">服务中心</div>
                 <div class="modal-content">
                     <div class="img">
                         <img src="../images/service_center_ewm.png" alt="" class="w-100">
                     </div>
-                    <div class="text-center text-content text-white margin-tb p">扫码进入3M个人防护小程序，获取更多防护知识信息。</div>
+                    <div class="text-center text-content text-white margin-tb p">
+                        扫码进入小程序，获取更多知识信息。
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!--操作指示-->
-        <div class="instruction-container pc-show flex flex-vc flex-hc instructionContainer" v-cloak v-if="showInstruction">
-            <img src="../images/instruction.png" alt="" class="instruction-img">
-        </div>
-
     </div>
 
+    <!--操作指示-->
+    <div class="instruction-container pc-show flex flex-vc flex-hc instructionContainer" v-cloak v-if="showInstruction">
+        <img src="../images/instruction.png" alt="" class="instruction-img">
+    </div>
+    
 </div>
 
 <script type="text/javascript" src="../dist/swiper/js/swiper.min.js"></script>
@@ -299,7 +294,6 @@
 <script type="text/javascript" src="../js/bgm.js"></script>
 <script type="text/javascript" src="../dist/current-device.min.js"></script>
 <script type="text/javascript" src="../dist/devicePixelRatio.js"></script>
-
 <script type="text/javascript">
     var scenePreviewSwiper = new Swiper(".scenePreviewSwiper", {
         slidesPerView: 'auto',

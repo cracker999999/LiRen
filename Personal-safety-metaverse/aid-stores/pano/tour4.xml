@@ -40,19 +40,14 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="lg_zaoyin1" style="skin_hotspotstyle_red" ath="-51.439" atv="-16.083" onclick="show_hotspot_alert(lg_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="lg_zaoyin2" style="skin_hotspotstyle_red" ath="6.032" atv="-23.536" onclick="show_hotspot_alert(lg_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="lg_zaoyin3" style="skin_hotspotstyle_red" ath="84.253" atv="-17.384" onclick="show_hotspot_alert(lg_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="lg_zaoyin4" style="skin_hotspotstyle_red" ath="-25.844" atv="-27.298" onclick="show_hotspot_alert(lg_zaoyin4)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-5.4" atv="-5.7" onclick="show_hotspot_alert(product_56)"  onloaded="add_all_the_time_tooltip()" text="技工桌" />
+		<hotspot name="product_61" style="skin_hotspotstyle_red" ath="25.2" atv="-6" onclick="show_hotspot_alert(product_61)"  onloaded="add_all_the_time_tooltip()" text="手钻" />
 
-		<hotspot name="lg_yhqt1" style="skin_hotspotstyle_red" ath="-10.867" atv="-25.554" onclick="show_hotspot_alert(lg_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="lg_yhqt2" style="skin_hotspotstyle_red" ath="75.540" atv="-10.278" onclick="show_hotspot_alert(lg_yhqt2)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
-		<hotspot name="lg_cjw1" style="skin_hotspotstyle_red" ath="37.488" atv="-37.151" onclick="show_hotspot_alert(lg_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="lg_cjw2" style="skin_hotspotstyle_red" ath="-9.906" atv="-8.157" onclick="show_hotspot_alert(lg_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="lg_fc1" style="skin_hotspotstyle_red" ath="-160.112" atv="-4.156" onclick="show_hotspot_alert(lg_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
+		<hotspot name="product_25" style="skin_hotspotstyle_red" ath="-132" atv="6.1" onclick="show_hotspot_alert(product_25)"  onloaded="add_all_the_time_tooltip()" text="助听器分析仪" />
+		<hotspot name="product_41" style="skin_hotspotstyle_red" ath="-111" atv="6" onclick="show_hotspot_alert(product_41)"  onloaded="add_all_the_time_tooltip()" text="超声波清洗机" />
+		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-71" atv="4.8" onclick="show_hotspot_alert(product_12)"  onloaded="add_all_the_time_tooltip()" text="助听器保养仪" />
+		
+		<hotspot name="product_53" style="skin_hotspotstyle_red" ath="-155.6" atv="21.5" onclick="show_hotspot_alert(product_53)"  onloaded="add_all_the_time_tooltip()" text="助听器服务工具盒" />
 	</scene>
 
 

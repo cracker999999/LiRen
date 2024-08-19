@@ -40,12 +40,8 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="yp_fc2" style="skin_hotspotstyle_red" ath="-3.746" atv="-13.053" onclick="show_hotspot_alert(yp_fc2)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
-
-		<hotspot name="yp_zy1" style="skin_hotspotstyle_red" ath="-12.605" atv="-2.073" onclick="show_hotspot_alert(yp_zy1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="yp_zy2" style="skin_hotspotstyle_red" ath="7.208" atv="-1.172" onclick="show_hotspot_alert(yp_zy2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
+		<hotspot name="product_2" style="skin_hotspotstyle_red" ath="-28.313" atv="-10" onclick="show_hotspot_alert(product_2)" onloaded="add_all_the_time_tooltip()" text="3D打印机" />
+		<hotspot name="product_1" style="skin_hotspotstyle_red" ath="0" atv="-10" onclick="show_hotspot_alert(product_1)" onloaded="add_all_the_time_tooltip()" text="3D扫描仪" />
 	</scene>
 
 

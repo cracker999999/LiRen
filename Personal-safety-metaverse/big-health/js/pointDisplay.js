@@ -11,6 +11,9 @@ function onHotspotClick(e) {
     let hotspotId = e.info.id,
         text = e.info.text;
     console.log("hotspotId: " + hotspotId);
+
+    onClickHotspot(hotspotId, vm);
+
     var sceneItem = vm.sceneList[vm.sceneIndex];
     var sceneName = sceneItem.name;
 
@@ -88,7 +91,7 @@ function onHotspotClick(e) {
         })
     });
 
-    vm.showAlertBox = true;
+    // vm.showAlertBox = true;
 
     var title = '场景页面-汽车-' + sceneName;
     var name = '场景页面-汽车-' + sceneName + '-场景危害查看';

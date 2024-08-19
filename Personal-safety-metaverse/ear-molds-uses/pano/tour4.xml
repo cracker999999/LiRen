@@ -40,12 +40,9 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="tl_fc1" style="skin_hotspotstyle_red" ath="-5.761" atv="6.765" onclick="show_hotspot_alert(tl_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
-		<hotspot name="tl_cjw1" style="skin_hotspotstyle_red" ath="6.898" atv="-0.755" onclick="show_hotspot_alert(tl_cjw1)" onloaded="add_all_the_time_tooltip()" text="液体飞溅" />
-
-		<hotspot name="tl_qitaiwu1" style="skin_hotspotstyle_red" ath="-16.562" atv="11.998" onclick="show_hotspot_alert(tl_qitaiwu1)" onloaded="add_all_the_time_tooltip()" text="有害气态物" />
-
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-7.6" atv="15.5" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="适配型耳塞" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="-1.7" atv="22.6" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="定制型耳塞" />
+	
 	</scene>
 
 

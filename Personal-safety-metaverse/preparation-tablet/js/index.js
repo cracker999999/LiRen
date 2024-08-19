@@ -894,7 +894,7 @@ const app = Vue.createApp({
             var solutionItem = this.curSolutionList[this.curSolutionIndex];
             var productLink = productItem.productLink[index];
             var title = '防护解决方案弹框-制药-' + secondarySceneItem.secondarySceneName + '-' + sceneItem.name;
-            var name = '防护解决方案弹框-制药-' + secondarySceneItem.secondarySceneName + '-' + sceneItem.name + '-去京东看看';
+            var name = '防护解决方案弹框-制药-' + secondarySceneItem.secondarySceneName + '-' + sceneItem.name + '-去商城看看';
             var attr1 = solutionItem.solutionName;
             var attr2 = productItem.name;
             typeof addPageEvent == 'function' && addPageEvent(title, name, attr1, attr2);

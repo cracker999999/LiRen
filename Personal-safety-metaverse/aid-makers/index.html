@@ -73,11 +73,11 @@
                     <img src="../images/btn_service_center.png" alt="" class="icon-service">
                 </div>
 
-                <div class="nav-game mobile-show flex-column flex-hc">
+                <!-- <div class="nav-game mobile-show flex-column flex-hc">
                     <a href="javascript:;" @click="goGame()">
                         <img src="../images/icon_game.png?v20230413" alt="" class="icon-game">
                     </a>
-                </div>
+                </div> -->
             </div>
 
             <div class="left-control">
@@ -215,7 +215,7 @@
                                             <div class="product-img product360Box flex flex-vc flex-hc w-100 h-100 relative" v-else>
                                                 <!-- 3d -->
                                                 <div class="w-100 h-100 product720Box" v-if="index === curProductIndex">
-                                                    <iframe id="childFrame" :src="'../innovationRoom/720Modal/3D.html' + '?model=' + item.modelName + '&anim=' + item.animation + '&trans=' + item.transparent + '&color=' + item.changeColor + '&type=' + item.modelType" 
+                                                    <iframe id="childFrame" :src="'../innovationRoom/720Modal/3D.html' + '?model=' + item.modelName + '&anim=' + item.animation + '&trans=' + item.transparent + '&color=' + item.changeColor + '&type=' + item.modelType + '&scale=' + item.scale" 
                                                     frameborder="0" class="iframe w-100 h-100" allowtransparency="true" style="background-color: transparent;" ></iframe>
                                                 </div>
 
@@ -228,7 +228,6 @@
                                                     <ol class="threesixty_images"></ol>
                                                 </div> -->
                                             </div>
-                                            
 
                                             <!-- 名字 描述 -->
                                             <div class="product-info-wrap">
@@ -282,12 +281,14 @@
         <div class="modal-container modal-service-center flex flex-vc flex-hc animated fadeIn" style="z-index: 1000; display: none;">
             <div class="modal-bg" onclick="hideServiceCenter()"></div>
             <div class="modal-body">
-                <div class="modal-title text-center text-white margin-tb">3M服务中心</div>
+                <div class="modal-title text-center text-white margin-tb">服务中心</div>
                 <div class="modal-content">
                     <div class="img">
                         <img src="../images/service_center_ewm.png" alt="" class="w-100">
                     </div>
-                    <div class="text-center text-content text-white margin-tb p">扫码进入3M个人防护小程序，获取更多防护知识信息。</div>
+                    <div class="text-center text-content text-white margin-tb p">
+                        扫码进入小程序，获取更多知识信息。
+                    </div>
                 </div>
             </div>
         </div>

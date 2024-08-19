@@ -40,15 +40,7 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="jcsc_zaoyin1" style="skin_hotspotstyle_red" ath="-160.072" atv="3.755" onclick="show_hotspot_alert(jcsc_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="jcsc_zaoyin2" style="skin_hotspotstyle_red" ath="-29.012" atv="3.534" onclick="show_hotspot_alert(jcsc_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="jcsc_zaoyin3" style="skin_hotspotstyle_red" ath="91.142" atv="1.136" onclick="show_hotspot_alert(jcsc_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="jcsc_keliwu1" style="skin_hotspotstyle_red" ath="-110.738" atv="5.378" onclick="show_hotspot_alert(jcsc_keliwu1)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-		<hotspot name="jcsc_keliwu2" style="skin_hotspotstyle_red" ath="7.544" atv="3.325" onclick="show_hotspot_alert(jcsc_keliwu2)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-
-		<hotspot name="jcsc_yhqt1" style="skin_hotspotstyle_red" ath="0.002" atv="-9.949" onclick="show_hotspot_alert(jcsc_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
+		
 	</scene>
 
 

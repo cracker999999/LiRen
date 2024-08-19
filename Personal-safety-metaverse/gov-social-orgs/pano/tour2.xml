@@ -40,15 +40,13 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="sn_linbian1" style="skin_hotspotstyle_red" ath="38.110" atv="-7.266" onclick="show_hotspot_alert(sn_linbian1)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
-		<hotspot name="sn_linbian2" style="skin_hotspotstyle_red" ath="-79.050" atv="3.786" onclick="show_hotspot_alert(sn_linbian2)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
-
-		<hotspot name="sn_pingtai" style="skin_hotspotstyle_red" ath="-6.950" atv="-1.190" onclick="show_hotspot_alert(sn_pingtai)" onloaded="add_all_the_time_tooltip()" text="操作平台" />
-
-		<hotspot name="sn_dongkou1" style="skin_hotspotstyle_red" ath="93.036" atv="3.522" onclick="show_hotspot_alert(sn_dongkou1)" onloaded="add_all_the_time_tooltip()" text="洞口作业" />
-		<hotspot name="sn_dongkou2" style="skin_hotspotstyle_red" ath="111.120" atv="30.141" onclick="show_hotspot_alert(sn_dongkou2)" onloaded="add_all_the_time_tooltip()" text="洞口作业" />
-
-
+		
+		<hotspot name="product_49" style="skin_hotspotstyle_red" ath="-19.4" atv="-22.7" onclick="show_hotspot_alert(product_49)" onloaded="add_all_the_time_tooltip()" text="隔声室" />
+		<hotspot name="product_74" style="skin_hotspotstyle_red" ath="-2.7" atv="0.7" onclick="show_hotspot_alert(product_74)" onloaded="add_all_the_time_tooltip()" text="听力计" />
+		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="12.6" atv="3.7" onclick="show_hotspot_alert(product_14)" onloaded="add_all_the_time_tooltip()" text="耳镜" />
+		<hotspot name="product_37" style="skin_hotspotstyle_red" ath="45.2" atv="1.4" onclick="show_hotspot_alert(product_37)" onloaded="add_all_the_time_tooltip()" text="视觉强化" />
+		<hotspot name="product_52" style="skin_hotspotstyle_red" ath="11" atv="11.5" onclick="show_hotspot_alert(product_52)" onloaded="add_all_the_time_tooltip()" text="听能保养包" />
+		<hotspot name="product_96" style="skin_hotspotstyle_red" ath="12.6" atv="20" onclick="show_hotspot_alert(product_96)" onloaded="add_all_the_time_tooltip()" text="助听器" />
 
 	</scene>
 

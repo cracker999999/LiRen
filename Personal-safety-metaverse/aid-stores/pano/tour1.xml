@@ -40,19 +40,14 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="sj_zaoyin1" style="skin_hotspotstyle_red" ath="59.443" atv="21.211" onclick="show_hotspot_alert(sj_zaoyin1)"  onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="sj_zaoyin2" style="skin_hotspotstyle_red" ath="144.582" atv="-3.764" onclick="show_hotspot_alert(sj_zaoyin2)"  onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="sj_zaoyin3" style="skin_hotspotstyle_red" ath="160.662" atv="-1.299" onclick="show_hotspot_alert(sj_zaoyin3)"  onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="sj_zaoyin4" style="skin_hotspotstyle_red" ath="-19.767" atv="1.398" onclick="show_hotspot_alert(sj_zaoyin4)"  onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="product_83" style="skin_hotspotstyle_red" ath="-19.4" atv="12.2" onclick="show_hotspot_alert(product_83)"  onloaded="add_all_the_time_tooltip()" text="OAE设备" />
+		<hotspot name="product_38" style="skin_hotspotstyle_red" ath="-5" atv="12.8" onclick="show_hotspot_alert(product_38)"  onloaded="add_all_the_time_tooltip()" text="声阻抗" />
+		<hotspot name="product_36" style="skin_hotspotstyle_red" ath="8.5" atv="12.8" onclick="show_hotspot_alert(product_36)"  onloaded="add_all_the_time_tooltip()" text="声级计" />
+		<hotspot name="product_74" style="skin_hotspotstyle_red" ath="22" atv="11" onclick="show_hotspot_alert(product_74)"  onloaded="add_all_the_time_tooltip()" text="听力计" />
 
-		<hotspot name="sj_yhqt1" style="skin_hotspotstyle_red" ath="112.711" atv="7.880" onclick="show_hotspot_alert(sj_yhqt1)"  onloaded="add_all_the_time_tooltip()" text="有害气体" />
+		<hotspot name="product_37" style="skin_hotspotstyle_red" ath="150" atv="26.4" onclick="show_hotspot_alert(product_37)"  onloaded="add_all_the_time_tooltip()" text="视觉强化" />
+		<hotspot name="product_35" style="skin_hotspotstyle_red" ath="-149" atv="25" onclick="show_hotspot_alert(product_35)"  onloaded="add_all_the_time_tooltip()" text="声场" />
 
-		<hotspot name="sj_cjw1" style="skin_hotspotstyle_red" ath="80.265" atv="12.994" onclick="show_hotspot_alert(sj_cjw1)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="sj_cjw2" style="skin_hotspotstyle_red" ath="-11.844" atv="2.405" onclick="show_hotspot_alert(sj_cjw2)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="sj_fc1" style="skin_hotspotstyle_red" ath="46.320" atv="9.946" onclick="show_hotspot_alert(sj_fc1)"  onloaded="add_all_the_time_tooltip()" text="粉尘" />
-		<hotspot name="sj_fc2" style="skin_hotspotstyle_red" ath="20.292" atv="15.150" onclick="show_hotspot_alert(sj_fc2)"  onloaded="add_all_the_time_tooltip()" text="粉尘" />
-		<hotspot name="sj_fc3" style="skin_hotspotstyle_red" ath="8.522" atv="-2.094" onclick="show_hotspot_alert(sj_fc3)"  onloaded="add_all_the_time_tooltip()" text="粉尘" />
 
 	</scene>
 

@@ -40,14 +40,12 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="ld_linbian1" style="skin_hotspotstyle_red" ath="11.952" atv="4.768" onclick="show_hotspot_alert(ld_linbian1)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
-		<hotspot name="ld_linbian2" style="skin_hotspotstyle_red" ath="83.654" atv="7.446" onclick="show_hotspot_alert(ld_linbian2)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
-
-		<hotspot name="ld_dongkou" style="skin_hotspotstyle_red" ath="-78.684" atv="14.854" onclick="show_hotspot_alert(ld_dongkou)" onloaded="add_all_the_time_tooltip()" text="洞口作业" />
-
-		<hotspot name="ld_pingtai" style="skin_hotspotstyle_red" ath="-34.024" atv="10.868" onclick="show_hotspot_alert(ld_pingtai)" onloaded="add_all_the_time_tooltip()" text="操作平台" />
-
-		<hotspot name="ld_pandeng" style="skin_hotspotstyle_red" ath="-54.455" atv="-16.526" onclick="show_hotspot_alert(ld_pandeng)" onloaded="add_all_the_time_tooltip()" text="攀登作业" />
+		<!-- 听力车 -->
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="-13.8" atv="-11.5" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-6" atv="-11.5" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="4" atv="-11.5" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="12" atv="-11.5" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="20" atv="-11.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
 
 	</scene>
 

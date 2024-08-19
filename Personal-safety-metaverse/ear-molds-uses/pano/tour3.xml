@@ -40,11 +40,9 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="bz_zy1" style="skin_hotspotstyle_red" ath="134.133" atv="22.557" onclick="show_hotspot_alert(bz_zy1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="bz_zy2" style="skin_hotspotstyle_red" ath="-128.891" atv="20.801" onclick="show_hotspot_alert(bz_zy2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="bz_zy3" style="skin_hotspotstyle_red" ath="37.648" atv="12.539" onclick="show_hotspot_alert(bz_zy3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="bz_zy4" style="skin_hotspotstyle_red" ath="103.00" atv="8.421" onclick="show_hotspot_alert(bz_zy4)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
+		<hotspot name="product_71" style="skin_hotspotstyle_red" ath="0" atv="-4" onclick="show_hotspot_alert(product_71)" onloaded="add_all_the_time_tooltip()" text="3D建模" />
+		<hotspot name="product_94" style="skin_hotspotstyle_red" ath="23" atv="-4" onclick="show_hotspot_alert(product_94)" onloaded="add_all_the_time_tooltip()" text="代加工生产" />
+	
 	</scene>
 
 

@@ -40,15 +40,14 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="sn_linbian1" style="skin_hotspotstyle_red" ath="38.110" atv="-7.266" onclick="show_hotspot_alert(sn_linbian1)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
-		<hotspot name="sn_linbian2" style="skin_hotspotstyle_red" ath="-79.050" atv="3.786" onclick="show_hotspot_alert(sn_linbian2)" onloaded="add_all_the_time_tooltip()" text="临边作业" />
+		<hotspot name="product_97" style="skin_hotspotstyle_red" ath="-15.6" atv="-1.5" onclick="show_hotspot_alert(product_97)" onloaded="add_all_the_time_tooltip()" text="培训体系" />
+		<hotspot name="product_98" style="skin_hotspotstyle_red" ath="12.3" atv="-4.1" onclick="show_hotspot_alert(product_98)" onloaded="add_all_the_time_tooltip()" text="资质考核" />
 
-		<hotspot name="sn_pingtai" style="skin_hotspotstyle_red" ath="-6.950" atv="-1.190" onclick="show_hotspot_alert(sn_pingtai)" onloaded="add_all_the_time_tooltip()" text="操作平台" />
-
-		<hotspot name="sn_dongkou1" style="skin_hotspotstyle_red" ath="93.036" atv="3.522" onclick="show_hotspot_alert(sn_dongkou1)" onloaded="add_all_the_time_tooltip()" text="洞口作业" />
-		<hotspot name="sn_dongkou2" style="skin_hotspotstyle_red" ath="111.120" atv="30.141" onclick="show_hotspot_alert(sn_dongkou2)" onloaded="add_all_the_time_tooltip()" text="洞口作业" />
-
-
+		<hotspot name="product_26" style="skin_hotspotstyle_red" ath="17.4" atv="-16.2" onclick="show_hotspot_alert(product_26)" onloaded="add_all_the_time_tooltip()" text="光固化机" />
+		<hotspot name="product_57" style="skin_hotspotstyle_red" ath="28.7" atv="-14.7" onclick="show_hotspot_alert(product_57)" onloaded="add_all_the_time_tooltip()" text="压力锅" />
+		<hotspot name="product_45" style="skin_hotspotstyle_red" ath="39.4" atv="-14.7" onclick="show_hotspot_alert(product_45)" onloaded="add_all_the_time_tooltip()" text="化学材料" />
+		<hotspot name="product_93" style="skin_hotspotstyle_red" ath="50.3" atv="-11.2" onclick="show_hotspot_alert(product_93)" onloaded="add_all_the_time_tooltip()" text="钻头" />
+		
 
 	</scene>
 

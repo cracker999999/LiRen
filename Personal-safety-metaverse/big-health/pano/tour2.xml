@@ -40,19 +40,13 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="hjcj_keliwu1" style="skin_hotspotstyle_red" ath="58.428" atv="-4.808" onclick="show_hotspot_alert(hjcj_keliwu1)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-		<hotspot name="hjcj_keliwu2" style="skin_hotspotstyle_red" ath="102.599" atv="-2.063" onclick="show_hotspot_alert(hjcj_keliwu2)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-
-		<hotspot name="hjcj_yhqt1" style="skin_hotspotstyle_red" ath="0.364" atv="-6.565" onclick="show_hotspot_alert(hjcj_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
-		<hotspot name="hjcj_zaoyin1" style="skin_hotspotstyle_red" ath="-123.844" atv="5.431" onclick="show_hotspot_alert(hjcj_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="hjcj_zaoyin2" style="skin_hotspotstyle_red" ath="44.001" atv="3.264" onclick="show_hotspot_alert(hjcj_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="hjcj_gxfs1" style="skin_hotspotstyle_red" ath="-104.083" atv="0.490" onclick="show_hotspot_alert(hjcj_gxfs1)" onloaded="add_all_the_time_tooltip()" text="光学辐射" />
-		<hotspot name="hjcj_gxfs2" style="skin_hotspotstyle_red" ath="90.333" atv="0.672" onclick="show_hotspot_alert(hjcj_gxfs2)" onloaded="add_all_the_time_tooltip()" text="光学辐射" />
-
-		<hotspot name="hjcj_cjw1" style="skin_hotspotstyle_red" ath="-87.761" atv="0.360" onclick="show_hotspot_alert(hjcj_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="hjcj_cjw2" style="skin_hotspotstyle_red" ath="-45.153" atv="4.650" onclick="show_hotspot_alert(hjcj_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
+		
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-4.1" atv="-27.7" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="24" atv="-29.5" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
+		
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="-172.6" atv="7.7" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="179.4" atv="15.3" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="-157.5" atv="19.9" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
 
 
 	</scene>

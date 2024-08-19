@@ -40,18 +40,10 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="xk_zaoyin1" style="skin_hotspotstyle_red" ath="-107.731" atv="-5.104" onclick="show_hotspot_alert(xk_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="xk_zaoyin2" style="skin_hotspotstyle_red" ath="59.526" atv="-7.811" onclick="show_hotspot_alert(xk_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="xk_zaoyin3" style="skin_hotspotstyle_red" ath="58.479" atv="4.674" onclick="show_hotspot_alert(xk_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="xk_fc1" style="skin_hotspotstyle_red" ath="-38.834" atv="-4.205" onclick="show_hotspot_alert(xk_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-		<hotspot name="xk_fc2" style="skin_hotspotstyle_red" ath="-1.387" atv="4.432" onclick="show_hotspot_alert(xk_fc2)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-		<hotspot name="xk_fc3" style="skin_hotspotstyle_red" ath="-28.043" atv="0.772" onclick="show_hotspot_alert(xk_fc3)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
-		<hotspot name="xk_cjw1" style="skin_hotspotstyle_red" ath="-63.786" atv="-2.139" onclick="show_hotspot_alert(xk_cjw1)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="xk_cjw2" style="skin_hotspotstyle_red" ath="32.309" atv="-7.661" onclick="show_hotspot_alert(xk_cjw2)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="xk_cjw3" style="skin_hotspotstyle_red" ath="71.691" atv="1.732" onclick="show_hotspot_alert(xk_cjw3)"  onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
+		<hotspot name="product_33" style="skin_hotspotstyle_red" ath="1.2" atv="-12.6" onclick="show_hotspot_alert(product_33)"  onloaded="add_all_the_time_tooltip()" text="工作台" />
+		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="28.4" atv="6.2" onclick="show_hotspot_alert(product_14)"  onloaded="add_all_the_time_tooltip()" text="耳镜" />
+		<hotspot name="product_34" style="skin_hotspotstyle_red" ath="82" atv="10" onclick="show_hotspot_alert(product_34)"  onloaded="add_all_the_time_tooltip()" text="诊疗椅" />
+		<hotspot name="product_33" style="skin_hotspotstyle_red" ath="-172" atv="26.4" onclick="show_hotspot_alert(product_33)"  onloaded="add_all_the_time_tooltip()" text="工作台" />
 
 
 

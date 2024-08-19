@@ -11,11 +11,11 @@
 		if(device.panovideosupport == false,
 			error('Sorry, but panoramic videos are not supported by your current browser!');
 		  ,
-			loadscene(scene_7);
+			loadscene(scene_8);
 		  );
 	</action>
 	
-	<scene name="scene_7" title="krpano Panoramic Video Example">
+	<scene name="scene_8" title="krpano Panoramic Video Example">
 
 		<!-- include the videoplayer plugin -->
 		<!-- <plugin name="video"
@@ -29,7 +29,7 @@
 		<!-- use the videoplayer plugin as panoramic image source -->
 		<image>
 			<!-- <sphere url="plugin:video" /> -->
-			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/tingliche.jpg" />
+			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/ZhuTingQiLianSuoMenDian_YanPeiPeiXunJiZiZhiKaoHe.jpg" />
 		</image>
 
 		<!-- set the default view -->
@@ -40,20 +40,9 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="zg_zaoyin1" style="skin_hotspotstyle_red" ath="-54.318" atv="-1.756" onclick="show_hotspot_alert(zg_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin2" style="skin_hotspotstyle_red" ath="-2.861" atv="-3.951" onclick="show_hotspot_alert(zg_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin3" style="skin_hotspotstyle_red" ath="25.482" atv="-6.534" onclick="show_hotspot_alert(zg_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin4" style="skin_hotspotstyle_red" ath="-77.378" atv="1.283" onclick="show_hotspot_alert(zg_zaoyin4)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="zg_fc1" style="skin_hotspotstyle_red" ath="-94.859" atv="-1.700" onclick="show_hotspot_alert(zg_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
-		<hotspot name="zg_cjw1" style="skin_hotspotstyle_red" ath="-21.909" atv="-8.757" onclick="show_hotspot_alert(zg_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="zg_cjw2" style="skin_hotspotstyle_red" ath="66.071" atv="-0.932" onclick="show_hotspot_alert(zg_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="zg_cjw3" style="skin_hotspotstyle_red" ath="-66.724" atv="-2.323" onclick="show_hotspot_alert(zg_cjw3)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="zg_yhqt1" style="skin_hotspotstyle_red" ath="53.140" atv="-4.836" onclick="show_hotspot_alert(zg_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="zg_yhqt2" style="skin_hotspotstyle_red" ath="-12.158" atv="-4.425" onclick="show_hotspot_alert(zg_yhqt2)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
+		<hotspot name="product_88" style="skin_hotspotstyle_red" ath="-13.8" atv="-11.5" onclick="show_hotspot_alert(product_88)" onloaded="add_all_the_time_tooltip()" text="验配培训" />
+		<hotspot name="product_89" style="skin_hotspotstyle_red" ath="12.7" atv="-10.6" onclick="show_hotspot_alert(product_89)" onloaded="add_all_the_time_tooltip()" text="验配师资质考核" />
+		
 	</scene>
 
 

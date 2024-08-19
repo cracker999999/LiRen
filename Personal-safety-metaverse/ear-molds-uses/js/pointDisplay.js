@@ -9,6 +9,9 @@ function onHotspotClick(e) {
     let hotspotId = e.info.id,
         text = e.info.text;
     console.log("hotspotId: " + hotspotId);
+
+    onClickHotspot(hotspotId, vm);
+
     let sceneIndex = vm.sceneIndex,
         sceneName = vm.sceneList[sceneIndex].name,
         curAlertIndex = vm.curAlertIndex,
@@ -46,7 +49,7 @@ function onHotspotClick(e) {
         default:
             return;
     }
-    vm.showAlertBox = true;
+    // vm.showAlertBox = true;
 
     var title = '场景页面-冶金-' + sceneName;
     var name = '场景页面-冶金-' + sceneName + '-场景危害查看';

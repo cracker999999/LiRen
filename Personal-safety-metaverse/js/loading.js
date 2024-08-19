@@ -22,7 +22,7 @@ loader.complete(function () {
     flashInit($cityImgs, len2);
 });
 loader.process(function () {
-    console.log("process: " + this.processNum);
+    // console.log("process: " + this.processNum);
 });
 loader.start();
 

@@ -14,7 +14,6 @@ document.addEventListener('productConfigLoaded', onProductConfigLoaded);
 
 function onProductConfigLoaded(e) {
     vm.productMap = productMap;
-    console.log(vm.productMap.size);
     vm.isConfigLoaded = true;
 }
 
@@ -27,6 +26,7 @@ const app = Vue.createApp({
     data() {
         return {
             isConfigLoaded: false,
+            productMap: null,
             krpano: null, // 左侧选中的场景索引
             sceneIndex, // 场景索引
             alertIndex: -1, // 危害点索引
@@ -120,7 +120,6 @@ const app = Vue.createApp({
             ],
             curSolutionList: [], //当前场景的解决方案
             productList: [], //从配置读取
-            productMap: null,
             curProductList: [], // 单个解决方案下的产品列表
             curProductTypeIndex: 0,
             productTypeList: [ // 产品页面的左侧分类
@@ -517,13 +516,10 @@ const app = Vue.createApp({
             this.curHotspot = '';
 
             let sceneIndex = this.sceneIndex,
-                sceneList = this.sceneList,
-                sceneName = sceneList[sceneIndex].name,
+                sceneName = this.sceneList[this.sceneIndex].name,
                 curAlertIndex = this.curAlertIndex,
                 curAlertList = this.curAlertList,
-                curSolutionIndex = this.curSolutionIndex,
-                curSolutionList = this.curSolutionList,
-                curSolution = curSolutionList[curSolutionIndex];
+                curSolution = this.curSolutionList[this.curSolutionIndex];
 
             // this.curProductList = this.productList.filter(item => {
             //     return item.sceneName.includes(sceneName) && item.solutionName.includes(curSolution.solutionName)
@@ -676,7 +672,7 @@ const app = Vue.createApp({
             var solutionItem = this.curSolutionList[this.curSolutionIndex];
             var productLink = productItem.productLink[index];
             var title = '防护解决方案弹框-化工-' + sceneItem.name;
-            var name = '防护解决方案弹框-化工-' + sceneItem.name + '-去京东看看';
+            var name = '防护解决方案弹框-化工-' + sceneItem.name + '-去商城看看';
             var attr1 = solutionItem.solutionName;
             var attr2 = productItem.name;
             typeof addPageEvent == 'function' && addPageEvent(title, name, attr1, attr2);

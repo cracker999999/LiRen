@@ -40,17 +40,10 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="lt_yhqt1" style="skin_hotspotstyle_red" ath="-151.635" atv="-10.835" onclick="show_hotspot_alert(lt_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="lt_yhqt2" style="skin_hotspotstyle_red" ath="-85.501" atv="-16.021" onclick="show_hotspot_alert(lt_yhqt2)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="lt_yhqt3" style="skin_hotspotstyle_red" ath="-49.334" atv="-14.933" onclick="show_hotspot_alert(lt_yhqt3)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
-		<hotspot name="lt_cjw1" style="skin_hotspotstyle_red" ath="-115.617" atv="-13.372" onclick="show_hotspot_alert(lt_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="lt_cjw2" style="skin_hotspotstyle_red" ath="-11.331" atv="-13.650" onclick="show_hotspot_alert(lt_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="lt_zaoyin1" style="skin_hotspotstyle_red" ath="-29.908" atv="-20.942" onclick="show_hotspot_alert(lt_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="lt_zaoyin2" style="skin_hotspotstyle_red" ath="-1.283" atv="3.397" onclick="show_hotspot_alert(lt_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-
+		<hotspot name="product_86" style="skin_hotspotstyle_red" ath="-43" atv="6" onclick="show_hotspot_alert(product_86)"  onloaded="add_all_the_time_tooltip()" text="NOAH平台" />
+		<hotspot name="product_8" style="skin_hotspotstyle_red" ath="-17.6" atv="17" onclick="show_hotspot_alert(product_8)"  onloaded="add_all_the_time_tooltip()" text="编程器" />
+		<hotspot name="product_13" style="skin_hotspotstyle_red" ath="0.37" atv="3" onclick="show_hotspot_alert(product_13)"  onloaded="add_all_the_time_tooltip()" text="真耳分析" />
+		<hotspot name="product_40" style="skin_hotspotstyle_red" ath="23" atv="-3.6" onclick="show_hotspot_alert(product_40)"  onloaded="add_all_the_time_tooltip()" text="助听器效果演示仪" />
 	</scene>
 
 

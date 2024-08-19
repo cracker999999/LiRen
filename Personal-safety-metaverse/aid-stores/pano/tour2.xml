@@ -40,19 +40,10 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="jh_fc1" style="skin_hotspotstyle_red" ath="-54.389" atv="6.748" onclick="show_hotspot_alert(jh_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-		<hotspot name="jh_fc2" style="skin_hotspotstyle_red" ath="-78.064" atv="-26.692" onclick="show_hotspot_alert(jh_fc2)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-		<hotspot name="jh_fc3" style="skin_hotspotstyle_red" ath="15.878" atv="-6.763" onclick="show_hotspot_alert(jh_fc3)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
-		<hotspot name="jh_yhqt1" style="skin_hotspotstyle_red" ath="-4.836" atv="10.590" onclick="show_hotspot_alert(jh_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
-		<hotspot name="jh_cjw1" style="skin_hotspotstyle_red" ath="38.363" atv="29.924" onclick="show_hotspot_alert(jh_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="jh_cjw2" style="skin_hotspotstyle_red" ath="53.167" atv="8.841" onclick="show_hotspot_alert(jh_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="jh_zaoyin1" style="skin_hotspotstyle_red" ath="73.190" atv="-0.302" onclick="show_hotspot_alert(jh_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="jh_zaoyin2" style="skin_hotspotstyle_red" ath="-77.99" atv="6.655" onclick="show_hotspot_alert(jh_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-
+		<hotspot name="product_84" style="skin_hotspotstyle_red" ath="-26" atv="18.7" onclick="show_hotspot_alert(product_84)"  onloaded="add_all_the_time_tooltip()" text="ABR/ASSR设备" />
+		<hotspot name="product_85" style="skin_hotspotstyle_red" ath="-11" atv="5" onclick="show_hotspot_alert(product_85)"  onloaded="add_all_the_time_tooltip()" text="诊疗床" />
+		<hotspot name="product_40" style="skin_hotspotstyle_red" ath="0.37" atv="0.22" onclick="show_hotspot_alert(product_40)"  onloaded="add_all_the_time_tooltip()" text="助听器效果演示仪" />
+		<hotspot name="product_49" style="skin_hotspotstyle_red" ath="30" atv="-1.8" onclick="show_hotspot_alert(product_49)"  onloaded="add_all_the_time_tooltip()" text="隔声室" />
 
 	</scene>
 

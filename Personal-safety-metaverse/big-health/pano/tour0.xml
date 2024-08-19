@@ -40,18 +40,12 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="pack_keliwu1" style="skin_hotspotstyle_red" ath="-120.813" atv="-3.110" onclick="show_hotspot_alert(pack_keliwu1)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-		<hotspot name="pack_keliwu2" style="skin_hotspotstyle_red" ath="-65.547" atv="-3.090" onclick="show_hotspot_alert(pack_keliwu2)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-		<hotspot name="pack_keliwu3" style="skin_hotspotstyle_red" ath="-37.270" atv="2.057" onclick="show_hotspot_alert(pack_keliwu3)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="-50.4" atv="-13" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-21.7" atv="-14.9" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="1.3" atv="-15.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
 
-		<hotspot name="pack_yhqt1" style="skin_hotspotstyle_red" ath="-94.296" atv="-5.032" onclick="show_hotspot_alert(pack_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="pack_yhqt2" style="skin_hotspotstyle_red" ath="-22.655" atv="-1.802" onclick="show_hotspot_alert(pack_yhqt2)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
-		<hotspot name="pack_cjw1" style="skin_hotspotstyle_red" ath="-58.059" atv="5.811" onclick="show_hotspot_alert(pack_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="pack_cjw2" style="skin_hotspotstyle_red" ath="-141.099" atv="-0.818" onclick="show_hotspot_alert(pack_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="pack_zaoyin1" style="skin_hotspotstyle_red" ath="26.784" atv="-3.757" onclick="show_hotspot_alert(pack_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="pack_zaoyin2" style="skin_hotspotstyle_red" ath="89.776" atv="1.318" onclick="show_hotspot_alert(pack_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="15.5" atv="-15.9" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="34.3" atv="-13.9" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
 
 	</scene>
 

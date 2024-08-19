@@ -40,16 +40,7 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="cycj_cjw1" style="skin_hotspotstyle_red" ath="-24.560" atv="-5.729" onclick="show_hotspot_alert(cycj_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="cycj_cjw2" style="skin_hotspotstyle_red" ath="-9.583" atv="1.652" onclick="show_hotspot_alert(cycj_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="cycj_cjw3" style="skin_hotspotstyle_red" ath="-105.081" atv="-1.361" onclick="show_hotspot_alert(cycj_cjw3)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="cycj_zaoyin1" style="skin_hotspotstyle_red" ath="26.712" atv="-0.198" onclick="show_hotspot_alert(cycj_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="cycj_keliwu1" style="skin_hotspotstyle_red" ath="-49.745" atv="1.926" onclick="show_hotspot_alert(cycj_keliwu1)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-		<hotspot name="cycj_keliwu2" style="skin_hotspotstyle_red" ath="-66.306" atv="15.387" onclick="show_hotspot_alert(cycj_keliwu2)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-		<hotspot name="cycj_keliwu3" style="skin_hotspotstyle_red" ath="-150.556" atv="-0.802" onclick="show_hotspot_alert(cycj_keliwu3)" onloaded="add_all_the_time_tooltip()" text="颗粒物" />
-
+		
 
 	</scene>
 

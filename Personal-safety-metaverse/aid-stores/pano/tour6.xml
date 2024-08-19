@@ -40,20 +40,10 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="zg_zaoyin1" style="skin_hotspotstyle_red" ath="-54.318" atv="-1.756" onclick="show_hotspot_alert(zg_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin2" style="skin_hotspotstyle_red" ath="-2.861" atv="-3.951" onclick="show_hotspot_alert(zg_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin3" style="skin_hotspotstyle_red" ath="25.482" atv="-6.534" onclick="show_hotspot_alert(zg_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin4" style="skin_hotspotstyle_red" ath="-77.378" atv="1.283" onclick="show_hotspot_alert(zg_zaoyin4)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-
-		<hotspot name="zg_fc1" style="skin_hotspotstyle_red" ath="-94.859" atv="-1.700" onclick="show_hotspot_alert(zg_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
-
-		<hotspot name="zg_cjw1" style="skin_hotspotstyle_red" ath="-21.909" atv="-8.757" onclick="show_hotspot_alert(zg_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="zg_cjw2" style="skin_hotspotstyle_red" ath="66.071" atv="-0.932" onclick="show_hotspot_alert(zg_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="zg_cjw3" style="skin_hotspotstyle_red" ath="-66.724" atv="-2.323" onclick="show_hotspot_alert(zg_cjw3)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-
-		<hotspot name="zg_yhqt1" style="skin_hotspotstyle_red" ath="53.140" atv="-4.836" onclick="show_hotspot_alert(zg_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="zg_yhqt2" style="skin_hotspotstyle_red" ath="-12.158" atv="-4.425" onclick="show_hotspot_alert(zg_yhqt2)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-
+		<hotspot name="product_1" style="skin_hotspotstyle_red" ath="45" atv="-8.5" onclick="show_hotspot_alert(product_1)"  onloaded="add_all_the_time_tooltip()" text="3D扫描仪" />
+		<hotspot name="product_2" style="skin_hotspotstyle_red" ath="35.7" atv="-9.3" onclick="show_hotspot_alert(product_2)"  onloaded="add_all_the_time_tooltip()" text="3D打印机" />
+		<hotspot name="product_72" style="skin_hotspotstyle_red" ath="-6" atv="-11" onclick="show_hotspot_alert(product_72)"  onloaded="add_all_the_time_tooltip()" text="3D后处理" />
+		
 	</scene>
 
 

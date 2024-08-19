@@ -33,7 +33,10 @@ document.addEventListener('click', onClick);
 
 function onClick(e) {
     const sphere = window.krpano.screentosphere(e.clientX, e.clientY);
-    console.log(sphere);
+    // console.log(sphere);
+    sphere.x = Number(sphere.x.toFixed(1));
+    sphere.y = Number(sphere.y.toFixed(1));
+    console.log(sphere.x, sphere.y)
     const floorHeight = 160;
     const depth = 1;
     const xyz = window.krpano.spheretospace(sphere.x, sphere.y, depth);

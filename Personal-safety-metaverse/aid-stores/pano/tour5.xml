@@ -40,19 +40,24 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="zg_zaoyin1" style="skin_hotspotstyle_red" ath="-54.318" atv="-1.756" onclick="show_hotspot_alert(zg_zaoyin1)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin2" style="skin_hotspotstyle_red" ath="-2.861" atv="-3.951" onclick="show_hotspot_alert(zg_zaoyin2)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin3" style="skin_hotspotstyle_red" ath="25.482" atv="-6.534" onclick="show_hotspot_alert(zg_zaoyin3)" onloaded="add_all_the_time_tooltip()" text="噪音" />
-		<hotspot name="zg_zaoyin4" style="skin_hotspotstyle_red" ath="-77.378" atv="1.283" onclick="show_hotspot_alert(zg_zaoyin4)" onloaded="add_all_the_time_tooltip()" text="噪音" />
+		<hotspot name="product_16" style="skin_hotspotstyle_red" ath="16.4" atv="-19.2" onclick="show_hotspot_alert(product_16)"  onloaded="add_all_the_time_tooltip()" text="亚克力六耳展示架" />
+		<hotspot name="product_64" style="skin_hotspotstyle_red" ath="36" atv="-17.4" onclick="show_hotspot_alert(product_64)"  onloaded="add_all_the_time_tooltip()" text="适配型耳塞" />
+		<hotspot name="product_17" style="skin_hotspotstyle_red" ath="43" atv="-16" onclick="show_hotspot_alert(product_17)"  onloaded="add_all_the_time_tooltip()" text="挂绳" />
+		<hotspot name="product_5" style="skin_hotspotstyle_red" ath="49.5" atv="-13" onclick="show_hotspot_alert(product_5)"  onloaded="add_all_the_time_tooltip()" text="耳朵解剖模型" />
 
-		<hotspot name="zg_fc1" style="skin_hotspotstyle_red" ath="-94.859" atv="-1.700" onclick="show_hotspot_alert(zg_fc1)" onloaded="add_all_the_time_tooltip()" text="粉尘" />
+		<hotspot name="product_55" style="skin_hotspotstyle_red" ath="33.75" atv="-0.3" onclick="show_hotspot_alert(product_55)"  onloaded="add_all_the_time_tooltip()" text="防耳垢网罩" />
+		<hotspot name="product_19" style="skin_hotspotstyle_red" ath="42" atv="0.27" onclick="show_hotspot_alert(product_19)"  onloaded="add_all_the_time_tooltip()" text="电子干燥器" />
+		<hotspot name="product_6" style="skin_hotspotstyle_red" ath="32.4" atv="15" onclick="show_hotspot_alert(product_6)"  onloaded="add_all_the_time_tooltip()" text="新款干燥饼+干燥盒" />
+		<hotspot name="product_87" style="skin_hotspotstyle_red" ath="41.2" atv="11.8" onclick="show_hotspot_alert(product_87)"  onloaded="add_all_the_time_tooltip()" text="声管耗材" />
+		<hotspot name="product_18" style="skin_hotspotstyle_red" ath="14.2" atv="29" onclick="show_hotspot_alert(product_18)"  onloaded="add_all_the_time_tooltip()" text="测电器" />
+		<hotspot name="product_54" style="skin_hotspotstyle_red" ath="28" atv="30.2" onclick="show_hotspot_alert(product_54)"  onloaded="add_all_the_time_tooltip()" text="电池" />
 
-		<hotspot name="zg_cjw1" style="skin_hotspotstyle_red" ath="-21.909" atv="-8.757" onclick="show_hotspot_alert(zg_cjw1)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="zg_cjw2" style="skin_hotspotstyle_red" ath="66.071" atv="-0.932" onclick="show_hotspot_alert(zg_cjw2)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
-		<hotspot name="zg_cjw3" style="skin_hotspotstyle_red" ath="-66.724" atv="-2.323" onclick="show_hotspot_alert(zg_cjw3)" onloaded="add_all_the_time_tooltip()" text="冲击物" />
+		<hotspot name="product_44" style="skin_hotspotstyle_red" ath="-44.3" atv="24" onclick="show_hotspot_alert(product_44)"  onloaded="add_all_the_time_tooltip()" text="真空护理仪" />
+		
+		<hotspot name="product_27" style="skin_hotspotstyle_red" ath="-142" atv="1.74" onclick="show_hotspot_alert(product_27)"  onloaded="add_all_the_time_tooltip()" text="大号耳朵展示架" />
+		
+		<hotspot name="product_43" style="skin_hotspotstyle_red" ath="120" atv="1.3" onclick="show_hotspot_alert(product_43)"  onloaded="add_all_the_time_tooltip()" text="Z型展示架" />
 
-		<hotspot name="zg_yhqt1" style="skin_hotspotstyle_red" ath="53.140" atv="-4.836" onclick="show_hotspot_alert(zg_yhqt1)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
-		<hotspot name="zg_yhqt2" style="skin_hotspotstyle_red" ath="-12.158" atv="-4.425" onclick="show_hotspot_alert(zg_yhqt2)" onloaded="add_all_the_time_tooltip()" text="有害气体" />
 
 	</scene>
 
