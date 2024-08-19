@@ -238,7 +238,7 @@
 }
 .overview-modal .pin-list .pin-item.item-yejin {
   top: 50%;
-  left: 46%;
+  left: 43%;
 }
 .overview-modal .pin-list .pin-item.item-zhiyao {
   top: 32%;
@@ -246,11 +246,11 @@
 }
 .overview-modal .pin-list .pin-item.item-qiche {
   top: 10%;
-  left: 40%;
+  left: 36%;
 }
 .overview-modal .pin-list .pin-item.item-jianzhu {
   top: 13%;
-  left: 63%;
+  left: 61%;
 }
 .overview-modal .pin-list .pin-item.item-chuanbo {
   top: 11%;
@@ -262,7 +262,7 @@
 }
 .overview-modal .pin-list .pin-item.item-chuangxin {
   top: 32%;
-  left: 44.5%;
+  left: 47%;
   pointer-events: all;
 }
 .overview-modal .dot-list .dot-item {
@@ -322,37 +322,37 @@
   left: 20%;
 }
 .overview-modal .dot-list .dot-item.dot-zhijiyaopian {
-  top: 41%;
-  left: 30%;
+  top: 55%;
+  left: 20%;
 }
 .overview-modal .dot-list .dot-item.dot-ermo-chanpinpeitao {
-  top: 35%;
-  left: 27%;
+  top: 37%;
+  left: 30%;
 }
 .overview-modal .dot-list .dot-item.dot-ermo-fuwu {
-  top: 45%;
-  left: 24%;
+  top: 48%;
+  left: 30%;
 }
 .overview-modal .dot-list .dot-item.dot-ermo-erdaoyingyong {
-  top: 35%;
-  left: 20%;
+  top: 40%;
+  left: 36%;
 }
 
 .overview-modal .dot-list .dot-item.dot-loudingzuoye {
-  top: 17%;
-  left: 57%;
+  top: 25%;
+  left: 65%;
 }
 .overview-modal .dot-list .dot-item.dot-jianzhugongdi {
   top: 20%;
   left: 60%;
 }
 .overview-modal .dot-list .dot-item.dot-shineizuoye {
-  top: 25%;
-  left: 63%;
+  top: 24%;
+  left: 58%;
 }
 .overview-modal .dot-list .dot-item.dot-zf-gaoxiao {
-  top: 25%;
-  left: 72%;
+  top: 20%;
+  left: 67.5%;
 }
 
 .overview-modal .dot-list .dot-item.dot-xuankuang {
@@ -361,7 +361,7 @@
 }
 .overview-modal .dot-list .dot-item.dot-jiaohua {
   top: 69%;
-  left: 42%;
+  left: 36%;
 }
 .overview-modal .dot-list .dot-item.dot-shaojie {
   top: 55%;
@@ -385,24 +385,24 @@
 }
 .overview-modal .dot-list .dot-item.dot-liansuo-ermozhizuo {
   top: 68%;
-  left: 53%;
+  left: 47%;
 }
 .overview-modal .dot-list .dot-item.dot-liansuo-tlc {
-  top: 70%;
-  left: 50%;
+  top: 69%;
+  left: 42%;
 }
 .overview-modal .dot-list .dot-item.dot-yanpeipeixun {
-  top: 76%;
-  left: 46%;
+  top: 69%;
+  left: 53%;
 }
 
 .overview-modal .dot-list .dot-item.dot-zhuangxiehuo {
-  top: 55%;
-  left: 68%;
+  top: 40%;
+  left: 63%;
 }
 .overview-modal .dot-list .dot-item.dot-richangzuoye {
-  top: 40%;
-  left: 65%;
+  top: 46%;
+  left: 73%;
 }
 .overview-modal .dot-list .dot-item.dot-gaochuzuoye {
   top: 40%;
@@ -421,16 +421,16 @@
   left: 65%;
 } */
 .overview-modal .dot-list .dot-item.dot-yingjixiangying {
-  top: 47%;
-  left: 63%;
+  top: 54%;
+  left: 65%;
 }
 .overview-modal .dot-list .dot-item.dot-pack {
-  top: 17%;
-  left: 37%;
+  top: 12%;
+  left: 45%;
 }
 .overview-modal .dot-list .dot-item.dot-chongyachejian {
-  top: 24%;
-  left: 39%;
+  top: 15%;
+  left: 35%;
 }
 .overview-modal .dot-list .dot-item.dot-hanjiechejian {
   top: 24%;
@@ -1027,20 +1027,20 @@
     pointer-events: all;
   }
   .overview-modal .pin-list .pin-item.item-yejin {
-    top: 53%;
-    left: 40%;
+    top: 50%;
+    left: 32%;
   }
   .overview-modal .pin-list .pin-item.item-zhiyao {
     top: 40%;
     left: 1%;
   }
   .overview-modal .pin-list .pin-item.item-qiche {
-    top: 28%;
+    top: 31%;
     left: 20%;
   }
   .overview-modal .pin-list .pin-item.item-jianzhu {
-    top: 30%;
-    left: 70%;
+    top: 32%;
+    left: 58%;
   }
   .overview-modal .pin-list .pin-item.item-chuanbo {
     top: 26%;
@@ -1051,7 +1051,7 @@
     right: 5%;
   }
   .overview-modal .pin-list .pin-item.item-chuangxin {
-    top: 35%;
+    top: 39%;
     left: 40%;
   }
   .overview-modal .solution-box {
