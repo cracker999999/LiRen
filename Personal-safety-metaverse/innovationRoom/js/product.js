@@ -5,6 +5,7 @@ console.log(winWidth, winHeight);
 document.addEventListener('productConfigLoaded', onProductConfigLoaded);
 
 function onProductConfigLoaded(e) {
+    vm.product3DList = productList.filter(item => item.is720);
     vm.productList = productList;
     vm.isConfigLoaded = true;
 }
@@ -17,7 +18,8 @@ const app = Vue.createApp({
             currentProduct: 0,
             showChangeColor: false, //默认值取第一个产品
             showAnimation: false, //默认值取第一个产品
-            productList: []
+            productList: [],
+            product3DList: []
         }
     },
 
@@ -78,14 +80,14 @@ const app = Vue.createApp({
                 return;
             }
             this.currentProduct = index;
-            this.showChangeColor = this.productList[index].changeColor !== '';
+            this.showChangeColor = this.product3DList[index].changeColor !== '';
             // console.log(showChangeColor);
 
-            this.showAnimation = this.productList[index].animation === true;
+            this.showAnimation = this.product3DList[index].animation === true;
             // console.log(this.showAnimation);
             
             
-            this.is720 = this.productList[index].is720;
+            this.is720 = this.product3DList[index].is720;
             // console.log(this.is720);
             if (this.is720) {
                 $("#childFrame").css("opacity", 0);
@@ -94,8 +96,8 @@ const app = Vue.createApp({
                     $("#childFrame").css("opacity", 1);
                 }, 300)
             } else {
-                let src = this.productList[index].order.src,
-                    num = this.productList[index].order.num;
+                let src = this.product3DList[index].order.src,
+                    num = this.product3DList[index].order.num;
                 setTimeout(function () {
                     showProduct(src, num);
                 }, 100);

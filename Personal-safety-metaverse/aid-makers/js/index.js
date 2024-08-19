@@ -65,7 +65,7 @@ const app = Vue.createApp({
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2',
                     jieshuo: '../jieshuo/ZhuTingQiZhiZaoShang_PeiTaoFangAn.mp3',
-                    solutions: ['生产','市场','助听器标配产品'],
+                    solutions: ['生产','市场','助听器产品'],
                     alertList: [],
                 },
             ],
@@ -110,10 +110,10 @@ const app = Vue.createApp({
                 {
                     solutionName: '市场',
                     solutionIcon: 'assets/img/icon_jiuyuan.png',
-                    productIds: [19,48,12, 16,75,76,77,78,79,80,81, 27, 3,14,28, 18,82],
+                    productIds: [19,48,12, 16,75,76,77,78,79,80,81, 27, 3,14,28, 18],
                 },
                 {
-                    solutionName: '助听器标配产品',
+                    solutionName: '助听器产品',
                     solutionIcon: 'assets/img/icon_jiuyuan.png',
                     productIds: [29,30,6,55,63, 29,30,6,58],
                 },
