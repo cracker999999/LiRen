@@ -84,7 +84,7 @@ const app = Vue.createApp({
                 {
                     solutionName: '产品供应 ',
                     solutionIcon: 'assets/img/ChanPinGongYing.png?v20230222',
-                    productIds: [96,40,49],
+                    productIds: [96,3,40,49],
                 },
                 {
                     solutionName: '健康服务',

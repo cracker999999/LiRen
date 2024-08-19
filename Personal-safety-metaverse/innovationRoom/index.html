@@ -50,7 +50,11 @@
 
 <div class="page-container bg-cover hidden zoomContainer" id="app">
     <a class="btn-back flex flex-vc flex-hc" href="javascript:;"
-       data-title="创新空间" data-name="创新空间-返回" onclick="toJumpPageEvent(this, function () { window.location.replace('../index.html'); });">
+       data-title="创新空间" data-name="创新空间-返回" onclick="toJumpPageEvent(this, function () { 
+                                                                                        //隐藏productContainer
+                                                                                        document.getElementById('productContainer').style.display = 'none';
+                                                                                        window.location.replace('../index.html'); 
+                                                                                    });">
         <img src="images/icon_back.png" alt="" class="icon-back">
         <span>返回</span>
     </a>
