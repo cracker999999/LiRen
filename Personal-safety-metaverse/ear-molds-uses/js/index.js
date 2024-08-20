@@ -79,7 +79,7 @@ const app = Vue.createApp({
                     solutions: ['生产设计'],
                 },
                 {
-                    name: '耳道应用全场景',
+                    name: '耳道应用场景',
                     previewImg: '../scene_preview/scene_erdaoyingyongquanchangjing.png?v20230222',
                     tour: 'tour4.xml?v20231211',
                     startScene: 'scene_4',

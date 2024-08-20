@@ -61,7 +61,7 @@ const app = Vue.createApp({
                     solutions: ['纯音测试','声场测试','言语测试','VRA测试','声导抗测试','耳声发射测试'],
                 },
                 {
-                    name: 'ABR/ASSR测试',
+                    name: 'ABR测试',
                     previewImg: '../scene_preview/scene_abrassrceshi.png?v20230222',
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2',

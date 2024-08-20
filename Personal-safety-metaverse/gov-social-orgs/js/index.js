@@ -52,7 +52,7 @@ const app = Vue.createApp({
                     solutions: ['产品供应 '],
                 },
                 {
-                    name: '移动服务听力车',
+                    name: '移动服务听力车场景',
                     previewImg: '../scene_preview/scene_yidongcetingchefuwuchangjing.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1',
@@ -68,7 +68,7 @@ const app = Vue.createApp({
                     solutions: ['健康服务','产品供应'],
                 },
                 {
-                    name: '高校及科研院所',
+                    name: '高校科研院所',
                     previewImg: '../scene_preview/scene_gaoxiaojikeyanyuansuo.png',
                     tour: 'tour3.xml?v20231211',
                     startScene: 'scene_3',
@@ -119,7 +119,7 @@ const app = Vue.createApp({
                 },
                 {
                     solutionName: '售后服务',
-                    solutionIcon: 'assets/img/ShouHouFuwu.png',
+                    solutionIcon: 'assets/img/ShouHouFuWu.png',
                     productIds: [48,12,53],
                 },
                 {
