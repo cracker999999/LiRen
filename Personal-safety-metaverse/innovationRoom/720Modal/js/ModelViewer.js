@@ -4,7 +4,7 @@ var config = {
     environment: true,
     showAxes: false,
     
-    exposure: 0.0,
+    exposure: -0.7,
     toneMapping: THREE.LinearToneMapping,
     ambientIntensity: 0.3,
     ambientColor: '#FFFFFF',
@@ -74,24 +74,22 @@ addLights();
 
 var controls = new THREE.OrbitControls(defaultCamera, renderer.domElement);
 controls.screenSpacePanning = true;
-// controls.target.set(59.26147475945824, 55.88615189082385, -30.479719301148734);
-// controls.object.position.set(24.0555452775575, 72.5390994913941, 352.06251928626904);
 window.controls = controls;
 controls.enableDamping = true;//开启阻尼效果，拖拽时有惯性效果
 
 config.showAxes && addAxesHelper();
 
 function addLights() {
-    const light1 = new THREE.AmbientLight(config.ambientColor, config.ambientIntensity);
-    light1.name = 'ambient_light';
-    defaultCamera.add(light1);
+    const ambientLight = new THREE.AmbientLight(config.ambientColor, config.ambientIntensity);
+    ambientLight.name = 'ambient_light';
+    defaultCamera.add(ambientLight);
 
-    const light2 = new THREE.DirectionalLight(config.directColor, config.directIntensity);
-    light2.position.set(0.5, 0, 0.866); // ~60º
-    light2.name = 'main_light';
-    defaultCamera.add(light2);
+    const directLight = new THREE.DirectionalLight(config.directColor, config.directIntensity);
+    directLight.position.set(0.5, 0, 0.866); // ~60º
+    directLight.name = 'main_light';
+    defaultCamera.add(directLight);
 
-    lights.push(light1, light2);
+    lights.push(ambientLight, directLight);
 
     renderer.toneMapping = Number(config.toneMapping);
     renderer.toneMappingExposure = Math.pow(2, config.exposure);
@@ -246,6 +244,9 @@ function setTransparent(){
             });
 
             obj.material = mat;
+        }
+        else{
+            console.log("mesh not found: " + meshName);
         }
     }
 }
