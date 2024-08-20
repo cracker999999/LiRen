@@ -12,6 +12,10 @@ var config = {
     directColor: '#FFFFFF',
 };
 
+function isInnovationRoom(){
+    return parent.location.href.indexOf('innovationRoom/index.html') > -1
+}
+
 function getUrlParams() {
     const params = {};
     const queryString = window.location.search.slice(1);
@@ -191,8 +195,8 @@ function onModelLoaded() {
     defaultCamera.position.y += size / 5.0;
     defaultCamera.position.z += size / 2.0;
     
-    if (isMobile()) {
-        defaultCamera.position.z += 300;
+    if (isMobile() && isInnovationRoom()) {
+        defaultCamera.position.z += 150;
     }
     else{
         defaultCamera.position.z += 50;

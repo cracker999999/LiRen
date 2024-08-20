@@ -50,76 +50,67 @@
 
 <div class="page-container bg-cover hidden zoomContainer" id="app">
     <a class="btn-back flex flex-vc flex-hc" href="javascript:;"
-       data-title="创新空间" data-name="创新空间-返回" onclick="toJumpPageEvent(this, function () { 
-                                                                                        //隐藏productContainer
-                                                                                        document.getElementById('productContainer').style.display = 'none';
-                                                                                        window.location.replace('../index.html'); 
-                                                                                    });">
+       data-title="创新空间" data-name="创新空间-返回" onclick="toJumpPageEvent(this, function () { document.getElementById('productContainer').style.display = 'none';
+                                                                                        window.location.replace('../index.html'); });" >
         <img src="images/icon_back.png" alt="" class="icon-back">
         <span>返回</span>
     </a>
-
-    <div v-if="isConfigLoaded" v-cloak>
-        <div class="control-right-top mobile-show">
-            <div class="flex flex-vc flex-hc">
-                <button class="btn-detail" onclick="showProductDescription()"></button>
-            </div>
-        </div>
     
-        <div class="product-wrap flex flex-vc flex-hc">
-            <div class="product-container flex flex-vc flex-hc" id="productContainer">
-                <div class="w-100 h-100 product720Box" v-show="is720">
-                    <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
-                        <iframe id="childFrame" :src="'720Modal/3D.html' + '?model=' + product3DList[currentProduct].modelName + '&anim=' + product3DList[currentProduct].animation + '&trans=' + product3DList[currentProduct].transparent + '&color=' + product3DList[currentProduct].changeColor + '&type=' + product3DList[currentProduct].modelType + '&scale=' + product3DList[currentProduct].scale" 
-                            frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
-                    </div>
-                </div>
-                <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
-                    <div class="spinner flex-column flex-vc flex-hc">
-                        <img src="map/loading.gif">
-                        <span>0%</span>
-                    </div>
-                    <div class="threesixty product1">
-                        <ol class="threesixty_images"></ol>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="product-description">
-                <div class="top flex flex-v-start flex-bt">
-                <div class="product-name">{{product3DList[currentProduct].productName}}</div>
-                    <i class="iconfont icon-close mc" onclick="showProductDescription()"></i>
-                </div>
-                <div class="p text-content">
-                    {{product3DList[currentProduct].desc}}
-                </div>
-                <div class="p text-content margin-top-sm">
-                    <a :href="product3DList[currentProduct].url" class="text-white text-underline" target="_blank">去商城看看 >></a>
-                </div>
-            </div>
-            <div class="icon-rotate"><span>720°</span></div>
+    <div class="control-right-top mobile-show">
+        <div class="flex flex-vc flex-hc">
+            <button class="btn-detail" onclick="showProductDescription()"></button>
         </div>
-    
-        <!--产品预览图-->
-        <div class="product-thum-swiper swiper-container productThumSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in product3DList" :key="index"
-                     data-title="创新空间" data-name="创新空间-切换产品类型" :data-attr1="item.productName" :data-attr2="item.attr1"
-                     :class="{active: index === currentProduct}"
-                     @click="onClickProduct(index)">
-                    <div class="thum-img">
-                        <img :src="item.img" alt="" class="w-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <div v-else>
-        <!-- Loading... -->
+
+    <div class="product-wrap flex flex-vc flex-hc" v-if="isConfigLoaded" v-cloak>
+        <div class="product-container flex flex-vc flex-hc" id="productContainer">
+            <div class="w-100 h-100 product720Box" v-show="is720">
+                <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
+                    <iframe id="childFrame" :src="'720Modal/3D.html' + '?model=' + product3DList[currentProduct].modelName + '&anim=' + product3DList[currentProduct].animation + '&trans=' + product3DList[currentProduct].transparent + '&color=' + product3DList[currentProduct].changeColor + '&type=' + product3DList[currentProduct].modelType + '&scale=' + product3DList[currentProduct].scale" 
+                        frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                </div>
+            </div>
+            <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
+                <div class="spinner flex-column flex-vc flex-hc">
+                    <img src="map/loading.gif">
+                    <span>0%</span>
+                </div>
+                <div class="threesixty product1">
+                    <ol class="threesixty_images"></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <div class="top flex flex-v-start flex-bt">
+            <div class="product-name">{{product3DList[currentProduct].productName}}</div>
+                <i class="iconfont icon-close mc" onclick="showProductDescription()"></i>
+            </div>
+            <div class="p text-content">
+                {{product3DList[currentProduct].desc}}
+            </div>
+            <div class="p text-content margin-top-sm">
+                <a :href="product3DList[currentProduct].url" class="text-white text-underline" target="_blank">去商城看看 >></a>
+            </div>
+        </div>
+        <div class="icon-rotate"><span>720°</span></div>
     </div>
     
+    <!--产品预览图-->
+    <div class="product-thum-swiper swiper-container productThumSwiper" v-if="isConfigLoaded" v-cloak>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in product3DList" :key="index"
+                    data-title="创新空间" data-name="创新空间-切换产品类型" :data-attr1="item.productName" :data-attr2="item.attr1"
+                    :class="{active: index === currentProduct}"
+                    @click="onClickProduct(index)">
+                <div class="thum-img">
+                    <img :src="item.img" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- 动画按扭 -->
     <div class="control-right-middle flex-column flex-vc flex-hc">
         <div id="loaderOver" class="model-control-box" v-show="showAnimation">
             <button class="aa btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-拆解" id="btnPos" title="拆解" type="button"></button>

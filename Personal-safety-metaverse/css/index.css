@@ -1100,5 +1100,11 @@
     top: 80%;
     right: 0.267rem /* 10/37.5 */;
   }
+  .moveUpDown_ear {
+    --offset: 1%;
+    -webkit-animation: moveUpDown 5s linear both;
+    -o-animation: moveUpDown 5s linear both;
+    animation: moveUpDown 5s linear both;
+  }
 }
 /*# sourceMappingURL=index.css.map */
