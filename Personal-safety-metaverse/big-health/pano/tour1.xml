@@ -29,7 +29,7 @@
 		<!-- use the videoplayer plugin as panoramic image source -->
 		<image>
 			<!-- <sphere url="plugin:video" /> -->
-			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/tingliche.jpg" />
+			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/DaJianKangHangYeJiGou_YaoFang.jpg" />
 		</image>
 
 		<!-- set the default view -->
@@ -40,7 +40,13 @@
 			videointerface_play('3000x1500');
 		</action>
 
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-4.1" atv="-27.7" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="24" atv="-29.5" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
 		
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="-172.6" atv="7.7" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="179.4" atv="15.3" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="-157.5" atv="19.9" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
+
 
 	</scene>
 
