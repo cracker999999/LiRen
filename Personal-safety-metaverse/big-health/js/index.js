@@ -90,7 +90,7 @@ const app = Vue.createApp({
                 },
                 {
                     solutionName: '售后服务',
-                    solutionIcon: 'assets/img/ShouHouFuwu.png',
+                    solutionIcon: 'assets/img/ShouHouFuWu.png',
                     productIds: [48,12,53,41],
                 },
                 {

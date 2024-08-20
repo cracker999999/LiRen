@@ -533,7 +533,7 @@
         "url": "http://www.soundlink.com.cn/products/6/710.html",
         "modelName": "BZLR_P47",
         "modelType": "glb",
-        "scale": "1",
+        "scale": "0.1",
         "img": "images/products/BZLR_I47.png",
         "transparent": "",
         "animation": "",
