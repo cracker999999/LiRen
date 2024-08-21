@@ -1000,9 +1000,71 @@
     top: -62%;
     left: -116%;
   }
+  .overview-modal .modal-body {
+    width: 100%;
+  }
+  .overview-modal .bottom-floor {
+    background-size: 200%;
+  }
   .overview-modal .city-img-box,
   .overview-modal .pin-list {
     width: 150%;
+  }
+  .overview-modal .city-img-box .city-img {
+    background-size: 100%; /*200 leen*/
+  }
+  .overview-modal .pin-list .pin-item {
+    pointer-events: all;
+  }
+  .overview-modal .pin-list .pin-item .pin .icon-pin {
+    margin: 0.185rem /* 10/54 */;
+    width: 2.5rem /* 50/54 */;
+  }
+  .overview-modal .pin-list .pin-item .pin .text {
+    padding: 20px 30px;
+    font-size: 0.888rem /* 16/54 */;
+    white-space: nowrap;
+    border-radius: 15px;
+  }
+  .overview-modal .pin-list .pin-item.item-yejin {
+    top: 55%;
+    left: 40%;
+  }
+  .overview-modal .pin-list .pin-item.item-zhiyao {
+    top: 40%;
+    left: 23%;
+  }
+  .overview-modal .pin-list .pin-item.item-qiche {
+    top: 26%;
+    left: 35%;
+  }
+  .overview-modal .pin-list .pin-item.item-jianzhu {
+    top: 30%;
+    left: 58%;
+  }
+  .overview-modal .pin-list .pin-item.item-huagong {
+    top: 42%;
+    right: 25%;
+  }
+  .overview-modal .pin-list .pin-item.item-chuangxin {
+    top: 37%;
+    left: 46%;
+  }
+  .overview-modal .solution-box {
+    width: 70%;
+  }
+  .overview-modal .img-map-container {
+    display: none;
+  }
+  .logo {
+    width: 6rem /* 52/54 */;
+  }
+  
+  .moveUpDown_ear {
+    --offset: 1%;
+    -webkit-animation: moveUpDown 5s linear both;
+    -o-animation: moveUpDown 5s linear both;
+    animation: moveUpDown 5s linear both;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1025,6 +1087,15 @@
   }
   .overview-modal .pin-list .pin-item {
     pointer-events: all;
+  }
+  .overview-modal .pin-list .pin-item .pin .icon-pin {
+    width: 0.926rem /* 50/54 */;
+  }
+  .overview-modal .pin-list .pin-item .pin .text {
+    padding: 5px 15px;
+    font-size: 0.296rem /* 16/54 */;
+    white-space: nowrap;
+    border-radius: 5px;
   }
   .overview-modal .pin-list .pin-item.item-yejin {
     top: 50%;
@@ -1099,6 +1170,9 @@
   .index-page .btn-msg {
     top: 80%;
     right: 0.267rem /* 10/37.5 */;
+  }
+  .logo {
+    width: 2.889rem;
   }
   .moveUpDown_ear {
     --offset: 1%;

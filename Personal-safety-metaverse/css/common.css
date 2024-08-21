@@ -922,6 +922,14 @@ flex布局
     padding: 0 50px;
   }
 }
+@media screen and (max-width: 1150px) {
+  .mobile-show {
+    display: block;
+  }
+  .pc-show {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .mc {
     display: block;

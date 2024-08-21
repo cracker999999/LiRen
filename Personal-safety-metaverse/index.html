@@ -581,189 +581,189 @@
 
     // console.log(getScreenSize())
 
-    function moveToSolution(e) {
-        let area = e.getAttribute("data-area");
-        console.log(area);
-        if (getScreenSize()[0] > 1150) {
-            console.log(">1150：" + getScreenSize()[0]);
-            switch (area) {
-                case "冶金":
-                    $(".drag-content").css({
-                        top: '-95%',
-                        left: '-50%',
-                    });
-                    break;
-                case "制药":
-                    $(".drag-content").css({
-                        top: '-46%',
-                        left: '-37%',
-                    });
-                    break;
-                case "创新中心":
-                    $(".drag-content").css({
-                        top: '-20%',
-                        left: '-50%',
-                    });
-                    break;
-                case "建筑":
-                    $(".drag-content").css({
-                        top: '-20%',
-                        left: '-50%',
-                    });
-                    break;
-                case "化工":
-                    $(".drag-content").css({
-                        top: '-66%',
-                        left: '-60%',
-                    });
-                    break;
-                case "汽车":
-                    $(".drag-content").css({
-                        top: '-35%',
-                        left: '-35%',
-                    });
-                    break;
-                default:
-                    $(".drag-content").css({
-                        top: '-130%',
-                        left: '-50%',
-                    });
-            }
+    // function moveToSolution(e) {
+    //     let area = e.getAttribute("data-area");
+    //     console.log(area);
+    //     if (getScreenSize()[0] > 1150) {
+    //         console.log(">1150：" + getScreenSize()[0]);
+    //         switch (area) {
+    //             case "冶金":
+    //                 $(".drag-content").css({
+    //                     top: '-95%',
+    //                     left: '-50%',
+    //                 });
+    //                 break;
+    //             case "制药":
+    //                 $(".drag-content").css({
+    //                     top: '-46%',
+    //                     left: '-37%',
+    //                 });
+    //                 break;
+    //             case "创新中心":
+    //                 $(".drag-content").css({
+    //                     top: '-20%',
+    //                     left: '-50%',
+    //                 });
+    //                 break;
+    //             case "建筑":
+    //                 $(".drag-content").css({
+    //                     top: '-20%',
+    //                     left: '-50%',
+    //                 });
+    //                 break;
+    //             case "化工":
+    //                 $(".drag-content").css({
+    //                     top: '-66%',
+    //                     left: '-60%',
+    //                 });
+    //                 break;
+    //             case "汽车":
+    //                 $(".drag-content").css({
+    //                     top: '-35%',
+    //                     left: '-35%',
+    //                 });
+    //                 break;
+    //             default:
+    //                 $(".drag-content").css({
+    //                     top: '-130%',
+    //                     left: '-50%',
+    //                 });
+    //         }
 
-            if (getCss(main, "left") !== "auto") {
-                params.left = getCss(main, "left");
-            }
-            if (getCss(main, "top") !== "auto") {
-                params.top = getCss(main, "top");
-            }
-            closeModal();
-            jieshuo.pause();
-        } else if (getScreenSize()[0] <= 1150 && getScreenSize()[0] > 768) {
-            console.log("768 ~ 1150：" + getScreenSize()[0]);
-            if (getRatio() == 100) {
-                switch (area) {
-                    case "冶金":
-                        $(".drag-content").css({
-                            top: "-100%",
-                            left: "-115%",
-                        });
-                        break;
-                    case "制药":
-                        $(".drag-content").css({
-                            top: "-65%",
-                            left: "-70%",
-                        });
-                        break;
-                    case "创新中心":
-                        $(".drag-content").css({
-                            top: "-40%",
-                            left: "-115%",
-                        });
-                        break;
-                    case "建筑":
-                        $(".drag-content").css({
-                            top: "-20%",
-                            left: "-125%",
-                        });
-                        break;
-                    case "化工":
-                        $(".drag-content").css({
-                            top: "-70%",
-                            left: "-150%",
-                        });
-                        break;
-                    case "汽车":
-                        $(".drag-content").css({
-                            top: "-30%",
-                            left: "-70%",
-                        });
-                        break;
-                    default:
-                        $(".drag-content").css({
-                            "top": "-80%",
-                            "left": "-110%",
-                        });
-                }
-            } else {
-                switch (area) {
-                    case "冶金":
-                        $(".drag-content").css({
-                            "top": -61 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -56 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                        break;
-                    case "制药":
-                        $(".drag-content").css({
-                            "top": -30 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -37 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                        break;
-                    case "创新中心":
-                        $(".drag-content").css({
-                            "top": -20 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -60 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                        break;
-                    case "建筑":
-                        $(".drag-content").css({
-                            "top": -10 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -60 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                        break;
-                    case "化工":
-                        $(".drag-content").css({
-                            "top": -40 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -80 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                        break;
-                    case "汽车":
-                        $(".drag-content").css({
-                            "top": -20 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -40 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                        break;
-                    default:
-                        $(".drag-content").css({
-                            "top": -50 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                            "left": -50 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
-                        });
-                }
-            }
+    //         if (getCss(main, "left") !== "auto") {
+    //             params.left = getCss(main, "left");
+    //         }
+    //         if (getCss(main, "top") !== "auto") {
+    //             params.top = getCss(main, "top");
+    //         }
+    //         closeModal();
+    //         jieshuo.pause();
+    //     } else if (getScreenSize()[0] <= 1150 && getScreenSize()[0] > 768) {
+    //         console.log("768 ~ 1150：" + getScreenSize()[0]);
+    //         if (getRatio() == 100) {
+    //             switch (area) {
+    //                 case "冶金":
+    //                     $(".drag-content").css({
+    //                         top: "-100%",
+    //                         left: "-115%",
+    //                     });
+    //                     break;
+    //                 case "制药":
+    //                     $(".drag-content").css({
+    //                         top: "-65%",
+    //                         left: "-70%",
+    //                     });
+    //                     break;
+    //                 case "创新中心":
+    //                     $(".drag-content").css({
+    //                         top: "-40%",
+    //                         left: "-115%",
+    //                     });
+    //                     break;
+    //                 case "建筑":
+    //                     $(".drag-content").css({
+    //                         top: "-20%",
+    //                         left: "-125%",
+    //                     });
+    //                     break;
+    //                 case "化工":
+    //                     $(".drag-content").css({
+    //                         top: "-70%",
+    //                         left: "-150%",
+    //                     });
+    //                     break;
+    //                 case "汽车":
+    //                     $(".drag-content").css({
+    //                         top: "-30%",
+    //                         left: "-70%",
+    //                     });
+    //                     break;
+    //                 default:
+    //                     $(".drag-content").css({
+    //                         "top": "-80%",
+    //                         "left": "-110%",
+    //                     });
+    //             }
+    //         } else {
+    //             switch (area) {
+    //                 case "冶金":
+    //                     $(".drag-content").css({
+    //                         "top": -61 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -56 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //                     break;
+    //                 case "制药":
+    //                     $(".drag-content").css({
+    //                         "top": -30 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -37 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //                     break;
+    //                 case "创新中心":
+    //                     $(".drag-content").css({
+    //                         "top": -20 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -60 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //                     break;
+    //                 case "建筑":
+    //                     $(".drag-content").css({
+    //                         "top": -10 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -60 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //                     break;
+    //                 case "化工":
+    //                     $(".drag-content").css({
+    //                         "top": -40 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -80 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //                     break;
+    //                 case "汽车":
+    //                     $(".drag-content").css({
+    //                         "top": -20 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -40 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //                     break;
+    //                 default:
+    //                     $(".drag-content").css({
+    //                         "top": -50 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                         "left": -50 * 100 / Number(getRatio()) * (realScreen / getScreenSize()[0]) + '%',
+    //                     });
+    //             }
+    //         }
 
-            if (getCss(main, "left") !== "auto") {
-                params.left = getCss(main, "left");
-            }
-            if (getCss(main, "top") !== "auto") {
-                params.top = getCss(main, "top");
-            }
-            closeModal();
-            jieshuo.pause();
-        } else {
-            console.log("小屏" + getScreenSize()[0]);
-            switch (area) {
-                case "冶金":
-                    changePage('aid-stores', 'tour0.xml', 0);
-                    break;
-                case "制药":
-                    changePage('ear-molds-uses', 'tour0.xml', 0, 0);
-                    break;
-                case "汽车":
-                    changePage('big-health', 'tour0.xml', 0);
-                    break;
-                case "建筑":
-                    changePage('gov-social-orgs', 'tour0.xml', 0);
-                    break;
-                case "化工":
-                    changePage('aid-makers', 'tour0.xml', 0);
-                    break;
-                case "创新中心":
-                    changePage('innovationRoom');
-                    break;
-                default:
-                    return;
-            }
-        }
-    }
+    //         if (getCss(main, "left") !== "auto") {
+    //             params.left = getCss(main, "left");
+    //         }
+    //         if (getCss(main, "top") !== "auto") {
+    //             params.top = getCss(main, "top");
+    //         }
+    //         closeModal();
+    //         jieshuo.pause();
+    //     } else {
+    //         console.log("小屏" + getScreenSize()[0]);
+    //         switch (area) {
+    //             case "冶金":
+    //                 changePage('aid-stores', 'tour0.xml', 0);
+    //                 break;
+    //             case "制药":
+    //                 changePage('ear-molds-uses', 'tour0.xml', 0, 0);
+    //                 break;
+    //             case "汽车":
+    //                 changePage('big-health', 'tour0.xml', 0);
+    //                 break;
+    //             case "建筑":
+    //                 changePage('gov-social-orgs', 'tour0.xml', 0);
+    //                 break;
+    //             case "化工":
+    //                 changePage('aid-makers', 'tour0.xml', 0);
+    //                 break;
+    //             case "创新中心":
+    //                 changePage('innovationRoom');
+    //                 break;
+    //             default:
+    //                 return;
+    //         }
+    //     }
+    // }
 
     function notShowGuide() {
         let checked = document.getElementById("notShow").checked;
@@ -804,7 +804,7 @@
                 jieshuo.pause();
                 break;
             case "制药":
-                changePage('ear-molds-uses', 'tour0.xml', 0, 0);
+                changePage('ear-molds-uses', 'tour0.xml', 0);
                 jieshuo.pause();
                 break;
             case "汽车":
