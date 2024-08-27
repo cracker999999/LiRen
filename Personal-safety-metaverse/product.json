@@ -599,7 +599,7 @@
         "id": "51",
         "desc": "定制型听力保护器，结合3D打印工艺，既能满足精准安全降噪，又能满足舒适性，提高个人佩戴意愿，解决绝大部分企业都存在的护听器虚戴的难题。分频降噪是该产品另一个特点，降噪的同时可以保留人语沟通声、识别警告信号，提高了工作效率和安全保障。",
         "url": "http://easysoundsz.com/products/1/",
-        "modelName": "BZLR_P23",
+        "modelName": "BZLR_P10",
         "modelType": "glb",
         "scale": "1",
         "img": "images/products/BZLR_I10.png",
@@ -607,7 +607,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": false,
+        "is720": true,
         "solution": "定制式耳塞",
         "productType": ""
     },
