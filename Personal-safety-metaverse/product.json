@@ -824,7 +824,7 @@
         "modelType": "glb",
         "scale": "1",
         "img": "images/products/BZLR_I49.png",
-        "transparent": "BZLR_P49a_glass:ffffff",
+        "transparent": "BZLR_P49a_glass:ffffff,BZLR_P49b_glass01:ffffff,\nBZLR_P49b_glass02:c339b0,BZLR_P49c_glass:683700,BZLR_P49d_glass:0132bb,BZLR_P49e_glass:0a0a0a,BZLR_P49f_glass:02e649,BZLR_P49g_glass:ff7802",
         "animation": "",
         "changeColor": "",
         "attr1": "",
@@ -845,7 +845,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": true,
+        "is720": false,
         "solution": "适配型耳塞",
         "productType": ""
     },
@@ -862,7 +862,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": true,
+        "is720": false,
         "solution": "适配型耳塞",
         "productType": ""
     },
@@ -879,7 +879,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": true,
+        "is720": false,
         "solution": "适配型耳塞",
         "productType": ""
     },
@@ -896,7 +896,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": true,
+        "is720": false,
         "solution": "适配型耳塞",
         "productType": ""
     },
@@ -913,7 +913,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": true,
+        "is720": false,
         "solution": "适配型耳塞",
         "productType": ""
     },
@@ -930,7 +930,7 @@
         "animation": "",
         "changeColor": "",
         "attr1": "",
-        "is720": true,
+        "is720": false,
         "solution": "适配型耳塞",
         "productType": ""
     },
