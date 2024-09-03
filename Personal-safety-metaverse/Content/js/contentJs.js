@@ -1,7 +1,7 @@
 ﻿
 //配置baseUrl
 var baseUrl = document.getElementById('main').getAttribute('data-baseurl');
-
+baseUrl = baseUrl.replace('../', '');;
 var mainsrc = document.getElementById('main').getAttribute('data-main') || '';
 
 var urlArgs = "?v=" + window.Version;//js参数,用于控制js版本   
