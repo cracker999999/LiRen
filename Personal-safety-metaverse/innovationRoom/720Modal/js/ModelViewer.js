@@ -3,8 +3,9 @@
 var config = {
     environment: true,
     showAxes: false,
+    debug: false,
     
-    exposure: -0.7,
+    exposure: -0.3,
     toneMapping: THREE.LinearToneMapping,
     ambientIntensity: 0.3,
     ambientColor: '#FFFFFF',
@@ -35,6 +36,7 @@ const urlParams = getUrlParams();
 var modelName = urlParams.model;
 var animation = urlParams.anim;
 var transparent = urlParams.trans;
+var transparentType = urlParams.transType;
 var changeColor = urlParams.color;
 var type = urlParams.type;
 var scale = parseFloat(urlParams.scale) || 1;
@@ -177,21 +179,51 @@ function onModelLoaded() {
     model.updateMatrixWorld();
 
     const box = new THREE.Box3().setFromObject(model);
-    const size = box.getSize(new THREE.Vector3()).length();
+    //模型在三个维度上的最大跨度。
+    const size = box.getSize(new THREE.Vector3());
+    const maxDis = size.length();
     const center = box.getCenter(new THREE.Vector3());
 
+    //将模型移动到场景的原点
     model.position.x -= center.x;
     model.position.y -= center.y;
     model.position.z -= center.z;
 
-    defaultCamera.near = size / 100;
-    defaultCamera.far = size * 100;
-    defaultCamera.updateProjectionMatrix();
+    //把模型的底放到原点
+    const scaleY = model.scale.y;
+    const bottomY = size.y / 2;
+    model.position.y += bottomY;
 
-    defaultCamera.position.copy(center);
-    defaultCamera.position.x += size / 2.0;
-    defaultCamera.position.y += size / 5.0;
-    defaultCamera.position.z += size / 2.0;
+    //移到地台中心
+    model.position.x += 5;
+    model.position.y -= 55;
+
+    if(config.debug)
+    {
+        // 添加透明绿色包围盒
+        const boxHelper = new THREE.BoxHelper(model, 0x00ff00);
+        scene.add(boxHelper);
+
+        // 添加高度标签
+        const height = size.y;
+        const heightLabel = createTextLabel(`height: ${parseFloat(height).toFixed(2)}`, 0x00ff00);
+        heightLabel.position.set(box.max.x, box.max.y, box.max.z);
+        // scene.add(heightLabel);
+
+        const scaleLabel = createTextLabel(`scale: ${parseFloat(scale).toFixed(2)}`, 0x00ff00);
+        scaleLabel.position.set(box.min.x, box.max.y, box.max.z);
+        scene.add(scaleLabel);
+    }
+
+    // defaultCamera.near = maxDis / 100;
+    // defaultCamera.far = maxDis * 100;
+    // defaultCamera.updateProjectionMatrix();
+    // console.log(defaultCamera.near, defaultCamera.far);
+
+    // defaultCamera.position.copy(center);
+    defaultCamera.position.set(0, 0, 100);
+    // defaultCamera.position.x += maxDis / 2.0;
+    // defaultCamera.position.y += maxDis / 10.0;
     
     if (isMobile() && isInnovationRoom()) {
         defaultCamera.position.z += 150;
@@ -199,7 +231,9 @@ function onModelLoaded() {
     else{
         defaultCamera.position.z += 50;
     }
-    defaultCamera.lookAt(center);
+    // defaultCamera.lookAt(center);
+    //看向地台
+    defaultCamera.lookAt(new THREE.Vector3(5, -55, 0));
 
     scene.add(model);
     // console.log(model.scale);
@@ -210,6 +244,47 @@ function onModelLoaded() {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('loaderOver').style.display = 'block';
     document.getElementById('colorBar').style.display = 'block';
+
+    initScaleInput();
+}
+
+function initScaleInput() {
+    const scaleInput = document.getElementById('scaleInput');
+    if (scaleInput) {
+        // console.log(scaleInput);
+        scaleInput.value = scale;
+        scaleInput.addEventListener('change', function() {
+            const newScale = parseFloat(this.value);
+            if (!isNaN(newScale) && newScale > 0) {
+                setModelScale(newScale);
+            }
+        });
+    } else {
+        console.error('无法找到id为scaleInput的元素');
+    }
+}
+
+function setModelScale(newScale) {
+    model.scale.setScalar(newScale);
+}
+
+// 创建文本标签的函数
+function createTextLabel(text, color) {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    context.font = '40px Arial';
+    context.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
+    context.fillText(text, 0, 40);
+    
+    const texture = new THREE.CanvasTexture(canvas);
+    const material = new THREE.SpriteMaterial({ map: texture });
+    const sprite = new THREE.Sprite(material);
+    
+    // 调整精灵的大小
+    const scaleFactor = 0.1;  // 调整这个值来改变标签大小
+    sprite.scale.set(canvas.width * scaleFactor, canvas.height * scaleFactor, 1);
+
+    return sprite;
 }
 
 // transparent格式为
@@ -233,7 +308,27 @@ function setTransparent(){
         
         var obj = model.getObjectByName(meshName);
         if (obj){
-            var mat = new THREE.MeshPhysicalMaterial({
+            var yakeliMat = new THREE.MeshPhysicalMaterial({
+                'color': color,
+                'roughness': 0.2,
+                'metalness': 0,
+                'transmission': 1,
+                'ior': 1.86,
+                'reflectivity': 0.68,
+                'thickness': 3,
+                'envMapIntensity': 3,
+                'clearcoat': 1,
+                'clearcoatRoughness': 0.1,
+                'normalScale': 0.3,
+                'clearcoatNormalScale': 0.2,
+                'normalRepeat': 3,
+                
+                // 'transparent': true,
+                // 'opacity': 0.3,
+                // 'envMap': neutralEnvironment,
+            });
+
+            var glassMat1 = new THREE.MeshPhysicalMaterial({
                 'color': color,
                 'metalness': 0,
                 'roughness': 0.1,
@@ -243,7 +338,14 @@ function setTransparent(){
                 'reflectivity': 0.5
             });
 
-            obj.material = mat;
+            if(transparentType = 'yakeli')
+            {
+                obj.material = yakeliMat;
+            }
+            else
+            {
+                obj.material = glassMat1;
+            }
         }
         else{
             console.log("mesh not found: " + meshName);
@@ -286,6 +388,8 @@ function addAxesHelper() {
     this.axesHelper = new THREE.AxesHelper();
     this.axesHelper.renderOrder = 999;
     this.axesHelper.onBeforeRender = (renderer) => renderer.clearDepth();
+    this.gridHelper.scale.set(10, 10, 10);
+    this.axesHelper.scale.set(10, 10, 10);
     scene.add(this.gridHelper);
     scene.add(this.axesHelper);
 }

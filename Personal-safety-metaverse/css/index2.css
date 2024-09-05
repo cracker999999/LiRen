@@ -284,19 +284,19 @@ body {
 .modal-3d .modal-body .modal-content .product-box .product-info-wrap,
 .modal-damage .modal-body .modal-content .product-box .product-info-wrap {
   padding: 0.185rem /* 10/54 */ 0.37rem /* 20/54 */;
-  width: 40%;
+  width: 50%;
 }
 .modal-3d .modal-body .modal-content .product-box .product-info-box,
 .modal-damage .modal-body .modal-content .product-box .product-info-box {
   color: #fff;
-  font-size: 0.296rem /* 16/54 */;
-  line-height: 1.5;
+  font-size: 0.352rem /* 19/54 */;
+  line-height: 1.3;
   position: relative;
 }
 .modal-3d .modal-body .modal-content .product-box .product-info-box .product-type,
 .modal-damage .modal-body .modal-content .product-box .product-info-box .product-type {
-  font-size: 0.37rem /* 20/54 */;
-  line-height: 1.3;
+  font-size: 0.5rem /* 27/54 */;
+  line-height: 1.2;
 }
 .modal-3d .modal-body .modal-content .product-box .product-info-box .product-desc,
 .modal-damage .modal-body .modal-content .product-box .product-info-box .product-desc {

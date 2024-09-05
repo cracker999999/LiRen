@@ -201,7 +201,7 @@
                                             <div class="product-img product360Box flex flex-vc flex-hc w-100 h-100 relative" v-else>
                                                 <!-- 3d -->
                                                 <div class="w-100 h-100 product720Box" v-if="index === curProductIndex">
-                                                    <iframe id="childFrame" :src="'../innovationRoom/720Modal/3D.html' + '?model=' + item.modelName + '&anim=' + item.animation + '&trans=' + item.transparent + '&color=' + item.changeColor + '&type=' + item.modelType + '&scale=' + item.scale" 
+                                                    <iframe id="childFrame" :src="'../innovationRoom/720Modal/3D.html' + '?model=' + item.modelName + '&anim=' + item.animation + '&trans=' + item.transparent +'&transType='+item.transparentType + '&color=' + item.changeColor + '&type=' + item.modelType + '&scale=' + item.scale" 
                                                     frameborder="0" class="iframe w-100 h-100" allowtransparency="true" style="background-color: transparent;" ></iframe>
                                                 </div>
 
@@ -226,7 +226,9 @@
                                                     <ul class="product-link-list margin-top-sm">
                                                         <!-- <li class="link-item" v-for="(item, index) in item.productLink" :key="index"> -->
                                                             <a :href="item.url" target="_blank" v-show="item.url" class="text-white text-underline"
-                                                               @click="onProductLinkClick(index)">去商城看看</a>
+                                                               @click="onProductLinkClick(index)">
+                                                               <img src="../images/shop.png" width="30" height="30" >
+                                                            </a>
                                                         <!-- </li> -->
                                                         <!-- <li class="link-item">
                                                             <a href="https://shop.m.jd.com/?shopId=84511" target="_blank" @click="goJD(index)">去商城看看</a>

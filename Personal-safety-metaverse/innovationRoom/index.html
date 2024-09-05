@@ -66,7 +66,7 @@
         <div class="product-container flex flex-vc flex-hc" id="productContainer">
             <div class="w-100 h-100 product720Box" v-show="is720">
                 <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
-                    <iframe id="childFrame" :src="'720Modal/3D.html' + '?model=' + product3DList[currentProduct].modelName + '&anim=' + product3DList[currentProduct].animation + '&trans=' + product3DList[currentProduct].transparent + '&color=' + product3DList[currentProduct].changeColor + '&type=' + product3DList[currentProduct].modelType + '&scale=' + product3DList[currentProduct].scale" 
+                    <iframe id="childFrame" :src="'720Modal/3D.html' + '?model=' + product3DList[currentProduct].modelName + '&anim=' + product3DList[currentProduct].animation + '&trans=' + product3DList[currentProduct].transparent +'&transType='+product3DList[currentProduct].transparentType + '&color=' + product3DList[currentProduct].changeColor + '&type=' + product3DList[currentProduct].modelType + '&scale=' + product3DList[currentProduct].scale" 
                         frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
                 </div>
             </div>
@@ -81,6 +81,7 @@
             </div>
         </div>
 
+        <!-- 产品描述 -->
         <div class="product-description">
             <div class="top flex flex-v-start flex-bt">
             <div class="product-name">{{product3DList[currentProduct].productName}}</div>
@@ -90,8 +91,12 @@
                 {{product3DList[currentProduct].desc}}
             </div>
             <div class="p text-content margin-top-sm">
-                <a :href="product3DList[currentProduct].url" class="text-white text-underline" target="_blank">去商城看看 >></a>
+                <a :href="product3DList[currentProduct].url" class="text-white text-underline" target="_blank">
+                    <!-- 去商城看看 >> -->
+                    <img src="../images/shop.png" width="30" height="30" >
+                </a>
             </div>
+            <input type="number" id="scaleInput" placeholder="" step="0.1" min="0.1" value="1" class="scale-input" style="display: none;">
         </div>
         <div class="icon-rotate"><span>720°</span></div>
     </div>
