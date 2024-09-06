@@ -36,7 +36,7 @@ const urlParams = getUrlParams();
 var modelName = urlParams.model;
 var animation = urlParams.anim;
 var transparent = urlParams.trans;
-var transparentType = urlParams.transType;
+var transparentType = urlParams.transType || '';
 var changeColor = urlParams.color;
 var type = urlParams.type;
 var scale = parseFloat(urlParams.scale) || 1;
@@ -195,8 +195,8 @@ function onModelLoaded() {
     model.position.y += bottomY;
 
     //移到地台中心
-    model.position.x += 5;
-    model.position.y -= 55;
+    // model.position.x += 5;
+    model.position.y -= 45;
 
     if(config.debug)
     {
@@ -221,7 +221,7 @@ function onModelLoaded() {
     // console.log(defaultCamera.near, defaultCamera.far);
 
     // defaultCamera.position.copy(center);
-    defaultCamera.position.set(0, 0, 100);
+    defaultCamera.position.set(0, -10, 100);
     // defaultCamera.position.x += maxDis / 2.0;
     // defaultCamera.position.y += maxDis / 10.0;
     
@@ -233,7 +233,7 @@ function onModelLoaded() {
     }
     // defaultCamera.lookAt(center);
     //看向地台
-    defaultCamera.lookAt(new THREE.Vector3(5, -55, 0));
+    defaultCamera.lookAt(new THREE.Vector3(0, -45, 0));
 
     scene.add(model);
     // console.log(model.scale);
@@ -338,7 +338,7 @@ function setTransparent(){
                 'reflectivity': 0.5
             });
 
-            if(transparentType = 'yakeli')
+            if(transparentType == 'yakeli')
             {
                 obj.material = yakeliMat;
             }
