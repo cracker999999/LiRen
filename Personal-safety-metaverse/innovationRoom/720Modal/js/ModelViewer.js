@@ -215,9 +215,10 @@ function onModelLoaded() {
         scene.add(scaleLabel);
     }
 
-    // defaultCamera.near = maxDis / 100;
-    // defaultCamera.far = maxDis * 100;
-    // defaultCamera.updateProjectionMatrix();
+    //注释掉模型会闪烁
+    defaultCamera.near = maxDis / 100;
+    defaultCamera.far = maxDis * 100;
+    defaultCamera.updateProjectionMatrix();
     // console.log(defaultCamera.near, defaultCamera.far);
 
     // defaultCamera.position.copy(center);
