@@ -222,7 +222,7 @@ function onModelLoaded() {
     // console.log(defaultCamera.near, defaultCamera.far);
 
     // defaultCamera.position.copy(center);
-    defaultCamera.position.set(0, -10, 100);
+    defaultCamera.position.set(0, 20, 100);
     // defaultCamera.position.x += maxDis / 2.0;
     // defaultCamera.position.y += maxDis / 10.0;
     
@@ -339,13 +339,27 @@ function setTransparent(){
                 'reflectivity': 0.5
             });
 
+            var glassMat2 = new THREE.MeshPhysicalMaterial({
+                'color': color,
+                'metalness': 0,
+                'roughness': 0.1,
+                'transparent': true,
+                // 'envMap': neutralEnvironment,
+                'opacity': 0.9,
+                'reflectivity': 0.5
+            });
+
             if(transparentType == 'yakeli')
             {
                 obj.material = yakeliMat;
             }
-            else
+            else if(transparentType == 'glass1')
             {
                 obj.material = glassMat1;
+            }
+            else if(transparentType == 'glass2')
+            {
+                obj.material = glassMat2;
             }
         }
         else{
