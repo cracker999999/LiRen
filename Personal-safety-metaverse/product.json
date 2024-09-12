@@ -602,7 +602,7 @@
         "modelType": "glb",
         "scale": "0.3",
         "img": "images/products/BZLR_I7.png",
-        "transparent": "BZLR_P7_Glass:ffffff",
+        "transparent": "BZLR_P7_glass:ffffff",
         "transparentType": "glass1",
         "animation": "",
         "changeColor": "",

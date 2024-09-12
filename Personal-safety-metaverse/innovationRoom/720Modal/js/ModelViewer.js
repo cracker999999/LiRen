@@ -308,8 +308,10 @@ function setTransparent(){
         // console.log(meshName, color);
         
         var obj = model.getObjectByName(meshName);
-        if (obj){
+        if (obj) {
+            var objMat = obj.material;
             var yakeliMat = new THREE.MeshPhysicalMaterial({
+                'map': objMat.map,
                 'color': color,
                 'roughness': 0.2,
                 'metalness': 0,
@@ -330,6 +332,7 @@ function setTransparent(){
             });
 
             var glassMat1 = new THREE.MeshPhysicalMaterial({
+                'map': objMat.map,
                 'color': color,
                 'metalness': 0,
                 'roughness': 0.1,
@@ -340,6 +343,7 @@ function setTransparent(){
             });
 
             var glassMat2 = new THREE.MeshPhysicalMaterial({
+                'map': objMat.map,
                 'color': color,
                 'metalness': 0,
                 'roughness': 0.1,
