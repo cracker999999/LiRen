@@ -5,7 +5,7 @@ var config = {
     showAxes: false,
     debug: false,
     
-    exposure: -0.3,
+    exposure: -0.5,
     toneMapping: THREE.LinearToneMapping,
     ambientIntensity: 0.3,
     ambientColor: '#FFFFFF',
@@ -44,7 +44,7 @@ var scale = parseFloat(urlParams.scale) || 1;
 var model;
 var mixer;
 var hdrCubeRenderTarget = null;
-var texture;
+var hdrTex;
 var scene = new THREE.Scene();
 var clips;
 var lights = [];
@@ -119,18 +119,24 @@ function addLights() {
 //     hdrCubeRenderTarget = pmremGenerator.fromEquirectangular(tex);
 //     tex.dispose();
 //     pmremGenerator.dispose();
-//     texture = hdrCubeRenderTarget.texture;
+//     hdrTex = hdrCubeRenderTarget.texture;
 
+//     loadModel();
 // });
 
 const draco = new THREE.DRACOLoader();
-draco.setDecoderPath('./js/draco/');
 
-if (type === 'glb') {
-    loadGLTF();
-}
-else if (type === 'fbx') {
-    loadFBX();
+loadModel();
+
+function loadModel() {
+    draco.setDecoderPath('./js/draco/');
+
+    if (type === 'glb') {
+        loadGLTF();
+    }
+    else if (type === 'fbx') {
+        loadFBX();
+    }
 }
 
 function loadGLTF() {
@@ -310,6 +316,17 @@ function setTransparent(){
         var obj = model.getObjectByName(meshName);
         if (obj) {
             var objMat = obj.material;
+            //在objMat的基础上，修改属性
+            // objMat.color = color;
+            // objMat.roughness = 0.2;
+            // objMat.metalness = 0;
+            // objMat.transmission = 1;
+            // objMat.ior = 1.86;
+            // objMat.reflectivity = 0.68;
+            // objMat.thickness = 3;
+            // objMat.envMapIntensity = 3;
+            // objMat.clearcoat = 1;
+            
             var yakeliMat = new THREE.MeshPhysicalMaterial({
                 'map': objMat.map,
                 'color': color,
