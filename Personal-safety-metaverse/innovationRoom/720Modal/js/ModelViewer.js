@@ -14,9 +14,9 @@ var config = {
     showAxes: false,
     debug: false,
     
-    exposure: 0,
+    exposure: -0.1,
     toneMapping: THREE.LinearToneMapping,
-    ambientIntensity: 1.2,
+    ambientIntensity: 0.5,
     ambientColor: '#FFFFFF',
     directIntensity: 0.3 * Math.PI, // TODO(#116)
     directColor: '#FFFFFF',
@@ -99,6 +99,12 @@ function addLights() {
     directLight.position.set(0.5, 0, 0.866); // ~60º
     directLight.name = 'main_light';
     defaultCamera.add(directLight);
+
+    // 添加背光
+    const backLight = new THREE.DirectionalLight(config.directColor, config.directIntensity * 1);
+    backLight.position.set(-0.5, 0, -0.866); // 与主光源相反的位置
+    backLight.name = 'back_light';
+    defaultCamera.add(backLight);
 
     //用sphere显示出light的位置
     // var sphere = new THREE.Mesh(new THREE.SphereGeometry(3, 32, 32), new THREE.MeshBasicMaterial({color: 0xff0000}));
@@ -270,7 +276,7 @@ function onModelLoaded() {
     model.traverse((node) => {
         if (node.isMesh) {
             node.material.envMap = hdrTex;
-            node.material.envMapIntensity = 1.5;
+            node.material.envMapIntensity = 1.0;
             node.material.needsUpdate = true;
         }
     });
