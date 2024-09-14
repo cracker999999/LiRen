@@ -10,15 +10,15 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { WebGLRenderer } from 'three/src/renderers/WebGLRenderer.js';
 
 var config = {
-    environment: true,
+    environment: false,
     showAxes: false,
     debug: false,
     
-    exposure: -0.5,
+    exposure: 0,
     toneMapping: THREE.LinearToneMapping,
-    ambientIntensity: 0.3,
+    ambientIntensity: 1,
     ambientColor: '#FFFFFF',
-    directIntensity: 0.5 * Math.PI, // TODO(#116)
+    directIntensity: 0.3 * Math.PI, // TODO(#116)
     directColor: '#FFFFFF',
 };
 
@@ -121,27 +121,27 @@ function addLights() {
 // normal.wrapT = THREE.RepeatWrapping;
 // normal.repeat.set(1, 1);
 
-// var rgbeLoader = new RGBELoader();
-// rgbeLoader.setDataType(THREE.FloatType);
-// rgbeLoader.setPath(window.baseFilesPath || './');
-// rgbeLoader.load('map/109.hdr', function (tex) {
-//     hdrCubeRenderTarget = pmremGenerator.fromEquirectangular(tex);
-//     hdrTex = hdrCubeRenderTarget.texture;
-//     // scene.environment = hdrTex;
-//     tex.dispose();
-//     pmremGenerator.dispose();
+var rgbeLoader = new RGBELoader();
+rgbeLoader.setDataType(THREE.FloatType);
+rgbeLoader.setPath(window.baseFilesPath || './');
+rgbeLoader.load('map/pixologic_tv_center_3.hdr', function (tex) {
+    hdrCubeRenderTarget = pmremGenerator.fromEquirectangular(tex);
+    hdrTex = hdrCubeRenderTarget.texture;
+    scene.environment = hdrTex;
+    tex.dispose();
+    pmremGenerator.dispose();
     
-//     loadModel();
-// }, progress => {
+    loadModel();
+}, progress => {
     
-// }, err => {
-//     console.log(err);
-//     loadModel();
-// });
+}, err => {
+    console.log(err);
+    loadModel();
+});
 
 const draco = new DRACOLoader();
 
-loadModel();
+// loadModel();
 
 function loadModel() {
     draco.setDecoderPath('./js/draco/');
@@ -194,7 +194,7 @@ function loadFBX() {
 }
 
 function onModelLoaded() {
-    // let scaleFactor = isMobile() ? 0.5 : 1;
+    // model.visible = false;
     model.scale.multiplyScalar(scale);
 
     model.updateMatrixWorld();
@@ -258,18 +258,17 @@ function onModelLoaded() {
     defaultCamera.lookAt(new THREE.Vector3(0, -45, 0));
 
     scene.add(model);
-    // console.log(model.scale);
 
     initColorDict();
     setTransparent();
 
-    // model.traverse((node) => {
-    //     if (node.isMesh) {
-    //         node.material.envMap = hdrTex;
-    //         node.material.envMapIntensity = 1;
-    //         // node.material.needsUpdate = true;
-    //     }
-    // });
+    model.traverse((node) => {
+        if (node.isMesh) {
+            node.material.envMap = hdrTex;
+            node.material.envMapIntensity = 1;
+            node.material.needsUpdate = true;
+        }
+    });
 
     // 设置mipmap
     model.traverse((node) => {
@@ -279,10 +278,14 @@ function onModelLoaded() {
             node.material.needsUpdate = true;
         }
     });
-    
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('loaderOver').style.display = 'block';
-    document.getElementById('colorBar').style.display = 'block';
+
+    //下一帧显示
+    requestAnimationFrame(() => {
+        model.visible = true;
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('loaderOver').style.display = 'block';
+        document.getElementById('colorBar').style.display = 'block';
+    });
 
     initScaleInput();
 }
