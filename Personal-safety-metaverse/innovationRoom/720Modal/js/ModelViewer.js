@@ -627,3 +627,11 @@ function render() {
 }
 
 render();
+
+// 将函数暴露到全局作用域
+window.pos = pos;
+window.bos = bos;
+window.red = red;
+window.green = green;
+window.blue = blue;
+window.resetAllColor = resetAllColor;
