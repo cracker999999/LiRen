@@ -16,7 +16,7 @@ var config = {
     
     exposure: 0,
     toneMapping: THREE.LinearToneMapping,
-    ambientIntensity: 1,
+    ambientIntensity: 1.2,
     ambientColor: '#FFFFFF',
     directIntensity: 0.3 * Math.PI, // TODO(#116)
     directColor: '#FFFFFF',
@@ -99,6 +99,11 @@ function addLights() {
     directLight.position.set(0.5, 0, 0.866); // ~60º
     directLight.name = 'main_light';
     defaultCamera.add(directLight);
+
+    //用sphere显示出light的位置
+    // var sphere = new THREE.Mesh(new THREE.SphereGeometry(3, 32, 32), new THREE.MeshBasicMaterial({color: 0xff0000}));
+    // sphere.position.copy(directLight.position);
+    // scene.add(sphere);
 
     lights.push(ambientLight, directLight);
 
@@ -265,7 +270,7 @@ function onModelLoaded() {
     model.traverse((node) => {
         if (node.isMesh) {
             node.material.envMap = hdrTex;
-            node.material.envMapIntensity = 1;
+            node.material.envMapIntensity = 1.5;
             node.material.needsUpdate = true;
         }
     });
@@ -538,7 +543,7 @@ function playAllAnim() {
 
     mixer = new THREE.AnimationMixer(model);
     for (var i = 0; i < clips.length; i++) {
-        AnimationAction = mixer.clipAction(clips[i]);
+        var AnimationAction = mixer.clipAction(clips[i]);
         AnimationAction.timeScale = 1;
         AnimationAction.loop = THREE.LoopOnce;
         AnimationAction.clampWhenFinished = true;
@@ -549,7 +554,7 @@ function playAllAnim() {
 function playAnim() {
     if(clips.length === 0) return;
     mixer = new THREE.AnimationMixer(model);
-    AnimationAction = mixer.clipAction(clips[0]);
+    var AnimationAction = mixer.clipAction(clips[0]);
     AnimationAction.timeScale = 1;
     AnimationAction.loop = THREE.LoopOnce;
     AnimationAction.clampWhenFinished = true;
@@ -561,7 +566,7 @@ function playAllAnimReverse() {
 
     mixer = new THREE.AnimationMixer(model);
     for (var i = 0; i < clips.length; i++) {
-        AnimationAction = mixer.clipAction(clips[i]);
+        var AnimationAction = mixer.clipAction(clips[i]);
         AnimationAction.timeScale = -1;
         AnimationAction.loop = THREE.LoopOnce;
         AnimationAction.clampWhenFinished = true;
@@ -573,7 +578,7 @@ function playAllAnimReverse() {
 function playAnimReverse() {
     if(clips.length === 0) return;
     mixer = new THREE.AnimationMixer(model);
-    AnimationAction = mixer.clipAction(clips[0]);
+    var AnimationAction = mixer.clipAction(clips[0]);
     // 设置时间缩放为负值,实现反向播放
     AnimationAction.timeScale = -1;
     AnimationAction.loop = THREE.LoopOnce;
