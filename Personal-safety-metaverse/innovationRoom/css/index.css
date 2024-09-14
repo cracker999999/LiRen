@@ -160,7 +160,7 @@
   transform: translate(-50%, -50%);
 }
 .product-wrap .product-container {
-  width: 60%;
+  width: 100%; /* 60% 3d展示区大小*/
   height: 100%;
   position: relative;
 }
