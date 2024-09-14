@@ -1,5 +1,14 @@
 //https://www.dejs.vip/2obfuscator
 
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { WebGLRenderer } from 'three/src/renderers/WebGLRenderer.js';
+
 var config = {
     environment: true,
     showAxes: false,
@@ -69,12 +78,12 @@ document.body.appendChild(renderer.domElement);
 var pmremGenerator = new THREE.PMREMGenerator(renderer);
 pmremGenerator.compileEquirectangularShader();
 
-var neutralEnvironment = pmremGenerator.fromScene(new THREE.RoomEnvironment()).texture;
+var neutralEnvironment = pmremGenerator.fromScene(new RoomEnvironment()).texture;
 config.environment && (scene.environment = neutralEnvironment);
 
 addLights();
 
-var controls = new THREE.OrbitControls(defaultCamera, renderer.domElement);
+var controls = new OrbitControls(defaultCamera, renderer.domElement);
 controls.screenSpacePanning = true;
 window.controls = controls;
 controls.enableDamping = true;//开启阻尼效果，拖拽时有惯性效果
@@ -112,19 +121,25 @@ function addLights() {
 // normal.wrapT = THREE.RepeatWrapping;
 // normal.repeat.set(1, 1);
 
-// var rgbeLoader = new THREE.RGBELoader();
-// rgbeLoader.setDataType(THREE.UnsignedByteType);
+// var rgbeLoader = new RGBELoader();
+// rgbeLoader.setDataType(THREE.FloatType);
 // rgbeLoader.setPath(window.baseFilesPath || './');
 // rgbeLoader.load('map/109.hdr', function (tex) {
 //     hdrCubeRenderTarget = pmremGenerator.fromEquirectangular(tex);
+//     hdrTex = hdrCubeRenderTarget.texture;
+//     // scene.environment = hdrTex;
 //     tex.dispose();
 //     pmremGenerator.dispose();
-//     hdrTex = hdrCubeRenderTarget.texture;
-
+    
+//     loadModel();
+// }, progress => {
+    
+// }, err => {
+//     console.log(err);
 //     loadModel();
 // });
 
-const draco = new THREE.DRACOLoader();
+const draco = new DRACOLoader();
 
 loadModel();
 
@@ -140,7 +155,7 @@ function loadModel() {
 }
 
 function loadGLTF() {
-    var gltfLoader = new THREE.GLTFLoader();
+    var gltfLoader = new GLTFLoader();
     gltfLoader.setPath(window.baseFilesPath || './');
     gltfLoader.setDRACOLoader(draco);
     gltfLoader.load(modelName + '.glb', function(gltf){
@@ -162,7 +177,7 @@ function loadFBX() {
     // const manager = new THREE.LoadingManager();
     // manager.addHandler( /\.tga$/i, new THREE.TGALoader());
 
-    var fbxLoader = new THREE.FBXLoader();
+    var fbxLoader = new FBXLoader();
     fbxLoader.setPath(window.baseFilesPath || './');
     fbxLoader.load(modelName + '.fbx', function(fbx){
         model = fbx;
@@ -247,6 +262,23 @@ function onModelLoaded() {
 
     initColorDict();
     setTransparent();
+
+    // model.traverse((node) => {
+    //     if (node.isMesh) {
+    //         node.material.envMap = hdrTex;
+    //         node.material.envMapIntensity = 1;
+    //         // node.material.needsUpdate = true;
+    //     }
+    // });
+
+    // 设置mipmap
+    model.traverse((node) => {
+        if (node.isMesh && node.material.map) {
+            node.material.map.minFilter = THREE.LinearFilter;
+            node.material.map.generateMipmaps = true;
+            node.material.needsUpdate = true;
+        }
+    });
     
     document.getElementById('loading').style.display = 'none';
     document.getElementById('loaderOver').style.display = 'block';
@@ -341,7 +373,7 @@ function setTransparent(){
                 'clearcoatRoughness': 0.1,
                 'normalScale': 0.3,
                 'clearcoatNormalScale': 0.2,
-                'normalRepeat': 3,
+                // 'normalRepeat': 3,
                 
                 // 'transparent': true,
                 // 'opacity': 0.3,

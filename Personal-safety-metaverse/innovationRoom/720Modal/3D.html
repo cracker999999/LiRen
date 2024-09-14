@@ -9,19 +9,30 @@
 
     <script src="js/tween.umd.js"></script>
     <!-- <script src="js/three.js"></script> -->
-    <script src="js/three.160.js"></script>
-    <!-- <script type="module" src="js/three.webgpu.168.js"></script> -->
-    <script src="js/OrbitControls.js"></script>
+    <!-- <script src="js/three.160.js"></script> -->
+    <!-- <script type="module" src="js/168/three.webgpu.js"></script> -->
+    <!-- <script src="js/OrbitControls.js"></script> -->
     <!-- <script src="./js/FBXLoader.js"></script> -->
-    <script src="js/FBXLoader.147.js"></script>
+    <!-- <script src="js/FBXLoader.147.js"></script> -->
     <script src="./js/inflate.min.js"></script>
-    <script src="js/GLTFLoader.js"></script>
-    <script src="js/DRACOLoader.js"></script>
-    <script src="js/RGBELoader.js"></script>
-    <script src="js/CSS2DRenderer.js"></script>
-    <script src="js/RoomEnvironment.js"></script>
+    <!-- <script src="js/GLTFLoader.js"></script> -->
+    <!-- <script src="js/DRACOLoader.js"></script> -->
+    <!-- <script src="js/RGBELoader.js"></script> -->
+    <!-- <script src="js/CSS2DRenderer.js"></script> -->
+    <!-- <script src="js/RoomEnvironment.js"></script> -->
     <script src="js/fflate.min.js"></script>
     <!-- <script src="js/TGALoader.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/",
+                "three/src/": "https://cdn.jsdelivr.net/npm/three@0.168.0/src/"
+            }
+        }
+    </script>
+
     <script>
         window.baseFilesPath = 'https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/model/'
     </script>
@@ -54,5 +65,5 @@
 
 </body>
 
-<script type="text/javascript" src="js/ModelViewer.js"></script>
+<script type="module" src="js/ModelViewer.js"></script>
 </html>
