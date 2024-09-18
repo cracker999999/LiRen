@@ -295,7 +295,7 @@ body {
 }
 .modal-3d .modal-body .modal-content .product-box .product-info-box .product-type,
 .modal-damage .modal-body .modal-content .product-box .product-info-box .product-type {
-  font-size: 0.5rem /* 27/54 */;
+  font-size: 0.556rem /* 30/54 */;
   line-height: 1.2;
 }
 .modal-3d .modal-body .modal-content .product-box .product-info-box .product-desc,
