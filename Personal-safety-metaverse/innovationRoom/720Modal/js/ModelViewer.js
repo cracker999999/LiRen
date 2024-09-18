@@ -101,7 +101,7 @@ function addLights() {
     defaultCamera.add(directLight);
 
     // 添加背光
-    const backLight = new THREE.DirectionalLight(config.directColor, config.directIntensity * 1);
+    const backLight = new THREE.DirectionalLight(config.directColor, config.directIntensity * 1.30);
     backLight.position.set(-0.5, 0, -0.866); // 与主光源相反的位置
     backLight.name = 'back_light';
     defaultCamera.add(backLight);
