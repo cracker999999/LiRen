@@ -1,0 +1,56 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_4);
+		  );
+	</action>
+	
+	<scene name="scene_4" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<!-- <plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        /> -->
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<!-- <sphere url="plugin:video" /> -->
+			<sphere url="https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/panorama/ZhuTingQiLianSuoMenDian_ShouHouFuWu.jpg" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0"  vlookat="0" fovtype="DFOV" fov="130" fov.mobile="90" fovmin="75" fovmax="150" distortion="0.0" />
+		
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/steel-making-ppe/4.video/video-3000x1500.mp4?v20231211', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/steel-making-ppe/4.video/video-3000x1500-poster.jpg?v20231211');
+			videointerface_play('3000x1500');
+		</action>
+
+		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-5.4" atv="-5.7" onclick="show_hotspot_alert(product_56)"  onloaded="add_all_the_time_tooltip()" text="技工桌" />
+		<hotspot name="product_61" style="skin_hotspotstyle_red" ath="25.2" atv="-6" onclick="show_hotspot_alert(product_61)"  onloaded="add_all_the_time_tooltip()" text="手钻" />
+
+		<hotspot name="product_25" style="skin_hotspotstyle_red" ath="-132" atv="6.1" onclick="show_hotspot_alert(product_25)"  onloaded="add_all_the_time_tooltip()" text="助听器分析仪" />
+		<hotspot name="product_41" style="skin_hotspotstyle_red" ath="-111" atv="6" onclick="show_hotspot_alert(product_41)"  onloaded="add_all_the_time_tooltip()" text="超声波清洗机" />
+		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-71" atv="4.8" onclick="show_hotspot_alert(product_12)"  onloaded="add_all_the_time_tooltip()" text="助听器保养仪" />
+		
+		<hotspot name="product_53" style="skin_hotspotstyle_red" ath="-155.6" atv="21.5" onclick="show_hotspot_alert(product_53)"  onloaded="add_all_the_time_tooltip()" text="助听器服务工具盒" />
+	</scene>
+
+
+
+
+</krpano>

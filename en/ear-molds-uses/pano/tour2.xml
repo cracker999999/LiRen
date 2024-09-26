@@ -1,0 +1,58 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_2);
+		  );
+	</action>
+	
+	<scene name="scene_2" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<!-- <plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        /> -->
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<!-- <sphere url="plugin:video" /> -->
+			<sphere url="https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/panorama/ErMoYingYongChangJing_XiangGuanChanPingPeiTao.jpg" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fov.mobile="100" fovmin="75" fovmax="150" distortion="0.0" />
+		
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/preparation-tablet/2.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/preparation-tablet/2.video/video-3000x1500-poster.jpg');
+			videointerface_play('3000x1500');
+		</action>
+
+		<hotspot name="product_72" style="skin_hotspotstyle_red" ath="-26" atv="-10" onclick="show_hotspot_alert(product_72)" onloaded="add_all_the_time_tooltip()" text="3D后处理" />
+		<hotspot name="product_47" style="skin_hotspotstyle_red" ath="4.2" atv="-12.2" onclick="show_hotspot_alert(product_47)" onloaded="add_all_the_time_tooltip()" text="喇叭" />
+		<hotspot name="product_87" style="skin_hotspotstyle_red" ath="11.4" atv="-12" onclick="show_hotspot_alert(product_87)" onloaded="add_all_the_time_tooltip()" text="声管" />
+		<hotspot name="product_92" style="skin_hotspotstyle_red" ath="17.2" atv="-12" onclick="show_hotspot_alert(product_92)" onloaded="add_all_the_time_tooltip()" text="焊线" />
+		<hotspot name="product_45" style="skin_hotspotstyle_red" ath="23.8" atv="-11.5" onclick="show_hotspot_alert(product_45)" onloaded="add_all_the_time_tooltip()" text="化学材料" />
+		<hotspot name="product_63" style="skin_hotspotstyle_red" ath="30.7" atv="-11" onclick="show_hotspot_alert(product_63)" onloaded="add_all_the_time_tooltip()" text="包装盒" />
+		<hotspot name="product_57" style="skin_hotspotstyle_red" ath="37" atv="-10" onclick="show_hotspot_alert(product_57)" onloaded="add_all_the_time_tooltip()" text="压力锅" />
+		<hotspot name="product_61" style="skin_hotspotstyle_red" ath="42.8" atv="-9.5" onclick="show_hotspot_alert(product_61)" onloaded="add_all_the_time_tooltip()" text="手钻" />
+		<hotspot name="product_93" style="skin_hotspotstyle_red" ath="49.8" atv="-8.5" onclick="show_hotspot_alert(product_93)" onloaded="add_all_the_time_tooltip()" text="钻头" />
+	
+	</scene>
+
+
+
+
+</krpano>

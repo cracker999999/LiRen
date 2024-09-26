@@ -1,0 +1,82 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_2);
+		  );
+	</action>
+	
+	<scene name="scene_2" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<!-- <plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        /> -->
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<!-- <sphere url="plugin:video" /> -->
+			<sphere url="https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/panorama/ZhuTingQiZhiZaoShang_PeiTaoFangAn.jpg" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+		
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/2.video/video-3000x1500.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/2.video/video-3000x1500-poster.jpg');
+			videointerface_play('3000x1500');
+		</action>
+
+		<!-- <hotspot name="something_1" style="skin_hotspotstyle_red" ath="-30" atv="-10" onclick="show_hotspot_alert(something_1)" onloaded="add_all_the_time_tooltip()" text="专业礼品" />
+		<hotspot name="something_2" style="skin_hotspotstyle_red" ath="-18" atv="-10" onclick="show_hotspot_alert(something_2)" onloaded="add_all_the_time_tooltip()" text="助听器清洁产品" />
+		<hotspot name="something_3" style="skin_hotspotstyle_red" ath="-1" atv="-10" onclick="show_hotspot_alert(something_3)" onloaded="add_all_the_time_tooltip()" text="助听器标配产品(标准)" />
+		<hotspot name="something_4" style="skin_hotspotstyle_red" ath="17" atv="-10" onclick="show_hotspot_alert(something_4)" onloaded="add_all_the_time_tooltip()" text="助听器标配产品(定制)" />
+		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-32" atv="12" onclick="show_hotspot_alert(product_56)" onloaded="add_all_the_time_tooltip()" text="技工桌" />
+		<hotspot name="product_57" style="skin_hotspotstyle_red" ath="17" atv="12" onclick="show_hotspot_alert(product_57)" onloaded="add_all_the_time_tooltip()" text="压力锅" />
+
+		<hotspot name="product_13" style="skin_hotspotstyle_red" ath="-130" atv="19" onclick="show_hotspot_alert(product_13)" onloaded="add_all_the_time_tooltip()" text="分析仪" />
+		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="-118" atv="15" onclick="show_hotspot_alert(product_14)" onloaded="add_all_the_time_tooltip()" text="验配耳镜" />
+		<hotspot name="product_26" style="skin_hotspotstyle_red" ath="-85" atv="16" onclick="show_hotspot_alert(product_26)" onloaded="add_all_the_time_tooltip()" text="光固化机" />
+		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-70" atv="8" onclick="show_hotspot_alert(product_12)" onloaded="add_all_the_time_tooltip()" text="助听器保养仪" /> -->
+
+		<!-- <hotspot name="product_82" style="skin_hotspotstyle_red" ath="-35" atv="-10" onclick="show_hotspot_alert(product_82)" onloaded="add_all_the_time_tooltip()" text="测电笔" /> -->
+		<hotspot name="product_18" style="skin_hotspotstyle_red" ath="-27" atv="-10" onclick="show_hotspot_alert(product_18)" onloaded="add_all_the_time_tooltip()" text="液晶测电器" />
+		<hotspot name="product_19" style="skin_hotspotstyle_red" ath="-17.5" atv="-10" onclick="show_hotspot_alert(product_19)" onloaded="add_all_the_time_tooltip()" text="电子干燥器" />
+		<hotspot name="product_48" style="skin_hotspotstyle_red" ath="-7" atv="-10" onclick="show_hotspot_alert(product_48)" onloaded="add_all_the_time_tooltip()" text="清洁护理套装" />
+		<hotspot name="product_29" style="skin_hotspotstyle_red" ath="4" atv="-10" onclick="show_hotspot_alert(product_29)" onloaded="add_all_the_time_tooltip()" text="磁铁钢针刷" />
+		<hotspot name="product_30" style="skin_hotspotstyle_red" ath="13" atv="-10" onclick="show_hotspot_alert(product_30)" onloaded="add_all_the_time_tooltip()" text="气孔通杆" />
+		<hotspot name="product_55" style="skin_hotspotstyle_red" ath="22" atv="-10" onclick="show_hotspot_alert(product_55)" onloaded="add_all_the_time_tooltip()" text="防耳垢网罩" />
+		<hotspot name="product_63" style="skin_hotspotstyle_red" ath="30" atv="-10" onclick="show_hotspot_alert(product_63)" onloaded="add_all_the_time_tooltip()" text="包装盒" />
+
+		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-32" atv="12" onclick="show_hotspot_alert(product_56)" onloaded="add_all_the_time_tooltip()" text="技工桌" />
+		<hotspot name="product_58" style="skin_hotspotstyle_red" ath="-20" atv="12" onclick="show_hotspot_alert(product_58)" onloaded="add_all_the_time_tooltip()" text="BTE三件套" />
+		<hotspot name="product_6" style="skin_hotspotstyle_red" ath="0" atv="12" onclick="show_hotspot_alert(product_6)" onloaded="add_all_the_time_tooltip()" text="新款干燥饼+干燥盒" />
+		<hotspot name="product_57" style="skin_hotspotstyle_red" ath="17" atv="12" onclick="show_hotspot_alert(product_57)" onloaded="add_all_the_time_tooltip()" text="压力锅" />
+
+		<hotspot name="product_13" style="skin_hotspotstyle_red" ath="-130" atv="20" onclick="show_hotspot_alert(product_13)" onloaded="add_all_the_time_tooltip()" text="分析仪" />
+		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="-118" atv="15" onclick="show_hotspot_alert(product_14)" onloaded="add_all_the_time_tooltip()" text="验配耳镜" />
+		<hotspot name="product_26" style="skin_hotspotstyle_red" ath="-85" atv="12" onclick="show_hotspot_alert(product_26)" onloaded="add_all_the_time_tooltip()" text="光固化机" />
+		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-70" atv="8" onclick="show_hotspot_alert(product_12)" onloaded="add_all_the_time_tooltip()" text="助听器保养仪" />
+
+		<hotspot name="product_27" style="skin_hotspotstyle_red" ath="97" atv="-20" onclick="show_hotspot_alert(product_27)" onloaded="add_all_the_time_tooltip()" text="大号耳朵展示架" />
+		<hotspot name="product_16" style="skin_hotspotstyle_red" ath="173" atv="30" onclick="show_hotspot_alert(product_16)" onloaded="add_all_the_time_tooltip()" text="亚克力六耳展示架" />
+		<hotspot name="product_3" style="skin_hotspotstyle_red" ath="-150" atv="28" onclick="show_hotspot_alert(product_3)" onloaded="add_all_the_time_tooltip()" text="验配套装" />
+	</scene>
+
+
+
+
+</krpano>

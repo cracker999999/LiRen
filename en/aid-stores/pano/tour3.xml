@@ -1,0 +1,52 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="skin/videointerface.xml" />
+	<include url="skin/vtourskin.xml" />
+	<include url="settings/init.xml" />
+	<include url="../plugins/showtext.xml" />
+
+<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(scene_3);
+		  );
+	</action>
+	
+	<scene name="scene_3" title="krpano Panoramic Video Example">
+
+		<!-- include the videoplayer plugin -->
+		<!-- <plugin name="video"
+		        url.html5="%VIEWER%/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        /> -->
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<!-- <sphere url="plugin:video" /> -->
+			<sphere url="https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/panorama/ZhuTingQiLianSuoMenDian_YanPei.jpg" />
+		</image>
+
+		<!-- set the default view -->
+		<view hlookat="0"  vlookat="0" fovtype="DFOV" fov="130" fov.mobile="90" fovmin="75" fovmax="150" distortion="0.0" />
+		
+		<action name="add_video_sources" >
+			videointerface_addsource('3000x1500', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/steel-making-ppe/3.video/video-3000x1500.mp4?v20231211', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/steel-making-ppe/3.video/video-3000x1500-poster.jpg?v20231211');
+			videointerface_play('3000x1500');
+		</action>
+
+		<hotspot name="product_86" style="skin_hotspotstyle_red" ath="-43" atv="6" onclick="show_hotspot_alert(product_86)"  onloaded="add_all_the_time_tooltip()" text="NOAH平台" />
+		<hotspot name="product_8" style="skin_hotspotstyle_red" ath="-17.6" atv="17" onclick="show_hotspot_alert(product_8)"  onloaded="add_all_the_time_tooltip()" text="编程器" />
+		<hotspot name="product_13" style="skin_hotspotstyle_red" ath="0.37" atv="3" onclick="show_hotspot_alert(product_13)"  onloaded="add_all_the_time_tooltip()" text="真耳分析" />
+		<hotspot name="product_40" style="skin_hotspotstyle_red" ath="23" atv="-3.6" onclick="show_hotspot_alert(product_40)"  onloaded="add_all_the_time_tooltip()" text="助听器效果演示仪" />
+	</scene>
+
+
+
+
+</krpano>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="flexible" content="initial-dpr=2"/>
+    <meta name="viewport" content="width=device-width,user-scalable=0,viewport-fit=cover">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="百助立人-创新空间">
+    <meta name="description" content="百助立人-创新空间">
+    <title>百助立人-创新空间</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../dist/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../dist/animate.min.css">
+    <link rel="stylesheet" href="dist/threesixty/threesixty.css">
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <script type="text/javascript" src="https://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+
+    <script src="../dist/jquery-1.11.3.min.js"></script>
+    <script src="../dist/flexible.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../Content/js/loadingJs.js" id="main" data-baseurl="../../" data-main="../js/http.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTPS8DHXHH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RTPS8DHXHH');
+    </script> -->
+</head>
+<body class="bg-cover" style="background-image: url('images/bg.png')">
+
+<div class="page-container bg-cover hidden zoomContainer" id="app">
+    <a class="btn-back flex flex-vc flex-hc" href="javascript:;"
+       data-title="创新空间" data-name="创新空间-返回" onclick="toJumpPageEvent(this, function () { document.getElementById('productContainer').style.display = 'none';
+                                                                                        window.location.replace('../index.html'); });" >
+        <img src="images/icon_back.png" alt="" class="icon-back">
+        <span>返回</span>
+    </a>
+    
+    <div class="control-right-top mobile-show">
+        <div class="flex flex-vc flex-hc">
+            <button class="btn-detail" onclick="showProductDescription()"></button>
+        </div>
+    </div>
+
+    <div class="product-wrap flex flex-vc flex-hc" v-if="isConfigLoaded" v-cloak>
+        <div class="product-container flex flex-vc flex-hc" id="productContainer">
+            <div class="w-100 h-100 product720Box" v-show="is720">
+                <div class="canvas-box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" id="canvasBox">
+                    <iframe id="childFrame" :src="'720Modal/3D.html' + '?model=' + product3DList[currentProduct].modelName + '&anim=' + product3DList[currentProduct].animation + '&trans=' + product3DList[currentProduct].transparent +'&transType='+product3DList[currentProduct].transparentType + '&color=' + product3DList[currentProduct].changeColor + '&type=' + product3DList[currentProduct].modelType + '&scale=' + product3DList[currentProduct].scale" 
+                        frameborder="0" class="iframe" allowtransparency="true" style="background-color: transparent;" ></iframe>
+                </div>
+            </div>
+            <div class="product-img-box flex flex-vc flex-hc w-100 h-100 relative product360Box EnterPageEventBtn" data-title="创新空间" data-name="创新空间-360旋转" v-show="!is720">
+                <div class="spinner flex-column flex-vc flex-hc">
+                    <img src="map/loading.gif">
+                    <span>0%</span>
+                </div>
+                <div class="threesixty product1">
+                    <ol class="threesixty_images"></ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- 产品描述 -->
+        <div class="product-description">
+            <div class="top flex flex-v-start flex-bt">
+            <div class="product-name">{{product3DList[currentProduct].productName}}</div>
+                <i class="iconfont icon-close mc" onclick="showProductDescription()"></i>
+            </div>
+            <div class="p text-content">
+                {{product3DList[currentProduct].desc}}
+            </div>
+            <div class="p text-content margin-top-sm">
+                <a :href="product3DList[currentProduct].url" class="text-white text-underline" target="_blank">
+                    <!-- 去商城看看 >> -->
+                    <img src="../images/shop.png" width="120" height="30" >
+                </a>
+            </div>
+            <!-- <input type="number" id="scaleInput" placeholder="" step="0.1" min="0.1" value="1" class="scale-input" style="display: none;"> -->
+        </div>
+        <div class="icon-rotate"><span>720°</span></div>
+    </div>
+    
+    <!--产品预览图-->
+    <div class="product-thum-swiper swiper-container productThumSwiper" v-if="isConfigLoaded" v-cloak>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide product-thum EnterPageEvent" v-for="(item, index) in product3DList" :key="index"
+                    data-title="创新空间" data-name="创新空间-切换产品类型" :data-attr1="item.productName" :data-attr2="item.attr1"
+                    :class="{active: index === currentProduct}"
+                    @click="onClickProduct(index)">
+                <div class="thum-img">
+                    <img :src="item.img" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 动画按扭 -->
+    <div class="control-right-middle flex-column flex-vc flex-hc">
+        <div id="loaderOver" class="model-control-box" v-show="showAnimation">
+            <button class="aa btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-拆解" id="btnPos" title="拆解" type="button"></button>
+            <button class="bb btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-组合" id="btnBos" title="组合" type="button"></button>
+        </div>
+
+        <a class="btn-msg" href="http://soundlink.com.cn/index.html" target="_blank">
+            <img src="../images/btn_msg.png" alt="" class="w-100">
+        </a>
+    </div>
+
+    <!-- 修改颜色 -->
+    <div id="colorBar" class="color-buttons" v-show="showChangeColor">
+        <button id="redBtn" class="red color-btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-red" title="红色" type="button">红</button>
+        <button id="greenBtn" class="green color-btn EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="绿色" type="button">绿</button>
+        <button id="blueBtn" class="color-btn blue EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="蓝色" type="button">蓝</button>
+        <button id="resetBtn" class="color-btn reset EnterPageEventBtn" data-title="创新空间" data-name="创新空间-green" title="还原" type="button">还原</button>
+    </div>
+</div><!-- app -->
+
+<script type="text/javascript" src="../dist/vue.global.min.js"></script>
+<script type="text/javascript" src="js/product.js"></script>
+<script type="text/javascript" src="../dist/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="dist/threesixty/threesixty.min.js"></script>
+
+<script type="text/javascript" src="../dist/current-device.min.js"></script>
+<script type="text/javascript" src="../dist/devicePixelRatio.js"></script>
+
+<!-- <script src="http://cbe.convertlab.com/cbe/collect?tid=5742798233695064425&amp;at=0&amp;h=web"></script> -->
+<script type="text/javascript" src="../js/clab_tracker.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>typeof addClabTrackerCommon == 'function' && addClabTrackerCommon("创新空间");</script>
+
+<script type="text/javascript">
+
+    // var productSwiper = new Swiper('.productThumSwiper', {
+    //     slidesPerView: 'auto',
+    // });
+
+    $(".product-thum").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    function showProduct(src, totalFrames) {
+        $(".spinner").show();
+        $(".spinner span").html("加载中...");
+        $(".threesixty_images").html("");
+        show360(src, totalFrames);
+
+        // $(".canvas-box").hide();
+        // $("canvas").remove();
+        $(".icon-rotate span").html("360°");
+        $(".product-img-box").show();
+        $(".model-control-box").hide();
+        $(".productImg").attr("src", src);
+    }
+
+    //360旋转
+    function show360(src, totalFrames) {
+        product1 = $('.product1').ThreeSixty({
+            totalFrames: totalFrames,
+            endFrame: totalFrames,
+            currentFrame: 1,
+
+            imgList: '.threesixty_images',
+            progress: '.spinner',
+            imagePath: 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/360Products/' + src + '/',
+            filePrefix: '',
+            ext: '.png',
+            height: 500,
+            width: 500,
+            navigation: false,
+            responsive: true
+        });
+    }
+
+    let isShow = false;
+
+    function showProductDescription() {
+        console.log(isShow);
+        isShow = !isShow;
+        if (isShow) {
+            $(".product-description").fadeIn();
+        } else {
+            $(".product-description").fadeOut();
+        }
+    }
+    
+    //product.js call this
+    window.initBtns = function() {
+        //监听子页面按钮
+        const parentBtnPos = document.querySelector("#btnPos");
+        const parentBtnBos = document.querySelector("#btnBos");
+        const parentBtnRed = document.querySelector("#redBtn");
+        const parentBtnGreen = document.querySelector("#greenBtn");
+        const parentBtnBlue = document.querySelector("#blueBtn");
+        const parentBtnReset = document.querySelector("#resetBtn");
+
+        const childFrame = document.querySelector("#childFrame");
+        
+        parentBtnPos.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#aa");
+            childBtn.click();
+        });
+        parentBtnBos.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#bb");
+            childBtn.click();
+        });
+        parentBtnRed.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#setRed");//id
+            childBtn.click();
+        });
+        parentBtnGreen.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#setGreen");//id
+            childBtn.click();
+        });
+        parentBtnBlue.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#setBlue");//id
+            childBtn.click();
+        });
+        parentBtnReset.addEventListener('click', ()=>{
+            const childBtn = childFrame.contentWindow.document.querySelector("#reset");//id
+            childBtn.click();
+        });
+    }
+
+</script>
+
+<!-- dify -->
+<!-- <script>
+    window.aiChatbotConfig = {
+        baseUrl: '../aiChat.html',
+        draggable: false,
+        dynamicScript: false
+    }
+</script>
+<script
+    src="../js/chatbot.js"
+    id="htwYEci6QayqHaC8"
+    defer>
+</script> -->
+<style>
+    #ai-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+    }
+</style>
+
+</body>
+</html>

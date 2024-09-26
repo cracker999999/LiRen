@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundLink</title>
+    <style>
+		body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,nav,section,input,select,option,textarea{margin:0;padding:0;}
+        * {
+            box-sizing: border-box;			
+        }
+        body {
+            background-color: #64a6ff;
+			background-image: linear-gradient(270deg,#2a71ff,#64a6ff);
+            font-family: "Calibri", "Roboto", sans-serif;
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat_window {
+            position: absolute;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            /* max-width: 100vw; */
+            /* max-height: 100vh; */
+            /* height: 750px; */
+            border-radius: 8px;
+            background-color: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            background-color: #f8f8f8;
+            overflow: hidden;
+        }
+        .top_menu {
+            background-color: #fff;
+            width: 100%;
+            padding: 10px 0;
+			height: 40px;
+            box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        }
+        .top_menu .buttons {
+            margin: 3px 0 0 20px;
+            position: absolute;
+        }
+        .top_menu .buttons .button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+        }
+        .top_menu .buttons .button.close {
+            background-color: #f5886e;
+        }
+        .top_menu .buttons .button.minimize {
+            background-color: #fdbf68;
+        }
+        .top_menu .buttons .button.maximize {
+            background-color: #a3d063;
+        }
+        .top_menu .title {
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+        }
+        .messages {
+            position: relative;
+            list-style: none;
+            padding: 20px 10px 0 10px;
+            margin: 0;
+            height: 415px; /*610*/
+			overflow: hidden;
+			overflow-y: scroll;
+        }
+        .messages .message {
+            clear: both;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: all 0.5s linear;
+            opacity: 0;
+        }
+        .messages .message.left .avatar {
+           background-color: #f5886e;
+		   background-size: 100%;
+            float: left;
+        }
+        .messages .message.left .text_wrapper {
+            background-color: #ffe6cb;
+            margin-left: 20px;
+        }
+        .messages .message.left .text_wrapper::after,
+        .messages .message.left .text_wrapper::before {
+            right: 100%;
+            border-right-color: #ffe6cb;
+        }
+        .messages .message.left .text {
+            color: #c48843;
+        }
+        .messages .message.right .avatar {
+            background-color: #fdbf68;
+            float: right;
+        }
+        .messages .message.right .text_wrapper {
+            background-color: #c7eafc;
+            margin-right: 20px;
+            float: right;
+        }
+        .messages .message.right .text_wrapper::after,
+        .messages .message.right .text_wrapper::before {
+            left: 100%;
+            border-left-color: #c7eafc;
+        }
+        .messages .message.right .text {
+            color: #45829b;
+        }
+        .messages .message.appeared {
+            opacity: 1;
+        }
+        .messages .message .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .messages .message .text_wrapper {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 6px;
+            width: calc(100% - 85px);
+            min-width: 100px;
+            position: relative;
+        }
+        .messages .message .text_wrapper::after,
+        .messages .message .text_wrapper:before {
+            top: 18px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        .messages .message .text_wrapper::after {
+            border-width: 13px;
+            margin-top: 0px;
+        }
+        .messages .message .text_wrapper::before {
+            border-width: 15px;
+            margin-top: -2px;
+        }
+        .messages .message .text_wrapper .text {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .bottom_wrapper {
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+			height:100px;
+            position: absolute;
+            bottom: 0;
+        }
+        .bottom_wrapper .message_input_wrapper {
+            display: inline-block;
+            height: 45px;
+            border-radius: 10px;
+            border: 1px solid #bcbdc0;
+            width: calc(100% - 120px);
+            position: relative;
+            padding: 0 20px;
+        }
+        .bottom_wrapper .message_input_wrapper .message_input {
+            border: none;
+            height: 100%;
+            box-sizing: border-box;
+            width: calc(100% - 40px);
+            position: absolute;
+            outline-width: 0;
+            color: #333;
+			background-color: #fff;
+        }
+        .bottom_wrapper .send_message {
+            width: 100px;
+            height: 45px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #64a6ff;
+            border: 2px solid #64a6ff;
+			background-image: linear-gradient(90deg,#2a71ff,#64a6ff);
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            text-align: center;
+            float: right;
+        }
+        .bottom_wrapper .send_message:hover {
+            color: #fff;
+            background-color: #64a6ff;
+        }
+        .bottom_wrapper .send_message .text {
+            font-size: 18px;
+            font-weight: 300;
+            display: inline-block;
+            line-height: 40px;
+        }
+        .message_template {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <!-- <div class="button close"></div> -->
+                <!-- <div class="button minimize"></div>
+                <div class="button maximize"></div> -->
+            </div>
+            <div class="title">SoundLink</div>
+        </div>
+        <ul class="messages"></ul>
+        <div class="bottom_wrapper clearfix">
+            <div class="message_input_wrapper">
+                <input class="message_input" placeholder="请输入..." />
+            </div>
+            <div class="send_message">
+                <div class="icon"></div>
+                <div class="text">发送</div>
+            </div>
+        </div>
+    </div>
+    <div class="message_template">
+        <li class="message">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <div class="text"></div>
+            </div>
+        </li>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        
+        (function() {
+            var MsgData;
+            
+            // 增加图片支持
+            MsgData = function(arg) {
+                this.text = arg.text; // 文本消息
+                this.imageSrc = arg.imageSrc; // 图片消息
+                this.message_side = arg.message_side;
+                this.id = arg.id
+                
+                this.draw = function() {
+                    var $message = $($('.message_template').clone().html());
+                    $message.addClass(this.message_side); 
+                    // 如果消息包含图片
+                    if (this.imageSrc) {
+                        $message.find('.text').html('<img src="' + this.imageSrc + '"><br><span>aaaa</span>');
+                    } else {
+                        // $message.find('.text').html(this.text);
+                        $message.find('.text').html('<span class="'+ this.id + '">' + this.text + '</span>');
+                    }        
+                    $('.messages').append($message);
+                    setTimeout(function() {
+                        $message.addClass('appeared');
+                    }, 0);
+                };
+
+                this.updateText = function(newText) {
+                    // 根据 id 查找对应的消息文本并更新
+                    var spanElement = $('.'+this.id);
+                    spanElement.text(newText)
+                    // $('.messages').children().each(function(index, element) {
+                    //     console.log($(element).html()); // 打印子元素的 HTML 内容
+                    //     console.log($(element).attr('id')); // 打印子元素的 id 属性值
+                    //     // 还可以打印其他属性或内容
+                    // });
+                };
+                return this;
+            };
+ 
+            $(function() {
+                // var msg_url = "http://192.168.41.7:5005/ask_dify";
+                // var msg_url = "http://192.168.41.7:5006/ask_s";  //test 宋词直播 苏东坡，李清照
+                // var msg_url = "https://comicomi.cloud/mbti/ask_su";  //test 宋词直播 苏东坡，李清照
+                var msg_url = "https://comicomi.cloud/mbti/ask_s";
+                // var msg_url = "http://192.168.41.7:5005/sse";  //test
+
+                var message_side;
+                var canInput = false;
+                var lastMessage;
+                var cid=0;
+
+                function getMessageText() {
+                    var $message_input;
+                    $message_input = $('.message_input');
+                    return $message_input.val();
+                };
+
+                function sendMessage(text, role, img=null) {
+                    var $messages, message;
+                    if (text.trim() === '') {
+                        return;
+                    }
+                    $('.message_input').val('');
+                    $messages = $('.messages');
+                    message_side = role === 'user' ? 'right' : 'left';
+                    message = new MsgData({
+                        id: "m"+cid,
+                        text: text,
+                        message_side: message_side,
+                        // imageSrc:'aa.png'
+                        imageSrc: img
+                    });
+                    cid++;
+                    lastMessage = message;
+                    
+                    message.draw();
+                    $messages.animate({
+                        scrollTop: $messages.prop('scrollHeight')
+                    }, 300);
+                };
+
+                function resetMessahge(str){
+                    // lastMessage.text = str
+                    lastMessage.updateText(str)
+                };
+
+                function send() {
+                    var msg_content = getMessageText();
+                    if(msg_content === '' || msg_content.trim().length === 0)
+                    {
+                        return;
+                    }
+                    sendMessage(msg_content,'user');
+                    $('.message_input').attr('readonly', true);
+                    //SSE,流式
+                    var answer = ''
+                    var eventSource = new EventSource(msg_url+'?ask_str='+msg_content);
+                    var firstChar = true
+                    eventSource.onmessage = function(event) {
+                        // console.log("SSE>>>>>>>>>>>>>"); // 处理接收到的数据
+                        // console.log(event.data); // 处理接收到的数据
+                        const jsonObject = JSON.parse(event.data);
+                        const evt = jsonObject.event;
+                        if(evt == "message"){
+                            const word = jsonObject.answer;
+                            const cid = jsonObject.conversation_id;
+                            answer = answer + word
+                            if(firstChar){
+                                firstChar=false
+                                sendMessage(answer,'ai');
+                            }else{
+                                resetMessahge(answer)
+                            }
+                            console.log(word)
+                        }else if(evt == "message_end"){
+                            console.log("message_end");
+                            $('.message_input').attr('readonly', false);
+                            eventSource.close();
+                        }
+                    };
+                    eventSource.onopen = function() {
+                        console.log('Connection to server opened');
+                    };
+                    eventSource.onerror = function(error) {
+                        console.error('Error occurred:', error);
+                    };
+                }
+
+                $('.close').click(function(e){
+                    console.log("close")
+                    // parentWindow.postMessage('closeLayer', '*');
+                    window.dispatchEvent(new CustomEvent('closeLayer', { detail: 'Hello from external HTML page!' }));
+                })
+
+                $('.send_message').click(send);
+
+                // $('.message_input').keyup(function(e) {
+                //     if (e.which === 13) {
+                        
+                //         var msg_content = getMessageText();
+                //         var canInput = true;
+                //         if(msg_content === '' || msg_content.trim().length === 0)
+                //         {
+                //             return;
+                //         }
+                //         sendMessage(msg_content,'user');
+                //         $('.message_input').attr('readonly', true);
+                //         // 请求Ajax
+                //         $.ajax({
+                //             type: 'POST',
+                //             timeout: 99999,
+                //             url: msg_url,
+                //             contentType: 'application/json', // 设置请求的媒体类型为 JSON
+                //             // data: JSON.stringify({cid: '', ask_str:'你好', mode:'blocking'}),
+                //             data: JSON.stringify({useId: '', messages:[{content: msg_content}]}),   // 模拟测试nexthunmen的请求
+                //             dataType: 'json',
+                //             beforeSend:function(){
+                //                 $(".title").text('正在输入中...');
+                //             },
+                //             success: function (resp){
+                //                 $(".title").text('SoundLink');
+                //                 var datas = resp;
+                //                 console.log(datas)
+                //                 // if (datas.code == 1) {
+                //                 //     sendMessage(datas.msg,'assistant');
+                //                 // }  else {
+                //                 //     alert(datas.msg);
+                //                 // }
+                //                 $('.message_input').attr('readonly', false);
+                //                 return false;
+                //             }
+                //         });
+                //     }
+                // });
+
+                sendMessage('你好! :)', 'assistant');
+                fakeMsg();
+
+                function handleEscKey(event) {
+                    if (event.key === "Enter") {
+                        send();
+                    }
+                }
+
+                function fakeMsg(){
+                    sendMessage('你好', 'user');
+                    sendMessage('还行', 'ai');
+                    sendMessage('在干嘛', 'user');
+                    sendMessage('在作诗', 'ai');
+                    sendMessage('好作吗', 'user');
+                    sendMessage('很难', 'ai');
+                    sendMessage('加油', 'user');
+                }
+
+                document.addEventListener("keydown", handleEscKey);
+            });
+ 
+        }).call(this);
+    </script>
+</body>
+</html>

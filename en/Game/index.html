@@ -1,0 +1,727 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="flexible" content="initial-dpr=2">
+    <meta name="viewport" content="width=device-width,user-scalable=0,viewport-fit=cover">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="3M换装游戏">
+    <meta name="description" content="3M换装游戏">
+    <title>3M换装游戏</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css?v20230628">
+    <link rel="stylesheet" href="../dist/swiper8.4.6/swiper-bundle.min.css">
+    <link rel="stylesheet" href="dist/animate.min.css">
+    <link rel="stylesheet" href="css/index.css?v20230628">
+
+    <script type="text/javascript" src="../open/js/jweixin-1.6.0.js"></script>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/imagesLoader.min.js"></script>
+    <script src="js/uploader.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <script type="text/javascript" src="../Content/js/loadingJs.js" id="main" data-baseurl="../../" data-main="js/http/http.js,../js/http.js,js/html/index.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async="" src="../gtag/js?id=G-RTPS8DHXHH"></script> -->
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-RTPS8DHXHH');
+    </script> -->
+</head>
+<body>
+<!--Loading-->
+<div class="loading-page full-page wrapper">
+    <div class="loading-box flex-column flex-vc flex-hc">
+        <div class="loading-num text-center text-xxl text-white margin-bottom">100%</div>
+        <div class="loading-bar">
+            <div class="inner-bar"></div>
+        </div>
+    </div>
+</div>
+
+<div class="common-wrap flex-column flex-vc flex-hc">
+    <div class="logo margin-bottom-sm" style="display: none;">
+        <img src="images/page2/logo.png" alt="" class="w-100">
+    </div>
+    <div class="btn-music animated " style="display: none;">
+        <img src="images/icon_music.png" alt="" class="w-100">
+    </div>
+</div>
+
+<!--MainPage-->
+<div class="page-container">
+    <!--游戏规则-->
+    <div class="page1 wrapper full-page bg-cover startPage" style="background-image: url('images/page1/bg.png'); z-index: 1;">
+        <div class="page-logo">
+            <img src="images/page1/logo.png" alt="" class="w-100">
+        </div>
+        <div class="mid">
+            <div class="banner-swiper bannerSwiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/page1/banner1.png?v20230418" alt="" class="banner-img w-100">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/page1/banner2.png?v20230418" alt="" class="banner-img w-100">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/page1/banner3.png?v20230418" alt="" class="banner-img w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="btn animated pulse infinite" data-title="3M换装游戏-首页" data-name="AI穿戴体验" data-page="choseGenderPage" onclick="navAgreements(this)">
+                <img src="images/page1/btn_rules.png?v20230413" alt="" class="w-100">
+            </div>
+           <!-- <div class="text">
+                3M 虚拟空间
+            </div>-->
+            <div class="text-content text-center text-white text-lg text-nowrap">
+                带你穿梭时空
+                <br>体验不同职业场景
+                <br>点击开启一键AI换脸
+                <br>查看平行世界的你
+            </div>
+            <div class="agreements-box flex flex-vc flex-hc" style="width: 100vw;">
+                <div class="checkbox margin-right-sm">
+                    <input type="checkbox" name="agreements" id="agreements" onclick="checkbox(this)">
+                    <div class="checkbox-custom"></div>
+                </div>
+                <div class="flex flex-vc">
+                    <span class="label" style="border-bottom: none;">我已阅读</span>
+                    <label class="label ">
+                        <a href="https://www.3m.com.cn/3M/zh_CN/company-cn/privacy-policy/" target="_blank" style="color: #fff; text-decoration: none;">隐私条款</a>
+                    </label>
+                    <span class="label" style="border-bottom: none;">及</span>
+                    <label class="label ">
+                        <a href="images/acknowledgement.pdf" target="_blank" style="color: #fff; text-decoration: none;">个人信息处理知情并同意书</a>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--选人物性别-->
+    <div class="page3 wrapper full-page bg-cover choseGenderPage" style="background-image: url('images/page3/bg.png'); z-index: 3;">
+        <div class="title">选人物</div>
+        <ul class="chose-gender-box flex flex-v-stretch flex-hc absolute">
+            <li class="gender female margin-right-lg active EnterPageEvent" data-title="3M换装游戏-选择性别" data-name="选择性别" data-attr1="女生" data-gender="female" onclick="choseGender(this)">
+                <div class="icon-gender">
+                    <img src="images/page3/icon_woman_on.png" alt="" class="w-100 iconFemale">
+                </div>
+                <div class="img-gender">
+                    <img src="images/page3/img_woman.png" alt="" class="w-100">
+                </div>
+            </li>
+            <li class="gender male EnterPageEvent" data-title="3M换装游戏-选择性别" data-name="选择性别" data-attr1="男生" data-gender="male" onclick="choseGender(this)">
+                <div class="icon-gender">
+                    <img src="images/page3/icon_man.png" alt="" class="w-100 iconMale">
+                </div>
+                <div class="img-gender">
+                    <img src="images/page3/img_man.png" alt="" class="w-100">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--拍照融合-->
+    <div class="page6 wrapper full-page bg-cover faceFusionPage" id="faceFusionPage" style="background-image: url('images/page3/bg.png'); z-index: 4;">
+        <div class="btn-back EnterPageEvent" data-title="3M换装游戏-AI换脸" data-name="上一步" data-pre="choseGenderPage" data-cur="faceFusionPage" onclick="backTo(this)">
+            <img src="images/page6/btn_back.png" alt="" class="w-100">
+        </div>
+        <div class="people">
+            <!--<img src="images/page6/woman.png" alt="" class="w-100 peopleImg people-img">-->
+            <img src="" alt="" class="w-100 peopleImg people-img" crossorigin="anonymous">
+            <img src="images/page6/identify.png?v20230418" alt="" class="upload-img w-100">
+            <div class="upload EnterPageEvent" data-title="3M换装游戏-AI换脸" data-name="点击换脸">
+                <input id="Filedata" name="Filedata" type="file" class="upload-input" accept="image/*" onchange="InitIssue.uoload(this);">
+            </div>
+        </div>
+    </div>
+
+    <!--选择场景、产品-->
+    <div class="page4 wrapper full-page bg-cover choseSceneProductsPage " id="choseSceneProductsPage" style="background-image: url('images/page4/bg_metallurgy.png'); z-index: 5;">
+        <!--<div class="btn-back" data-pre="faceFusionPage" data-cur="choseSceneProductsPage" onclick="backTo(this)">
+        <img src="images/page6/btn_back.png" alt="" class="w-100">
+    </div>-->
+        <div class="people">
+            <img src="images/page4/woman.png" alt="" class="w-100 peopleImg people-img">
+            <img src="images/page6/marsk1_product.png" alt="" class="product-img productImg" style="display: none;">
+        </div>
+
+        <div class="bottom-options">
+            <div class="btns flex flex-vc flex-hc">
+                <div class="btn upload relative EnterPageEvent" data-title="3M换装游戏-换装结果" data-name="再玩一次" onclick="playAgain()">
+                    <img src="images/page7/btn_upload.png" alt="" class="w-100">
+                </div>
+                <div class="btn forward EnterPageEvent" data-title="3M换装游戏-换装结果" data-name="转发海报" onclick="initPoster()">
+                    <img src="images/page6/btn_forward.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+        <!--选择场景-->
+        <div class="scene-box bottom-box" style="display: none;">
+            <div class="btn-next" data-change="selectProduct" onclick="changeBottomBox(this)">
+                <img src="images/page5/btn_next.png" alt="" class="w-100">
+            </div>
+
+            <div class="btn-pre" data-pre="faceFusionPage" data-cur="choseSceneProductsPage" onclick="backTo(this)">
+                <img src="images/page5/btn_next.png" alt="" class="w-100">
+            </div>
+
+            <div class="bottom-box-inner">
+                <div class="title margin-bottom-sm text-bold">场景选择</div>
+                <div class="scene-swiper swiper-container sceneSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-content active" data-scene="metallurgy" onclick="selectScene(this)">
+                                <div class="scene-img">
+                                    <img src="images/page4/preview_metallurgy.png" alt="" class="w-100">
+                                </div>
+                                <div class="scene-name">冶金</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-scene="chemical" onclick="selectScene(this)">
+                                <div class="scene-img">
+                                    <img src="images/page4/preview_chemical.png" alt="" class="w-100">
+                                </div>
+                                <div class="scene-name">化工</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-scene="pharmacy" onclick="selectScene(this)">
+                                <div class="scene-img">
+                                    <img src="images/page4/preview_pharmacy.png" alt="" class="w-100">
+                                </div>
+                                <div class="scene-name">制药</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-scene="automobile" onclick="selectScene(this)">
+                                <div class="scene-img">
+                                    <img src="images/page4/preview_automobile.png" alt="" class="w-100">
+                                </div>
+                                <div class="scene-name">汽车</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-scene="architecture" onclick="selectScene(this)">
+                                <div class="scene-img">
+                                    <img src="images/page4/preview_architecture.png" alt="" class="w-100">
+                                </div>
+                                <div class="scene-name">建筑</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-scene="shipping" onclick="selectScene(this)">
+                                <div class="scene-img">
+                                    <img src="images/page4/preview_shipping.png" alt="" class="w-100">
+                                </div>
+                                <div class="scene-name">船舶</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--选择产品-->
+        <div class="sort-box bottom-box" style="display: none;">
+            <div class="btn-next" onclick="initPoster()">
+                <img src="images/page5/btn_next.png" alt="" class="w-100">
+            </div>
+
+            <div class="btn-pre" data-change="selectScene" onclick="changeBottomBox(this)">
+                <img src="images/page5/btn_next.png" alt="" class="w-100">
+            </div>
+
+            <div class="bottom-box-inner ">
+                <!--选类型-->
+                <div class="sort-swiper">
+                    <div class="swiper-container sortSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-content active" data-sort="marsk" onclick="selectSort(this)">
+                                    <img src="images/page5/sort_marsk.png" alt="" class="sort-img w-100">
+                                    <img src="images/page5/sort_marsk_on.png" alt="" class="sort-img-on w-100">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content" data-sort="helmet" onclick="selectSort(this)">
+                                    <img src="images/page5/sort_helmet.png" alt="" class="sort-img w-100">
+                                    <img src="images/page5/sort_helmet_on.png" alt="" class="sort-img-on w-100">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content" data-sort="glasses" onclick="selectSort(this)">
+                                    <img src="images/page5/sort_glasses.png" alt="" class="sort-img w-100">
+                                    <img src="images/page5/sort_glasses_on.png" alt="" class="sort-img-on w-100">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content" data-sort="earphone" onclick="selectSort(this)">
+                                    <img src="images/page5/sort_earphone.png" alt="" class="sort-img w-100">
+                                    <img src="images/page5/sort_earphone_on.png" alt="" class="sort-img-on w-100">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content" data-sort="earplugs" onclick="selectSort(this)">
+                                    <img src="images/page5/sort_earplugs.png" alt="" class="sort-img w-100">
+                                    <img src="images/page5/sort_earplugs_on.png" alt="" class="sort-img-on w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--选产品-->
+                <div class="product-swiper swiper-container margin-top productSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-content active" data-product="marsk1" onclick="selectProduct(this)">
+                                <img src="images/page5/marsk1_preview.png" alt="" class="product-preview w-100">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-product="marsk2" onclick="selectProduct(this)">
+                                <img src="images/page5/marsk2_preview.png" alt="" class="product-preview-img w-100">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-product="marsk3" onclick="selectProduct(this)">
+                                <img src="images/page5/marsk3_preview.png" alt="" class="product-preview-img w-100">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content" data-product="marsk4" onclick="selectProduct(this)">
+                                <img src="images/page5/marsk4_preview.png" alt="" class="product-preview-img w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--海报-->
+    <div class="page7 wrapper full-page bg-cover posterPage" style="z-index: -1;">
+        <div class="bg full-page bg-cover absolute" style="background-image: url('images/page4/bg_metallurgy.png'); z-index: 1;"></div>
+        <div class="bg-drop"></div>
+        <div class="btn-back" data-pre="posterPage" data-cur="posterPage" onclick="backTo(this)" style="display:none;">
+            <img src="images/page6/btn_back.png" alt="" class="w-100">
+        </div>
+
+        <div class="poster-wrap posterWrap" style="z-index: -1;">
+            <div class="relative" id="posterWrap">
+                <img src="images/page7/poster_bg.png?v20230112" alt="" class="bg-poster">
+                <div class="placeholder">
+                    <img src="images/page7/poster_bg_placeholder.png" alt="" class="w-100">
+                    <div class="poster-content posterContent absolute" id="posterContent">
+                        <!--                 <img src="images/page6/woman.png" alt="" class="peopleImg people-img">-->
+                    </div>
+                </div>
+                <div class="poster-bottom flex flex-vc">
+                    <div class="avator margin-right-sm margin-left">
+                        <img src="images/page7/avator.png?v2023062902" alt="" class="w-100" id="userLogo">
+                    </div>
+                    <div class="text">
+                        <span>我在3M我为“安全代言”</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--转发海报用-->
+        <div class="poster-wrap posterForwardContent" id="posterForwardContent"></div>
+
+        <div class="bottom-options">
+            <div class="btns flex flex-vc flex-hc">
+                <img src="images/page7/tips.png" alt="" class="tips">
+                <div class="btn upload relative EnterPageEvent" data-title="3M换装游戏-生成海报" data-name="再玩一次" onclick="playAgain()">
+                    <!--<input type="file" class="upload-input">-->
+                    <img src="images/page7/btn_upload.png" alt="" class="w-100">
+                </div>
+                <!--<div class="btn forward">
+                    <img src="images/page6/btn_forward.png" alt="" class="w-100">
+                </div>-->
+                <!--探索元宇宙按钮-->
+                <div class="btn explore flex flex-vc flex-hc">
+                    <a href="javascript:;" class="btn upload relative" data-title="3M换装游戏-生成海报" data-name="探索个人防护元宇宙" onclick="toJumpPageEvent(this, function () { location.replace('../index.html'); });">
+                        <img src="images/page7/btn_explore.png" alt="" class="w-100">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--注册会员-->
+        <div class="btn-register EnterPageEvent" data-title="3M换装游戏-生成海报" data-name="注册会员即享好礼" onclick="showServiceCenter()">
+            <img src="images/page7/btn_register.png" alt="" class="w-100">
+        </div>
+
+    </div>
+
+    <!--制作中-->
+    <div class="modal-container making-tips flex flex-vc flex-hc makingTips" style="display: none;">
+        <div class="modal-bg"></div>
+        <div class="tips flex-column flex-vc flex-hc" style="z-index: 2;">
+            <span class="loader-106 tips"></span>
+            <span class="text-white text-center text-df p">制作中...</span>
+        </div>
+    </div>
+
+    <!--服务中心弹框-->
+    <div class="modal-container modal-service-center flex flex-vc flex-hc animated fadeIn" style="z-index: 1000; display: none;">
+        <div class="modal-bg" onclick="hideServiceCenter()"></div>
+        <div class="modal-body">
+            <div class="modal-title text-center text-white margin-tb">百助立人线上商城</div>
+            <div class="modal-content">
+                <div class="img">
+                    <img src="images/service_center_ewm.png" alt="" class="w-100">
+                </div>
+                <div class="text-center text-content text-white margin-tb p">扫码进入百助立人线上商城</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/loading.js?v20230418"></script>
+<script src="../dist/swiper8.4.6/swiper-bundle.min.js"> </script>
+<script type="text/javascript" src="dist/html2canvas.js"></script>
+<script type="text/javascript" src="dist/canvas2image.js"></script>
+<script src="//cbe.convertlab.com/cbe/collect?tid=5742798233695064425&at=0&h=web"></script>
+<script type="text/javascript" src="../js/clab_tracker.js?v20231212"></script>
+<script>typeof addClabTrackerCommon == 'function' && addClabTrackerCommon("3M换装游戏");</script>
+<script type="text/javascript">
+    /*bannerSwiper*/
+    var bannerSwiper = new Swiper('.bannerSwiper', {
+        effect: 'cube',
+        cubeEffect: {
+            slideShadows: false,
+        },
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+    })
+
+    function navAgreements(e) {
+        if (!$(":input[type='checkbox'][name=agreements]").prop('checked')) {
+            JsDialog('请同意隐私条款', 2000);
+            return;
+        }
+
+        let page = e.getAttribute("data-page");
+        console.log(page);
+        $("." + page).fadeIn();
+        $(".logo, .btn-music").fadeIn();
+
+        var title = $(e).data('title');
+        var name = $(e).data('name');
+        var attr1 = $(e).data('attr1') || '';
+        var attr2 = $(e).data('attr2') || '';
+        typeof addPageEvent == 'function' && addPageEvent(title, name, attr1, attr2);//页面日志
+
+        typeof addOpenPageEvent == 'function' && addOpenPageEvent("3M换装游戏-选择性别");
+    }
+
+    function navTo(e) {
+        let page = e.getAttribute("data-page");
+        console.log(page);
+        $("." + page).fadeIn();
+        $(".logo, .btn-music").fadeIn();
+    }
+
+    function backTo(e) {
+        let pre = e.getAttribute("data-pre"),
+            cur = e.getAttribute("data-cur");
+        // console.log(pre);
+        if (cur == "posterPage") {
+            $(".posterPage").css("z-index", -1);
+            $(".choseSceneProductsPage .btn-back, .choseSceneProductsPage .bottom-box").show();
+            $(".posterContent img").remove();
+            $(".posterForwardContent img").remove();
+        } else {
+            $("." + cur).hide();
+        }
+        $("." + pre).fadeIn();
+    }
+
+    function checkbox(e) {
+        // console.log(e.checked);
+        if (e.checked) {
+            $(".checkbox-custom").addClass("checked");
+        } else {
+            $(".checkbox-custom").removeClass("checked");
+        }
+        var title = '3M换装游戏-首页';
+        var name = '确认隐私条款';
+        var attr1 = e.checked ? '同意' : '取消';
+        var attr2 = '';
+        typeof addPageEvent == 'function' && addPageEvent(title, name, attr1, attr2);//页面日志
+    }
+
+    var gender = "";
+
+    function choseGender(e) {
+        gender = e.getAttribute("data-gender");
+        console.log(gender);
+        switch (gender) {
+            case "female":
+                $(".female").addClass("active").siblings().removeClass("active");
+                $(".iconFemale").attr("src", "images/page3/icon_woman_on.png");
+                $(".iconMale").attr("src", "images/page3/icon_man.png");
+                $(".choseSceneProductsPage .peopleImg").attr("src", "images/page6/woman.png");
+                $(".faceFusionPage .peopleImg").attr("src", "images/page6/woman.png");
+                break;
+            case "male":
+                $(".male").addClass("active").siblings().removeClass("active");
+                $(".iconFemale").attr("src", "images/page3/icon_woman.png");
+                $(".iconMale").attr("src", "images/page3/icon_man_on.png");
+                $(".choseSceneProductsPage .peopleImg").attr("src", "images/page6/man.png");
+                $(".faceFusionPage .peopleImg").attr("src", "images/page6/man.png");
+                break;
+            default:
+                $(".female").addClass("active").siblings().removeClass("active");
+                $(".iconFemale").attr("src", "images/page3/icon_woman_on.png");
+                $(".iconMale").attr("src", "images/page3/icon_man.png");
+                $(".choseSceneProductsPage .peopleImg").attr("src", "images/page6/woman.png");
+                $(".faceFusionPage .peopleImg").attr("src", "images/page6/woman.png");
+        }
+
+        $(".faceFusionPage").fadeIn();
+        typeof addOpenPageEvent == 'function' && addOpenPageEvent("3M换装游戏-AI换脸");
+    }
+
+    function changeBottomBox(e) {
+        let change = e.getAttribute("data-change");
+        console.log(change);
+        switch (change) {
+            case "selectScene":
+                $(".scene-box").show();
+                $(".sort-box").hide();
+                break;
+            case "selectProduct":
+                $(".scene-box").hide();
+                $(".sort-box").show();
+                $(".productImg").show();
+                break;
+            default:
+                $(".scene-box").show();
+                $(".sort-box").hide();
+        }
+    }
+
+    /*选择场景*/
+    var sceneSwiper = new Swiper(".sceneSwiper", {
+        slidesPerView: 4.5,
+        spaceBetween: 10,
+        loop: true,
+        observer: true,
+        observeParents: true,
+    })
+
+    function selectScene(e) {
+        let scene = e.getAttribute("data-scene");
+        // console.log(scene);
+        $(".choseSceneProductsPage, .faceFusionPage, .posterPage .bg").css("background-image", "url('images/page4/bg_" + scene + ".png')");
+        $(".scene-swiper .slide-content").removeClass("active");
+        $(e).addClass("active");
+    }
+
+    /*选择产品种类*/
+    var sortSwiper = new Swiper(".sortSwiper", {
+        slidesPerView: "auto",
+        loop: true,
+        observer: true,
+        observeParents: true,
+    })
+
+    function selectSort(e) {
+        let sort = e.getAttribute("data-sort");
+        console.log(sort);
+        $(".sort-swiper .slide-content").removeClass("active");
+        $(e).addClass("active");
+    }
+
+    /*选择产品*/
+    var productSwiper = new Swiper(".productSwiper", {
+        slidesPerView: "auto",
+        loop: true,
+        observer: true,
+        observeParents: true,
+    })
+
+    function selectProduct(e) {
+        let product = e.getAttribute("data-product");
+        console.log(product);
+
+        $(".product-swiper .slide-content").removeClass("active");
+        $(e).addClass("active");
+
+        $(".choseSceneProductsPage .productImg").attr("src", "images/page6/" + product + "_product.png");
+        $(".faceFusionPage .productImg").attr("src", "images/page6/" + product + "_product.png");
+        $(".productImg").show();
+    }
+
+    /*人脸融合*/
+    function faceFusion() {
+        // sceneSwiper.init();
+        $(".makingTips").fadeIn();
+        setTimeout(function () {
+            $(".makingTips").hide();
+            $(".choseSceneProductsPage").fadeIn();
+        }, 3000);
+    }
+
+    /*生成海报*/
+    function initPoster() {
+        fusePoster();
+        $(".logo").hide();
+        $(".makingTips").fadeIn();
+        setTimeout(function () {
+            makePosterForwardContent();
+            $(".makingTips").hide();
+            $(".posterPage").css("z-index", 6);
+            typeof addOpenPageEvent == 'function' && addOpenPageEvent("3M换装游戏-生成海报");
+        }, 3000);
+    }
+
+    function fusePoster() {
+        $(".choseSceneProductsPage .btn-back, .choseSceneProductsPage .bottom-box, .page4 .bottom-options").hide();
+
+        var choseSceneProductsPage = document.getElementById("choseSceneProductsPage")
+            , posterContent = document.getElementById("posterContent")
+            , canvas;
+
+        //html转canvas
+        html2canvas(choseSceneProductsPage, {
+            backgroundColor: null,
+            useCORS: true,
+            allowTaint: true
+        }).then(function (canvas) {
+            canvas.setAttribute('id', 'canvas');
+            var dataURL = canvas.toDataURL('image/png');
+
+            var canvasWidth = $("#canvas").width()
+                , canvasHeight = $("#canvas").height();
+            console.log(canvasWidth, canvasHeight);
+
+            // canvas转图片
+            var canvasImg = Canvas2Image.convertToPNG(canvas, canvasWidth, canvasHeight, true)
+                , dataURL = canvasImg.getAttribute("src");
+            posterContent.appendChild(canvasImg);
+            
+        });
+    }
+
+
+
+    function initPosterLongPress() {
+
+        var timeOutEvent = 0;
+        $(document).on("touchstart", "#posterImg", function (e) {
+            var that = this;
+            timeOutEvent = setTimeout("longPress()", 500);//500设置时间
+            picUrl = $(that).attr('src');
+            //e.preventDefault();
+        })
+        $(document).on("touchmove", "#posterImg", function (e) {
+            clearTimeout(timeOutEvent);
+            timeOutEvent = 0;
+        })
+        $(document).on("touchend", "#posterImg", function (e) {
+            clearTimeout(timeOutEvent);
+            if (timeOutEvent != 0) {
+                //alert("你这是点击，不是长按"); 
+            }
+            return false;
+        })
+    }
+
+    function longPress() {
+        timeOutEvent = 0;
+        //alert("长按事件触发");
+
+        var title = '3M换装游戏-生成海报';
+        var name = '长按保存';
+        var attr1 = '';
+        var attr2 = '';
+        typeof addPageEvent == 'function' && addPageEvent(title, name, attr1, attr2);//页面日志
+
+    }
+
+    function makePosterForwardContent() {
+        var posterWrap = document.getElementById("posterWrap")
+            , posterForwardContent = document.getElementById("posterForwardContent")
+            , canvas;
+
+        if (posterForwardContent.hasChildNodes()) {
+            $("#posterForwardContent img").remove();
+        }
+
+        //html转canvas
+        html2canvas(posterWrap, {
+            backgroundColor: null,
+            useCORS: true,
+            allowTaint: true
+        }).then(function (canvas) {
+            canvas.setAttribute('id', 'canvas');
+            var dataURL = canvas.toDataURL('image/png');
+
+            var canvasWidth = $("#canvas").width()
+                , canvasHeight = $("#canvas").height();
+            console.log(canvasWidth, canvasHeight);
+
+            // canvas转图片
+            var canvasImg = Canvas2Image.convertToPNG(canvas, canvasWidth, canvasHeight, true)
+                , dataURL = canvasImg.getAttribute("src");
+            canvasImg.setAttribute('id', 'posterImg');
+            posterForwardContent.appendChild(canvasImg);
+
+            initPosterLongPress();
+        });
+    }
+
+    function playAgain() {
+        $(".wrapper").hide();
+        $(".page7").css("z-index", "-1");
+        $(".page3, .page7, .page4 .bottom-options").show();
+    }
+
+    function showServiceCenter(){
+        $(".modal-service-center").fadeIn();
+    }
+    function hideServiceCenter(){
+        $(".modal-service-center").hide();
+    }
+
+</script>
+
+</body>
+</html>

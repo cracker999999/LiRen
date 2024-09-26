@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品展示</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script src="js/tween.umd.js"></script>
+    <!-- <script src="js/three.js"></script> -->
+    <!-- <script src="js/three.160.js"></script> -->
+    <!-- <script type="module" src="js/168/three.webgpu.js"></script> -->
+    <!-- <script src="js/OrbitControls.js"></script> -->
+    <!-- <script src="./js/FBXLoader.js"></script> -->
+    <!-- <script src="js/FBXLoader.147.js"></script> -->
+    <script src="./js/inflate.min.js"></script>
+    <!-- <script src="js/GLTFLoader.js"></script> -->
+    <!-- <script src="js/DRACOLoader.js"></script> -->
+    <!-- <script src="js/RGBELoader.js"></script> -->
+    <!-- <script src="js/CSS2DRenderer.js"></script> -->
+    <!-- <script src="js/RoomEnvironment.js"></script> -->
+    <script src="js/fflate.min.js"></script>
+    <!-- <script src="js/TGALoader.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./three@0.168.0/build/three.module.js",
+                "three/addons/": "./three@0.168.0/examples/jsm/",
+                "three/src/": "./three@0.168.0/src/"
+            }
+        }
+    </script>
+
+    <script>
+        window.baseFilesPath = 'https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/model/'
+    </script>
+</head>
+
+<body>
+<div class="page-loading" id="loading">
+    <img src="map/loading.gif">
+    <div id="load" class="text">加载中...</div>
+</div>
+
+<input type="number" id="scaleInput" placeholder="" step="0.1" min="0.1" value="1" class="scale-input" style="display: none;">
+<div id="loaderOver" class="model-control-box">
+    <button class="aa btn" id="aa" title="拆解" onclick="pos()" type="button"
+            style="position: absolute;padding: 10px; display: none;"></button>
+    <button class="bb btn" id="bb" title="组合" onclick="bos()" type="button"
+            style="position: absolute;padding: 10px; display: none;"></button>
+</div>
+
+<div id="colorBar" class="color-buttons">
+    <button class="color-btn red" id="setRed" onclick="red()" type="button" 
+            style="position: absolute;padding: 10px; display: none;">红</button>
+    <button class="color-btn green" id="setGreen" onclick="green()" type="button"
+            style="position: absolute;padding: 10px; display: none;">绿</button>
+    <button class="color-btn blue" id="setBlue" onclick="blue()" type="button"
+            style="position: absolute;padding: 10px; display: none;">蓝</button>
+    <button class="color-btn reset" id="reset" onclick="resetAllColor()" type="button"
+            style="position: absolute;padding: 10px; display: none;">还原</button>
+</div>
+
+</body>
+
+<script type="module" src="js/ModelViewer.js"></script>
+</html>

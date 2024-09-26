@@ -1,0 +1,307 @@
+<krpano onstart="asyncloop(true, set(contextmenu.item[creator].visible,false);)">
+    <!-- style -->
+    <style name="infospot" type="text"
+           html="" css="font-size:60px;text-align:center;" vcenter="true"
+           width="70" height="70" scale="0.05"
+           bgColor="0xff0000" bgroundedge="36" bgborder="2 0xff0000 1"
+           oversampling="2" mipmapping="true" depth="0" depthbuffer="true" zorder="2"
+           zoom="true" torigin="world"
+           autoalpha="true" alpha="0.0"
+           onloaded.addevent="delayedcall(1,tween(alpha,0.7));"
+           onover.addevent="tween(scale,0.07,0.07,easeoutback); tween(alpha,0.7);"
+           onout.addevent="if(enabled, tween(scale,0.05,0.05); tween(alpha,0.7); )"
+           onclick.addevent="dollhouse_off();"
+    />
+
+    <style name="skin_hotspotstyle_red" url="hotspot_red.png" distorted="true"
+           tooltip=""
+           linkedscene=""
+           linkedscene_lookat=""
+           onclick="skin_hotspotstyle_click();"
+           depth="1000" edge="center" zorder="10" scale="0.5"
+           onloaded.addevent="do_crop_animation(128,128,10);"
+    />
+
+<!--    <hotspot name="p1" style="skin_hotspotstyle_red" ath="-87.895" atv="1.153" onclick="show_hotspot_alert(p1)"/>-->
+    <events oncontextmenu="onContextmenu"></events>
+    <events onnewscene="js(onNewScene())"></events>
+    <events onviewchanged="js(onViewChanged(get(view.vlookat), get(view.hlookat), get(xml.scene)))"></events>
+
+    <!-- action -->
+    <action name="onContextmenu">
+        jscall(calc('console.log("++++++")'));
+        js(hideContextmenu());
+        delayedcall(5,set(contextmenu.item[creator].visible,false);)
+    </action>
+    <action name="setHotspotsVisible" scope="local" args="isShow, duration">
+        set(num, 0);
+        for(set(i, 0), i LT hotspot.count, inc(i),
+        copy(hotspotname, hotspot[get(i)].name);
+        subtxt(namestart, get(hotspotname), 0, 6);
+        if (namestart == 'scene_', tween(hotspot[get(i)].visible, isShow, get(duration)))
+        )
+    </action>
+    <action name="setHotspotVisible" scope="local" args="name, isShow, duration">
+        tween(hotspot[get(name)].visible, get(isShow), get(duration));
+        <!--        jscall(calc('console.log("' + get(name) +',' +  isShow + '")'));-->
+    </action>
+    <action name="onscenestart" scope="local">
+        <!--        jscall(calc('console.log("' + 'onblendcomplete' + '")'));-->
+        js(resetHotspotPos())
+    </action>
+    <action name="hotspotLoaded" scope="local">
+
+    </action>
+    <action name="show_hotspot_alert" scope="local" args="id">
+        screentosphere(mouse.x, mouse.y, toh, tov);
+        spheretoscreen(hotspot[p1].ath, hotspot[p1].atv, screenX, screenY);
+        <!--        jscall(calc('console.log("' + mouse.x +',' + hotspot[p1] + '")'));-->
+        <!--        jscall(calc('console.log("' + mouse.y +',' + tov + '")'));-->
+
+        <!-- krpano调用js方法 -->
+        js(showHotspotAlert(get(id), get(screenX), get(screenY), get(hotspot[get(id)].ath), get(hotspot[get(id)].atv), get(hotspot[get(id)].text)))
+    </action>
+    <!-- js调用krpano方法 -->
+    <action name="jsCallKrpano" scope="local" args="a,b">
+        <!--        jscall(calc('console.log("' + get(a) +'")'));-->
+        <!--        jscall(calc('console.log("' + get(b) +'")'));-->
+
+        <!--        jscall(calc('console.log("' + get(args[0]) +'")'));-->
+        <!--        jscall(calc('console.log("' + get(args[1]) +'")'));-->
+    </action>
+
+    <action name="hotspot_hover" scope="local" args="id, text, style">
+        txtadd(fn, 'isHotspotShow("',get(id),'")');
+        jsget(isShow, get(fn));
+        if(!isShow,showtext(get(text), get(style)));
+    </action>
+
+    <action name="add_arrow_tooltip">
+        txtadd(tooltipname, 'tooltip_', get(name));
+        addplugin(get(tooltipname));
+        txtadd(plugin[get(tooltipname)].parent, 'hotspot[', get(name), ']');
+        set(plugin[get(tooltipname)].url,'%SWFPATH%/plugins/textfield.swf');
+        set(plugin[get(tooltipname)].align,bottom);
+        set(plugin[get(tooltipname)].edge,top);
+        set(plugin[get(tooltipname)].distorted,false);
+        set(plugin[get(tooltipname)].x,0);
+        set(plugin[get(tooltipname)].y,40);
+        set(plugin[get(tooltipname)].autowidth,true);
+        set(plugin[get(tooltipname)].autoheight,true);
+        set(plugin[get(tooltipname)].vcenter,true);
+        set(plugin[get(tooltipname)].background,true);
+        set(plugin[get(tooltipname)].backgroundcolor,0x000000);
+        set(plugin[get(tooltipname)].roundedge,5);
+        set(plugin[get(tooltipname)].backgroundalpha,0.0);
+        set(plugin[get(tooltipname)].padding,10);
+        set(plugin[get(tooltipname)].border,false);
+        set(plugin[get(tooltipname)].glow,0);
+        set(plugin[get(tooltipname)].glowcolor,0xFFFFFF);
+        set(plugin[get(tooltipname)].css,'margin-top: 20px;text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;  font-size:30px;');
+        if(device.mobile,set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei; font-weight:bold; font-size:30px;');
+        );
+        set(plugin[get(tooltipname)].textshadow,0);
+        set(plugin[get(tooltipname)].textshadowrange,6.0);
+        set(plugin[get(tooltipname)].textshadowangle,90);
+        if(text == '' OR text === null,
+        copy(plugin[get(tooltipname)].html,scene[get(linkedscene)].title),
+        copy(plugin[get(tooltipname)].html,text)
+        );
+        set(plugin[get(tooltipname)].enabled,false);
+    </action>
+    <action name="setTooltipStyle" scope="local" args="name">
+        txtadd(tooltipname, 'tooltip_', get(name));
+        set(plugin[get(tooltipname)].backgroundcolor,0xff0000);
+        set(plugin[get(tooltipname)].backgroundalpha,1);
+    </action>
+    <action name="resetTooltipsStyle" scope="local" args="name">
+        txtadd(tooltipname, 'tooltip_', get(name));
+        set(plugin[get(tooltipname)].backgroundcolor,0x000000);
+        set(plugin[get(tooltipname)].backgroundalpha,0.3);
+    </action>
+    <action name="add_all_the_time_tooltip">
+        txtadd(tooltipname, 'tooltip_', get(name));
+        addplugin(get(tooltipname));
+        txtadd(plugin[get(tooltipname)].parent, 'hotspot[', get(name), ']');
+        set(plugin[get(tooltipname)].url,'%SWFPATH%/plugins/textfield.swf');
+        set(plugin[get(tooltipname)].align,bottom);
+        set(plugin[get(tooltipname)].edge,bottom);
+        set(plugin[get(tooltipname)].x,0);
+        set(plugin[get(tooltipname)].y,-30px);
+        set(plugin[get(tooltipname)].autowidth,true);
+        set(plugin[get(tooltipname)].autoheight,true);
+        set(plugin[get(tooltipname)].vcenter,true);
+        set(plugin[get(tooltipname)].background,true);
+        set(plugin[get(tooltipname)].backgroundcolor,0x000000);
+        set(plugin[get(tooltipname)].roundedge,5);
+        set(plugin[get(tooltipname)].backgroundalpha,0.3);
+        set(plugin[get(tooltipname)].padding,5);
+        set(plugin[get(tooltipname)].border,false);
+        set(plugin[get(tooltipname)].glow,0);
+        set(plugin[get(tooltipname)].glowcolor,0xFFFFFF);
+        set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;
+        font-size:30px;');
+        if(device.mobile,set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;
+        font-weight:bold; font-size:30px;');
+        );
+        set(plugin[get(tooltipname)].textshadow,0);
+        set(plugin[get(tooltipname)].textshadowrange,6.0);
+        set(plugin[get(tooltipname)].textshadowangle,90);
+        if(text == '' OR text === null,
+        copy(plugin[get(tooltipname)].html,scene[get(linkedscene)].title),
+        copy(plugin[get(tooltipname)].html,text)
+        );
+        set(plugin[get(tooltipname)].enabled,false);
+    </action>
+
+    <action name="add_all_the_time_tooltip_top">
+        txtadd(tooltipname, 'tooltip_', get(name));
+        addplugin(get(tooltipname));
+        txtadd(plugin[get(tooltipname)].parent, 'hotspot[', get(name), ']');
+        set(plugin[get(tooltipname)].url,'%SWFPATH%/plugins/textfield.swf');
+        set(plugin[get(tooltipname)].align,top);
+        set(plugin[get(tooltipname)].edge,top);
+        set(plugin[get(tooltipname)].x,0);
+        set(plugin[get(tooltipname)].y,-30px);
+        set(plugin[get(tooltipname)].autowidth,true);
+        set(plugin[get(tooltipname)].autoheight,true);
+        set(plugin[get(tooltipname)].vcenter,true);
+        set(plugin[get(tooltipname)].background,true);
+        set(plugin[get(tooltipname)].backgroundcolor,0x000000);
+        set(plugin[get(tooltipname)].roundedge,5);
+        set(plugin[get(tooltipname)].backgroundalpha,0.3);
+        set(plugin[get(tooltipname)].padding,5);
+        set(plugin[get(tooltipname)].border,false);
+        set(plugin[get(tooltipname)].glow,0);
+        set(plugin[get(tooltipname)].glowcolor,0xFFFFFF);
+        set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;
+        font-size:30px;');
+        if(device.mobile,set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;
+        font-weight:bold; font-size:30px;');
+        );
+        set(plugin[get(tooltipname)].textshadow,0);
+        set(plugin[get(tooltipname)].textshadowrange,6.0);
+        set(plugin[get(tooltipname)].textshadowangle,90);
+        if(text == '' OR text === null,
+        copy(plugin[get(tooltipname)].html,scene[get(linkedscene)].title),
+        copy(plugin[get(tooltipname)].html,text)
+        );
+        set(plugin[get(tooltipname)].enabled,false);
+    </action>
+    <action name="add_all_the_time_tooltip_blue">
+        txtadd(tooltipname, 'tooltip_', get(name));
+        addplugin(get(tooltipname));
+        txtadd(plugin[get(tooltipname)].parent, 'hotspot[', get(name), ']');
+        set(plugin[get(tooltipname)].url,'%SWFPATH%/plugins/textfield.swf');
+        set(plugin[get(tooltipname)].align,bottom);
+        set(plugin[get(tooltipname)].edge,bottom);
+        set(plugin[get(tooltipname)].x,0);
+        set(plugin[get(tooltipname)].y,-30px);
+        set(plugin[get(tooltipname)].autowidth,true);
+        set(plugin[get(tooltipname)].autoheight,true);
+        set(plugin[get(tooltipname)].vcenter,true);
+        set(plugin[get(tooltipname)].background,true);
+        set(plugin[get(tooltipname)].backgroundcolor,0x33b8f3);
+        set(plugin[get(tooltipname)].roundedge,5);
+        set(plugin[get(tooltipname)].backgroundalpha,0.5);
+        set(plugin[get(tooltipname)].padding,5);
+        set(plugin[get(tooltipname)].border,false);
+        set(plugin[get(tooltipname)].glow,0);
+        set(plugin[get(tooltipname)].glowcolor,0xFFFFFF);
+        set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;
+        font-size:30px;');
+        if(device.mobile,set(plugin[get(tooltipname)].css,'text-align:center; color:#FFFFFF; font-family:MicrosoftYahei;
+        font-weight:bold; font-size:30px;');
+        );
+        set(plugin[get(tooltipname)].textshadow,0);
+        set(plugin[get(tooltipname)].textshadowrange,6.0);
+        set(plugin[get(tooltipname)].textshadowangle,90);
+        if(text == '' OR text === null,
+        copy(plugin[get(tooltipname)].html,scene[get(linkedscene)].title),
+        copy(plugin[get(tooltipname)].html,text)
+        );
+        set(plugin[get(tooltipname)].enabled,false);
+    </action>
+    <textstyle name="tooltipText"
+               origin="cursor"
+               edge="bottom"
+               xoffset="0"
+               yoffset="60"
+               fadeintime="0.0"
+               showtime="0.1"
+               fadetime="0.0"
+               font="MicrosoftYahei"
+               fontsize="14"
+               bold="false"
+               italic="false"
+               textcolor="0xFFFFFF"
+               textalign="center"
+               padding="5"
+               css=""
+               width=""
+               height=""
+               vcenter=""
+               background="true"
+               backgroundcolor="0x000000"
+               backgroundalpha="0.5"
+               border="false"
+               bordercolor="0x000000"
+               borderalpha="1.0"
+               borderwidth="1.0"
+               roundedge="5"
+               shadow="0.0"
+               shadowrange="6.0"
+               shadowangle="90"
+               shadowcolor="0x000000"
+               shadowalpha="1.0"
+               textshadow="0.0"
+               textshadowrange="4.0"
+               textshadowangle="45"
+               textshadowcolor="0x000000"
+               textshadowalpha="1.0"
+               alpha="1.0"
+               parent=""
+               noclip="true"
+    />
+    <textstyle name="tooltipTextBlue"
+               origin="cursor"
+               edge="bottom"
+               xoffset="0"
+               yoffset="60"
+               fadeintime="0.0"
+               showtime="0.1"
+               fadetime="0.0"
+               font="MicrosoftYahei"
+               fontsize="14"
+               bold="false"
+               italic="false"
+               textcolor="0xFFFFFF"
+               textalign="center"
+               padding="5"
+               css=""
+               width=""
+               height=""
+               vcenter=""
+               background="true"
+               backgroundcolor="0x33b8f3"
+               backgroundalpha="0.6"
+               border="false"
+               bordercolor="0x000000"
+               borderalpha="1.0"
+               borderwidth="1.0"
+               roundedge="5"
+               shadow="0.0"
+               shadowrange="6.0"
+               shadowangle="90"
+               shadowcolor="0x000000"
+               shadowalpha="1.0"
+               textshadow="0.0"
+               textshadowrange="4.0"
+               textshadowangle="45"
+               textshadowcolor="0x000000"
+               textshadowalpha="1.0"
+               alpha="1.0"
+               parent=""
+               noclip="true"
+    />
+</krpano>
