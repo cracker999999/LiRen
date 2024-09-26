@@ -40,7 +40,7 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-4.1" atv="-27.7" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="0" atv="0" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
 		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="24" atv="-29.5" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
 		
 		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="-172.6" atv="7.7" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
