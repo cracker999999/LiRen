@@ -40,9 +40,9 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="product_1" style="skin_hotspotstyle_red" ath="45" atv="-8.5" onclick="show_hotspot_alert(product_1)"  onloaded="add_all_the_time_tooltip()" text="3D扫描仪" />
-		<hotspot name="product_2" style="skin_hotspotstyle_red" ath="35.7" atv="-9.3" onclick="show_hotspot_alert(product_2)"  onloaded="add_all_the_time_tooltip()" text="3D打印机" />
-		<hotspot name="product_72" style="skin_hotspotstyle_red" ath="-6" atv="-11" onclick="show_hotspot_alert(product_72)"  onloaded="add_all_the_time_tooltip()" text="3D后处理" />
+		<hotspot name="product_1" style="skin_hotspotstyle_red" ath="47" atv="-7" onclick="show_hotspot_alert(product_1)"  onloaded="add_all_the_time_tooltip()" text="Fitshape 3D Scanner" />
+		<hotspot name="product_2" style="skin_hotspotstyle_red" ath="35.7" atv="-11" onclick="show_hotspot_alert(product_2)"  onloaded="add_all_the_time_tooltip()" text="Fitshape 3D Printer" />
+		<hotspot name="product_72" style="skin_hotspotstyle_red" ath="-6" atv="-11" onclick="show_hotspot_alert(product_72)"  onloaded="add_all_the_time_tooltip()" text="3D Post-Processing" />
 		
 	</scene>
 

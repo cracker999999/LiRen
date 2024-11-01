@@ -44,36 +44,36 @@ const app = Vue.createApp({
             highLightArray: [],
             sceneList: [
                 {
-                    name: '政府',
+                    name: ' Government Support',
                     previewImg: '../scene_preview/scene_zhengfu.png',
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0',
                     jieshuo: '../jieshuo/ZhengFuJiSheHuiZuZhi_ZhengFu.mp3',
-                    solutions: ['产品供应 '],
+                    solutions: ['Product'],
                 },
                 {
-                    name: '移动服务听力车场景',
+                    name: 'Audiometry Vehicle Service',
                     previewImg: '../scene_preview/scene_yidongcetingchefuwuchangjing.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1',
                     jieshuo: '../jieshuo/TingLiChe.mp3',
-                    solutions: ['测听','验配','售后服务','市场用具','配件耗材'],
+                    solutions: ['Audiometry','Fitting','After-Sales','Market Display','Accessories'],
                 },
                 {
-                    name: '社会组织',
+                    name: 'Social Organizations',
                     previewImg: '../scene_preview/scene_shehuizuzhi.png',
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2',
                     jieshuo: '../jieshuo/ZhengFuJiSheHuiZuZhi_SheHuiZuZhi.mp3',
-                    solutions: ['健康服务','产品供应'],
+                    solutions: ['Health Serv',' Product Sup'],
                 },
                 {
-                    name: '高校科研院所',
+                    name: 'Universities And Research',
                     previewImg: '../scene_preview/scene_gaoxiaojikeyanyuansuo.png',
                     tour: 'tour3.xml?v20231211',
                     startScene: 'scene_3',
                     jieshuo: '../jieshuo/ZhengFuJiSheHuiZuZhi_GaoXiaoJiKeYanChangSuo.mp3',
-                    solutions: ['科研场景','教培场景'],
+                    solutions: ['Research','Training'],
                 }
             ],
             alertList: [],
@@ -82,53 +82,53 @@ const app = Vue.createApp({
 
             solutionList: [
                 {
-                    solutionName: '产品供应 ',
+                    solutionName: 'Product',
                     solutionIcon: 'assets/img/ChanPinGongYing.png?v20230222',
                     productIds: [96,3,40,49],
                 },
                 {
-                    solutionName: '健康服务',
+                    solutionName: 'Health Serv',
                     solutionIcon: 'assets/img/JianKangFuWu.png?v20230222',
                     productIds: [52,14,28,74,37],
                 },
                 {
-                    solutionName: '产品供应',
+                    solutionName: ' Product Sup',
                     solutionIcon: 'assets/img/ChanPinGongYing.png?v20230222',
                     productIds: [49,96],
                 },
                 {
-                    solutionName: '科研场景',
+                    solutionName: 'Research',
                     solutionIcon: 'assets/img/KeYanChangJing.png?v20230222',
                     productIds: [26,57,45,93,62],
                 },
                 {
-                    solutionName: '教培场景',
+                    solutionName: 'Training',
                     solutionIcon: 'assets/img/JiaoPeiChangJing.png?v20230222',
                     productIds: [97,98],
                 },
                 //听力车
                 {
-                    solutionName: '测听',
+                    solutionName: 'Audiometry',
                     solutionIcon: 'assets/img/CeTing.png',
                     productIds: [74],
                 },
                 {
-                    solutionName: '验配',
+                    solutionName: 'Fitting',
                     solutionIcon: 'assets/img/YanPei.png',
                     productIds: [3,8],
                 },
                 {
-                    solutionName: '售后服务',
+                    solutionName: 'After-Sales',
                     solutionIcon: 'assets/img/ShouHouFuWu.png',
                     productIds: [48,12,53],
                 },
                 {
-                    solutionName: '市场用具',
+                    solutionName: 'Market Display',
                     solutionIcon: 'assets/img/ShiChangYongJu.png',
                     productIds: [5,16,75,76,77,78,79,80,81],
                 },
                 {
-                    solutionName: '配件耗材',
+                    solutionName: 'Accessories',
                     solutionIcon: 'assets/img/PeiJianHaoCai.png',
                     productIds: [18,19,6,54,55,22,59,64, 17,99,100,101,102,103],
                 },

@@ -40,8 +40,8 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-7.6" atv="15.5" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="适配型耳塞" />
-		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="-1.7" atv="22.6" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="定制型耳塞" />
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-7.6" atv="15.5" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="Molded Earplugs" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="-1.7" atv="22.6" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="Customized Hearing Protectors" />
 	
 	</scene>
 

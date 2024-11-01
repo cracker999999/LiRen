@@ -40,13 +40,13 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="product_83" style="skin_hotspotstyle_red" ath="-19.4" atv="12.2" onclick="show_hotspot_alert(product_83)"  onloaded="add_all_the_time_tooltip()" text="OAE设备" />
-		<hotspot name="product_38" style="skin_hotspotstyle_red" ath="-5" atv="12.8" onclick="show_hotspot_alert(product_38)"  onloaded="add_all_the_time_tooltip()" text="声阻抗" />
-		<hotspot name="product_36" style="skin_hotspotstyle_red" ath="8.5" atv="12.8" onclick="show_hotspot_alert(product_36)"  onloaded="add_all_the_time_tooltip()" text="声级计" />
-		<hotspot name="product_74" style="skin_hotspotstyle_red" ath="22" atv="11" onclick="show_hotspot_alert(product_74)"  onloaded="add_all_the_time_tooltip()" text="听力计" />
+		<hotspot name="product_83" style="skin_hotspotstyle_red" ath="-19.4" atv="12.2" onclick="show_hotspot_alert(product_83)"  onloaded="add_all_the_time_tooltip()" text=" OAE Equipment" />
+		<hotspot name="product_38" style="skin_hotspotstyle_red" ath="-5" atv="8" onclick="show_hotspot_alert(product_38)"  onloaded="add_all_the_time_tooltip()" text="Madsen Zodiac" />
+		<hotspot name="product_36" style="skin_hotspotstyle_red" ath="8.5" atv="12.8" onclick="show_hotspot_alert(product_36)"  onloaded="add_all_the_time_tooltip()" text="Sound Level Meter" />
+		<hotspot name="product_74" style="skin_hotspotstyle_red" ath="22" atv="11" onclick="show_hotspot_alert(product_74)"  onloaded="add_all_the_time_tooltip()" text="Audiometer" />
 
-		<hotspot name="product_37" style="skin_hotspotstyle_red" ath="150" atv="26.4" onclick="show_hotspot_alert(product_37)"  onloaded="add_all_the_time_tooltip()" text="视觉强化" />
-		<hotspot name="product_35" style="skin_hotspotstyle_red" ath="-149" atv="25" onclick="show_hotspot_alert(product_35)"  onloaded="add_all_the_time_tooltip()" text="声场" />
+		<hotspot name="product_37" style="skin_hotspotstyle_red" ath="150" atv="26.4" onclick="show_hotspot_alert(product_37)"  onloaded="add_all_the_time_tooltip()" text="Visual Reinforcement" />
+		<hotspot name="product_35" style="skin_hotspotstyle_red" ath="-149" atv="25" onclick="show_hotspot_alert(product_35)"  onloaded="add_all_the_time_tooltip()" text="Sound Field" />
 
 
 	</scene>

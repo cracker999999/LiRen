@@ -42,7 +42,7 @@
 
 		<hotspot name="product_33" style="skin_hotspotstyle_red" ath="1.2" atv="-12.6" onclick="show_hotspot_alert(product_33)"  onloaded="add_all_the_time_tooltip()" text="工作台" />
 		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="28.4" atv="6.2" onclick="show_hotspot_alert(product_14)"  onloaded="add_all_the_time_tooltip()" text="耳镜" />
-		<hotspot name="product_34" style="skin_hotspotstyle_red" ath="55" atv="23" onclick="show_hotspot_alert(product_34)"  onloaded="add_all_the_time_tooltip()" text="诊疗椅" />
+		<hotspot name="product_34" style="skin_hotspotstyle_red" ath="55" atv="21" onclick="show_hotspot_alert(product_34)"  onloaded="add_all_the_time_tooltip()" text="诊疗椅" />
 		<hotspot name="product_33" style="skin_hotspotstyle_red" ath="10" atv="-10" onclick="show_hotspot_alert(product_33)"  onloaded="add_all_the_time_tooltip()" text="工作台" />
 
 

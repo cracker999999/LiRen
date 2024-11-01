@@ -40,8 +40,8 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="product_71" style="skin_hotspotstyle_red" ath="0" atv="-4" onclick="show_hotspot_alert(product_71)" onloaded="add_all_the_time_tooltip()" text="3D建模" />
-		<hotspot name="product_94" style="skin_hotspotstyle_red" ath="23" atv="-4" onclick="show_hotspot_alert(product_94)" onloaded="add_all_the_time_tooltip()" text="代加工生产" />
+		<hotspot name="product_71" style="skin_hotspotstyle_red" ath="0" atv="-4" onclick="show_hotspot_alert(product_71)" onloaded="add_all_the_time_tooltip()" text="3D Modeling" />
+		<hotspot name="product_94" style="skin_hotspotstyle_red" ath="23" atv="-4" onclick="show_hotspot_alert(product_94)" onloaded="add_all_the_time_tooltip()" text="OEM Production" />
 	
 	</scene>
 

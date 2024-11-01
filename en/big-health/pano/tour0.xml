@@ -40,12 +40,12 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="-50.4" atv="-13" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
-		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-21.7" atv="-14.9" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
-		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="1.3" atv="-15.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="-50.4" atv="-13" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="Market Display" />
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-21.7" atv="-14.9" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="Fitting" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="1.3" atv="-15.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="Accessories" />
 
-		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="15.5" atv="-15.9" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
-		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="34.3" atv="-13.9" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="15.5" atv="-15.9" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="Audiometry" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="34.3" atv="-13.9" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="After-Sales" />
 
 	</scene>
 

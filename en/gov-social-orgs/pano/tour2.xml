@@ -41,11 +41,11 @@
 		</action>
 
 		
-		<hotspot name="product_49" style="skin_hotspotstyle_red" ath="-19.4" atv="-22.7" onclick="show_hotspot_alert(product_49)" onloaded="add_all_the_time_tooltip()" text="隔声室" />
-		<hotspot name="product_74" style="skin_hotspotstyle_red" ath="-2.7" atv="0.7" onclick="show_hotspot_alert(product_74)" onloaded="add_all_the_time_tooltip()" text="听力计" />
-		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="12.6" atv="3.7" onclick="show_hotspot_alert(product_14)" onloaded="add_all_the_time_tooltip()" text="耳镜" />
-		<hotspot name="product_37" style="skin_hotspotstyle_red" ath="45.2" atv="1.4" onclick="show_hotspot_alert(product_37)" onloaded="add_all_the_time_tooltip()" text="视觉强化" />
-		<hotspot name="product_52" style="skin_hotspotstyle_red" ath="11" atv="11.5" onclick="show_hotspot_alert(product_52)" onloaded="add_all_the_time_tooltip()" text="听能保养包" />
+		<hotspot name="product_49" style="skin_hotspotstyle_red" ath="-19.4" atv="-22.7" onclick="show_hotspot_alert(product_49)" onloaded="add_all_the_time_tooltip()" text="Customized Audiometric Booth Room" />
+		<hotspot name="product_74" style="skin_hotspotstyle_red" ath="-2.7" atv="0.7" onclick="show_hotspot_alert(product_74)" onloaded="add_all_the_time_tooltip()" text="Audiometer" />
+		<hotspot name="product_14" style="skin_hotspotstyle_red" ath="12.6" atv="3.7" onclick="show_hotspot_alert(product_14)" onloaded="add_all_the_time_tooltip()" text="Otoscope" />
+		<hotspot name="product_37" style="skin_hotspotstyle_red" ath="45.2" atv="1.4" onclick="show_hotspot_alert(product_37)" onloaded="add_all_the_time_tooltip()" text="Visual Reinforcement" />
+		<hotspot name="product_52" style="skin_hotspotstyle_red" ath="11" atv="11.5" onclick="show_hotspot_alert(product_52)" onloaded="add_all_the_time_tooltip()" text="Kit Bag-Ⅱ" />
 		<!-- <hotspot name="product_96" style="skin_hotspotstyle_red" ath="12.6" atv="20" onclick="show_hotspot_alert(product_96)" onloaded="add_all_the_time_tooltip()" text="助听器" /> -->
 
 	</scene>

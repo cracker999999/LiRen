@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-title" content="耳模应用场景">
     <meta name="description" content="耳模应用场景">
-    <title>耳模应用场景</title>
+    <title>Comprehensive Ear Canal Application</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -65,7 +65,7 @@
 
             <a class="btn-back flex flex-vc flex-hc" href="javascript:;" @click="goBack()">
                 <img src="assets/img/icon_back.png" alt="" class="icon-back">
-                <span>返回</span>
+                <span>Back</span>
             </a>
 
             <div class="control-right-top flex-column flex-v-end">
@@ -83,12 +83,12 @@
             <div class="left-control">
                 <div class="btn btn-bgm flex-column flex-vc flex-hc" onclick="onPlayBgm()">
                     <span class="icon"></span>
-                    <span>音乐</span>
+                    <span>Music</span>
                     <audio style="opacity: 0; height: 0" src="../images/bgm.mp3" id="bgm" loop="" autoplay="autoplay" preload="auto"></audio>
                 </div>
                 <div class="btn btn-jieshuo flex-column flex-vc flex-hc">
                     <span class="icon"></span>
-                    <span>解说</span>
+                    <span>Introduce</span>
                     <audio style="opacity: 0; height: 0" :src="jieshuoSrc" id="jieshuo" autoplay="autoplay" preload="auto"></audio>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                     :data-name="item.name" 
                     @click="onAlertClick(index)"></div>
 
-                <a class="btn-msg" href="http://soundlink.com.cn/index.html" target="_blank" @click="goContenthub()">
+                <a class="btn-msg" href="http://www.soundlink.cn/" target="_blank" @click="goContenthub()">
                     <img src="../images/btn_msg.png?v20230721" alt="" class="w-100">
                 </a>
             </div>
@@ -131,7 +131,7 @@
                         :class="{active: showScenePreview}" v-cloak 
                         @click="onScenePreviewClick()">
                         <img src="assets/img/icon_scene.png" alt="" class="icon">
-                        <span>场景选择</span>
+                        <span>Scene</span>
                     </div>
                     <ul class="solution-list flex flex-vc flex-hc">
                         <li class="item flex-column flex-vc flex-hc" 
@@ -227,7 +227,7 @@
                                                         <!-- <li class="link-item" v-for="(item, index) in item.productLink" :key="index"> -->
                                                             <a :href="item.url" target="_blank" v-show="item.url" class="text-white text-underline"
                                                                 @click="onProductLinkClick(index)">
-                                                                <img src="../images/shop.png" width="120" height="30" >
+                                                                <img src="../images/shop.png" width="180" height="30" >
                                                             </a>
                                                         <!-- </li> -->
                                                         <!-- <li class="link-item">
@@ -259,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-close" @click="onCloseProductModal">关闭</div>
+                <div class="btn-close" @click="onCloseProductModal">Close</div>
             </div>
         </div>
 

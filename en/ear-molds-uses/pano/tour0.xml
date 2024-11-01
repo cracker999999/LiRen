@@ -40,8 +40,8 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="product_73" style="skin_hotspotstyle_red" ath="-13.7" atv="-0.5" onclick="show_hotspot_alert(product_73)"  onloaded="add_all_the_time_tooltip()" text="3D制程培训" />
-		<hotspot name="product_91" style="skin_hotspotstyle_red" ath="12.4" atv="0.94" onclick="show_hotspot_alert(product_91)"  onloaded="add_all_the_time_tooltip()" text="手工培训" />
+		<hotspot name="product_73" style="skin_hotspotstyle_red" ath="-13.7" atv="-0.5" onclick="show_hotspot_alert(product_73)"  onloaded="add_all_the_time_tooltip()" text="3D Process Training" />
+		<hotspot name="product_91" style="skin_hotspotstyle_red" ath="12.4" atv="0.94" onclick="show_hotspot_alert(product_91)"  onloaded="add_all_the_time_tooltip()" text="Manual Training" />
 
 	</scene>
 

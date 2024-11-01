@@ -40,14 +40,14 @@
 			videointerface_play('3000x1500');
 		</action>
 
-		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-5.4" atv="-5.7" onclick="show_hotspot_alert(product_56)"  onloaded="add_all_the_time_tooltip()" text="技工桌" />
-		<hotspot name="product_61" style="skin_hotspotstyle_red" ath="25.2" atv="-6" onclick="show_hotspot_alert(product_61)"  onloaded="add_all_the_time_tooltip()" text="手钻" />
+		<hotspot name="product_56" style="skin_hotspotstyle_red" ath="-5.4" atv="-5.7" onclick="show_hotspot_alert(product_56)"  onloaded="add_all_the_time_tooltip()" text="Double Earmold Lab Bench" />
+		<hotspot name="product_61" style="skin_hotspotstyle_red" ath="25.2" atv="-6" onclick="show_hotspot_alert(product_61)"  onloaded="add_all_the_time_tooltip()" text="Hand Drill" />
 
-		<hotspot name="product_25" style="skin_hotspotstyle_red" ath="-132" atv="6.1" onclick="show_hotspot_alert(product_25)"  onloaded="add_all_the_time_tooltip()" text="助听器分析仪" />
-		<hotspot name="product_41" style="skin_hotspotstyle_red" ath="-111" atv="6" onclick="show_hotspot_alert(product_41)"  onloaded="add_all_the_time_tooltip()" text="超声波清洗机" />
-		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-71" atv="4.8" onclick="show_hotspot_alert(product_12)"  onloaded="add_all_the_time_tooltip()" text="助听器保养仪" />
+		<hotspot name="product_25" style="skin_hotspotstyle_red" ath="-132" atv="6.1" onclick="show_hotspot_alert(product_25)"  onloaded="add_all_the_time_tooltip()" text="Hearing Aid Analyzer" />
+		<hotspot name="product_41" style="skin_hotspotstyle_red" ath="-111" atv="6" onclick="show_hotspot_alert(product_41)"  onloaded="add_all_the_time_tooltip()" text="Ultrasonic Cleaner-Ⅱ" />
+		<hotspot name="product_12" style="skin_hotspotstyle_red" ath="-71" atv="4.8" onclick="show_hotspot_alert(product_12)"  onloaded="add_all_the_time_tooltip()" text="ZB03-B II Vacuum Pump" />
 		
-		<hotspot name="product_53" style="skin_hotspotstyle_red" ath="-155.6" atv="21.5" onclick="show_hotspot_alert(product_53)"  onloaded="add_all_the_time_tooltip()" text="助听器服务工具盒" />
+		<hotspot name="product_53" style="skin_hotspotstyle_red" ath="-155.6" atv="21.5" onclick="show_hotspot_alert(product_53)"  onloaded="add_all_the_time_tooltip()" text="Hearing Aid Service Toolkit" />
 	</scene>
 
 

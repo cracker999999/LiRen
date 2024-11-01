@@ -42,30 +42,30 @@ const app = Vue.createApp({
             highLightArray: [],
             sceneList: [
                 {
-                    name: '制程',
+                    name: 'Manufacturing',
                     previewImg: '../scene_preview/scene_zhicheng.png', // 下方预览图
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0', // 解决方案按钮
                     jieshuo: '../jieshuo/ZhuTingQiZhiZaoShang_ZhiCheng.mp3',
-                    solutions: ['3D制造'],
+                    solutions: ['3D MFG'],
                     alertList: [],
                 },
                 {
-                    name: '移动测听车服务场景',
+                    name: 'Audiometry Vehicle Service',
                     previewImg: '../scene_preview/scene_yidongcetingchefuwuchangjing.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1',
                     jieshuo: '../jieshuo/TingLiChe.mp3',
-                    solutions: ['测听','验配','售后服务','市场用具','配件耗材'],
+                    solutions: ['Audiometry','Fitting','After-Sales','Market Display','Accessories'],
                     alertList: [],
                 },
                 {
-                    name: '配套方案',
+                    name: 'Supporting Solutions',
                     previewImg: '../scene_preview/scene_peitaofangan.png',
                     tour: 'tour2.xml?v20231211',
                     startScene: 'scene_2',
                     jieshuo: '../jieshuo/ZhuTingQiZhiZaoShang_PeiTaoFangAn.mp3',
-                    solutions: ['生产','市场','助听器产品'],
+                    solutions: ['Produce','Marketing','Hearing Aids'],
                     alertList: [],
                 },
             ],
@@ -73,47 +73,47 @@ const app = Vue.createApp({
             curAlertList: [],
             solutionList: [ //该版块所有的解决方案
                 {
-                    solutionName: '3D制造',
+                    solutionName: '3D MFG',
                     solutionIcon: 'assets/img/3DZhiZao.png',
                     productIds: [1,2],
                 },
                 {
-                    solutionName: '测听',
+                    solutionName: 'Audiometry',
                     solutionIcon: 'assets/img/CeTing.png',
                     productIds: [74],
                 },
                 {
-                    solutionName: '验配',
+                    solutionName: 'Fitting',
                     solutionIcon: 'assets/img/YanPei.png',
                     productIds: [3,8],
                 },
                 {
-                    solutionName: '售后服务',
+                    solutionName: 'After-Sales',
                     solutionIcon: 'assets/img/ShouHouFuWu.png',
                     productIds: [48,12,53],
                 },
                 {
-                    solutionName: '市场用具',
+                    solutionName: 'Market Display',
                     solutionIcon: 'assets/img/ShiChangYongJu.png',
                     productIds: [5,16,75,76,77,78,79,80,81],
                 },
                 {
-                    solutionName: '配件耗材',
+                    solutionName: 'Accessories',
                     solutionIcon: 'assets/img/PeiJianHaoCai.png',
                     productIds: [18,19,6,54,55,22,59,64, 17,99,100,101,102,103],
                 },
                 {
-                    solutionName: '生产',
+                    solutionName: 'Produce',
                     solutionIcon: 'assets/img/ShengChan.png',
                     productIds: [56,57,13,26],
                 },
                 {
-                    solutionName: '市场',
+                    solutionName: 'Marketing',
                     solutionIcon: 'assets/img/ShiChang.png',
                     productIds: [19,48,12, 16,75,76,77,78,79,80,81, 27, 3,14,28, 18,82],
                 },
                 {
-                    solutionName: '助听器产品',
+                    solutionName: 'Hearing Aids',
                     solutionIcon: 'assets/img/ZhuTingQiBiaoPeiChanPin.png',
                     productIds: [29,30,6,55,63, 29,30,6,58],
                 },

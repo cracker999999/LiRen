@@ -41,11 +41,11 @@
 		</action>
 
 		<!-- 听力车 -->
-		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="-13.8" atv="-11.5" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="测听" />
-		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-6" atv="-11.5" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="验配" />
-		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="4" atv="-11.5" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="售后服务" />
-		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="12" atv="-11.5" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="市场用具" />
-		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="20" atv="-11.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="配件耗材" />
+		<hotspot name="solution_0" style="skin_hotspotstyle_red" ath="-13.8" atv="-11.5" onclick="show_hotspot_alert(solution_0)" onloaded="add_all_the_time_tooltip()" text="Audiometry" />
+		<hotspot name="solution_1" style="skin_hotspotstyle_red" ath="-6" atv="-20" onclick="show_hotspot_alert(solution_1)" onloaded="add_all_the_time_tooltip()" text="Fitting" />
+		<hotspot name="solution_2" style="skin_hotspotstyle_red" ath="1" atv="-11.5" onclick="show_hotspot_alert(solution_2)" onloaded="add_all_the_time_tooltip()" text="After-Sales" />
+		<hotspot name="solution_3" style="skin_hotspotstyle_red" ath="12" atv="-20" onclick="show_hotspot_alert(solution_3)" onloaded="add_all_the_time_tooltip()" text="Marketing And Display" />
+		<hotspot name="solution_4" style="skin_hotspotstyle_red" ath="20" atv="-11.5" onclick="show_hotspot_alert(solution_4)" onloaded="add_all_the_time_tooltip()" text="Hearing Aid Accessories" />
 
 	</scene>
 

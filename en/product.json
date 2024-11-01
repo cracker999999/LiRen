@@ -1,9 +1,9 @@
 [
     {
-        "productName": "Fitshape 3D扫描仪",
+        "productName": "Fitshape 3D Scanner",
         "id": "1",
-        "desc": "应用于耳道三维数据采集，开放式设计、可视化操作，多模块组合，便于售后且成本低 格式兼容市场上所有3D设计软件， 产品已通过CE、FCC认证。",
-        "url": "http://www.ear3d.cn/product/3d_scanner/Fitshape/",
+        "desc": "Applied to the ear canal 3D data，With Open design, Visual Operation, Multi-module combination, Convenient after-sales and low cost, this 3D scanner can compatible with all 3D design software.  Passed CE and FCC certification",
+        "url": "http://www.soundlink.cn/products/6/894.html",
         "modelName": "BZLR_P1",
         "modelType": "glb",
         "scale": "1",
@@ -18,10 +18,10 @@
         "productType": ""
     },
     {
-        "productName": "Fitshape 3D打印机",
+        "productName": "Fitshape 3D Printer",
         "id": "2",
-        "desc": "专注于听力行业快速成型领域，高分辨率、高精度，\n层厚可达到25-100μm。\n出色的表面质量，打印出的产品表面光滑， 更快的成型方式，能够高效完成复杂精细的模型， 耗材兼容性强，能兼容多种品牌耗材。",
-        "url": "http://www.ear3d.cn/product/3d_printer/fitshape/",
+        "desc": "Focus on the rapid prototyping of the hearing industry, \n With high resolution & precision, layer thickness can reach 25-100μm,\n Excellent quality and smooth surface of printed products,\n Able to efficiently complete complex and detailed models,\n Strong compatibility of consumables with various brands.",
+        "url": "http://www.soundlink.cn/products/6/895.html",
         "modelName": "BZLR_P2",
         "modelType": "glb",
         "scale": "0.8",
@@ -36,10 +36,10 @@
         "productType": ""
     },
     {
-        "productName": "真耳分析仪",
+        "productName": "Real Ear Measurements",
         "id": "13",
-        "desc": "自动真耳分析，兼容各大助听器厂家软件，·客观验配，精准调节，·提高患者满意度",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2712.html",
+        "desc": "Automatic real ear analysis, compatible with major hearing aid manufacturers' software, objective fitting, precise adjustment, improve patient satisfaction",
+        "url": "",
         "modelName": "BZLR_P13",
         "modelType": "glb",
         "scale": "2.5",
@@ -54,10 +54,10 @@
         "productType": ""
     },
     {
-        "productName": "挂绳",
+        "productName": "BTE Clip (Binaural)",
         "id": "17",
-        "desc": "多款多色单耳、双耳挂绳，解决了耳背机佩戴时容易脱落等问题。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/406.html",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
+        "url": "http://www.soundlink.cn/products/Matching3/521.html",
         "modelName": "BZLR_P17",
         "modelType": "glb",
         "scale": "3.5",
@@ -72,10 +72,10 @@
         "productType": "挂绳"
     },
     {
-        "productName": "液晶测电器",
+        "productName": "Digital Battery Tester",
         "id": "18",
-        "desc": "新颖设计，电池电量直观显示，携带方便。内置的电池仓小抽屉，最少可容纳两颗助听器电池。",
-        "url": "http://www.soundlink.com.cn/products/Matching8/205.html",
+        "desc": "Novel design, intuitive battery level display, easy to carry. The built-in battery compartment drawer can hold at least two hearing aid batteries.",
+        "url": "http://www.soundlink.cn/product/shichangyongju/657.html",
         "modelName": "BZLR_P18",
         "modelType": "glb",
         "scale": "4.5",
@@ -90,10 +90,10 @@
         "productType": "陈列道具,专业礼品"
     },
     {
-        "productName": "防耳垢网罩",
+        "productName": "Wax Filter (Nanocare)",
         "id": "55",
-        "desc": "用于定制式助听器，深受消费者青睐的防耳垢系列产品，防耳垢效果好，更换方便。",
-        "url": "http://www.soundlink.com.cn/products/6/705.html",
+        "desc": "Used in custom hearing aids, this series of anti-earwax products is popular among customers. It has good anti-earwax effect and is easy to replace.",
+        "url": "http://www.soundlink.cn/product/application/839.html",
         "modelName": "BZLR_P21",
         "modelType": "glb",
         "scale": "1.3",
@@ -108,10 +108,10 @@
         "productType": "陈列道具,定制机"
     },
     {
-        "productName": "声阻抗",
+        "productName": "Madsen Zodiac",
         "id": "38",
-        "desc": "Madsen Zodiac的设计重点在于容易获得密封的探头\n·采用7英寸彩色大屏，对比鲜明，重点内容突出显示\n·平面菜单结构，快速上手\n·内置打印机，亦可连接耳遂听软件，创建定制化报告。",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2711.html",
+        "desc": "Madsen Zodiac is designed with easy access to sealed probes. \n Large 7-inch color screen with sharp contrast and highlighted content. \n Flat menu structure for quick start. \n Built-in printer and can also connect to EarTune software to create customized reports",
+        "url": "",
         "modelName": "BZLR_P38",
         "modelType": "glb",
         "scale": "0.2",
@@ -126,10 +126,10 @@
         "productType": ""
     },
     {
-        "productName": "电子干燥器",
+        "productName": "Hearing Aids Drying AID201",
         "id": "19",
-        "desc": "本产品采用自动恒温加热元件，能在短时间内达到设定恒定温度，除湿效果明显。中层板隔离干燥物与发热系统，通过加热后的空气对被干燥物进行除湿，避免了传统加热方式引起的温度过高而导致被干燥物损坏。\n本产品外形小巧、便于携带、性能稳定，全新科技外观设计（已申请专利），USB电源供电方式，操作简便。是用户居家及旅途常备的干燥除湿佳品。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/359.html",
+        "desc": "This product is small in size, easy to carry, stable in performance, with a brand-new technological appearance design (patent applied for), USB power supply, and easy operation. It is an excellent drying and dehumidifying product for users at home and on the road.",
+        "url": "http://www.soundlink.cn/products/Matching3/561.html",
         "modelName": "BZLR_P19",
         "modelType": "glb",
         "scale": "2",
@@ -144,10 +144,10 @@
         "productType": "陈列道具,助听器清洁产品"
     },
     {
-        "productName": "超声波清洗机",
+        "productName": "Ultrasonic Cleaner-Ⅱ",
         "id": "41",
-        "desc": "数码型设计，适用于清洗助听器、耳模，为客户日常清洗，让您的专营店服务更细致、更贴心，凸显专业，让您的客户对您更信赖。",
-        "url": "http://www.soundlink.com.cn/products/5/637.html",
+        "desc": "The digital design.  Suitable for cleaning hearing aids and ear molds. It can provide daily cleaning for customers, the service will be more meticulous and considerate, highlighting your professionalism and making your customers trust more.",
+        "url": "http://www.soundlink.cn/products/Matching3/514.html",
         "modelName": "BZLR_P41",
         "modelType": "glb",
         "scale": "0.15",
@@ -162,10 +162,10 @@
         "productType": ""
     },
     {
-        "productName": "编程器",
+        "productName": "Mini Hipro",
         "id": "8",
-        "desc": "Mini USB Pro 是一种通用型编程器，\n携带方便，通用性与兼容性强！",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2955.html",
+        "desc": "Mini USB Pro is a universal programmer, \n Easy to carry, versatile and compatible.",
+        "url": "",
         "modelName": "BZLR_P8",
         "modelType": "glb",
         "scale": "2.5",
@@ -180,10 +180,10 @@
         "productType": ""
     },
     {
-        "productName": "手钻",
+        "productName": "Hand Drill",
         "id": "61",
-        "desc": "强力无碳刷手钻，脚踏无极调速功能，\n正反转任意调节，自动过载保护功能。",
-        "url": "http://www.soundlink.com.cn/products/4/575.html",
+        "desc": "Powerful brushless hand drill, stepless speed regulation by foot, forward and reverse rotation adjustable, automatic overload protection.",
+        "url": "http://www.soundlink.cn/products/Matching1/698.html",
         "modelName": "BZLR_P42",
         "modelType": "glb",
         "scale": "3.4",
@@ -198,10 +198,10 @@
         "productType": ""
     },
     {
-        "productName": "助听器效果演示仪",
+        "productName": "Hearing Aid Demonstrator",
         "id": "40",
-        "desc": "用于助听器实际效果演示，大大提升了客户的体验感和满意度。使用本产品时可同时供两到四人试听，以满足聋儿的监护人、亲属一同参与试听选购助听器的需求。",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2965.html",
+        "desc": "Equipped with headphones to let the patient's family experienced the actual hearing aid effect demonstration. Highly enhance the trust and satisfaction (Standard 1pc headphone, Optional 4pcs headphones)",
+        "url": "",
         "modelName": "BZLR_P40",
         "modelType": "glb",
         "scale": "0.23",
@@ -216,10 +216,10 @@
         "productType": ""
     },
     {
-        "productName": "压力锅",
+        "productName": "Pressure Pot",
         "id": "57",
-        "desc": "德国原装进口，钻石品质，各大助听器生产企业指定使用制作设备，安全高效，操作便捷，一次可容纳多个耳模，可有效排除软耳模的气泡。需要配合空气压缩机使用。",
-        "url": "http://www.soundlink.com.cn/products/4/253.html",
+        "desc": "Imported from Germany, designated by main hearing aid manufacturers. It is safe, efficient, easy to operate, and can accommodate multiple ear molds at a time, and effectively eliminate bubbles in soft ear molds. Need to be used with an air compressor.",
+        "url": "",
         "modelName": "BZLR_P24",
         "modelType": "glb",
         "scale": "0.25",
@@ -234,10 +234,10 @@
         "productType": "实验室技术研发"
     },
     {
-        "productName": "包装盒",
+        "productName": "Hearing Aid Case",
         "id": "63",
-        "desc": "用于存放助听器及相关听力小配件，携带方便。",
-        "url": "http://www.soundlink.com.cn/product/application/151.html",
+        "desc": "Used to store hearing aids and related hearing accessories, easy to carry.",
+        "url": "http://www.soundlink.cn/product/shichangyongju/644.html",
         "modelName": "BZLR_P48",
         "modelType": "glb",
         "scale": "0.009",
@@ -252,10 +252,10 @@
         "productType": "定制机"
     },
     {
-        "productName": "验配套装",
+        "productName": "Impression-Taking Kit",
         "id": "3",
-        "desc": "产品配备齐全，携带方便，凸显专业，适合验配师外出上门使用，是各听力中心常备工具套装。",
-        "url": "http://www.soundlink.com.cn/products/Matching2/476.html",
+        "desc": "Including all the material, tools to take ear impression model. \n Easy to carry and professional for hearing aid dispensers taking outside to visit customers. \n It is a must-have tool kit for all hearing centers.",
+        "url": "http://www.soundlink.cn/product/3D_printing/598.html",
         "modelName": "BZLR_P3",
         "modelType": "glb",
         "scale": "2.2",
@@ -270,10 +270,10 @@
         "productType": "验配耳镜"
     },
     {
-        "productName": "听能保养包",
+        "productName": "Kit Bag-Ⅱ",
         "id": "52",
-        "desc": "套装包括助听器常用清洁及保养产品，是聋耳家长朋友及语言培训老师听能管理之常备产品。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/402.html",
+        "desc": "The set includes commonly used cleaning and maintenance products for hearing aids, and is a must-have product for parents of deaf children and language training teachers to manage hearing ability.",
+        "url": "http://www.soundlink.cn/products/Matching3/541.html",
         "modelName": "BZLR_P11",
         "modelType": "glb",
         "scale": "0.3",
@@ -288,10 +288,10 @@
         "productType": ""
     },
     {
-        "productName": "助听器服务工具盒",
+        "productName": "Hearing Aid Service Tool kit",
         "id": "53",
-        "desc": "用于助听器日常维修，以专业化、整洁化、规范化为助听器用户们提供专业、便捷、高品质的服务。",
-        "url": "http://www.soundlink.com.cn/products/5/2959.html",
+        "desc": "Used for daily maintenance of hearing aids, providing professional, convenient and high-quality services to hearing aid users in the hearing clinics and maintain place.",
+        "url": "",
         "modelName": "BZLR_P15",
         "modelType": "glb",
         "scale": "0.4",
@@ -306,10 +306,10 @@
         "productType": ""
     },
     {
-        "productName": "新款干燥饼+干燥盒",
+        "productName": "Drying Pallet",
         "id": "6",
-        "desc": "搭配30g专用干燥饼，用于助听器日常干燥护理使用。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/175.html",
+        "desc": "Used with drying jar for drying hearing aids and earmolds.\n The color will turn from orange to transparent when it is saturated with moisture.\n Passed CE&RoHS certification",
+        "url": "http://www.soundlink.cn/products/Matching3/555.html",
         "modelName": "BZLR_P6",
         "modelType": "glb",
         "scale": "0.4",
@@ -324,10 +324,10 @@
         "productType": "陈列道具,定制机,标准机"
     },
     {
-        "productName": "大号耳朵展示架",
+        "productName": "Market Display",
         "id": "27",
-        "desc": "选用丰富艳丽的色彩，立体的耳朵形象更引人注目，以产品形象直观展示来替代市场激烈竞争中产生昂贵的推广成本，达到促进形象，降低宣传成本的营销目的。适用于听力中心、展会、活动等场所，有利于赢得市场，提高行业竞争力。",
-        "url": "http://www.soundlink.com.cn/product/application/2960.html",
+        "desc": "Choose rich and bright colors to make the three-dimensional ear model more eye-catching; Fierce market competition generates expensive promotion costs. This ear model can achieve the marketing purpose of promoting and reducing publicity costs; Suitable for hearing centers, exhibitions, activities and other places, it is conducive to winning the market and improving industry competitiveness.",
+        "url": "",
         "modelName": "BZLR_P27",
         "modelType": "glb",
         "scale": "0.6",
@@ -342,10 +342,10 @@
         "productType": "大耳展示架"
     },
     {
-        "productName": "Z型展示架",
+        "productName": "Z-Shaped Market Display",
         "id": "43",
-        "desc": "优质材质，精工制作，产品独立展示，\n提升店面形象，打造品牌生命力。",
-        "url": "http://www.soundlink.com.cn/product/application/2966.html",
+        "desc": "High-quality materials, fine workmanship, and independent product display enhance the brand image",
+        "url": "",
         "modelName": "BZLR_P43",
         "modelType": "glb",
         "scale": "0.4",
@@ -360,10 +360,10 @@
         "productType": ""
     },
     {
-        "productName": "硬耳模材料",
+        "productName": "Nice-Fit Hard Earmold Material",
         "id": "45",
-        "desc": "液态光固化材料，用于制作助听器硬耳模、定制音乐耳机外壳等。\n材质对人体安全无刺激，制成品性能稳定，得到国内外客户一致。\n口碑好评，是耳模实验室常备的材料。\n制成品通过后期处理（亮漆、打磨），使产品水晶般晶莹剔透。",
-        "url": "http://www.soundlink.com.cn/products/Matching3/243.html",
+        "desc": "Liquid light-curing material. Used to make hard ear molds, IEM shells, etc.The material is safe and non-irritating to the human body, and the finished product has stable performance. It is a common material in ear mold laboratories.The finished product is processed (dip lacquer, polishing) to make the product crystal clear.",
+        "url": "http://www.soundlink.cn/products/5/849.html",
         "modelName": "BZLR_P45",
         "modelType": "glb",
         "scale": "2",
@@ -378,10 +378,10 @@
         "productType": "实验室技术研发"
     },
     {
-        "productName": "软耳模材料",
+        "productName": "Nice-Fit Fast Solidified Soft Earmold Material",
         "id": "62",
-        "desc": "德国进口材料，用于制作BTE助听器软耳模，制成品柔软度好，韧性度高，表面光泽度显著，佩戴舒适。 常温20min即可全部成型凝固（压力锅中可加速凝固），适合小批量以及对时间有快速要求的工作需要(注射时间需要控制在90S内)，适用于一次成型及二次成型制作工艺。",
-        "url": "http://www.soundlink.com.cn/products/Matching3/502.html",
+        "desc": "Materials imported from Germany are used to make soft earmolds for BTE hearing aids. The finished products have good softness, high toughness, significant surface gloss, and are comfortable to wear. It can be fully formed and solidified in 20 minutes at room temperature (solidification can be accelerated in a pressure pot). It is suitable for small batches and work that requires fast time (injection time needs to be controlled within 90S). ",
+        "url": "http://www.soundlink.cn/products/Matching1/667.html",
         "modelName": "BZLR_P46",
         "modelType": "glb",
         "scale": "0.8",
@@ -396,10 +396,10 @@
         "productType": "实验室技术研发"
     },
     {
-        "productName": "耳声发射",
+        "productName": "Otoacoustic Emissions",
         "id": "60",
-        "desc": "高效而精准的筛查工具，是您值得信赖的客观听力测试仪，全中文彩色显示屏，方便易学",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2963.html",
+        "desc": "An efficient and accurate screening tool, an objective hearing tester you can trust, with a full Chinese color display, easy to learn",
+        "url": "",
         "modelName": "BZLR_P39",
         "modelType": "glb",
         "scale": "5",
@@ -414,10 +414,10 @@
         "productType": ""
     },
     {
-        "productName": "声级计",
+        "productName": "Sound Level Meter",
         "id": "36",
-        "desc": "声音强度测试工具，声场校准工具",
-        "url": "http://www.soundlink.com.cn/products/Matching2/469.html",
+        "desc": "Sound intensity test tool, sound field calibration tool",
+        "url": "",
         "modelName": "BZLR_P36",
         "modelType": "glb",
         "scale": "1.3",
@@ -432,10 +432,10 @@
         "productType": ""
     },
     {
-        "productName": "耳镜",
+        "productName": "Otoscope",
         "id": "14",
-        "desc": "本产品是一款利用CMOS摄像装置来对耳道进行检查，并将摄取到的图像传输到电脑屏幕上显示，使用者可以在耳镜主机上操作按键来调节LED亮度或拍照，也可在电脑软件上进行拍照、储存、打印和编辑等操作。\n适用于医生、听力学专家、听力师、助听器验配师和其他接受过专业培训的人士。\n适用于医院、听力诊所、助听器验配店等场所。",
-        "url": "http://www.soundlink.com.cn/products/Matching2/2958.html",
+        "desc": "Checking ear canal, High resolution images Automatic focusing, High-tech ergonomic design. \n Can easily adjust the LED brightness or take photos by the key on the otoscope host, and can also take photos, store, print and edit on the computer software.",
+        "url": "",
         "modelName": "BZLR_P14",
         "modelType": "glb",
         "scale": "0.5",
@@ -450,10 +450,10 @@
         "productType": "验配耳镜"
     },
     {
-        "productName": "检耳镜",
+        "productName": "Otoscope",
         "id": "28",
-        "desc": "e-scope耳窥镜是德国Riester的产品之-光线柔和明亮，观察效果佳;\n简洁大方的外观设计、符合人体工程学的使用要求，极佳手感;\n采用减少反射的光学元件和LED技术，\n可提高诊断效率并降低维护成本。",
-        "url": "http://www.soundlink.com.cn/product/application/2960.html",
+        "desc": "The e-scope otoscope is a product of German Riester, featuring soft and bright light for excellent observation results; its simple and elegant design meets ergonomic requirements for a great feel; it uses optical components that reduce reflection and LED technology, which can improve diagnostic efficiency and reduce maintenance costs.",
+        "url": "",
         "modelName": "BZLR_P28",
         "modelType": "glb",
         "scale": "1",
@@ -468,10 +468,10 @@
         "productType": "验配耳镜"
     },
     {
-        "productName": "磁铁钢针刷",
+        "productName": "Brush With Wax Loop",
         "id": "29",
-        "desc": "用于助听器及耳模的清洁。一端安有钢针圆环，\n可用于助听器或耳模异物的清除。",
-        "url": "http://www.soundlink.com.cn/product/shichangyongju/786.html",
+        "desc": "Used for cleaning hearing aids and ear molds. A steel needle ring is installed on one end, which can be used to remove wax or dirty from hearing aids or ear molds.",
+        "url": "http://www.soundlink.cn/products/Matching3/500.html",
         "modelName": "BZLR_P29",
         "modelType": "glb",
         "scale": "1.5",
@@ -486,10 +486,10 @@
         "productType": "定制机,标准机"
     },
     {
-        "productName": "气孔通杆",
+        "productName": "Vent Cleaner For Open Fitting",
         "id": "30",
-        "desc": "适用于定制机气孔、导声管的清洁和疏通。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/369.html",
+        "desc": "Suitable for cleaning and unblocking vent hole and sound tube of CIC, ITC, ITE.",
+        "url": "http://www.soundlink.cn/products/Matching3/501.html",
         "modelName": "BZLR_P30",
         "modelType": "glb",
         "scale": "1.1",
@@ -504,10 +504,10 @@
         "productType": "定制机,标准机"
     },
     {
-        "productName": "移动听力车",
+        "productName": "Mobile Hearing Service Vehicle",
         "id": "50",
-        "desc": "移动听力服务车 ⸺ 送医上门，专业的隔声室、听力检测产品，一站式提供听力检测、验配等工作。",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2957.html",
+        "desc": "Providing medical services at your doorstep, professional soundproof rooms, and hearing testing products, providing one-stop services such as hearing testing and hearing aid fitting.",
+        "url": "",
         "modelName": "BZLR_P9",
         "modelType": "glb",
         "scale": "0.25",
@@ -522,10 +522,10 @@
         "productType": ""
     },
     {
-        "productName": "定制款隔声室",
+        "productName": "Customized Audiometric Booth Room",
         "id": "49",
-        "desc": "内部可依据客户要求选择相关配件；空调、监控、可视观察窗、声场、视觉强化、通风系统、配电、 家具等。材质可依据场地情况、客户需求选择单层或双层结构，定制专属款式。为用户提供专业、美观、舒适的测听环境。",
-        "url": "http://www.soundlink.com.cn/products/Matching9/720.html",
+        "desc": "The customized audiometric booth adopts a new composite layer sound insulation wall structure. And all materials are flame retardant, fireproof, odorless and environmentally friendly products. \n For internal, relevant accessories can be selected according to customer requirements; Air conditioning, surveillance, visual viewing windows, sound field, visual enhancement, ventilation system, power distribution, furniture, etc.",
+        "url": "",
         "modelName": "BZLR_P7",
         "modelType": "glb",
         "scale": "0.3",
@@ -540,10 +540,10 @@
         "productType": ""
     },
     {
-        "productName": "一体化工作台",
+        "productName": "Ear Examination Desk",
         "id": "33",
-        "desc": "用于客户耳道检查，助听器维修保养的工作台，布局合理，兼容性高，多角度可调，操作便捷。",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2961.html",
+        "desc": "This clinic desk is a professional table for ear examination and impression taken. To meet audiology checking demand, stainless steel material is high quality for daily using. The large-capacity space can satisfy the fitter to store various ear impressions, repair and maintenance, material & tools, or storage of medicines",
+        "url": "",
         "modelName": "BZLR_P33",
         "modelType": "glb",
         "scale": "0.3",
@@ -558,10 +558,10 @@
         "productType": ""
     },
     {
-        "productName": "技工桌",
+        "productName": "Double Earmold lab bench",
         "id": "56",
-        "desc": "本产品是一款多功能技工台，适用助听器配制专业及口腔专业技工室，是技师操作的必备设备。本产品钢木结构，最新造型设计。台面由高密度板加防火板制成，平整光洁；抽屉采用优质滑轨，推拉自如；台架垫脚可调整，以保证工作台平稳；吸尘系统采用大功率吸尘机，吸力强劲、噪音低，具有良好的吸尘效果，工作环境更加洁净；新颖的照明灯具，操作方便；配置的国际标准型插座能满足各种操作工具的需要。",
-        "url": "http://www.soundlink.com.cn/products/4/578.html",
+        "desc": "This product is a multifunctional technician table, suitable for hearing aid preparation and dental professional technician rooms. \n This product has a steel and wood structure. The table top is made of high-density board and fireproof board, which is flat and smooth; The drawer uses high-quality slide rails, which can be pushed and pulled freely; The table feet can be adjusted to ensure the stability of the workbench;",
+        "url": "http://www.soundlink.cn/products/Matching1/700.html",
         "modelName": "BZLR_P23",
         "modelType": "glb",
         "scale": "0.07",
@@ -576,9 +576,9 @@
         "productType": ""
     },
     {
-        "productName": "诊疗椅",
+        "productName": "Clinic Chair",
         "id": "34",
-        "desc": "座垫平面升降范围：560-760mm（200mm）\n靠背府仰角度：90°~180\n旋转角度：360°，可任一位置锁定\n头枕延伸：0~200mm\n最大承载范围：<150kg",
+        "desc": "Seat cushion lifting range: 560-760mm (200mm) \n Backrest reclining angle: 90°~180 \n Rotation angle: 360°, can be locked in any position \n Headrest extension: 0~200mm \n Maximum load range: <150kg",
         "url": "http://www.soundlink.com.cn/products/Matching9/2962.html",
         "modelName": "BZLR_P34",
         "modelType": "glb",
@@ -594,10 +594,10 @@
         "productType": ""
     },
     {
-        "productName": "助听器保养仪",
+        "productName": "ZB03-B II Vacuum Pump",
         "id": "12",
-        "desc": "用于助听器日常干燥、清洁护理使用，便捷的按键操作，一键智能开启，除湿保养 一机搞定。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/383.html",
+        "desc": "Used for daily drying, cleaning and caring of hearing aids. Convenient button operation, one-button smart start, dehumidification and maintenance are all done in one machine",
+        "url": "http://www.soundlink.cn/products/Matching3/517.html",
         "modelName": "BZLR_P12",
         "modelType": "glb",
         "scale": "2",
@@ -612,10 +612,10 @@
         "productType": "助听器清洁产品"
     },
     {
-        "productName": "真空护理仪",
+        "productName": "Vacuum Desiccator EW01-M",
         "id": "44",
-        "desc": "人工耳蜗、助听器是一种精密且昂贵的电子设备，佩戴时需要与人体接触，人体的新陈代谢产生的汗液、空气中潮气会侵蚀机器，对耳蜗、助听器相关配件存在潜在危害。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/405.html",
+        "desc": "This Vacuum Desiccator is designed to dry hearing aids and with sterilization and disinfection function to protect healthy of customers.LED sterilization lamp Three LED lamp to sterilize all-around. Manual pressure relief valve Double insurance Working surface One-click to work Power switch One button to turn off the power",
+        "url": "http://www.soundlink.cn/products/Matching3/536.html",
         "modelName": "BZLR_P44",
         "modelType": "glb",
         "scale": "0.4",
@@ -630,10 +630,10 @@
         "productType": ""
     },
     {
-        "productName": "声场",
+        "productName": "Sound Field",
         "id": "35",
-        "desc": "用于听障患者佩戴助听器后的听力评估，由必备扬声器单元、调节支架组成。使用便捷，是听力中心标准评估设备之一。\n\n(含支架，支架高度可调)",
-        "url": "http://www.soundlink.com.cn/products/Matching9/201.html",
+        "desc": "Used for hearing assessment of hearing-impaired patients after wearing hearing aids. It consists of the necessary speaker unit and adjustment bracket. It is easy to use and is one of the standard assessment equipment in the hearing center. (Including bracket, the bracket height is adjustable)",
+        "url": "",
         "modelName": "BZLR_P35",
         "modelType": "glb",
         "scale": "1",
@@ -648,9 +648,9 @@
         "productType": ""
     },
     {
-        "productName": "视觉强化",
+        "productName": "Visual Reinforcement",
         "id": "37",
-        "desc": "TFT LCD全彩液晶屏显示内含存储系统，可持续循环播放转换档案，经编程设定的无线遥控器，全动态移动范围的悬臂显屏安装支架。",
+        "desc": "TFT LCD full-color display with built-in storage system, continuous loop playback of converted files, programmed wireless remote control, cantilever display mounting bracket with full dynamic range of motion.",
         "url": "http://www.soundlink.com.cn/products/Matching9/727.html",
         "modelName": "BZLR_P37",
         "modelType": "glb",
@@ -666,10 +666,10 @@
         "productType": ""
     },
     {
-        "productName": "助听器分析仪",
+        "productName": "Hearing Aid Analyzer",
         "id": "25",
-        "desc": "配有海特箱(HIT Box)的耦合腔验配，包括真耳耦合腔差值（RECD）–无论是实测还是预估，都可以使您更加高效地开展儿童和成人验配工作。",
-        "url": "http://www.soundlink.com.cn/products/Matching9/2710.html",
+        "desc": "Coupler fitting with the HIT Box, including Real Ear Coupler Difference (RECD) – both measured and estimated, allows you to fit children and adults more efficiently.",
+        "url": "",
         "modelName": "BZLR_P25",
         "modelType": "glb",
         "scale": "90",
@@ -684,10 +684,10 @@
         "productType": ""
     },
     {
-        "productName": "光固化机",
+        "productName": "Light Curing Machine",
         "id": "26",
-        "desc": "UV-LED光固化机采用MCU技术进行控制，LCD液晶显示，可以快速固化红胶、亮漆，树脂等材料。光照强度大，效果好，任意设置固化时间，随时可以中断固化操作。",
-        "url": "http://www.soundlink.com.cn/products/4/2968.html",
+        "desc": "The UV-LED light curing machine is controlled by MCU technology and has LCD display. It can quickly cure red glue, lacquer, resin and other materials. The light intensity is high and the effect is good. The curing time can be set arbitrarily and the curing operation can be interrupted at any time.",
+        "url": "",
         "modelName": "BZLR_P26",
         "modelType": "glb",
         "scale": "2.5",
@@ -702,10 +702,10 @@
         "productType": "实验室技术研发"
     },
     {
-        "productName": "大号耳朵解剖模型",
+        "productName": "Ear Anatomy Model-L",
         "id": "5",
-        "desc": "有外耳、中耳、内耳组成的解剖模型。可以直观看到听骨链，半规管及耳蜗。适合于摆放在公司或助听器专营店显眼的位置，以营造专业的气氛。通过模型的讲解，增进与客户间的沟通和交流。",
-        "url": "http://www.soundlink.com.cn/product/application/139.html",
+        "desc": "Anatomical display model demonstrates outer, middle, and inner ear.The ossicular chain, semicircular canals and cochlea can be seen directly. Used for display in hearing clinics, school, hearing aid exhibition place. With professional explain, to let customers well understanding.",
+        "url": "http://www.soundlink.cn/product/shichangyongju/632.html",
         "modelName": "BZLR_P5",
         "modelType": "glb",
         "scale": "25",
@@ -720,10 +720,10 @@
         "productType": "解剖模型"
     },
     {
-        "productName": "听力保护器",
+        "productName": "Customized Hearing Protectors",
         "id": "51",
-        "desc": "定制型听力保护器，结合3D打印工艺，既能满足精准安全降噪，又能满足舒适性，提高个人佩戴意愿，解决绝大部分企业都存在的护听器虚戴的难题。分频降噪是该产品另一个特点，降噪的同时可以保留人语沟通声、识别警告信号，提高了工作效率和安全保障。",
-        "url": "http://easysoundsz.com/products/1/",
+        "desc": "Customized hearing protectors, combined with 3D printing technology, can not only meet the requirements of accurate and safe noise reduction, but also meet the requirements of comfort, increase personal willingness to wear, and solve the problem of hearing protectors being worn in vain in most companies. Frequency division noise reduction is another feature of this product.",
+        "url": "",
         "modelName": "BZLR_P10",
         "modelType": "glb",
         "scale": "0.06",
@@ -738,10 +738,10 @@
         "productType": ""
     },
     {
-        "productName": "电池",
+        "productName": "Hearing Aid Battery",
         "id": "54",
-        "desc": "德国VARTA原厂代工（powerone电池母公司），品质保证，无腐蚀、优化电池平衡、三重密封保护措施、活化时间短",
-        "url": "http://www.soundlink.com.cn/products/Matching8/214.html",
+        "desc": "Imported from Germany VARTA Micro-battery GmbH. Quality assurance, no corrosion, optimized battery balance, triple seal protection, short activation time.",
+        "url": "",
         "modelName": "BZLR_P20",
         "modelType": "glb",
         "scale": "0.45",
@@ -756,10 +756,10 @@
         "productType": "陈列道具"
     },
     {
-        "productName": "清洁护理套装",
+        "productName": "Hearing aid cleaning kit",
         "id": "48",
-        "desc": "套装包括助听器常用清洁及保养产品，是各听力中心促销优选产品。可根据需求提供贴牌定制服务。",
-        "url": "http://www.soundlink.com.cn/products/Matching1/395.html",
+        "desc": "Including the necessary cleaning tools for hearing aid maintain and caring. The welcomed promotion product in the hearing centers.\n OEM logo and customized items as requested.",
+        "url": "http://www.soundlink.cn/products/Matching3/528.html",
         "modelName": "BZLR_P4",
         "modelType": "glb",
         "scale": "0.3",
@@ -774,10 +774,10 @@
         "productType": "助听器清洁产品"
     },
     {
-        "productName": "喇叭单元",
+        "productName": "Receiver System",
         "id": "47",
-        "desc": "标准配件，美国楼氏产品，全系列型号可供选择。",
-        "url": "http://www.soundlink.com.cn/products/6/710.html",
+        "desc": "Standard accessories for hearing aid and IEM producing. full range of models to choose from.",
+        "url": "http://www.soundlink.cn/product/application/810.html",
         "modelName": "BZLR_P47",
         "modelType": "glb",
         "scale": "0.6",
@@ -792,10 +792,10 @@
         "productType": ""
     },
     {
-        "productName": "亚克力六耳展示架",
+        "productName": "Ear display (Six ears)",
         "id": "16",
-        "desc": "由仿真耳及亚克力板组成。亚克力板晶莹剔透，仿真耳柔软细腻，整体精致典雅，展示极具视觉效果。",
-        "url": "http://www.soundlink.com.cn/product/application/133.html",
+        "desc": "It is composed of simulated ears and acrylic display. The acrylic plates are crystal clear, the simulated ears are soft and delicate, the whole display is exquisite and elegant with great visual effects.",
+        "url": "http://www.soundlink.cn/product/shichangyongju/627.html",
         "modelName": "BZLR_P16",
         "modelType": "glb",
         "scale": "0.25",
@@ -810,10 +810,10 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "开放式耳塞",
+        "productName": "Open Fitting Eartip",
         "id": "22",
-        "desc": "特殊声音滤波器保护您的双耳，防过敏硅胶材质，柔软舒适。\n三层叠状设计，有效降低压追感。\n安全不易损坏，可多次重复使用。\n独特的声音过滤器，有效保护您的双耳。",
-        "url": "http://easysoundsz.com/products/8/5229.html",
+        "desc": "Special sound filter protects your ears, anti-allergic silicone material, soft and comfortable.\n Three-layer design effectively reduces the pressure tracking feeling. Safe and not easy to damage, can be reused many times. Unique sound filter effectively protects your ears",
+        "url": "",
         "modelName": "BZLR_P22",
         "modelType": "glb",
         "scale": "0.3",
@@ -828,10 +828,10 @@
         "productType": "陈列道具"
     },
     {
-        "productName": "BTE三件套",
+        "productName": "Eartip With Tubing-Ⅱ",
         "id": "58",
-        "desc": "标准助听器配件，用于BTE助听器。",
-        "url": "http://www.soundlink.com.cn/products/6/670.html",
+        "desc": "Standard hearing aid accessories for use with BTE hearing aids.",
+        "url": "http://www.soundlink.cn/product/application/798.html",
         "modelName": "BZLR_P31",
         "modelType": "glb",
         "scale": "2.3",
@@ -846,10 +846,10 @@
         "productType": "标准机"
     },
     {
-        "productName": "软耳塞",
+        "productName": "Eartip-Ⅱ",
         "id": "59",
-        "desc": "标准助听器配件，用于BTE、盒式助听器。",
-        "url": "http://www.soundlink.com.cn/products/6/663.html",
+        "desc": "Standard hearing aid accessories, for BTE, body hearing aids.",
+        "url": "http://www.soundlink.cn/product/application/791.html",
         "modelName": "BZLR_P32",
         "modelType": "glb",
         "scale": "0.9",
@@ -864,10 +864,10 @@
         "productType": "陈列道具"
     },
     {
-        "productName": "适配型耳塞",
+        "productName": "Molded Earplugs",
         "id": "64",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，\n有效降低压迫感，保护双耳。",
-        "url": "http://easysoundsz.com/products/8/",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
+        "url": "",
         "modelName": "BZLR_P49",
         "modelType": "glb",
         "scale": "0.28",
@@ -882,9 +882,9 @@
         "productType": "陈列道具"
     },
     {
-        "productName": "阅读耳塞",
+        "productName": "Earplugs For Reading",
         "id": "65",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，有效降低压迫感，保护双耳。",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
         "url": "http://easysoundsz.com/products/8/",
         "modelName": "BZLR_P49b",
         "modelType": "glb",
@@ -900,9 +900,9 @@
         "productType": ""
     },
     {
-        "productName": "商务旅行耳塞",
+        "productName": "Earplugs For Business",
         "id": "66",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，有效降低压迫感，保护双耳。",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
         "url": "http://easysoundsz.com/products/8/",
         "modelName": "BZLR_P49c",
         "modelType": "glb",
@@ -918,9 +918,9 @@
         "productType": ""
     },
     {
-        "productName": "游泳耳塞",
+        "productName": "Earplugs For Swimming",
         "id": "67",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，有效降低压迫感，保护双耳。",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
         "url": "http://easysoundsz.com/products/8/",
         "modelName": "BZLR_P49d",
         "modelType": "glb",
@@ -936,9 +936,9 @@
         "productType": ""
     },
     {
-        "productName": "公路驾驶耳塞",
+        "productName": "Earplugs For Driving",
         "id": "68",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，有效降低压迫感，保护双耳。",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
         "url": "http://easysoundsz.com/products/8/",
         "modelName": "BZLR_P49e",
         "modelType": "glb",
@@ -954,9 +954,9 @@
         "productType": ""
     },
     {
-        "productName": "音乐耳塞",
+        "productName": "Earplugs For Music",
         "id": "69",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，有效降低压迫感，保护双耳。",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
         "url": "http://easysoundsz.com/products/8/",
         "modelName": "BZLR_P49f",
         "modelType": "glb",
@@ -972,9 +972,9 @@
         "productType": ""
     },
     {
-        "productName": "睡眠耳塞",
+        "productName": "Earplugs For Sleeping",
         "id": "70",
-        "desc": "防过敏硅胶材质，柔软舒适，三层叠状设计，有效降低压迫感，保护双耳。",
+        "desc": "Made of hypoallergenic silicone material, soft and comfortable, with a three-layer design that effectively reduces the feeling of pressure and protects the ears.",
         "url": "http://easysoundsz.com/products/8/",
         "modelName": "BZLR_P49g",
         "modelType": "glb",
@@ -990,9 +990,9 @@
         "productType": ""
     },
     {
-        "productName": "3D耳模设计",
+        "productName": " 3D Modeling",
         "id": "71",
-        "desc": "3D耳模建模是指使用3D建模软件和技术，依据人耳1V1创建耳模或助听器外壳。\n\n可通过FITSHAPE 3D耳印模扫描仪，可以快速扫描耳印模，获取3D数据，然后在3D建模软件中，对扫描的数据进行处理，实现3D耳模的搭建。",
+        "desc": "3D earmold modeling refers to using 3D modeling software and technology to turn the digital ear impression scans into earmolds or hearing aid shells for 3D printing The Fitshape 3D ear impression scanner can quickly scan ear impressions to obtain 3D data, and then process the scanned data in the 3D modeling software for construction.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1008,9 +1008,9 @@
         "productType": ""
     },
     {
-        "productName": "3D后处理",
+        "productName": "3D Post-Processing",
         "id": "72",
-        "desc": "3D后处理是指3D打印完成后对耳模进行的一系列加工和改进措施，用来去除打印痕迹、抛光打磨、改善表面光洁度、表面的处理等，来实现耳模成品。\n\n常用的3D打印后处理配套产品有：超声波清洗机、光固化机、吸料机、调速旋匀仪、恒温储存箱、后处理研磨机等。",
+        "desc": "3D post-processing refers to processing and improvement measures for the earmolds after 3D printing which is used to remove printing marks, polish and grind the surface, improve surface finish, and perform other surface treatments to achieve the final earmold products.\n Commonly used 3D printing post-processing products include ultrasonic cleaner, UV curing chamber, material suction machine, material rotating device, constant temperature storage cabinet, and post-processing grinder, etc.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1026,9 +1026,9 @@
         "productType": ""
     },
     {
-        "productName": "3D制程培训",
+        "productName": "3D Process Training",
         "id": "73",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry。",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1044,9 +1044,9 @@
         "productType": ""
     },
     {
-        "productName": "听力计",
+        "productName": "Audiometer",
         "id": "74",
-        "desc": "听力计通常指的是纯音听力计，是一种用于测试听觉功能的电子仪器。\n\n广泛应用于听觉障碍的检查与诊断。它根据电声学原理设计而成，能产生多种频率的纯音，经耳机传输入耳。",
+        "desc": "Audiometer usually refers to pure tone audiometer, is an electronic device used to test auditory function.\n It is widely used in the examination and diagnosis of hearing impairment. Designed based on electroacoustic principles, it can generate pure tones of various frequencies and transmit them to the ears through headphones.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1062,9 +1062,9 @@
         "productType": ""
     },
     {
-        "productName": "单耳展示架",
+        "productName": "Ear Display(Single Ear)",
         "id": "75",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1080,9 +1080,9 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "高透加厚人头展架",
+        "productName": "Thicken Ear Display(Frosted Head Style)",
         "id": "76",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1098,9 +1098,9 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "四耳展示架",
+        "productName": "Ear Display(Four Ear)",
         "id": "77",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1116,9 +1116,9 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "五耳展示架",
+        "productName": "Ear Display(Five Ear)",
         "id": "78",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1134,9 +1134,9 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "亚克力人头展示架",
+        "productName": "Ear Display(Head Style)",
         "id": "79",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1152,9 +1152,9 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "亚克力异形展示座",
+        "productName": "Hearing Aid Display",
         "id": "80",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1170,9 +1170,9 @@
         "productType": "耳展示架"
     },
     {
-        "productName": "圆柱形单耳展架",
+        "productName": "Hearing Aid Display",
         "id": "81",
-        "desc": "门店产品展示日趋重要且专业化，是商品与消费者沟通的桥梁。\n\nSoundlink(百助立人)提供全套专业展示用品，精选优质材质，精心打造多款助听器、耳模展示架，让您的产品橱窗展示更加形象与立体。赢得市场，提高企业竞争力！",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1188,9 +1188,9 @@
         "productType": ""
     },
     {
-        "productName": "测电笔",
+        "productName": "Battery Tester",
         "id": "82",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Market display in stores is becoming increasingly important and professional, serving as a bridge for communication between commodities and consumers.\n Soundlink provides a full set of professional display supplies, selects high-quality materials, and carefully built a variety of hearing aids, earmold display stands to make your product window display more vivid. Win the market and improve corporate competitiveness!",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1206,9 +1206,9 @@
         "productType": "专业礼品"
     },
     {
-        "productName": "OAE设备",
+        "productName": "OAE Equipment",
         "id": "83",
-        "desc": "OAE耳声发射，Otoacoustic Emissions\n 反应耳蜗外毛细胞功能的指标。主要用于评估耳蜗部分的听觉功能损失情况。",
+        "desc": "OAE (Otoacoustic Emissions), is an indicator reflecting the function of outer hair cells in the cochlea. It is mainly used to assess hearing loss in the cochlea region.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1224,9 +1224,9 @@
         "productType": ""
     },
     {
-        "productName": "ABR/ASSR设备",
+        "productName": "ABR Equipment",
         "id": "84",
-        "desc": "ABR听性脑干反应，Auditory brainstem response\n 有助于对从听神经到脑干听觉通路的病变进行定位诊断。通过V波的反应阈值有助于听力损失水平的客观评估。",
+        "desc": "ABR (Auditory Brainstem Response), Helps to localize and diagnose lesions in the auditory pathway from the auditory nerve to the brainstem. Response thresholds through the V-wave help in the objective assessment of the level of hearing loss.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1242,9 +1242,9 @@
         "productType": ""
     },
     {
-        "productName": "诊疗床",
+        "productName": "Diagnostic Bed",
         "id": "85",
-        "desc": "诊疗床可用于客户耳道诊断、治疗、护理等，可以满足不同临床需求。\n\n可调节角度，以适应不同患者的身高和体位需求，使患者在诊疗过程中保持舒适。\n\n广泛应用于医院、听力检查中心等场所，是进行诊疗活动的常备工具。",
+        "desc": "The diagnostic bed is designed for ear canal diagnosis, treatment, and nursing of patients, to meet different clinical needs.It features adjustable angles to accommodate patients of different heights and postural requirements, ensuring patient comfort throughout the examination and treatment process.Widely used in hospitals, hearing examination centers, etc, it is a standing equipment for diagnostic and treatment activities.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1260,9 +1260,9 @@
         "productType": ""
     },
     {
-        "productName": "NOAH平台",
+        "productName": "NOAH",
         "id": "86",
-        "desc": "Noah系统是himsa集团旗下专为听力行业开发的客户管理软件，其整合了行业内主流听力产品的软件集成，您可以通过Noah方便的进行用户管理，用户测听，用户验配等功能。",
+        "desc": "The Noah system is a customer management software developed by the Himsa group for the hearing industry. It integrates the software of mainstream hearing products in the industry. You can easily manage clients, conduct user hearing tests, hearing aid fitting, and other functions",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1278,9 +1278,9 @@
         "productType": ""
     },
     {
-        "productName": "声管耗材",
+        "productName": "Sound Tubes",
         "id": "87",
-        "desc": "助听器声管用于连接助听器的不同部件，如耳钩和耳模（或耳塞），以传递声音信号。可根据用户的耳道形状和助听器型号，进行选择声管的样式、尺寸、长度。以确保佩戴的舒适性和声音传输的效果。",
+        "desc": "Hearing aid sound tubes are used to connect different parts of hearing aids, such as earhooks and earmolds (or earplugs), to transmit sound signals. The style, size, and length can be selected according to the user's ear canal shape and hearing aid model to ensure comfort wearing and sound transmission.",
         "url": "http://www.soundlink.com.cn/plus/search.php?typeid=5&q=%E5%A3%B0%E7%AE%A1",
         "modelName": "",
         "modelType": "",
@@ -1296,9 +1296,9 @@
         "productType": ""
     },
     {
-        "productName": "验配培训",
+        "productName": "Fitting Training",
         "id": "88",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1314,9 +1314,9 @@
         "productType": ""
     },
     {
-        "productName": "验配师资质考核",
+        "productName": " Fitting Technician Qualification Assessment",
         "id": "89",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1332,9 +1332,9 @@
         "productType": ""
     },
     {
-        "productName": "3D制程培训",
+        "productName": "3D Process Training",
         "id": "90",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1350,9 +1350,9 @@
         "productType": ""
     },
     {
-        "productName": "手工培训",
+        "productName": "Hand Manual Training",
         "id": "91",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1368,9 +1368,9 @@
         "productType": ""
     },
     {
-        "productName": "焊线",
+        "productName": "Silver-Plated Litz Wire",
         "id": "92",
-        "desc": "多股漆包线，用于助听器喇叭、麦克风等配件之间的连线。",
+        "desc": "Multi-strand silver plated litz wire, used to connect hearing aid receivers, microphones, and other accessories.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1386,9 +1386,9 @@
         "productType": ""
     },
     {
-        "productName": "钻头",
+        "productName": "Drills",
         "id": "93",
-        "desc": "助听器用钻头，通常用于助听器维修，软硬耳模的制作等，配合专用维修设备一起使用。常用的有：球形钻头、圆形钻、椭圆形钻、梨形钻、麻花钻、橡胶钻等，可根据使用的需求来选择合适的钻头。",
+        "desc": "Drill bits for hearing aids are commonly used for hearing aid repairs, soft and hard earmold production, etc., and work with specific repair equipment. Common types include spherical drill, round drill, oval drill, pear-shaped drill, twist drill, rubber drill, etc. You can choose the appropriate one according to your needs.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1404,9 +1404,9 @@
         "productType": "实验室技术研发"
     },
     {
-        "productName": "代加工生产",
+        "productName": "OEM Production",
         "id": "94",
-        "desc": "Soundlink（百助立人）在国内率先建立专业级3D产线耳模实验室，引入全球尖端软硬件设备，组织强有力的技术团队，将纷繁复杂的的定制耳模生产流程化、标准化，提升耳模产品的稳定声学性能体验。",
+        "desc": "Soundlink is the first in China to establish a professional 3D earmold laboratory, introduce cutting-edge hardware and software equipment, and organize a strong technical team to streamline and standardize the complex production of customized earmolds, thereby improving the stable acoustic performance of earmold products.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1422,9 +1422,9 @@
         "productType": ""
     },
     {
-        "productName": "助听器",
+        "productName": "Hearing Aids",
         "id": "96",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1440,9 +1440,9 @@
         "productType": ""
     },
     {
-        "productName": "培训体系",
+        "productName": "Training System",
         "id": "97",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1458,9 +1458,9 @@
         "productType": "人员资质培训及考核"
     },
     {
-        "productName": "资质考核",
+        "productName": "Qualification Assessment",
         "id": "98",
-        "desc": "百助立人（soundlink）长期以来开展多次3D耳模培训班，不断赋能行业发展。",
+        "desc": "Soundlink has been carrying out 3D earmold training courses for a long time, constantly promoting the development of the industry.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1476,9 +1476,9 @@
         "productType": "人员资质培训及考核"
     },
     {
-        "productName": "BTE棉布保护套",
+        "productName": "Hearing Aid Protector",
         "id": "99",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1494,9 +1494,9 @@
         "productType": "挂绳"
     },
     {
-        "productName": "儿童生肖挂绳",
+        "productName": "Hearing Aid Clip For Children",
         "id": "100",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1512,9 +1512,9 @@
         "productType": "挂绳"
     },
     {
-        "productName": "耳背机挂绳单耳",
+        "productName": "Monaural BTE Clip",
         "id": "101",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1530,9 +1530,9 @@
         "productType": "挂绳"
     },
     {
-        "productName": "耳背机挂绳双耳",
+        "productName": "Binaural BTE Clip",
         "id": "102",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1548,9 +1548,9 @@
         "productType": "挂绳"
     },
     {
-        "productName": "硅胶防丢挂绳",
+        "productName": "Hearing Aid Anti-Lost Lanyard",
         "id": "103",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1566,9 +1566,9 @@
         "productType": "挂绳"
     },
     {
-        "productName": "定制式睡眠耳塞",
+        "productName": "Custom Earplugs For Sleeping",
         "id": "104",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",
@@ -1584,9 +1584,9 @@
         "productType": ""
     },
     {
-        "productName": "定制式游泳耳塞",
+        "productName": "Custom Earplugs For Swimming",
         "id": "105",
-        "desc": "助听器的防丢神器，解决了耳背机佩戴时容易脱落等问题，适用大多数BTE/RIC助听器。\n\n配有高品质防丢夹，有单耳和双耳、多种颜色可供选择。",
+        "desc": "Prevent BTE from falling off and losing Fits any size BTE hearing aids Available in Binaural and Monaural Varied color for selection.",
         "url": "",
         "modelName": "",
         "modelType": "",

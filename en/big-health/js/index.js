@@ -38,22 +38,22 @@ const app = Vue.createApp({
             highLightArray: [],
             sceneList: [
                 {
-                    name: '听力中心',
+                    name: ' Supermarket',
                     previewImg: '../scene_preview/scene_tinglizhongxin.png',
                     tour: 'tour0.xml?v20231211',
                     startScene: 'scene_0',
                     alertList: [],
                     jieshuo: '../jieshuo/DaJianKangHangYeJiGou_TingLiZhongXin.mp3',
-                    solutions: ['测听','验配','售后服务','市场用具','配件耗材'],
+                    solutions: ['Audiometry','Fitting','After-Sales','Market Display','Accessories'],
                 },
                 {
-                    name: '药房',
+                    name: ' Pharmacy',
                     previewImg: '../scene_preview/scene_yaofang.png',
                     tour: 'tour1.xml?v20231211',
                     startScene: 'scene_1',
                     alertList: [],
                     jieshuo: '../jieshuo/DaJianKangHangYeJiGou_YaoDian.mp3',
-                    solutions: ['测听','验配','售后服务','市场用具','配件耗材'],
+                    solutions: ['Audiometry','Fitting','After-Sales','Market Display','Accessories'],
                 },
                 // {
                 //     name: '眼镜门店场景',
@@ -62,7 +62,7 @@ const app = Vue.createApp({
                 //     startScene: 'scene_1',
                 //     alertList: [],
                 //     jieshuo: '../jieshuo/ZhuTingQiLianSuoMenDian_ErBaoJianJianCha.mp3',
-                //     solutions: ['测听','验配','售后服务','市场用具','配件耗材'],
+                //     solutions: ['Hearing Test','Fitting','After-Sales Service','Market','Market Supplies'],
                 // },
                 
                 // {
@@ -79,27 +79,27 @@ const app = Vue.createApp({
             curAlertList: [],
             solutionList: [
                 {
-                    solutionName: '测听',
+                    solutionName: 'Audiometry',
                     solutionIcon: 'assets/img/CeTing.png',
                     productIds: [49,74],
                 },
                 {
-                    solutionName: '验配',
+                    solutionName: 'Fitting',
                     solutionIcon: 'assets/img/YanPei.png',
                     productIds: [3,28,8,86,40],
                 },
                 {
-                    solutionName: '售后服务',
+                    solutionName: 'After-Sales',
                     solutionIcon: 'assets/img/ShouHouFuWu.png',
                     productIds: [48,12,53,41],
                 },
                 {
-                    solutionName: '市场用具',
+                    solutionName: 'Market Display',
                     solutionIcon: 'assets/img/ShiChangYongJu.png',
                     productIds: [5,16,27],
                 },
                 {
-                    solutionName: '配件耗材',
+                    solutionName: 'Accessories',
                     solutionIcon: 'assets/img/PeiJianHaoCai.png',
                     productIds: [17,18,19,6,54,55,22,59,64,44,87],
                 },
