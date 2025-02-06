@@ -911,6 +911,22 @@ flex布局
   font-size: 0.333rem /* 18/54 */;
   color: #fff;
 }
+.btn-lang {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 999;
+}
+.btn-lang img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+.btn-lang span {
+  font-size: 14px;
+  color: #fff;
+}
 .btn-msg {
   display: block;
   width: 1.296rem /* 70/54 */;

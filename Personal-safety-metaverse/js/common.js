@@ -167,3 +167,11 @@ async function loadProductConfig() {
 $(function (){
     loadProductConfig();
 })
+
+function switchLang(lang) {
+    if (lang === 'en') {
+        window.location.href = '../en/index.html';
+    } else {
+        window.location.href = '../Personal-safety-metaverse/index.html';
+    }
+}
