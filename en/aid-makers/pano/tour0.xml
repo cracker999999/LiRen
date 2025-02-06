@@ -29,14 +29,14 @@
 		<!-- use the videoplayer plugin as panoramic image source -->
 		<image>
 			<!-- <sphere url="plugin:video" /> -->
-			<sphere url="https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/panorama/ZhuTingQiZhiZaoShang_ZhiCheng.jpg" />
+			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/ZhuTingQiZhiZaoShang_ZhiCheng.jpg" />
 		</image>
 
 		<!-- set the default view -->
 		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="142" fov.mobile="90" fovmin="75" fovmax="150" distortion="0.0" ty="0"/>
 
 		<action name="add_video_sources" >
-			videointerface_addsource('6000x3000', 'https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/video/VR_Sequence_360.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/0.video/video-3000x1500-poster.jpg');
+			videointerface_addsource('6000x3000', 'https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/video/VR_Sequence_360.mp4', 'https://file-sjune.oss-cn-hangzhou.aliyuncs.com/PSD/chemical-industry/0.video/video-3000x1500-poster.jpg');
 			videointerface_play('6000x3000');
 		</action>
 

@@ -29,7 +29,7 @@
 		<!-- use the videoplayer plugin as panoramic image source -->
 		<image>
 			<!-- <sphere url="plugin:video" /> -->
-			<sphere url="https://soundlink-de-1301174277.cos.eu-frankfurt.myqcloud.com/panorama/ZhuTingQiLianSuoMenDian_ABRASSRCeShi.jpg" />
+			<sphere url="https://soundlink-1301174277.cos.ap-beijing.myqcloud.com/panorama/ZhuTingQiLianSuoMenDian_ABRASSRCeShi.jpg" />
 		</image>
 
 		<!-- set the default view -->
