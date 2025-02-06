@@ -78,6 +78,8 @@ function autoPlayMusic() {
     // 自动播放音乐效果，解决浏览器或者APP自动播放问题
     function musicInBrowserHandler() {
         console.log("1111111111", allowPlay, bgm.paused);
+        bgm.muted = false;
+        jieshuo.muted = false;
         onPlayJieshuo();
         onPlayBgm();
         document.body.removeEventListener('touchstart', musicInBrowserHandler);
