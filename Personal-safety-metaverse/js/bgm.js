@@ -102,7 +102,7 @@ function autoPlayMusic() {
         document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
     }
 
-    document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+    // document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
     $(".btn-jieshuo, .btn-bgm").removeClass("paused");
 }
 
