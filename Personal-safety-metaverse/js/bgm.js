@@ -50,15 +50,19 @@ function onPlayBgm() {
 function autoPlayMusic() {
     // 自动播放音乐效果，解决浏览器或者APP自动播放问题
     function musicInBrowserHandler() {
-        console.log(allowPlay, bgm.paused);
+        console.log("1111", allowPlay, bgm.paused);
         onPlayJieshuo();
         onPlayBgm();
         document.body.removeEventListener('touchstart', musicInBrowserHandler);
         document.body.removeEventListener('mousedown', musicInBrowserHandler);
+        document.body.removeEventListener('click', musicInBrowserHandler);
+        document.body.removeEventListener('mousemove', musicInBrowserHandler);
     }
 
     document.body.addEventListener('touchstart', musicInBrowserHandler);
-    // document.body.addEventListener('mousedown', musicInBrowserHandler);
+    document.body.addEventListener('mousedown', musicInBrowserHandler);
+    document.body.addEventListener('click', musicInBrowserHandler);
+    document.body.addEventListener('mousemove', musicInBrowserHandler);
 
     // 自动播放音乐效果，解决微信自动播放问题
     function musicInWeixinHandler() {
