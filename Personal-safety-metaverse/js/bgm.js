@@ -48,9 +48,36 @@ function onPlayBgm() {
 }
 
 function autoPlayMusic() {
+    bgm.muted = true;  // 初始静音以绕过 Chrome 限制
+    jieshuo.muted = true;
+    bgm.volume = 0.1;
+
+    async function startPlay() {
+        try {
+            // 先静音播放
+            await Promise.all([bgm.play(), jieshuo.play()]);
+
+            // 延迟取消静音
+            setTimeout(() => {
+                bgm.muted = false;
+                jieshuo.muted = false;
+                $(".btn-jieshuo, .btn-bgm").removeClass("paused");
+            }, 100);
+        } catch (e) {
+            console.log("自动播放失败:", e);
+        }
+    }
+
+    // 页面加载完成后尝试播放
+    if (document.readyState === 'complete') {
+        startPlay();
+    } else {
+        window.addEventListener('load', startPlay);
+    }
+
     // 自动播放音乐效果，解决浏览器或者APP自动播放问题
     function musicInBrowserHandler() {
-        console.log("1111", allowPlay, bgm.paused);
+        console.log("1111111111", allowPlay, bgm.paused);
         onPlayJieshuo();
         onPlayBgm();
         document.body.removeEventListener('touchstart', musicInBrowserHandler);
